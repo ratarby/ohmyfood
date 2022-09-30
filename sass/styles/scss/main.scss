@@ -4,18 +4,21 @@
 @import "./scss/vendors/_variables.scss";
 @import "./scss/base/_responsive.scss";
 @import "./scss/layout/_header.scss";
+@import "./scss/components/_buttons.scss";
 
 
+                                    /*conteneur de la page web*/ 
     .container{
-        section{
-            main{
+        main{
+                                    /*localisation, découverte & exploration*/ 
+            section{
                 .localisation__ville{
                     display: flex;
                     align-items: baseline;
                     justify-content: center;
                     text-align: center;
                     font-size: 1.08rem;
-                    font-weight: 500;
+                    font-weight: bold;
                     background: $color-bg__ville;
                     padding: .8rem;
                     .icone__ville{
@@ -27,11 +30,29 @@
                         -o-transform: translateX(-1.4rem);
                     }
                 }
+            
+                .decouverte__exploration{
+                    .title__resa__menu{
+                        text-align: center;
+                        align-items: center;
+                        padding: 1.5rem;
+                        font-size: $font-size-title__resa__menu;
+                        h2{
+                            font-weight: 500;
+                        }
+                        
+                    }
+                    .title__para__resto{
+                        text-align: center;
+                        font-weight: lighter;
+                        font-size: $font-size-title__para__resto;
+                        opacity: 70%;
+                    }
+                }
             }
-        } 
-    }
-    
-    
+        }
+    }        
+
     @media  #{$small-up} {
         .container{
             width: $small;
