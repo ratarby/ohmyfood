@@ -6,7 +6,7 @@ body {
     margin: 0;
     padding: 0;
     background: $color-bg;
-    font-family: sans-serif;
+    font-family: "Roboto",sans-serif;
     text-decoration: none;
     @if (lightness($color-bg) > 50%) {
         color:#000;

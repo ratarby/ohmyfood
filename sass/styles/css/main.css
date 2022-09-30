@@ -51,7 +51,7 @@ body {
   margin: 0;
   padding: 0;
   background: rgb(255, 255, 255);
-  font-family: sans-serif;
+  font-family: "Roboto", sans-serif;
   text-decoration: none;
   color: #000;
 }
@@ -59,12 +59,55 @@ body {
 header {
   font-family: "Shrikhand", cursive;
   text-align: center;
-  padding: 0.0625rem;
+  position: relative;
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: 2rem;
   box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.25);
+  padding-top: 1rem;
+  padding-bottom: 0.4rem;
+}
+
+.container section main .localisation__ville {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  text-align: center;
+  font-size: 1.08rem;
+  font-weight: 500;
+  background: #f3f3f3;
+  padding: 0.8rem;
+}
+.container section main .localisation__ville .icone__ville {
+  font-size: 1rem;
+  transform: translateX(-1.4rem);
+  -webkit-transform: translateX(-1.4rem);
+  -moz-transform: translateX(-1.4rem);
+  -ms-transform: translateX(-1.4rem);
+  -o-transform: translateX(-1.4rem);
+}
+
+@media only screen and (min-width: 375) {
+  .container {
+    width: 375;
+    height: auto;
+    margin: auto;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+    height: auto;
+    margin: auto;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .container {
+    width: 992px;
+    height: auto;
+    margin: auto;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

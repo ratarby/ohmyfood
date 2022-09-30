@@ -6,3 +6,51 @@
 @import "./scss/layout/_header.scss";
 
 
+    .container{
+        section{
+            main{
+                .localisation__ville{
+                    display: flex;
+                    align-items: baseline;
+                    justify-content: center;
+                    text-align: center;
+                    font-size: 1.08rem;
+                    font-weight: 500;
+                    background: $color-bg__ville;
+                    padding: .8rem;
+                    .icone__ville{
+                        font-size: $font-size-icone__ville;
+                        transform: translateX(-1.4rem);
+                        -webkit-transform: translateX(-1.4rem);
+                        -moz-transform: translateX(-1.4rem);
+                        -ms-transform: translateX(-1.4rem);
+                        -o-transform: translateX(-1.4rem);
+                    }
+                }
+            }
+        } 
+    }
+    
+    
+    @media  #{$small-up} {
+        .container{
+            width: $small;
+            height: auto;
+            margin: auto;
+        }
+    }    
+    @media  #{$medium-up} {
+        .container{
+            width: $medium;
+            height: auto;
+            margin: auto;
+        }
+    }    
+    @media  #{$large-up} {
+        .container{
+            width: $large;
+            height: auto;
+            margin: auto;
+        }
+    }    
+
