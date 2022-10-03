@@ -5,12 +5,13 @@ body {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background: $color-bg;
     font-family: "Roboto",sans-serif;
     text-decoration: none;
+    background: $color-bg;
     @if (lightness($color-bg) > 50%) {
         color:#000;
     }@else {
         color: #fff;
     }
 }
+

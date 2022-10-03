@@ -1,0 +1,132 @@
+                    // page d'accueil
+// section localisation, decouverte & exploration
+// __________________________________________
+// localisation
+// __________________________________________
+@mixin nom__ville{
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.08rem;
+    font-weight: bold;
+    background: $color-bg__ville;
+    padding: 1rem;
+}
+
+// icone__ville
+@mixin icon__ville{
+    font-size: $font-size-icone__ville;
+    transform: translateX(-1.4rem);
+    -webkit-transform: translateX(-1.4rem);
+    -moz-transform: translateX(-1.4rem);
+    -ms-transform: translateX(-1.4rem);
+    -o-transform: translateX(-1.4rem);
+}
+
+// __________________________________________
+// decouverte et exploration
+// __________________________________________
+@mixin resa__menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 1.5rem;
+}
+@mixin text__resa__menu{
+    width:80%;
+    font-size: $font-size-title__resa__menu;
+    font-weight: 600;
+}
+@mixin para__resto {
+    text-align: center;
+    font-weight: lighter;
+}
+@mixin text__para__resto {
+    font-size: $font-size-title__para__resto;
+    opacity: 70%;
+}
+
+
+// Section Fonctionnement
+@mixin fonctionnement {
+    padding-left: 1.2rem;
+   
+}
+@mixin title__fonctionnement{
+    margin-top: 6rem;
+    margin-bottom: 2rem;
+    font-size: 1.4rem;
+}
+// order
+@mixin order {
+    width: 90%;
+    counter-reset: section;
+    transform:translateX(5px);
+    -webkit-transform:translateX(5px);
+    -moz-transform:translateX(5px);
+    -ms-transform:translateX(5px);
+    -o-transform:translateX(5px);
+}
+// order__list
+@mixin btn__menu {
+    position: relative;
+    text-align: center;
+    padding-top: 1.6rem;
+    padding-bottom: 1.6rem;
+    margin-bottom: 1.6rem;
+    background: $color-grey-2;
+    box-shadow: $shadow-menu;
+}
+
+// order__list
+@mixin border__menu ($border-radius_menu){
+    border-radius:$border-radius-menu;
+    -webkit-border-radius:$border-radius-menu;
+    -moz-border-radius:$border-radius-menu;
+    -ms-border-radius:$border-radius-menu;
+    -o-border-radius:$border-radius-menu;
+}
+
+
+// order__list::before
+@mixin btn__menu__couleur__violet {
+    counter-increment: section;
+    content: "" counter(section);
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    list-style-type: decimal;
+    background-color: #9356DC;
+    font-size: .9375rem;
+    font-weight: lighter;
+    color: white;
+    padding: .125rem .5rem .125rem .5rem;
+    text-decoration: none;
+    transform: translateY(-1.6px) ;
+    transform: translateX(-12px) ;
+    -webkit-transform: translateX(-12px) ;
+    -moz-transform: translateX(-12px) ;
+    -ms-transform: translateX(-12px) ;
+    -o-transform: translateX(-12px) ;
+    border-radius: 2.8125rem;
+    -webkit-border-radius: 2.8125rem;
+    -moz-border-radius: 2.8125rem;
+    -ms-border-radius: 2.8125rem;
+    -o-border-radius: 2.8125rem;
+}
+
+// mobile__icon, list__icon, store__icon
+@mixin transform_icons{
+    color: $color-grey-3;
+    font-size: 1.2rem;
+    transform: translateX(-1.4rem);
+    -webkit-transform: translateX(-1.4rem);
+    -moz-transform: translateX(-1.4rem);
+    -ms-transform: translateX(-1.4rem);
+    -o-transform: translateX(-1.4rem);}
+
+// Section 
+

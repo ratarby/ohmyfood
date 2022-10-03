@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
@@ -51,9 +50,9 @@ body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  background: rgb(255, 255, 255);
   font-family: "Roboto", sans-serif;
   text-decoration: none;
+  background: rgb(255, 255, 255);
   color: #000;
 }
 
@@ -100,10 +99,6 @@ h1 {
   top: 1px;
 }
 
-/*conteneur de la page web*/
-.container main {
-  /*localisation, découverte & exploration*/
-}
 .container main section .localisation__ville {
   display: flex;
   align-items: baseline;
@@ -112,7 +107,7 @@ h1 {
   font-size: 1.08rem;
   font-weight: bold;
   background: #f3f3f3;
-  padding: 0.8rem;
+  padding: 1rem;
 }
 .container main section .localisation__ville .icone__ville {
   font-size: 1rem;
@@ -123,19 +118,147 @@ h1 {
   -o-transform: translateX(-1.4rem);
 }
 .container main section .decouverte__exploration .title__resa__menu {
-  text-align: center;
+  display: flex;
+  justify-content: center;
   align-items: center;
-  padding: 1.5rem;
-  font-size: 1.718rem;
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 1.5rem;
 }
-.container main section .decouverte__exploration .title__resa__menu h2 {
-  font-weight: 500;
+.container main section .decouverte__exploration .title__resa__menu .text__title__resa__menu {
+  width: 80%;
+  font-size: 1.58rem;
+  font-weight: 600;
 }
 .container main section .decouverte__exploration .title__para__resto {
   text-align: center;
   font-weight: lighter;
+}
+.container main section .decouverte__exploration .title__para__resto .text__title__para__resto {
   font-size: 1.14rem;
   opacity: 70%;
+}
+.container main section .fonctionnement {
+  padding-left: 1.2rem;
+}
+.container main section .fonctionnement .title__fonctionnement {
+  margin-top: 6rem;
+  margin-bottom: 2rem;
+  font-size: 1.4rem;
+}
+.container main section .fonctionnement .title__fonctionnement .text__title__fonctionnement {
+  font-weight: 600;
+}
+.container main section .fonctionnement .order {
+  width: 90%;
+  counter-reset: section;
+  transform: translateX(5px);
+  -webkit-transform: translateX(5px);
+  -moz-transform: translateX(5px);
+  -ms-transform: translateX(5px);
+  -o-transform: translateX(5px);
+}
+.container main section .fonctionnement .order .order__list {
+  border-radius: 1.4rem;
+  -webkit-border-radius: 1.4rem;
+  -moz-border-radius: 1.4rem;
+  -ms-border-radius: 1.4rem;
+  -o-border-radius: 1.4rem;
+  position: relative;
+  text-align: center;
+  padding-top: 1.6rem;
+  padding-bottom: 1.6rem;
+  margin-bottom: 1.6rem;
+  background: #f6f6f6;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.25);
+}
+.container main section .fonctionnement .order .order__list .list__resto {
+  padding-left: 20px;
+}
+.container main section .fonctionnement .order .order__list .list__resto .fa-mobile-alt {
+  color: #6b6363;
+  font-size: 1.2rem;
+  transform: translateX(-1.4rem);
+  -webkit-transform: translateX(-1.4rem);
+  -moz-transform: translateX(-1.4rem);
+  -ms-transform: translateX(-1.4rem);
+  -o-transform: translateX(-1.4rem);
+}
+.container main section .fonctionnement .order .order__list .list__menu .list__icon {
+  color: #6b6363;
+  font-size: 1.2rem;
+  transform: translateX(-1.4rem);
+  -webkit-transform: translateX(-1.4rem);
+  -moz-transform: translateX(-1.4rem);
+  -ms-transform: translateX(-1.4rem);
+  -o-transform: translateX(-1.4rem);
+}
+.container main section .fonctionnement .order .order__list .list__degust .store__icon {
+  color: #6b6363;
+  font-size: 1.2rem;
+  transform: translateX(-1.4rem);
+  -webkit-transform: translateX(-1.4rem);
+  -moz-transform: translateX(-1.4rem);
+  -ms-transform: translateX(-1.4rem);
+  -o-transform: translateX(-1.4rem);
+}
+.container main section .fonctionnement .order .order__list::before {
+  counter-increment: section;
+  content: "" counter(section);
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  list-style-type: decimal;
+  background-color: #9356DC;
+  font-size: 0.9375rem;
+  font-weight: lighter;
+  color: white;
+  padding: 0.125rem 0.5rem 0.125rem 0.5rem;
+  text-decoration: none;
+  transform: translateY(-1.6px);
+  transform: translateX(-12px);
+  -webkit-transform: translateX(-12px);
+  -moz-transform: translateX(-12px);
+  -ms-transform: translateX(-12px);
+  -o-transform: translateX(-12px);
+  border-radius: 2.8125rem;
+  -webkit-border-radius: 2.8125rem;
+  -moz-border-radius: 2.8125rem;
+  -ms-border-radius: 2.8125rem;
+  -o-border-radius: 2.8125rem;
+}
+.container main section .title__resto {
+  margin-top: 6rem;
+  margin-bottom: 2rem;
+  font-size: 1.4rem;
+  position: relative;
+  padding-left: 1.2rem;
+}
+.container main section .title__resto .text__title__resto {
+  font-weight: 600;
+}
+.container main section .card__resto {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  height: 280px;
+  position: relative;
+  background-color: white;
+  border-radius: 18px;
+  box-shadow: 0px 5px 18px -3px #9e9e9e;
+  margin: 0px 20px 20px 20px;
+}
+.container main section .card__resto__img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 1.2rem 1.2rem 0 0;
+  justify-content: center;
+  align-items: center;
+  -webkit-border-radius: 1.2rem 1.2rem 0 0;
+  -moz-border-radius: 1.2rem 1.2rem 0 0;
+  -ms-border-radius: 1.2rem 1.2rem 0 0;
+  -o-border-radius: 1.2rem 1.2rem 0 0;
 }
 
 @media only screen and (min-width: 375) {

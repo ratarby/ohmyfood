@@ -5,54 +5,109 @@
 @import "./scss/base/_responsive.scss";
 @import "./scss/layout/_header.scss";
 @import "./scss/components/_buttons.scss";
+@import "./scss/utils/mixins";
 
 
-                                    /*conteneur de la page web*/ 
+
+                                    //conteneur de la page web  
     .container{
-        main{
-                                    /*localisation, découverte & exploration*/ 
+        main{    
+                                //localisation, découverte & exploration                                 
             section{
                 .localisation__ville{
-                    display: flex;
-                    align-items: baseline;
-                    justify-content: center;
-                    text-align: center;
-                    font-size: 1.08rem;
-                    font-weight: bold;
-                    background: $color-bg__ville;
-                    padding: .8rem;
+                    @include nom__ville;
                     .icone__ville{
-                        font-size: $font-size-icone__ville;
-                        transform: translateX(-1.4rem);
-                        -webkit-transform: translateX(-1.4rem);
-                        -moz-transform: translateX(-1.4rem);
-                        -ms-transform: translateX(-1.4rem);
-                        -o-transform: translateX(-1.4rem);
+                        @include icon__ville;
                     }
                 }
-            
                 .decouverte__exploration{
                     .title__resa__menu{
-                        text-align: center;
-                        align-items: center;
-                        padding: 1.5rem;
-                        font-size: $font-size-title__resa__menu;
-                        h2{
-                            font-weight: 500;
+                        @include resa__menu;
+                        .text__title__resa__menu{
+                            @include text__resa__menu;
                         }
-                        
                     }
                     .title__para__resto{
-                        text-align: center;
-                        font-weight: lighter;
-                        font-size: $font-size-title__para__resto;
-                        opacity: 70%;
+                        @include para__resto;
+                        .text__title__para__resto{
+                            @include text__para__resto;
+                        }
                     }
                 }
             }
-        }
-    }        
+            section{
+                .fonctionnement{
+                    @include fonctionnement;
+                    .title__fonctionnement{
+                        @include title__fonctionnement;
+                        .text__title__fonctionnement{
+                            font-weight: 600;
 
+                    }
+                    }
+                    .order{
+                        @include order;
+                            .order__list{
+                                @include border__menu(1.4rem);
+                                @include btn__menu;
+                                .list__resto{
+                                    padding-left: 20px;
+                                    .fa-mobile-alt{
+                                        @include transform_icons;
+                                    }
+                                }
+                                .list__menu{
+                                    .list__icon{
+                                        @include transform_icons;
+                                    }
+                                }
+                                .list__degust{
+                                    .store__icon{
+                                        @include transform_icons;
+                                    }
+                                }
+                            }
+                            .order__list::before{
+                                @include btn__menu__couleur__violet;
+                        }
+                    }
+                }
+            }
+            section{
+                .title__resto{
+                    @include title__fonctionnement;
+                    position:relative;
+                    padding-left: 1.2rem;
+                    .text__title__resto{
+                        font-weight: 600;
+                    }
+                }
+                .card__resto{
+                    display: flex;
+                    flex-direction: column;
+                    width:90%;
+                    height: 280px;
+                    position: relative;
+                    background-color: white;
+                    border-radius: 18px;
+                    box-shadow: 0px 5px 18px -3px #9e9e9e;
+                    margin: 0px 20px 20px 20px;
+                }    
+                .card__resto__img{
+                    width: 100%;
+                    height: 200px;
+                    object-fit: cover;
+                    border-radius: 1.2rem 1.2rem 0 0 ;
+                    justify-content: center;
+                    align-items: center;
+                    -webkit-border-radius: 1.2rem 1.2rem 0 0 ;
+                    -moz-border-radius: 1.2rem 1.2rem 0 0 ;
+                    -ms-border-radius: 1.2rem 1.2rem 0 0 ;
+                    -o-border-radius: 1.2rem 1.2rem 0 0 ;
+                }
+            }
+        }
+    }
     @media  #{$small-up} {
         .container{
             width: $small;
