@@ -140,6 +140,12 @@ h1 {
 }
 .container main section .fonctionnement {
   padding-left: 1.2rem;
+  padding-right: 1.8rem;
+  transform: translateX(6px);
+  -webkit-transform: translateX(6px);
+  -moz-transform: translateX(6px);
+  -ms-transform: translateX(6px);
+  -o-transform: translateX(6px);
 }
 .container main section .fonctionnement .title__fonctionnement {
   margin-top: 6rem;
@@ -150,7 +156,7 @@ h1 {
   font-weight: 600;
 }
 .container main section .fonctionnement .order {
-  width: 90%;
+  width: 100%;
   counter-reset: section;
   transform: translateX(5px);
   -webkit-transform: translateX(5px);
@@ -178,36 +184,37 @@ h1 {
 .container main section .fonctionnement .order .order__list .list__resto .fa-mobile-alt {
   color: #6b6363;
   font-size: 1.2rem;
-  transform: translateX(-1.4rem);
-  -webkit-transform: translateX(-1.4rem);
-  -moz-transform: translateX(-1.4rem);
-  -ms-transform: translateX(-1.4rem);
-  -o-transform: translateX(-1.4rem);
+  transform: translateX(-1.6rem);
+  -webkit-transform: translateX(-1.6rem);
+  -moz-transform: translateX(-1.6rem);
+  -ms-transform: translateX(-1.6rem);
+  -o-transform: translateX(-1.6rem);
+  font-size: 1.28rem;
 }
-.container main section .fonctionnement .order .order__list .list__menu .list__icon {
+.container main section .fonctionnement .order .list__menu .list__icon {
   color: #6b6363;
-  font-size: 1.2rem;
-  transform: translateX(-1.4rem);
-  -webkit-transform: translateX(-1.4rem);
-  -moz-transform: translateX(-1.4rem);
-  -ms-transform: translateX(-1.4rem);
-  -o-transform: translateX(-1.4rem);
+  font-size: 1rem;
+  transform: translateX(-1.4rem) translateY(-0.008rem);
+  -webkit-transform: translateX(-1.4rem) translateY(-0.008rem);
+  -moz-transform: translateX(-1.4rem) translateY(-0.008rem);
+  -ms-transform: translateX(-1.4rem) translateY(-0.008rem);
+  -o-transform: translateX(-1.4rem) translateY(-0.008rem);
 }
-.container main section .fonctionnement .order .order__list .list__degust .store__icon {
+.container main section .fonctionnement .order .list__degust .store__icon {
   color: #6b6363;
-  font-size: 1.2rem;
-  transform: translateX(-1.4rem);
-  -webkit-transform: translateX(-1.4rem);
-  -moz-transform: translateX(-1.4rem);
-  -ms-transform: translateX(-1.4rem);
-  -o-transform: translateX(-1.4rem);
+  font-size: 1rem;
+  transform: translateX(-1.4rem) translateY(-0.008rem);
+  -webkit-transform: translateX(-1.4rem) translateY(-0.008rem);
+  -moz-transform: translateX(-1.4rem) translateY(-0.008rem);
+  -ms-transform: translateX(-1.4rem) translateY(-0.008rem);
+  -o-transform: translateX(-1.4rem) translateY(-0.008rem);
 }
-.container main section .fonctionnement .order .order__list::before {
+.container main section .fonctionnement .order__list::before {
+  display: flex;
+  flex-direction: row;
   counter-increment: section;
   content: "" counter(section);
   position: absolute;
-  display: flex;
-  flex-direction: row;
   list-style-type: decimal;
   background-color: #9356DC;
   font-size: 0.9375rem;
@@ -226,6 +233,10 @@ h1 {
   -moz-border-radius: 2.8125rem;
   -ms-border-radius: 2.8125rem;
   -o-border-radius: 2.8125rem;
+}
+.container main section .fonctionnement .order__list:hover {
+  background: #f2eafb;
+  box-shadow: 0px 5px 22px -3px #6b6363;
 }
 .container main section .title__resto {
   margin-top: 6rem;
@@ -260,23 +271,22 @@ h1 {
   -ms-border-radius: 1.2rem 1.2rem 0 0;
   -o-border-radius: 1.2rem 1.2rem 0 0;
 }
-
 @media only screen and (min-width: 375) {
-  .container {
+  .container .container {
     width: 375;
     height: auto;
     margin: auto;
   }
 }
 @media only screen and (min-width: 768px) {
-  .container {
+  .container .container {
     width: 768px;
     height: auto;
     margin: auto;
   }
 }
 @media only screen and (min-width: 992px) {
-  .container {
+  .container .container {
     width: 992px;
     height: auto;
     margin: auto;

@@ -42,8 +42,7 @@
                         @include title__fonctionnement;
                         .text__title__fonctionnement{
                             font-weight: 600;
-
-                    }
+                        }
                     }
                     .order{
                         @include order;
@@ -53,24 +52,30 @@
                                 .list__resto{
                                     padding-left: 20px;
                                     .fa-mobile-alt{
-                                        @include transform_icons;
-                                    }
-                                }
-                                .list__menu{
-                                    .list__icon{
-                                        @include transform_icons;
-                                    }
-                                }
-                                .list__degust{
-                                    .store__icon{
-                                        @include transform_icons;
+                                        @include transform_icons__mobile;                                        
+                                        font-size: 1.28rem;
                                     }
                                 }
                             }
+                            .list__menu{
+                                .list__icon{
+                                    @include transform_icons;
+                                }
+                            }
+                            .list__degust{
+                                .store__icon{
+                                    @include transform_icons;
+                                }
+                            }
+                            }
                             .order__list::before{
                                 @include btn__menu__couleur__violet;
-                        }
-                    }
+                                
+                            }
+                            .order__list:hover{
+                                background: #f2eafb;
+                                box-shadow: $shadow-order__list;
+                            }
                 }
             }
             section{
@@ -106,7 +111,7 @@
                     -o-border-radius: 1.2rem 1.2rem 0 0 ;
                 }
             }
-        }
+        
     }
     @media  #{$small-up} {
         .container{
@@ -128,5 +133,6 @@
             height: auto;
             margin: auto;
         }
-    }    
+    }   
+} 
 

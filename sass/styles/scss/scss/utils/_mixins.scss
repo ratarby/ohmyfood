@@ -53,7 +53,12 @@
 // Section Fonctionnement
 @mixin fonctionnement {
     padding-left: 1.2rem;
-   
+    padding-right: 1.8rem;
+    transform: translateX(6px);
+    -webkit-transform: translateX(6px);
+    -moz-transform: translateX(6px);
+    -ms-transform: translateX(6px);
+    -o-transform: translateX(6px);
 }
 @mixin title__fonctionnement{
     margin-top: 6rem;
@@ -62,7 +67,7 @@
 }
 // order
 @mixin order {
-    width: 90%;
+    width: 100%;
     counter-reset: section;
     transform:translateX(5px);
     -webkit-transform:translateX(5px);
@@ -93,11 +98,11 @@
 
 // order__list::before
 @mixin btn__menu__couleur__violet {
+    display: flex;
+    flex-direction: row;
     counter-increment: section;
     content: "" counter(section);
     position: absolute;
-    display: flex;
-    flex-direction: row;
     list-style-type: decimal;
     background-color: #9356DC;
     font-size: .9375rem;
@@ -121,12 +126,22 @@
 // mobile__icon, list__icon, store__icon
 @mixin transform_icons{
     color: $color-grey-3;
+    font-size: 1rem;
+    transform: translateX(-1.4rem)translateY(-.008rem);
+    -webkit-transform: translateX(-1.4rem)translateY(-.008rem);
+    -moz-transform: translateX(-1.4rem)translateY(-.008rem);
+    -ms-transform: translateX(-1.4rem)translateY(-.008rem);
+    -o-transform: translateX(-1.4rem)translateY(-.008rem);
+}
+@mixin transform_icons__mobile{
+    color: $color-grey-3;
     font-size: 1.2rem;
-    transform: translateX(-1.4rem);
-    -webkit-transform: translateX(-1.4rem);
-    -moz-transform: translateX(-1.4rem);
-    -ms-transform: translateX(-1.4rem);
-    -o-transform: translateX(-1.4rem);}
+    transform: translateX(-1.6rem);
+    -webkit-transform: translateX(-1.6rem);
+    -moz-transform: translateX(-1.6rem);
+    -ms-transform: translateX(-1.6rem);
+    -o-transform: translateX(-1.6rem);
+}
 
 // Section 
 
