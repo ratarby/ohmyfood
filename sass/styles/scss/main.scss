@@ -1,8 +1,10 @@
+// ohmyfood - Accueil
 @import "./scss/base/_minireset.scss";
 @import "./scss/base/_reset.scss";
 @import "./scss/base/_typography.scss";
 @import "./scss/utils/_variables.scss";
 @import "./scss/base/_responsive.scss";
+@import "./scss/base/_container.scss";
 @import "./scss/layout/_header.scss";
 @import "./scss/components/_buttons.scss";
 @import "./scss/utils/_mixins.scss";
@@ -13,6 +15,7 @@
 @import "./scss/layout/_footer.scss";
 @import "./scss/components/_restaurants.scss";
 @import "./scss/base/_mediasqueries.scss";
+
 
 
 

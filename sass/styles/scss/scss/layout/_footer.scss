@@ -4,6 +4,9 @@
         @include flexColumn;
         .foot__logo{
             @include footLogo;
+            .foot__logo__title{
+                @include foot__logo__title;
+            }
         }
         *,
         .foot__list{

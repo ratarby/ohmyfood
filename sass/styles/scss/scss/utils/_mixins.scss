@@ -252,8 +252,10 @@ justify-content: space-around;
 }
 @mixin footLogo {
     @include fontFamily("Shrikhand") ;
-    @include fontSize(1.2rem);
     @include paddingBottom(.8rem);
+}
+@mixin foot__logo__title{
+    @include fontSize(1.1rem)
 }
 @mixin foot__list{
     @include textDecoration(none);
@@ -454,6 +456,7 @@ justify-content: space-around;
 // Section Restaurants
 @mixin back__Ground {
     @include backGround($backGround:$color-grey-2);
+    @include paddingBottom(2.6rem);
 }
 @mixin title__resto{
     @include marginBottom(2rem);

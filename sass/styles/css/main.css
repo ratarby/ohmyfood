@@ -59,6 +59,11 @@ body {
   color: #000;
 }
 
+.container {
+  width: auto;
+  height: auto;
+}
+
 /*footer*/
 /*page d'accueil*/
 /*header*/
@@ -302,8 +307,10 @@ section .fonctionnement .title__fonctionnement .text__title__fonctionnement {
 }
 .foot .foot__con .foot__logo {
   font-family: "Shrikhand";
-  font-size: 1.2rem;
   padding-bottom: 0.8rem;
+}
+.foot .foot__con .foot__logo .foot__logo__title {
+  font-size: 1.1rem;
 }
 .foot .foot__con *,
 .foot .foot__con .foot__list {
@@ -335,6 +342,7 @@ section .fonctionnement .title__fonctionnement .text__title__fonctionnement {
 
 main section .back__Ground {
   background: #f6f6f6;
+  padding-bottom: 2.6rem;
 }
 main section .back__Ground .title__resto {
   margin: 3rem;
