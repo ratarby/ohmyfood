@@ -1,4 +1,7 @@
+@charset "UTF-8";
 /*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
 html, body, p, ol, ul, li, dl, dt, dd, blockquote, figure, fieldset, legend, textarea, pre, iframe, hr, h1, h2, h3, h4, h5, h6 {
@@ -56,8 +59,16 @@ body {
   color: #000;
 }
 
+/*footer*/
+/*page d'accueil*/
+/*header*/
+/* section localisation, decouverte & exploration*/
+/*localisation*/
+/*decouverte et exploration*/
+/*btn*/
+/* Section Fonctionnement*/
 header {
-  font-family: "Shrikhand", cursive;
+  font-family: "Shrikhand";
   text-align: center;
   position: relative;
 }
@@ -69,22 +80,34 @@ h1 {
   padding-bottom: 0.4rem;
 }
 
+/*footer*/
+/*page d'accueil*/
+/*header*/
+/* section localisation, decouverte & exploration*/
+/*localisation*/
+/*decouverte et exploration*/
+/*btn*/
+/* Section Fonctionnement*/
 .btn {
   display: flex;
   flex-direction: row;
-  justify-content: center;
   margin: 1.8rem;
+  justify-content: center;
 }
 .btn .btn__exp__resto {
-  align-items: center;
-  color: #fff;
   font-size: 1rem;
   font-weight: normal;
+  border-radius: 2.1875rem;
+  -webkit-border-radius: 2.1875rem;
+  -moz-border-radius: 2.1875rem;
+  -ms-border-radius: 2.1875rem;
+  -o-border-radius: 2.1875rem;
+  padding: 15px 25px;
+  align-items: center;
   box-shadow: 0px 5px 18px -3px #9e9e9e;
   background: linear-gradient(175deg, #FF79DA 5%, #9356DC 100%);
   border: none;
-  border-radius: 35px;
-  padding: 15px 25px;
+  color: #fff;
   text-decoration: none;
   cursor: pointer;
 }
@@ -99,25 +122,19 @@ h1 {
   top: 1px;
 }
 
-.container main section .localisation__ville {
-  display: flex;
-  align-items: baseline;
-  justify-content: center;
-  text-align: center;
-  font-size: 1.08rem;
-  font-weight: bold;
-  background: #f3f3f3;
-  padding: 1rem;
+/*footer*/
+/*page d'accueil*/
+/*header*/
+/* section localisation, decouverte & exploration*/
+/*localisation*/
+/*decouverte et exploration*/
+/*btn*/
+/* Section Fonctionnement*/
+section .decouverte__exploration {
+  background: #f6f6f6;
+  padding-bottom: 1.4rem;
 }
-.container main section .localisation__ville .icone__ville {
-  font-size: 1rem;
-  transform: translateX(-1.4rem);
-  -webkit-transform: translateX(-1.4rem);
-  -moz-transform: translateX(-1.4rem);
-  -ms-transform: translateX(-1.4rem);
-  -o-transform: translateX(-1.4rem);
-}
-.container main section .decouverte__exploration .title__resa__menu {
+section .decouverte__exploration .title__resa__menu {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -125,169 +142,356 @@ h1 {
   padding-top: 2rem;
   padding-bottom: 1.5rem;
 }
-.container main section .decouverte__exploration .title__resa__menu .text__title__resa__menu {
-  width: 80%;
+section .decouverte__exploration .title__resa__menu .text__title__resa__menu {
   font-size: 1.58rem;
   font-weight: 600;
+  width: 80%;
 }
-.container main section .decouverte__exploration .title__para__resto {
+section .decouverte__exploration .title__para__resto {
   text-align: center;
   font-weight: lighter;
 }
-.container main section .decouverte__exploration .title__para__resto .text__title__para__resto {
+section .decouverte__exploration .title__para__resto .text__title__para__resto {
   font-size: 1.14rem;
   opacity: 70%;
 }
-.container main section .fonctionnement {
-  padding-left: 1.2rem;
-  padding-right: 1.8rem;
+
+/*bar de recherche*/
+.localisation__ville {
+  display: flex;
+  background: #ebebeb;
+  padding: 1rem;
+  font-size: 1.08rem;
+  font-weight: bold;
+  align-items: baseline;
+  justify-content: center;
+  text-align: center;
+}
+.localisation__ville .icone__ville {
+  transform: translateX(-1.4rem);
+  -webkit-transform: translateX(-1.4rem);
+  -moz-transform: translateX(-1.4rem);
+  -ms-transform: translateX(-1.4rem);
+  -o-transform: translateX(-1.4rem);
+  font-size: 1rem;
+}
+
+/*localisation, découverte & exploration*/
+section .fonctionnement {
+  padding-bottom: 1.4rem;
+  padding-left: 0;
+  padding-right: 1rem;
   transform: translateX(6px);
   -webkit-transform: translateX(6px);
   -moz-transform: translateX(6px);
   -ms-transform: translateX(6px);
   -o-transform: translateX(6px);
 }
-.container main section .fonctionnement .title__fonctionnement {
-  margin-top: 6rem;
-  margin-bottom: 2rem;
+section .fonctionnement .title__fonctionnement {
+  margin: 3rem;
+  margin: 2rem;
   font-size: 1.4rem;
 }
-.container main section .fonctionnement .title__fonctionnement .text__title__fonctionnement {
+section .fonctionnement .title__fonctionnement .text__title__fonctionnement {
   font-weight: 600;
 }
-.container main section .fonctionnement .order {
+
+/*commandes choisissez, composez, dégustez*/
+.order {
+  transform: translateX(3px);
+  -webkit-transform: translateX(3px);
+  -moz-transform: translateX(3px);
+  -ms-transform: translateX(3px);
+  -o-transform: translateX(3px);
   width: 100%;
   counter-reset: section;
-  transform: translateX(5px);
-  -webkit-transform: translateX(5px);
-  -moz-transform: translateX(5px);
-  -ms-transform: translateX(5px);
-  -o-transform: translateX(5px);
 }
-.container main section .fonctionnement .order .order__list {
+.order .order__list {
   border-radius: 1.4rem;
   -webkit-border-radius: 1.4rem;
   -moz-border-radius: 1.4rem;
   -ms-border-radius: 1.4rem;
   -o-border-radius: 1.4rem;
-  position: relative;
-  text-align: center;
   padding-top: 1.6rem;
   padding-bottom: 1.6rem;
-  margin-bottom: 1.6rem;
+  margin: 1rem;
   background: #f6f6f6;
-  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0.3125rem 1.375rem -0.1875rem #9e9e9e;
+  position: relative;
+  text-align: center;
 }
-.container main section .fonctionnement .order .order__list .list__resto {
+.order .order__list .list__resto {
   padding-left: 20px;
 }
-.container main section .fonctionnement .order .order__list .list__resto .fa-mobile-alt {
+.order .order__list .list__resto .fa-mobile-alt {
   color: #6b6363;
-  font-size: 1.2rem;
+  font-size: 1.28rem;
   transform: translateX(-1.6rem);
   -webkit-transform: translateX(-1.6rem);
   -moz-transform: translateX(-1.6rem);
   -ms-transform: translateX(-1.6rem);
   -o-transform: translateX(-1.6rem);
-  font-size: 1.28rem;
 }
-.container main section .fonctionnement .order .list__menu .list__icon {
+.order .order__list:hover {
+  background: #f2eafb;
+  box-shadow: 0px 0.3125rem 1.375rem -0.1875rem #6b6363;
+  cursor: pointer;
+}
+
+.list__menu .list__icon {
   color: #6b6363;
   font-size: 1rem;
-  transform: translateX(-1.4rem) translateY(-0.008rem);
-  -webkit-transform: translateX(-1.4rem) translateY(-0.008rem);
-  -moz-transform: translateX(-1.4rem) translateY(-0.008rem);
-  -ms-transform: translateX(-1.4rem) translateY(-0.008rem);
-  -o-transform: translateX(-1.4rem) translateY(-0.008rem);
+  transform: translateX(-1.4rem);
+  -webkit-transform: translateX(-1.4rem);
+  -moz-transform: translateX(-1.4rem);
+  -ms-transform: translateX(-1.4rem);
+  -o-transform: translateX(-1.4rem);
 }
-.container main section .fonctionnement .order .list__degust .store__icon {
+
+.list__degust .store__icon {
   color: #6b6363;
   font-size: 1rem;
-  transform: translateX(-1.4rem) translateY(-0.008rem);
-  -webkit-transform: translateX(-1.4rem) translateY(-0.008rem);
-  -moz-transform: translateX(-1.4rem) translateY(-0.008rem);
-  -ms-transform: translateX(-1.4rem) translateY(-0.008rem);
-  -o-transform: translateX(-1.4rem) translateY(-0.008rem);
+  transform: translateX(-1.4rem);
+  -webkit-transform: translateX(-1.4rem);
+  -moz-transform: translateX(-1.4rem);
+  -ms-transform: translateX(-1.4rem);
+  -o-transform: translateX(-1.4rem);
 }
-.container main section .fonctionnement .order__list::before {
+
+.order__list::before {
   display: flex;
   flex-direction: row;
-  counter-increment: section;
-  content: "" counter(section);
-  position: absolute;
-  list-style-type: decimal;
-  background-color: #9356DC;
-  font-size: 0.9375rem;
-  font-weight: lighter;
-  color: white;
-  padding: 0.125rem 0.5rem 0.125rem 0.5rem;
-  text-decoration: none;
-  transform: translateY(-1.6px);
-  transform: translateX(-12px);
-  -webkit-transform: translateX(-12px);
-  -moz-transform: translateX(-12px);
-  -ms-transform: translateX(-12px);
-  -o-transform: translateX(-12px);
+  transform: translateY(-0.0625rem);
+  -webkit-transform: translateY(-0.0625rem);
+  -moz-transform: translateY(-0.0625rem);
+  -ms-transform: translateY(-0.0625rem);
+  -o-transform: translateY(-0.0625rem);
+  transform: translateX(-0.75rem);
+  -webkit-transform: translateX(-0.75rem);
+  -moz-transform: translateX(-0.75rem);
+  -ms-transform: translateX(-0.75rem);
+  -o-transform: translateX(-0.75rem);
   border-radius: 2.8125rem;
   -webkit-border-radius: 2.8125rem;
   -moz-border-radius: 2.8125rem;
   -ms-border-radius: 2.8125rem;
   -o-border-radius: 2.8125rem;
+  font-size: 0.9375rem;
+  font-weight: lighter;
+  background-color: #9356DC;
+  color: #fff;
+  padding: 0.125rem 0.5rem 0.125rem 0.5rem;
+  text-decoration: none;
+  position: absolute;
+  counter-increment: section;
+  content: "" counter(section);
+  list-style-type: decimal;
 }
-.container main section .fonctionnement .order__list:hover {
-  background: #f2eafb;
-  box-shadow: 0px 5px 22px -3px #6b6363;
-  cursor: pointer;
+
+.foot {
+  background: #353535;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-bottom: 40px;
+  color: #fff;
+  width: 100%;
 }
-.container main section .title__resto {
-  margin-top: 6rem;
-  margin-bottom: 2rem;
-  font-size: 1.4rem;
-  position: relative;
-  padding-left: 1.2rem;
-}
-.container main section .title__resto .text__title__resto {
-  font-weight: 600;
-}
-.container main section .card__resto {
+.foot .foot__con {
   display: flex;
   flex-direction: column;
-  width: 90%;
-  height: 280px;
-  position: relative;
-  background-color: white;
-  border-radius: 18px;
-  box-shadow: 0px 5px 18px -3px #9e9e9e;
-  margin: 0px 20px 20px 20px;
 }
-.container main section .card__resto__img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 1.2rem 1.2rem 0 0;
+.foot .foot__con .foot__logo {
+  font-family: "Shrikhand";
+  font-size: 1.2rem;
+  padding-bottom: 0.8rem;
+}
+.foot .foot__con *,
+.foot .foot__con .foot__list {
+  text-decoration: none;
+  color: #fff;
+  line-height: 1.6rem;
+  font-size: 0.96rem;
+}
+.foot .foot__con * .text__1,
+.foot .foot__con .foot__list .text__1 {
+  color: #fff;
+}
+.foot .foot__con * .foot__list__textA .foot__link__icon .text__1,
+.foot .foot__con .foot__list .foot__list__textA .foot__link__icon .text__1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 12rem;
+  font-size: 0.96rem;
+}
+.foot .foot__con * .foot__list__textA .foot__link__icon .text__2,
+.foot .foot__con .foot__list .foot__list__textA .foot__link__icon .text__2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 9.94rem;
+  font-size: 0.96rem;
+}
+
+main section .back__Ground {
+  background: #f6f6f6;
+}
+main section .back__Ground .title__resto {
+  margin: 3rem;
+  padding-top: 3rem;
+  margin: 1.8rem;
+  font-size: 1.4rem;
+}
+main section .back__Ground .title__resto .text__title__resto {
+  font-weight: 600;
+}
+main section .back__Ground *,
+main section .back__Ground .card {
+  text-decoration: none;
+  color: #000000;
+}
+main section .back__Ground * .new,
+main section .back__Ground .card .new {
+  position: relative;
+}
+main section .back__Ground * .new::before,
+main section .back__Ground .card .new::before {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  background: #99E2D0;
+  color: #1b6150;
+  position: absolute;
+  height: 2rem;
+  width: 5rem;
+  content: "Nouveau";
+  top: 1rem;
+  right: 1rem;
+}
+main section .back__Ground * .card__resto,
+main section .back__Ground .card .card__resto {
+  transform: translateX(-5px);
+  -webkit-transform: translateX(-5px);
+  -moz-transform: translateX(-5px);
+  -ms-transform: translateX(-5px);
+  -o-transform: translateX(-5px);
+  border-radius: 1.125rem;
+  -webkit-border-radius: 1.125rem;
+  -moz-border-radius: 1.125rem;
+  -ms-border-radius: 1.125rem;
+  -o-border-radius: 1.125rem;
+  box-shadow: 0px 5px 18px -3px #9e9e9e;
+  margin: 0px 20px 20px 20px;
+  background: #fff;
+  width: 90%;
+  height: 260px;
+}
+main section .back__Ground * .card__resto .card__resto__img,
+main section .back__Ground .card .card__resto .card__resto__img {
+  border-radius: 1.2rem 1.2rem 0 0;
   -webkit-border-radius: 1.2rem 1.2rem 0 0;
   -moz-border-radius: 1.2rem 1.2rem 0 0;
   -ms-border-radius: 1.2rem 1.2rem 0 0;
   -o-border-radius: 1.2rem 1.2rem 0 0;
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
 }
+main section .back__Ground * .card__resto .card__resto__description,
+main section .back__Ground .card .card__resto .card__resto__description {
+  display: flex;
+  flex-direction: row;
+  padding: 0px 10px 13px 10px;
+  border-radius: 0px 0px 15px 15px;
+  -webkit-border-radius: 0px 0px 15px 15px;
+  -moz-border-radius: 0px 0px 15px 15px;
+  -ms-border-radius: 0px 0px 15px 15px;
+  -o-border-radius: 0px 0px 15px 15px;
+  justify-content: space-between;
+  border-top: none;
+}
+main section .back__Ground * .card__resto .card__resto__description .card__resto__text__description,
+main section .back__Ground .card .card__resto .card__resto__description .card__resto__text__description {
+  justify-content: space-between;
+  padding-top: 1.2rem;
+}
+main section .back__Ground * .card__resto .card__resto__description .card__resto__text__description .card__resto__title,
+main section .back__Ground .card .card__resto .card__resto__description .card__resto__text__description .card__resto__title {
+  font-size: 1.1rem;
+}
+main section .back__Ground * .card__resto .card__resto__description .card__resto__text__description .card__resto__title .resto__title,
+main section .back__Ground .card .card__resto .card__resto__description .card__resto__text__description .card__resto__title .resto__title {
+  font-weight: 500;
+}
+main section .back__Ground * .card__resto .card__resto__description .card__resto__text__description .card__resto__title .resto__subtitle,
+main section .back__Ground .card .card__resto .card__resto__description .card__resto__text__description .card__resto__title .resto__subtitle {
+  font-size: 1rem;
+  font-weight: lighter;
+  line-height: 24px;
+}
+main section .back__Ground * .card__resto .card__resto__description .card__btn__like__heart,
+main section .back__Ground .card .card__resto .card__resto__description .card__btn__like__heart {
+  position: relative;
+}
+main section .back__Ground * .card__resto .card__resto__description .card__btn__like__heart .hearticones__1,
+main section .back__Ground .card .card__resto .card__resto__description .card__btn__like__heart .hearticones__1 {
+  position: absolute;
+  font-size: 1.5rem;
+  background-image: linear-gradient(to top, #FF79DA, #9356DC);
+  top: 38%;
+  right: 1rem;
+  background-clip: text;
+  color: transparent;
+  background-position: 0 24px;
+  height: 24px;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  transition: background-position 1s;
+  -webkit-transition: background-position 1s;
+  -moz-transition: background-position 1s;
+  -ms-transition: background-position 1s;
+  -o-transition: background-position 1s;
+}
+main section .back__Ground * .card__resto .card__resto__description .card__btn__like__heart .hearticones__1:hover,
+main section .back__Ground .card .card__resto .card__resto__description .card__btn__like__heart .hearticones__1:hover {
+  background-position: 0 0px;
+}
+main section .back__Ground * .card__resto .card__resto__description .card__btn__like__heart .hearticones__2,
+main section .back__Ground .card .card__resto .card__resto__description .card__btn__like__heart .hearticones__2 {
+  font-size: 1.5rem;
+  top: 0%;
+  right: 0%;
+  color: #000000;
+  opacity: 1;
+  position: absolute;
+  transition: opacity 1.5s;
+  -webkit-transition: opacity 1.5s;
+  -moz-transition: opacity 1.5s;
+  -ms-transition: opacity 1.5s;
+  -o-transition: opacity 1.5s;
+}
+main section .back__Ground * .card__resto .card__resto__description .card__btn__like__heart .hearticones__2:hover,
+main section .back__Ground .card .card__resto .card__resto__description .card__btn__like__heart .hearticones__2:hover {
+  opacity: 0;
+}
+
 @media only screen and (min-width: 375) {
-  .container .container {
+  .container {
     width: 375;
     height: auto;
     margin: auto;
   }
 }
 @media only screen and (min-width: 768px) {
-  .container .container {
+  .container {
     width: 768px;
     height: auto;
     margin: auto;
   }
 }
 @media only screen and (min-width: 992px) {
-  .container .container {
+  .container {
     width: 992px;
     height: auto;
     margin: auto;

@@ -1,147 +1,560 @@
-                    // page d'accueil
-// section localisation, decouverte & exploration
-// __________________________________________
-// localisation
-// __________________________________________
-@mixin nom__ville{
+// General
+@mixin flex{
     display: flex;
-    align-items: baseline;
+}
+@mixin flexRow{
+    display: flex;
+    flex-direction: row;
+}
+@mixin flexCenter{
+    display: flex;
     justify-content: center;
-    text-align: center;
-    font-size: 1.08rem;
-    font-weight: bold;
-    background: $color-bg__ville;
-    padding: 1rem;
+    align-items: center;
+}
+@mixin flexAround{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+@mixin flexBetween{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+@mixin flexColumnCenter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+@mixin flexColumn{
+    display: flex;
+    flex-direction: column;
+}
+@mixin flexColumnAround{
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+}
+@mixin flexColumnBetween{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+// justify-content
+@mixin justifyContent($justifyContent) {
+    justify-content: $justifyContent;
+}
+// align-items
+@mixin alignItems($alignItems) {
+    align-items:$alignItems;
+}
+// text-align
+@mixin textAlign($textAlign){
+    text-align: $textAlign;
+}
+// text-decoration
+@mixin textDecoration($textDecoration){
+    text-decoration: $textDecoration;
+}
+// line-height
+@mixin lineHeight($lineHeight){
+    line-height: $lineHeight;
+}
+// width
+@mixin widTh($widTh){
+    width: $widTh;
+}
+// height
+@mixin heiGht($heiGht) {
+    height: $heiGht;
+}
+// top
+@mixin Top($Top){
+    top:$Top;
+}
+// right
+@mixin Right($Right){
+    right: $Right;
+}
+// position
+@mixin posiTion($posiTion){
+    position: $posiTion;
+}
+// margin
+@mixin marginLRTB($marginLRTB) {
+    margin: $marginLRTB;
+}
+@mixin marginLeft($marginLeft) {
+    margin: $marginLeft;
+}
+@mixin marginRight($marginRight) {
+    margin: $marginRight;
+}
+@mixin marginTop($marginTop) {
+    margin: $marginTop;
+}
+@mixin marginBottom($marginBottom) {
+    margin: $marginBottom;
+}
+// padding
+@mixin paddingLRTB($paddingLRTB) {
+    padding: $paddingLRTB;
+}
+@mixin paddingLeft($paddingLeft) {
+    padding-left: $paddingLeft;
+}
+@mixin paddingRight($paddingRight) {
+    padding-right: $paddingRight;
+}
+@mixin paddingTop($paddingTop) {
+    padding-top: $paddingTop;
+}
+@mixin paddingBottom($paddingBottom) {
+    padding-bottom: $paddingBottom;
+}
+// font-family
+@mixin fontFamily($fontFamily){
+    font-family: $fontFamily;
+}
+// font-weight
+@mixin fontWeight($fontWeight) {
+    font-weight: $fontWeight;
+}
+// font-size
+@mixin fontSize($fontSize) {
+    font-size: $fontSize;
+}
+// transform
+@mixin transformX($transformX) {
+    transform:  translateX($transformX);
+    -webkit-transform:  translateX($transformX);
+    -moz-transform:  translateX($transformX);
+    -ms-transform:  translateX($transformX);
+    -o-transform:  translateX($transformX);
+}
+@mixin transformY($transformY) {
+    transform:  translateY($transformY);
+    -webkit-transform:  translateY($transformY);
+    -moz-transform:  translateY($transformY);
+    -ms-transform:  translateY($transformY);
+    -o-transform:  translateY($transformY);
+}
+// transition
+@mixin transiTion($transiTion){
+    transition: $transiTion;
+    -webkit-transition: $transiTion;
+    -moz-transition: $transiTion;
+    -ms-transition: $transiTion;
+    -o-transition: $transiTion;
+}
+// border
+@mixin borDer($borDer){
+    border: $borDer;
+}
+// border-top
+@mixin borderTop($borderTop) {
+    border-top: $borderTop;
+}
+// border-radius
+@mixin bordeRadius($bordeRadius) {
+    border-radius:$bordeRadius;
+    -webkit-border-radius:$bordeRadius;
+    -moz-border-radius:$bordeRadius;
+    -ms-border-radius:$bordeRadius;
+    -o-border-radius:$bordeRadius;
+}
+// box-shaddow
+@mixin boxShaddow($boxShaddow){
+    box-shadow: $boxShaddow;
+}
+// background
+@mixin backGround($backGround){
+    background: $backGround;
+}
+// background-image
+@mixin backgroundImage($backgroundImage){
+    background-image: $backgroundImage;
+}
+// background-color
+@mixin backgroundColor($backgroundColor){
+    background-color: $backgroundColor;
+}
+// background-clip
+@mixin backgroundClip($backgroundClip){
+    background-clip: $backgroundClip;
+}
+// background-position
+@mixin backgroundPosition($backgroundPosition){
+    background-position: $backgroundPosition;
+}
+// background-repeat
+@mixin backgroundRepeat($backgroundRepeat){
+    background-repeat: $backgroundRepeat;
+}
+// color
+@mixin coLor($coLor) {
+    color: $coLor;
+}
+// color darken
+@mixin darKen($color, $amount){
+    color: darken($color, $amount);
+}
+// color lighTen
+@mixin lighTen($color, $amount){
+    color: lighten($color, $amount);
+}
+// opacity
+@mixin opaCity($opaCity){
+    opacity: $opaCity;
+}
+@mixin curSor($curSor){
+    cursor: $curSor;
+}
+// object-fit
+@mixin objectFit($objectFit){
+    object-fit: $objectFit;
+}
+// COUNTER (section & increment)
+// _____________________________
+// counter-reset
+@mixin counteReset($counteReset){
+    counter-reset: $counteReset;
+}
+@mixin counterIncrement($counterIncrement){
+    counter-increment: $counterIncrement;
+}
+@mixin conTent($conTent){
+    content: $conTent;
+}
+@mixin listStyleType($listStyleType){
+    list-style-type: $listStyleType;
+}
+
+
+// ________________________________________
+/*footer*/ 
+@mixin darkLight{
+    @if (lightness($color-grey-4) > 50%) {
+        color:#000;
+    }@else {
+        color: #fff;
+    }
+}
+
+@mixin foot{
+    @include backGround($color-grey-4);
+    @include paddingTop(20px);
+    @include paddingLeft(20px);
+    @include paddingBottom(40px);
+    @include darkLight;
+    @include widTh(100%);
+}
+@mixin footLogo {
+    @include fontFamily("Shrikhand") ;
+    @include fontSize(1.2rem);
+    @include paddingBottom(.8rem);
+}
+@mixin foot__list{
+    @include textDecoration(none);
+    @include darkLight;
+    @include lineHeight(1.6rem);
+    @include fontSize(.96rem);
+}
+@mixin footList {
+    @include darkLight;
+}
+@mixin text__1{
+    @include flexRow;
+    @include justifyContent(space-between);
+    @include widTh(12rem);
+    @include fontSize(.96rem);
+}
+@mixin text__2{
+    @include flexRow;
+    @include justifyContent(space-between);
+    @include widTh(9.94rem);
+    @include fontSize(.96rem);
+}
+
+@mixin footIcon{
+    @include transformX(-1px);
+    @include widTh(1.2rem);
+    @include marginRight(0.5rem);
+}
+
+
+                    /*page d'accueil*/ 
+/*header*/ 
+@mixin header{
+    @include fontFamily("Shrikhand");
+    @include textAlign(center);
+    @include posiTion(relative) ;
+}
+@mixin h__1{
+    @include fontSize(2rem);
+    @include boxShaddow($shadow-header);
+    @include paddingTop(1rem);
+    @include paddingBottom(.4rem);
+}
+// _______________________________________________
+/* section localisation, decouverte & exploration*/
+// ______________________________________________
+/*localisation*/ 
+// ______________________________________________
+@mixin nom__ville{
+    @include flex;    
+    @include backGround(lighten($color-grey-1, 30%)) ;
+    @include paddingLRTB(1rem);
+    @include fontSize(1.08rem);
+    @include fontWeight(bold);
+    @include alignItems(baseline);
+    @include justifyContent(center);
+    @include textAlign(center);
 }
 
 // icone__ville
 @mixin icon__ville{
-    font-size: $font-size-icone__ville;
-    transform: translateX(-1.4rem);
-    -webkit-transform: translateX(-1.4rem);
-    -moz-transform: translateX(-1.4rem);
-    -ms-transform: translateX(-1.4rem);
-    -o-transform: translateX(-1.4rem);
+    @include transformX(-1.4rem);
+    @include fontSize($font-size-icone__ville);
 }
 
 // __________________________________________
-// decouverte et exploration
+/*decouverte et exploration*/ 
 // __________________________________________
 @mixin resa__menu {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding-top: 2rem;
-    padding-bottom: 1.5rem;
+    @include flex;
+    @include justifyContent(center);
+    @include alignItems(center) ;
+    @include textAlign(center) ;
+    @include paddingTop(2rem);
+    @include paddingBottom(1.5rem);
 }
 @mixin text__resa__menu{
-    width:80%;
-    font-size: $font-size-title__resa__menu;
-    font-weight: 600;
+    @include fontSize($font-size-title__resa__menu);
+    @include fontWeight(600);
+    @include widTh(80%);
 }
 @mixin para__resto {
-    text-align: center;
-    font-weight: lighter;
+    @include textAlign(center);
+    @include fontWeight(lighter);
 }
 @mixin text__para__resto {
-    font-size: $font-size-title__para__resto;
-    opacity: 70%;
+    @include fontSize($font-size-title__para__resto);
+    @include opaCity(70%);
+}
+
+/*btn*/ 
+@mixin btn{
+    @include flexRow;
+    @include marginLRTB(1.8rem);
+    @include justifyContent(center);
+}
+@mixin btn__exp__resto{
+    @include fontSize(1rem) ;
+    @include fontWeight(normal);
+    @include bordeRadius(2.1875rem);
+    @include paddingLRTB(15px 25px);
+    @include alignItems(center);
+    @include boxShaddow( 0px 5px 18px -3px $color-grey-1);
+    @include backGround($bg-linear-gradient);
+    @include borDer(none);
+    @include coLor($color-white);
+    @include textDecoration(none);
+    @include curSor(pointer);
+}
+@mixin btn__exp__resto__hover{
+    @include backGround($bg-linear-gradient);
+    @include boxShaddow(0px 5px 22px -3px $color-grey-5);
+    @include opaCity(0.8) ;
+    @include curSor(pointer);
+}
+@mixin btn__exp__rest__active{
+    @include posiTion(relative);
+    @include Top(1px);
 }
 
 
-// Section Fonctionnement
+
+/* Section Fonctionnement*/
 @mixin fonctionnement {
-    padding-left: 1.2rem;
-    padding-right: 1.8rem;
-    transform: translateX(6px);
-    -webkit-transform: translateX(6px);
-    -moz-transform: translateX(6px);
-    -ms-transform: translateX(6px);
-    -o-transform: translateX(6px);
+    @include paddingBottom(1.4rem);
+    @include paddingLeft(0);
+    @include paddingRight(1rem);
+    @include transformX(6px);
 }
 @mixin title__fonctionnement{
-    margin-top: 6rem;
-    margin-bottom: 2rem;
-    font-size: 1.4rem;
+    @include marginTop(3rem);
+    @include marginBottom(2rem);
+    @include fontSize(1.4rem);
+}
+@mixin text__title__fonctionnement {
+    @include fontWeight(600);
 }
 // order
 @mixin order {
-    width: 100%;
-    counter-reset: section;
-    transform:translateX(5px);
-    -webkit-transform:translateX(5px);
-    -moz-transform:translateX(5px);
-    -ms-transform:translateX(5px);
-    -o-transform:translateX(5px);
+    @include transformX(3px);
+    @include widTh(100%) ;
+    @include counteReset(section);
 }
 // order__list
-@mixin btn__menu {
-    position: relative;
-    text-align: center;
-    padding-top: 1.6rem;
-    padding-bottom: 1.6rem;
-    margin-bottom: 1.6rem;
-    background: $color-grey-2;
-    box-shadow: $shadow-menu;
+@mixin order__list {
+    @include bordeRadius(1.4rem);
+    @include btn__menu;
 }
-
-// order__list
-@mixin border__menu ($border-radius_menu){
-    border-radius:$border-radius-menu;
-    -webkit-border-radius:$border-radius-menu;
-    -moz-border-radius:$border-radius-menu;
-    -ms-border-radius:$border-radius-menu;
-    -o-border-radius:$border-radius-menu;
-}
-
-
 // order__list::before
 @mixin btn__menu__couleur__violet {
-    display: flex;
-    flex-direction: row;
-    counter-increment: section;
-    content: "" counter(section);
-    position: absolute;
-    list-style-type: decimal;
-    background-color: #9356DC;
-    font-size: .9375rem;
-    font-weight: lighter;
-    color: white;
-    padding: .125rem .5rem .125rem .5rem;
-    text-decoration: none;
-    transform: translateY(-1.6px) ;
-    transform: translateX(-12px) ;
-    -webkit-transform: translateX(-12px) ;
-    -moz-transform: translateX(-12px) ;
-    -ms-transform: translateX(-12px) ;
-    -o-transform: translateX(-12px) ;
-    border-radius: 2.8125rem;
-    -webkit-border-radius: 2.8125rem;
-    -moz-border-radius: 2.8125rem;
-    -ms-border-radius: 2.8125rem;
-    -o-border-radius: 2.8125rem;
+    @include flexRow;
+    @include transformY(-0.0625rem);
+    @include transformX(-0.75rem);
+    @include bordeRadius(2.8125rem);
+    @include fontSize(.9375rem);
+    @include fontWeight(lighter);
+    @include backgroundColor($color-primary) ;
+    @include coLor($color-white);
+    @include paddingLRTB(.125rem .5rem .125rem .5rem);
+    @include textDecoration(none);
+    @include posiTion(absolute);
+    @include counterIncrement(section);
+    @include conTent("" counter(section)) ;
+    @include listStyleType(decimal);
+}
+@mixin btn__menu {
+    @include paddingTop(1.6rem);
+    @include paddingBottom(1.6rem);
+    @include marginBottom(1rem);
+    @include backGround($color-grey-2);
+    @include boxShaddow($shadow-menu);
+    @include posiTion(relative);
+    @include textAlign(center);
 }
 
+
+// order__list::hover
+@mixin order__list__hover{
+    @include backGround($color-palette-1);
+    @include boxShaddow($shadow-order__list);
+    @include curSor(pointer);
+}
+// list__resto
+@mixin list__resto {
+    @include paddingLeft($paddingLeft:20px);
+}
 // mobile__icon, list__icon, store__icon
 @mixin transform_icons{
-    color: $color-grey-3;
-    font-size: 1rem;
-    transform: translateX(-1.4rem)translateY(-.008rem);
-    -webkit-transform: translateX(-1.4rem)translateY(-.008rem);
-    -moz-transform: translateX(-1.4rem)translateY(-.008rem);
-    -ms-transform: translateX(-1.4rem)translateY(-.008rem);
-    -o-transform: translateX(-1.4rem)translateY(-.008rem);
+    @include coLor($color-grey-3);
+    @include fontSize(1rem);
+    @include transformX($transformX:-1.4rem);
 }
 @mixin transform_icons__mobile{
-    color: $color-grey-3;
-    font-size: 1.2rem;
-    transform: translateX(-1.6rem);
-    -webkit-transform: translateX(-1.6rem);
-    -moz-transform: translateX(-1.6rem);
-    -ms-transform: translateX(-1.6rem);
-    -o-transform: translateX(-1.6rem);
+    @include coLor($color-grey-3);
+    @include fontSize(1.28rem);
+    @include transformX($transformX:-1.6rem);
+}
+// Section Restaurants
+@mixin back__Ground {
+    @include backGround($backGround:$color-grey-2);
+}
+@mixin title__resto{
+    @include marginBottom(2rem);
+    @include fontSize(2.4rem);
+    @include backGround($color-grey-2);
+    @include paddingLeft(1.2rem);
+}
+@mixin card{
+    @include textDecoration(none);
+    @include coLor($color-black);
+}
+@mixin new{
+    @include posiTion(relative);
+}
+@mixin new__before {
+    @include flexColumnCenter;
+    @include backGround($color-tertiary) ;
+    @include darKen($color: $color-tertiary, $amount: 50%);
+    @include posiTion(absolute);
+    @include heiGht(2rem);
+    @include widTh(5rem);
+    @include conTent("Nouveau");
+    @include Top(1rem);
+    @include Right(1rem);
+}
+@mixin title__resto{
+    @include marginTop(3rem);
+    @include paddingTop(3rem);
+    @include marginBottom(1.8rem);
+    @include fontSize(1.4rem);
+}
+@mixin card__resto{
+    @include transformX(-5px);
+    @include bordeRadius(1.125rem);
+    @include boxShaddow(0px 5px 18px -3px $color-grey-1);
+    @include marginLRTB (0px 20px 20px 20px);
+    @include backGround($color-white);
+    @include widTh(90%);
+    @include heiGht(260px) ;
+}
+@mixin card__resto__img{
+    @include bordeRadius(1.2rem 1.2rem 0 0);
+    @include widTh(100%);
+    @include heiGht(180px);
+    @include objectFit(cover);
+}
+@mixin card__resto__description{
+    @include flexRow;
+    @include paddingLRTB(0px 10px 13px 10px);
+    @include bordeRadius(0px 0px 15px 15px);
+    @include justifyContent(space-between);
+    @include borderTop(none);
+}
+@mixin card__resto__text__description{
+    @include justifyContent(space-between);
+    @include paddingTop(1.2rem);
+}
+@mixin card__resto__title{
+    @include fontSize(1.1rem);
+}
+@mixin resto__title{
+    @include fontWeight(500);
+}
+@mixin resto__subtitle{
+    @include fontSize(1rem);
+    @include fontWeight(lighter);
+    @include lineHeight(24px);
+}
+@mixin card__btn__like__heart{
+    @include posiTion(relative);
+}
+@mixin hearticones__1 {
+    @include posiTion(absolute);
+    @include fontSize(1.5rem);
+    @include backgroundImage(linear-gradient(to top, #FF79DA, #9356DC));
+    @include Top(38%);
+    @include Right(1rem);
+    @include backgroundClip(text);
+    @include coLor(transparent);
+    @include backgroundPosition(0 24px);
+    @include heiGht(24px);
+    @include curSor(pointer);
+    @include backgroundRepeat(no-repeat);
+    @include transiTion(background-position 1s);
+    
+}
+@mixin hearticones__1__hover{
+    @include backgroundPosition(0 0px);
+}
+@mixin hearticones__2{
+    @include fontSize(1.5rem);
+    @include Top(0%);
+    @include Right(0%);
+    @include coLor($color-black);
+    @include opaCity(1);
+    @include posiTion(absolute);
+    @include transiTion(opacity 1.5s);
+}
+@mixin hearticones__2__hover{
+    @include opaCity(0);
 }
 
-// Section 
+
 

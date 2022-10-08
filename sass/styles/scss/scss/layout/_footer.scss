@@ -1,0 +1,29 @@
+.foot{
+    @include foot;
+    .foot__con{
+        @include flexColumn;
+        .foot__logo{
+            @include footLogo;
+        }
+        *,
+        .foot__list{
+            @include foot__list;
+            .text__1{ 
+                @include footList;
+            }
+            .foot__list__textA{
+                .foot__link__icon{
+                    .text__1{
+                        @include text__1;
+                    }
+                }
+                .foot__link__icon{
+                    .text__2{
+                        @include text__2;
+                    }
+                }
+            }
+            
+        }
+    }
+}

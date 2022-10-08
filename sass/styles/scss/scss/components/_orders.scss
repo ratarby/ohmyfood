@@ -1,0 +1,31 @@
+/*commandes choisissez, composez, dégustez*/
+.order{
+    @include order;
+        .order__list{
+            @include order__list;
+            .list__resto{
+                @include list__resto;
+                .fa-mobile-alt{
+                    @include transform_icons__mobile;                                        
+                }
+            }
+        }
+        .order__list:hover{
+            @include order__list__hover;
+            }              
+    }
+        .list__menu{
+            .list__icon{
+                @include transform_icons;
+            }
+        }
+        .list__degust{
+            .store__icon{
+                @include transform_icons;
+            
+            }
+        }
+        .order__list::before{
+            @include btn__menu__couleur__violet;
+        }
+    

@@ -1,0 +1,21 @@
+
+
+// section, titre & paragrphe
+section{
+    .decouverte__exploration{
+        @include backGround($backGround: $color-grey-2);
+        @include paddingBottom(1.4rem);
+        .title__resa__menu{
+            @include resa__menu;
+            .text__title__resa__menu{
+                @include text__resa__menu;
+            }
+        }
+        .title__para__resto{
+            @include para__resto;
+            .text__title__para__resto{
+                @include text__para__resto;
+            }
+        }
+    }
+}

@@ -1,0 +1,22 @@
+    
+    @media  #{$small-up} {
+        .container{
+            width: $small;
+            height: auto;
+            margin: auto;
+        }
+    }    
+    @media  #{$medium-up} {
+        .container{
+            width: $medium;
+            height: auto;
+            margin: auto;
+        }
+    }    
+    @media  #{$large-up} {
+        .container{
+            width: $large;
+            height: auto;
+            margin: auto;
+        }
+    }   

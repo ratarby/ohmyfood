@@ -1,0 +1,7 @@
+/*bar de recherche*/
+.localisation__ville{
+    @include nom__ville;
+    .icone__ville{
+        @include icon__ville;
+    }
+}

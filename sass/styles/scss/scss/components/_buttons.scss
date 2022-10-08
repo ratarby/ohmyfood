@@ -1,31 +1,15 @@
-
+@import "../utils/mixins";
 // btn explorez nos restaurants
 .btn{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin: 1.8rem;
+    @include btn;
     .btn__exp__resto{
-        align-items: center;
-        color: $color-white;
-        font-size: 1rem;
-        font-weight: normal;
-        box-shadow: 0px 5px 18px -3px $color-grey-1;
-        background: $bg-linear-gradient;
-        border: none;
-        border-radius: 35px;
-        padding: 15px 25px;
-        text-decoration: none;
-        cursor: pointer;
+        @include btn__exp__resto;
+        
         &:hover {
-            background: $bg-linear-gradient;
-            box-shadow: 0px 5px 22px -3px #6b6b6b;
-            opacity: 0.8;
-            cursor: pointer;
+            @include btn__exp__resto__hover;
         }
         &:active{
-            position:relative;
-            top: 1px;
+            @include btn__exp__rest__active;
         }
     }
 }
