@@ -1,0 +1,11 @@
+
+header{
+    .menu__header{
+        @include flex;
+        @include justifyContent(center);
+        .leftArrow{
+        @include transformX(-5rem);
+        @include fontSize(1.6rem);
+        }
+        }
+    }

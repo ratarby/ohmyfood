@@ -1,0 +1,38 @@
+
+*,
+.menu{
+    .menu__resto{
+        @include menu__resto;
+        .menu__resto__img{
+            @include menu__resto__img;
+        }
+        .menu__resto__description{
+            @include menu__resto__description;
+            .menu__resto__text__description{
+                @include menu__resto__text__description;
+                .menu__resto__title{
+                    @include menu__resto__title;
+                    .menu__resto__title{
+                        @include menu__resto__title;
+                    }
+                }
+            }
+            .menu__btn__like__heart{
+                @include menu__btn__like__heart;
+                .menu__hearticones__1 {
+                    @include menu__hearticones__1;
+                }
+                .menu__hearticones__1:hover {
+                @include menu__hearticones__1__hover;
+                }
+                .menu__hearticones__2 {
+                @include menu__hearticones__2;
+                }
+                
+                .menu__hearticones__2:hover {
+                @include menu__hearticones__2__hover;
+                }
+            }               
+        }
+    }
+}

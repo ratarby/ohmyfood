@@ -1,0 +1,30 @@
+    
+    @media  #{$small-up} {
+        .menucontainer{
+            @include widTh($small);
+            @include heiGht(auto);
+            @include marginLRTB(auto);
+        }
+    }    
+    @media  #{$medium-up} {
+        .menucontainer{
+            @include widTh($medium);
+            @include heiGht(auto);
+            @include marginLRTB(auto);
+            .media {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                background: rgb(246, 246, 246);
+                flex-wrap: wrap;
+              }
+        }
+        
+    }    
+    @media  #{$large-up} {
+        .menucontainer{
+            @include widTh($large);
+            @include heiGht(auto);
+            @include marginLRTB(auto);
+        }
+    }   

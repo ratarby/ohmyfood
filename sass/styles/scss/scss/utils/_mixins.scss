@@ -2,6 +2,9 @@
 @mixin flex{
     display: flex;
 }
+@mixin flexDirection($flexDirection){
+    flex-direction: $flexDirection;
+}
 @mixin flexRow{
     display: flex;
     flex-direction: row;
@@ -41,9 +44,17 @@ justify-content: space-around;
     flex-direction: column;
     justify-content: space-between;
 }
+// position
+@mixin posiTion($posiTion){
+    position: $posiTion; 
+}
 // justify-content
 @mixin justifyContent($justifyContent) {
     justify-content: $justifyContent;
+}
+// justify-items
+@mixin justifyItems($justifyItems) {
+    justify-items: $justifyItems;
 }
 // align-items
 @mixin alignItems($alignItems) {
@@ -156,6 +167,9 @@ justify-content: space-around;
 @mixin borderTop($borderTop) {
     border-top: $borderTop;
 }
+@mixin borderBottom($borderBottom){
+    border-bottom: $borderBottom;
+}
 // border-radius
 @mixin bordeRadius($bordeRadius) {
     border-radius:$bordeRadius;
@@ -204,6 +218,14 @@ justify-content: space-around;
 @mixin lighTen($color, $amount){
     color: lighten($color, $amount);
 }
+// overflow
+@mixin overFlow($overFlow){
+    overflow : $overFlow
+}
+// text-overflow
+@mixin textOverflow($textOverflow) {
+    text-overflow: $textOverflow;
+}
 // opacity
 @mixin opaCity($opaCity){
     opacity: $opaCity;
@@ -215,6 +237,13 @@ justify-content: space-around;
 @mixin objectFit($objectFit){
     object-fit: $objectFit;
 }
+// white-space
+@mixin whiteSpace($whiteSpace){
+    white-space: $whiteSpace;
+}
+
+
+
 // COUNTER (section & increment)
 // _____________________________
 // counter-reset
@@ -288,17 +317,16 @@ justify-content: space-around;
 
                     /*page d'accueil*/ 
 /*header*/ 
-@mixin header{
+@mixin logo{
     @include fontFamily("Shrikhand");
     @include textAlign(center);
     @include posiTion(relative) ;
-}
-@mixin h__1{
     @include fontSize(2rem);
     @include boxShaddow($shadow-header);
     @include paddingTop(1rem);
     @include paddingBottom(.4rem);
 }
+
 // _______________________________________________
 /* section localisation, decouverte & exploration*/
 // ______________________________________________
@@ -454,19 +482,16 @@ justify-content: space-around;
     @include transformX($transformX:-1.6rem);
 }
 // Section Restaurants
+// HOME --> CARD + BTN
 @mixin back__Ground {
     @include backGround($backGround:$color-grey-2);
     @include paddingBottom(2.6rem);
 }
-@mixin title__resto{
-    @include marginBottom(2rem);
-    @include fontSize(2.4rem);
-    @include backGround($color-grey-2);
-    @include paddingLeft(1.2rem);
-}
+
 @mixin card{
     @include textDecoration(none);
     @include coLor($color-black);
+    @include widTh(100%);
 }
 @mixin new{
     @include posiTion(relative);
@@ -532,8 +557,8 @@ justify-content: space-around;
     @include posiTion(absolute);
     @include fontSize(1.5rem);
     @include backgroundImage(linear-gradient(to top, #FF79DA, #9356DC));
-    @include Top(38%);
-    @include Right(1rem);
+    @include Top(42%);
+    @include transformX(78%);
     @include backgroundClip(text);
     @include coLor(transparent);
     @include backgroundPosition(0 24px);
@@ -558,6 +583,188 @@ justify-content: space-around;
 @mixin hearticones__2__hover{
     @include opaCity(0);
 }
+// MENUS --> IMG + BTN
+@mixin menu{
+    @include textDecoration(none);
+    @include coLor($color-black);
+    @include widTh(100%);
+}
+@mixin menu__resto{
+    @include boxShaddow(0px 5px 18px -3px $color-grey-1);
+    @include backGround($color-white);
+    @include widTh(100%);
+    @include heiGht(260px) ;
+}
+@mixin menu__resto__img{
+    @include bordeRadius(0 0 0 0);
+    @include widTh(100%);
+    @include heiGht(240px);
+    @include objectFit(cover);
+    @include posiTion(relative);
+    @include marginBottom(-20px);
+    @include Top(1.2rem);
+    @include Right(-1.2rem);
+}
+
+@mixin menu__resto__description{
+    @include flexRow;
+    @include posiTion(absolute);
+    @include backGround($color-white);
+    @include paddingLRTB(0px 0px 20px 20px);
+    @include bordeRadius( 2.5rem 2.5rem 0 0 );
+    @include borderTop(none);
+    @include widTh(100%);
+    @include Top(21.5%);
+}
+@mixin menu__resto__text__description{
+    @include justifyContent(space-between);
+    @include paddingTop(1.2rem);
+}
+@mixin menu__resto__title{
+    @include fontFamily("Shrikhand");
+    @include fontSize(1.8rem);
+    
+}
+@mixin menu__title{
+    @include fontFamily("Shrikhand");
+    @include fontSize(1.8rem);
+    @include fontWeight(500);
+}
+@mixin menu__btn__like__heart{
+    @include posiTion(relative);
+    @include Top(1.6rem);
+    @include Right(-5rem);
+}
+@mixin menu__hearticones__1 {
+    @include posiTion(absolute);
+    @include fontSize(1.5rem);
+    @include backgroundImage(linear-gradient(to top, #FF79DA, #9356DC));
+    @include Top(3%);
+    @include transformX(8%);
+    @include backgroundClip(text);
+    @include coLor(transparent);
+    @include backgroundPosition(0 24px);
+    @include heiGht(24px);
+    @include curSor(pointer);
+    @include backgroundRepeat(no-repeat);
+    @include transiTion(background-position 1s);
+}
+@mixin menu__hearticones__1__hover{
+    @include backgroundPosition(0 0px);
+}
+@mixin menu__hearticones__2{
+    @include fontSize(1.5rem);
+    @include Top(0%);
+    @include Right(0%);
+    @include coLor($color-black);
+    @include opaCity(1);
+    @include posiTion(absolute);
+    @include transiTion(opacity 1.5s);
+}
+@mixin menu__hearticones__2__hover{
+    @include opaCity(0);
+}
+//                   MENUS
+// ___________________________________________
+
+// ===========================================
+//                  SLIDES
+// ===========================================
+@mixin slideInUp--1{
+    -webkit-animation: slideInUp 1s both;
+            animation: slideInUp 1s both;
+    -webkit-animation-delay: 0.2s;
+            animation-delay: 0.2s;
+}
+@mixin slideInUp--2{
+    -webkit-animation: slideInUp 1s both;
+            animation: slideInUp 1s both;
+    -webkit-animation-delay: 0.2s;
+            animation-delay: 0.2s;
+}
+@mixin slideInUp--3{
+    -webkit-animation: slideInUp 1s both;
+            animation: slideInUp 1s both;
+    -webkit-animation-delay: 0.2s;
+            animation-delay: 0.2s;
+}
+@mixin slideInUp--4{
+    -webkit-animation: slideInUp 1s both;
+            animation: slideInUp 1s both;
+    -webkit-animation-delay: 0.2s;
+            animation-delay: 0.2s;
+}
 
 
+// MENUS ENTREES - PLAT - DESSERT
 
+@mixin menu{
+    @include flexColumn;
+    @include heiGht(auto);
+    @include backGround($color-grey-2);
+}
+@mixin menu__title{
+    @include fontSize(1rem);
+    @include fontWeight(300);
+    @include marginLeft(20px) ;
+    @include marginTop(30px);
+    @include borderBottom(3px solid $color-tertiary);
+    @include widTh(40px);
+    @include paddingBottom(3px);
+}
+@mixin sticker--menu{
+    @include flexRow;
+    @include justifyContent(space-between);
+    @include boxShaddow(0px 5px 18px -3px $color-grey-1);
+    @include marginLRTB(0px 13px 13px 14px);
+    @include bordeRadius(15px);
+    @include textDecoration(none);
+    @include coLor($color-black);
+    @include overFlow(hidden);
+}
+@mixin sticker--menu__description{
+    @include flexColumn;
+    @include widTh(85%);
+    @include transiTion(width 1s ease-in-out);
+}
+@mixin sticker--menu__description__title{
+    @include fontSize(18px);
+    @include fontWeight(500);
+    @include marginLRTB(11px 0px 4px 10px); 
+    @include whiteSpace(nowrap);
+    @include overFlow(hidden);
+    @include textOverflow(ellipsis);
+}
+@mixin sticker--menu__description__subtitle{
+    @include fontSize(14px);
+    @include fontWeight(lighter);
+    @include marginLRTB(0px 0px 12px 10px);
+    @include whiteSpace(nowrap);
+    @include overFlow(hidden);
+    @include textOverflow(ellipsis);
+}
+@mixin sticker--menu__price{
+    @include fontSize(15px);
+    @include fontWeight(bold);
+    @include justifyItems(center);
+    @include marginLRTB(40px 10px 0px 10px);
+    @include widTh(15%);
+    @include transiTion(width 1s ease-in-out);
+}
+@mixin sticker--menu__icon {
+    @include flexRow;
+    @include backgroundColor($color-tertiary);
+    @include widTh(0%);
+    @include bordeRadius(0px 15px 15px 0px);
+    @include justifyContent(center);
+    @include alignItems(center);
+    @include overFlow(hidden);
+    @include textOverflow(ellipsis);
+}
+@mixin sticker--menu__icon__check {
+    @include backgroundColor($color-white);
+    @include coLor($color-tertiary);
+    @include fontSize(12px);
+    @include paddingLRTB(4px);
+    @include bordeRadius(25px);
+}

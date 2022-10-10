@@ -2,8 +2,5 @@
 @import "../utils/_mixins";
 
 header {
-    @include header;
-}
-h1{
-    @include h__1;
+    @include logo;
 }

@@ -1,22 +1,140 @@
     
     @media  #{$small-up} {
         .container{
-            width: $small;
-            height: auto;
-            margin: auto;
+            @include widTh($small);
+            @include heiGht(auto);
+            @include marginLRTB(auto);
         }
     }    
     @media  #{$medium-up} {
         .container{
-            width: $medium;
-            height: auto;
-            margin: auto;
+            @include widTh($medium);
+            @include heiGht(auto);
+            @include marginLRTB(auto);
+            section{
+                .back__Ground{
+                    @include back__Ground;
+                    .title__resto{
+                        @include title__resto;
+                        .text__title__resto{
+                            @include fontWeight(600);
+                        }
+                    }
+                    .box__1{
+                        @include flex;
+                        @include paddingBottom(.4rem);
+                        @include paddingLeft(.8rem);
+                        @include paddingRight(.8rem);
+                        *,
+                        .card{
+                        @include card;
+                        .new{
+                            @include new;
+                        }
+                        .new::before{
+                            @include new__before;
+                        }   
+                        .card__resto{
+                            @include card__resto;
+                            .card__resto__img{
+                                @include card__resto__img;
+                                }
+                            .card__resto__description{
+                                @include card__resto__description;
+                                .card__resto__text__description{
+                                    @include card__resto__text__description;
+                                    .card__resto__title{
+                                        @include card__resto__title;
+                                        .resto__title{
+                                            @include resto__title;
+                                        }
+                                        .resto__subtitle{
+                                            @include resto__subtitle;
+                                        }
+                                    }
+                                }
+                                .card__btn__like__heart{
+                                    @include card__btn__like__heart;
+                                    .hearticones__1 {
+                                        @include hearticones__1;
+                                    }
+                                    .hearticones__1:hover {
+                                    @include hearticones__1__hover;
+                                    }
+                                    .hearticones__2 {
+                                    @include hearticones__2;
+                                    }
+                                    
+                                    .hearticones__2:hover {
+                                    @include hearticones__2__hover;
+                                    }
+                                    }                                   
+                                }
+                            }
+                        }
+                    }
+                    .box__2{
+                        @include flex;
+                        @include paddingTop(.4rem);
+                        @include paddingLeft(.8rem);
+                        @include paddingRight(.8rem);
+                        *,
+                        .card{
+                        @include card;
+                        .new{
+                            @include new;
+                        }
+                        .new::before{
+                            @include new__before;
+                        }   
+                        .card__resto{
+                            @include card__resto;
+                            .card__resto__img{
+                                @include card__resto__img;
+                                }
+                            .card__resto__description{
+                                @include card__resto__description;
+                                .card__resto__text__description{
+                                    @include card__resto__text__description;
+                                    .card__resto__title{
+                                        @include card__resto__title;
+                                        .resto__title{
+                                            @include resto__title;
+                                        }
+                                        .resto__subtitle{
+                                            @include resto__subtitle;
+                                        }
+                                    }
+                                }
+                                .card__btn__like__heart{
+                                    @include card__btn__like__heart;
+                                    .hearticones__1 {
+                                        @include hearticones__1;
+                                    }
+                                    .hearticones__1:hover {
+                                    @include hearticones__1__hover;
+                                    }
+                                    .hearticones__2 {
+                                    @include hearticones__2;
+                                    }
+                                    .hearticones__2:hover {
+                                    @include hearticones__2__hover;
+                                    }
+                                    }                                   
+                                }
+                            }
+                        }
+                    }
+                    }
+                }
+        
         }
+        
     }    
     @media  #{$large-up} {
         .container{
-            width: $large;
-            height: auto;
-            margin: auto;
+            @include widTh($large);
+            @include heiGht(auto);
+            @include marginLRTB(auto);
         }
     }   

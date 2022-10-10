@@ -1,0 +1,37 @@
+.card__resto{
+    @include card__resto;
+    .card__resto__img{
+        @include card__resto__img;
+    }
+    .card__resto__description{
+        @include card__resto__description;
+        .card__resto__text__description{
+            @include card__resto__text__description;
+            .card__resto__title{
+                @include card__resto__title;
+                .resto__title{
+                    @include resto__title;
+                }
+                .resto__subtitle{
+                    @include resto__subtitle;
+                }
+            }
+        }
+        .card__btn__like__heart{
+            @include card__btn__like__heart;
+            .hearticones__1 {
+                @include hearticones__1;
+            }
+            .hearticones__1:hover {
+            @include hearticones__1__hover;
+            }
+            .hearticones__2 {
+            @include hearticones__2;
+            }
+            
+            .hearticones__2:hover {
+            @include hearticones__2__hover;
+            }
+        }                                   
+    }
+}
