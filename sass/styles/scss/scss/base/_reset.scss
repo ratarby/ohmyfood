@@ -7,7 +7,7 @@ body {
     padding: 0;
     font-family: "Roboto",sans-serif;
     text-decoration: none;
-    background: $color-bg;
+    background: #{$color-bg};
     @if (lightness($color-bg) > 50%) {
         color:#000;
     }@else {

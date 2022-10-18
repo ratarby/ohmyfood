@@ -1,0 +1,23 @@
+
+.sticker__menu:hover.sticker__menu__price {
+    @include widTh(5%);
+    @include paddingTop(35px);
+    @include transiTion(width .5s -.3s ease-in-out);
+
+}
+
+.sticker__menu:hover .sticker__menu__icon {
+    @include backgroundColor(#{$color-tertiary});
+    @include coLor(#{$color-white});
+    @include widTh(18%);
+    @include paddingLeft(9%);
+    @include paddingRight(9%);
+    @include transiTion(width .5s -.3s ease-in-out);
+
+}
+
+.sticker__menu:hover .sticker__menu__icon__check {
+    @include animaTion(checkrotation 1s -.3s ease-in-out);
+    @include fontSize(12px);
+    @include paddingLRTB(4px);
+}

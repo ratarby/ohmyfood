@@ -14,19 +14,24 @@
 @import "./scss/components/_orders.scss";
 @import "./scss/layout/_footer.scss";
 @import "./scss/components/_restaurants.scss";
-@import "./scss/base/_mediasqueries.scss";
 
-// menu - À la française
+// menus
 @import "../scss/scss/layout/_menuheader.scss";
 @import "../scss/scss/layout/_menuAlafrancaise.scss";
-@import "../scss/scss/layout/_menusentreeplatdesser";
-@import "../scss/scss/base/_menumediasqueries.scss";
+@import "../scss/scss/layout/_lanoteenchantee.scss";
+@import "../scss/scss/layout/_lapalettedugout.scss";
+@import "../scss/scss/layout/_ledelicedessens.scss";
+@import "../scss/scss/utils/_keyframes.scss";
+@import "../scss/scss/components/_buttons.scss";
+
+@import "./scss/base/_mediasqueries.scss";
 
 
 
 
 
-                                    //conteneur de la page web  
+
+
     
         
 

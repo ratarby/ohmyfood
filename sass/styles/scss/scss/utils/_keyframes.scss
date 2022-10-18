@@ -1,0 +1,43 @@
+/*ANIMATION */
+
+
+@-webkit-keyframes checkrotation {
+
+    0% {
+        @include transformRotate(0deg);
+    }
+    100% {
+        @include transformRotate(361deg);
+    }
+    
+}
+
+@keyframes checkrotation {
+    0% {
+        @include transformRotate(0deg);
+    }
+    100% {
+        @include transformRotate(361deg);
+    }
+}
+@-webkit-keyframes slideInUp {
+    0% {
+        @include opaCity(0);
+        @include transformY(100%);
+        }
+    100% {
+        @include opaCity(0);
+        @include transformY(0%)   ;
+    }
+    }
+    @keyframes slideInUp {
+    0% {
+    @include opaCity(0);
+    @include transformY(100%);
+}
+    100% {
+        @include opaCity(1);        
+        @include transformY(0%);
+}
+    }
+   

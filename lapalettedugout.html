@@ -5,211 +5,225 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./sass/styles/css/main.css">
-    <title>ohmyfood - Accueil</title>
+    <title>menu - La palette du goût</title>
     <script src="https://kit.fontawesome.com/1b66eac319.js" crossorigin="anonymous"></script>
 </head>
 <body>
                                     <!-- Conteneur de la page web -->
-    <div class="menucontainer">
-                                        <!-- header -->
+    <div class="container">
+                                    <!-- header -->
         <header>
-            <div class="menu__header">
-                <div class="leftArrow">
-                    <a  href="index.html"><i class="fas fa-arrow-left arrow fa-xs"></i></a>
-                </div>
-                <div class="logo">
-                    <div class="logo__title">ohmyfood</div>
-                </div>
+        <div class="menu__header">
+            <div class="leftArrow">
+                <a  href="index.html"><i class="fas fa-arrow-left arrow fa-xs"></i></a>
             </div>
+            <div class="logo">
+                <div class="logo__title">ohmyfood</div>
+            </div>
+        </div>
         </header>
+                                    <!-- MENU + IMG -->
         <section class="menu__header">
             <div class="menu">
-                <div class= "menu__resto"> 
-                        <img class="menu__resto__img" src="./img/webp/lapalettedugout.webp" alt="La palette du goût">
-                        <div class= "menu__resto__description">
-                            <div class="menu__resto__text__description">
-                                <div class= "menu__resto__title">
-                                    <h3 class="menu__resto__title">La palette de goût</h3>
-                                </div>
-                            </div>
-                            <div class="menu__btn__like__heart">
-                                <i class="fas fa-heart menu__hearticones__1"><i class="far fa-heart menu__hearticones__2"></i></i>
-                            </div>
+            <div class= "menu__resto"> 
+                <img class="menu__resto__img" src="./img/webp/lapalettedugout.webp" alt="La palette du goût">
+                <div class= "menu__resto__description">
+                    <div class="menu__resto__text__description">
+                        <div class= "menu__resto__title">
+                            <h3 class="menu__resto__title">La palette du goût</h3>
                         </div>
-                </div>            
+                    </div>
+                    <div class="menu__btn__like__heart__lapalettedugout">
+                        <i class="fas fa-heart menu__hearticones__1"><i class="far fa-heart menu__hearticones__2"></i></i>
+                    </div>
+                </div>
+            </div>            
             </div>
-            </div>
-        </section>    
-        
-        <main class="media">
-            <section class="menu">
+        </section>
+                                    <!--MENU ENTREES PLATS DESSERTS  -->
+        <main class="menus__entrees__plats__desserts">
+                                    <!-- menu entrées - section -->
+            <section class="menu__entree">
                 <h2 class="menu__title">ENTRÉES</h2>
-<!--CARD 1-->
-                <a href="#" class="sticker--menu slideInUp slideInUp--1">
-                    <div class="sticker--menu__description">
-                        <h2 class="sticker--menu__description__title">Fricassée d'escargot</h2>
-                        <h3 class="sticker--menu__description__subtitle">Au piment d'Espelette</h3>
+                                            <!--CARD 1-->
+                <div class="sticker__menu__box__card">
+                    <a  class="sticker__menu slideInUp slideInUp__1" href="#" >
+                        <div class="sticker__menu__description">
+                            <h2 class="sticker__menu__description__title">Fricassée d'escargot</h2>
+                            <h3 class="sticker__menu__description__subtitle">Au piment d'Espelette</h3>
+                        </div>   
+                        <div class="sticker__menu__price">25€</div>
+                        <div class="sticker__menu__icon">
+                            <i class="sticker__menu__icon__check fas fa-check"></i>
+                        </div> 
+                    </a>
+                </div>
+                                            <!--CARD 2-->
+                <div class="sticker__menu__box__card">
+                    <a  class="sticker__menu slideInUp slideInUp__2" href="#" >
+                        <div class="sticker__menu__description">
+                            <h2 class="sticker__menu__description__title">Foie gras de canard mi-cuit</h2>
+                            <h3 class="sticker__menu__description__subtitle">Et ses copeaux de truffe noire</h3>
+                        </div>   
+                        <div class="sticker__menu__price">35€</div>
+                        <div class="sticker__menu__icon">
+                            <i class="sticker__menu__icon__check fas fa-check"></i>
+                        </div> 
+                    </a>
+                </div>
+                                            <!--CARD 3-->
+                <div class="sticker__menu__box__card">
+                    <a  class="sticker__menu slideInUp slideInUp__3" href="#" >
+                        <div class="sticker__menu__description">
+                            <h2 class="sticker__menu__description__title">Oeuf au plat</h2>
+                            <h3 class="sticker__menu__description__subtitle">Assaisonné à la truffe sur lit de caviar</h3>
+                        </div>   
+                        <div class="sticker__menu__price">20€</div>
+                        <div class="sticker__menu__icon">
+                            <i class="sticker__menu__icon__check fas fa-check"></i>
+                        </div> 
+                    </a>
+                </div>
+                                            <!--CARD 4-->
+                <div class="sticker__menu__box__card">
+                    <a  class="sticker__menu slideInUp slideInUp__3" href="#" >
+                        <div class="sticker__menu__description">
+                            <h2 class="sticker__menu__description__title">Foie gras de canard cuit entier</h2>
+                            <h3 class="sticker__menu__description__subtitle">Confiture de figue et pein toasté</h3>
+                        </div>   
+                        <div class="sticker__menu__price">35€</div>
+                        <div class="sticker__menu__icon">
+                            <i class="sticker__menu__icon__check fas fa-check"></i>
+                        </div> 
+                    </a>
+                </div>
+            </section> 
+                                    <!-- menu plats - section -->
+            <section class="menu__plat">
+            <h2 class="menu__title">PLATS</h2>
+                                        <!--CARD 5-->
+            <div class="sticker__menu__box__card">
+                <a  class="sticker__menu slideInUp slideInUp__1" href="#" >
+                    <div class="sticker__menu__description">
+                        <h2 class="sticker__menu__description__title">Filet de boeuf aux herbes</h2>
+                        <h3 class="sticker__menu__description__subtitle">Accompagné de sa ribambelle de légumes</h3>
                     </div>   
-                    <div >
-                        <h4 class="sticker--menu__price">25€</h4>
-                    </div>                
-                    <div class="sticker--menu__icon">
-                        <i class="fas fa-check sticker--menu__icon__check"></i>
+                    <div class="sticker__menu__price">40€</div>
+                    <div class="sticker__menu__icon">
+                        <i class="sticker__menu__icon__check fas fa-check"></i>
                     </div> 
                 </a>
-<!--CARD 2-->
-                <a href="#" class="sticker--menu slideInUp--2">
-                    <div class="sticker--menu__description">
-                        <h2 class="sticker--menu__description__title">Foie gras de canard mi-cuit</h2>
-                        <h3 class="sticker--menu__description__subtitle">Et ses copeaux de truffe noire</h3>
-                    </div>                   
-                    <div>
-                        <h4 class="sticker--menu__price">35€</h4>
-                    </div>
-                    <div class="sticker--menu__icon">
-                        <i class="far fas fa-check sticker--menu__icon__check"></i>
+            </div>
+                                        <!--CARD 6-->
+            <div class="sticker__menu__box__card">
+                <a  class="sticker__menu slideInUp slideInUp__2" href="#" >
+                    <div class="sticker__menu__description">
+                        <h2 class="sticker__menu__description__title">Parmentier de queue de boeuf</h2>
+                        <h3 class="sticker__menu__description__subtitle">À la truffe noire sur sa purée de panais</h3>
+                    </div>   
+                    <div class="sticker__menu__price">35€</div>
+                    <div class="sticker__menu__icon">
+                        <i class="sticker__menu__icon__check fas fa-check"></i>
                     </div> 
                 </a>
-<!--CARD 3-->
-                <a href="#" class="sticker--menu slideInUp--3">
-                    <div class="sticker--menu__description">
-                        <h2 class="sticker--menu__description__title">Oeuf au plat</h2>
-                        <h3 class="sticker--menu__description__subtitle">Assaisonné à la truffe sur lit de caviar</h3> 
-                    </div>
-                    <div>
-                        <h4 class="sticker--menu__price">20€</h4>
-                    </div>                   
-                    <div class="sticker--menu__icon">
-                        <i class="far fas fa-check sticker--menu__icon__check"></i>
+            </div>
+                                        <!--CARD 7-->
+            <div class="sticker__menu__box__card">
+                <a  class="sticker__menu slideInUp slideInUp__3" href="#" >
+                    <div class="sticker__menu__description">
+                        <h2 class="sticker__menu__description__title">Filet de turbot</h2>
+                        <h3 class="sticker__menu__description__subtitle">Aux agrumes</h3>
+                    </div>   
+                    <div class="sticker__menu__price">44€</div>
+                    <div class="sticker__menu__icon">
+                        <i class="sticker__menu__icon__check fas fa-check"></i>
                     </div> 
                 </a>
+            </div>
+            </section>     
+                                        <!-- menu desserts - section -->
+            <section class="menu__dessert">
+                <h2 class="menu__title">DESSERTS</h2>
+                                        <!--CARD 8-->
+                <div class="sticker__menu__box__card">
+                    <a  class="sticker__menu slideInUp slideInUp__1" href="#" >
+                        <div class="sticker__menu__description">
+                            <h2 class="sticker__menu__description__title">Paris-Brest</h2>
+                            <h3 class="sticker__menu__description__subtitle">Revisité</h3>
+                        </div>   
+                        <div class="sticker__menu__price">18€</div>
+                        <div class="sticker__menu__icon">
+                            <i class="sticker__menu__icon__check fas fa-check"></i>
+                        </div> 
+                    </a>
+                </div>
+                                        <!--CARD 9-->
+                <div class="sticker__menu__box__card">
+                    <a  class="sticker__menu slideInUp slideInUp__2" href="#" >
+                        <div class="sticker__menu__description">
+                            <h2 class="sticker__menu__description__title">Macaron au chocolat d'exception</h2>
+                            <h3 class="sticker__menu__description__subtitle">Et glace à la vanille de Madagascar</h3>
+                        </div>   
+                        <div class="sticker__menu__price">22€</div>
+                        <div class="sticker__menu__icon">
+                            <i class="sticker__menu__icon__check fas fa-check"></i>
+                        </div> 
+                    </a>
+                </div>
+                                        <!--CARD 10-->
+                <div class="sticker__menu__box__card">
+                    <a  class="sticker__menu slideInUp slideInUp__3" href="#" >
+                        <div class="sticker__menu__description">
+                            <h2 class="sticker__menu__description__title">Mousse au chocolat</h2>
+                            <h3 class="sticker__menu__description__subtitle">Au piment d'espelette et à la truffe noire</h3>
+                        </div>   
+                        <div class="sticker__menu__price">23€</div>
+                        <div class="sticker__menu__icon">
+                            <i class="sticker__menu__icon__check fas fa-check"></i>
+                        </div> 
+                    </a>
+                </div>
             </section>
-<!--MENU 2 SECTION-->
-            <section class="menu">
-                <h2 class="menu__title">PLATS</h2>
-<!--CARD 4-->
-                <a href="#" class="sticker--menu slideInUp--1">
-                    <div class="sticker--menu__description">
-                        <h2 class="sticker--menu__description__title">Filet de boeuf aux herbes</h2>
-                        <h3 class="sticker--menu__description__subtitle">Accompagné de sa ribambelle de légumes</h3>  
-                    </div>                   
-                    <div>
-                        <h4 class="sticker--menu__price">40€</h4>
-                    </div>
-                    <div class="sticker--menu__icon">
-                        <i class="far fas fa-check sticker--menu__icon__check"></i>
-                    </div> 
-                </a>
-<!--CARD 5-->
-                <a href="#" class="sticker--menu slideInUp--2">
-                    <div class="sticker--menu__description">
-                        <h2 class="sticker--menu__description__title">Parmentier de queue de boeuf</h2>
-                        <h3 class="sticker--menu__description__subtitle">À la truffe noire sur sa purée de panais</h3>
-                    </div>                   
-                    <div>
-                        <h4 class="sticker--menu__price">35€</h4>
-                    </div>
-                    <div class="sticker--menu__icon">
-                        <i class="far fas fa-check sticker--menu__icon__check"></i>
-                    </div> 
-                </a>
-<!--CARD 6-->
-                <a href="#" class="sticker--menu slideInUp--3">
-                    <div class="sticker--menu__description">
-                        <h2 class="sticker--menu__description__title">Filet de turbot</h2>
-                        <h3 class="sticker--menu__description__subtitle">Aux agrumes</h3>
-                    </div>                   
-                    <div>
-                        <h4 class="sticker--menu__price">44€</h4>
-                    </div>
-                    <div class="sticker--menu__icon">
-                        <i class="far fas fa-check sticker--menu__icon__check"></i>
-                    </div> 
-                </a>
-            </section>
-<!--MENU 3 SECTION-->
-            <section class="menu">
-                <h2 class="menu__title ">DESSERTS</h2>
-<!--CARD 7-->
-                <a href="#" class="sticker--menu slideInUp--1">
-                    <div class="sticker--menu__description">
-                        <h2 class="sticker--menu__description__title">Paris-Brest</h2>
-                        <h3 class="sticker--menu__description__subtitle">Revisité</h3>       
-                    </div>                   
-                    <div>
-                        <h4 class="sticker--menu__price">18€</h4>
-                    </div>
-                    <div class="sticker--menu__icon">
-                        <i class="far fas fa-check sticker--menu__icon__check"></i>
-                    </div> 
-                </a>
-<!--CARD 8-->
-                <a href="#" class="sticker--menu slideInUp--2">
-                    <div class="sticker--menu__description">
-                        <h2 class="sticker--menu__description__title">Macaron au chocolat d'exception</h2>
-                        <h3 class="sticker--menu__description__subtitle">Et glace à la vanille de Madagascar</h3>
-                    </div>                   
-                    <div>
-                        <h4 class="sticker--menu__price">22€</h4>
-                    </div>
-                    <div class="sticker--menu__icon">
-                        <i class="far fas fa-check sticker--menu__icon__check"></i>
-                    </div> 
-                </a>
-<!--CARD 9-->
-                <a href="#" class="sticker--menu slideInUp--3">
-                    <div class="sticker--menu__description">
-                        <h2 class="sticker--menu__description__title">Mousse au chocolat </h2>
-                        <h3 class="sticker--menu__description__subtitle">Au piment d'Espelette et à la truffe noire</h3>
-                    </div>                   
-                    <div>
-                        <h4 class="sticker--menu__price">23€</h4>
-                    </div>
-                    <div class="sticker--menu__icon">
-                        <i class="far fas fa-check sticker--menu__icon__check"></i>
-                    </div> 
-                </a>
-            </section>            
         </main>
-        <div class="box">
+                                    <!-- btn__commander -->
+        <div class="btn__commander">
             <button class="button box__commandbutton">Commander</button>
         </div>
-        
-        
-        
+                                    <!-- footer -->
         <footer class="foot">
-            <div class="foot__con">
-                <div class="foot__logo">
-                    <h2 class="foot__logo__title">ohmyfood</h2>
-                </div>
-                <div class="foot__list">
-                    <div class="foot__list__textA">
-                        <a class="foot__link__icon" href="#">
-                            <p class="text__1">
-                                <i class="foot__icon fas fa-utensils fa-sm"></i>
-                                Proposer un restaurant
-                            </p>
-                        </a>
-                        <a class="foot__link__icon" href="#">
-                            <p class="text__2">
-                                <i class="foot__icon fas fa-hands-helping fa-sm"></i>
-                                Devenir partenaire
-                            </p>
-                        </a>
-                    </div>    
-                    <div class="foot__list__textB">
-                        <a class="footer__link" href="#">
-                            <p class="text__3">Mentions légales</p>
-                        </a>
-                    </div>
-                    <div class="foot__list__textC">
-                        <a class="mail__to" href="mailto:contact@ohmyfood.com">
-                            <p class="text__4">Contact</p>
-                        </a>
-                    </div>
-                </div>
-            </div>
+        <div class="foot__con">
+        <div class="foot__logo">
+        <h2 class="foot__logo__title">ohmyfood</h2>
+        </div>
+        <div class="foot__list">
+        <div class="foot__list__textA">
+            <a class="foot__link__icon" href="#">
+                <p class="text__1">
+                    <i class="foot__icon fas fa-utensils fa-sm"></i>
+                    Proposer un restaurant
+                </p>
+            </a>
+            <a class="foot__link__icon" href="#">
+                <p class="text__2">
+                    <i class="foot__icon fas fa-hands-helping fa-sm"></i>
+                    Devenir partenaire
+                </p>
+            </a>
+        </div>    
+        <div class="foot__list__textB">
+            <a class="footer__link" href="#">
+                <p class="text__3">Mentions légales</p>
+            </a>
+        </div>
+        <div class="foot__list__textC">
+            <a class="mail__to" href="mailto:contact@ohmyfood.com">
+                <p class="text__4">Contact</p>
+            </a>
+        </div>
+        </div>
+        </div>
         </footer>
-    </div> 
+    </div>
+
 </body>
 </html>

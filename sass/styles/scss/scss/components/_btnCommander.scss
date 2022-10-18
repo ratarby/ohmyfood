@@ -1,0 +1,39 @@
+//  btn commander
+
+
+.btn__commander{
+    @include flexColumnCenter;
+    @include paddingLRTB(18px); 
+    @include marginBottom(3px); 
+    @include backGround(#{$color-palette-2}); 
+    .button {
+      @include coLor(#{$color-white});
+      @include fontSize(16px);
+      @include fontWeight(normal);
+      @include boxShaddow(0px 5px 18px -3px #{$color-grey-1});
+      @include backGround(linear-gradient(175deg, #{$color-secondary} 5%, #{$color-primary} 100%));
+      @include borDer(#{$color-black});
+      @include bordeRadius(35px);
+      @include curSor(pointer);
+      @include paddingLRTB(15px 50px);
+      @include textDecoration(none);
+    }
+    
+    .button:hover {
+      @include backGround(linear-gradient(175deg, #{$color-secondary} 5%, #{$color-primary} 100%));
+      @include boxShaddow(0px 5px 22px -3px #{$color-grey-5});
+      @include opaCity(0.8);
+    }
+    
+    .button:active {
+    @include posiTion(relative);
+    @include Top(1px);
+    }
+    }
+    .box__commandbutton {
+    @include paddingLeft(45px);
+    @include paddingRight(45px);
+    @include marginBottom(45px);
+    @include marginTop(25px);
+    }
+  

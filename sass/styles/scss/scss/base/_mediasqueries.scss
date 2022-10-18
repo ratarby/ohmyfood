@@ -1,4 +1,4 @@
-    
+    @import "../utils/_mixins.scss";
     @media  #{$small-up} {
         .container{
             @include widTh($small);
@@ -11,6 +11,16 @@
             @include widTh($medium);
             @include heiGht(auto);
             @include marginLRTB(auto);
+            header{
+                .menu__header{
+                    @include flex;
+                    @include justifyContent(center);
+                    .leftArrow{
+                    @include transformX(-23vh);
+                    @include fontSize(1.6rem);
+                    }
+                    }
+                }
             section{
                 .back__Ground{
                     @include back__Ground;
@@ -129,12 +139,206 @@
                 }
         
         }
-        
+        .menu{
+            .menu__resto{
+            @include menu__resto;
+            .menu__resto__img{
+                @include menu__resto__img;
+            }
+            .menu__resto__description{
+                @include menu__resto__description;
+                .menu__resto__text__description{
+                    @include menu__resto__text__description;
+                    .menu__resto__title{
+                        @include menu__resto__title;
+                        .menu__resto__title{
+                            @include menu__resto__title;
+            }       
+                    }
+                }
+                .menu__btn__like__heart__alafrancaise{
+                    @include menu__btn__like__heart__alafrancaise__responsiveTablet;
+                    @include menu__btn__like__heart__lanoteenchantee__responsiveTablet;
+                    .menu__hearticones__1 {
+                        @include menu__hearticones__1__alafrancaise__responsiveTablet;
+                    }
+                    .menu__hearticones__1:hover {
+                    @include menu__hearticones__1__hover__alafrancaise__responsiveTablet;
+                    }
+                    .menu__hearticones__2 {
+                    @include menu__hearticones__2__alafrancaise__responsiveTablet;
+                    }
+                    
+                    .menu__hearticones__2:hover {
+                    @include menu__hearticones__2__hover__alafrancaise__responsiveTablet;
+                    }
+                }               
+                .menu__btn__like__heart__alafrancaise{
+                    @include menu__btn__like__heart__lanoteenchantee__responsiveTablet;
+                    .menu__hearticones__1 {
+                        @include menu__hearticones__1__alafrancaise__responsiveTablet;
+                    }
+                    .menu__hearticones__1:hover {
+                    @include menu__hearticones__1__hover__alafrancaise__responsiveTablet;
+                    }
+                    .menu__hearticones__2 {
+                    @include menu__hearticones__2__alafrancaise__responsiveTablet;
+                    }
+                    
+                    .menu__hearticones__2:hover {
+                    @include menu__hearticones__2__hover__alafrancaise__responsiveTablet;
+                    }
+                }               
+            }
+        }
+    }
+    // MENU ENTREES
+
+/*MENU 1 SECTION*/
+    .menus__entrees__plats__desserts{
+    .menu__entree{
+        @include menu__entree;
+        .menu__title{
+            @include menu__title;
+        }
+        /*  CARD 1,
+            CARD 2,
+            CARD 3  */ 
+        .sticker__menu__box__card{
+            .sticker__menu{
+                @include sticker__menu;
+            }
+            .slideInUp,
+            .slideInUp__1{
+                @include slideInUp__1;
+                .sticker__menu__description{
+                    @include sticker__menu__description;
+                    .sticker__menu__description__title{
+                        @include sticker__menu__description__title;
+                    }
+                    .sticker__menu__description__subtitle {
+                        @include sticker__menu__description__subtitle;
+                    }
+                    .sticker__menu:hover,
+                    .sticker__menu__description {
+                        @include widTh(60%);
+                    }
+                } 
+                    .sticker__menu__price{
+                        @include sticker__menu__price;
+                    }
+                    
+                    .sticker__menu__icon {
+                        @include sticker__menu__icon;
+                    }
+                    .sticker__menu__icon__check {
+                        @include sticker__menu__icon__check;
+            }
+            
+        }    
+        }
+    }
+    .menu__plat{
+        @include menu__plat;
+        .menu__title{
+            @include menu__title;
+        }
+        /*  CARD 4,
+            CARD 5,
+            CARD 6  */
+        .sticker__menu__box__card{
+            .sticker__menu{
+                @include sticker__menu;
+            }
+            .slideInUp,
+            .slideInUp__2{
+                @include slideInUp__1;
+                .sticker__menu__description{
+                    @include sticker__menu__description;
+                    .sticker__menu__description__title{
+                        @include sticker__menu__description__title;
+                    }
+                    .sticker__menu__description__subtitle {
+                        @include sticker__menu__description__subtitle;
+                    }
+                    .sticker__menu:hover,
+                    .sticker__menu__description {
+                        @include widTh(60%);
+                    }
+                } 
+                    .sticker__menu__price{
+                        @include sticker__menu__price;
+                    }
+                    
+                    .sticker__menu__icon {
+                        @include sticker__menu__icon;
+                    }
+                    .sticker__menu__icon__check {
+                        @include sticker__menu__icon__check;
+            }
+            
+        }    
+        }
+    }
+    .menu__dessert{
+        @include menu__dessert;
+        .menu__title{
+            @include menu__title;
+        }
+        /*  CARD 7,
+            CARD 8,
+            CARD 9  */
+        .sticker__menu__box__card{
+            .sticker__menu{
+                @include sticker__menu;
+            }
+            .slideInUp,
+            .slideInUp__2{
+                @include slideInUp__1;
+                .sticker__menu__description{
+                    @include sticker__menu__description;
+                    .sticker__menu__description__title{
+                        @include sticker__menu__description__title;
+                    }
+                    .sticker__menu__description__subtitle {
+                        @include sticker__menu__description__subtitle;
+                    }
+                    .sticker__menu:hover,
+                    .sticker__menu__description {
+                        @include widTh(60%);
+                    }
+                } 
+                    .sticker__menu__price{
+                        @include sticker__menu__price;
+                    }
+                    
+                    .sticker__menu__icon {
+                        @include sticker__menu__icon;
+                    }
+                    .sticker__menu__icon__check {
+                        @include sticker__menu__icon__check;
+            }
+            
+        }    
+        }
+    }
+
+}
     }    
     @media  #{$large-up} {
         .container{
             @include widTh($large);
             @include heiGht(auto);
             @include marginLRTB(auto);
+
+            header{
+                .menu__header{
+                    @include flex;
+                    @include justifyContent(center);
+                    .leftArrow{
+                        @include Right(#{700vh})
+                    }
+                    }
+                }
         }
     }   
