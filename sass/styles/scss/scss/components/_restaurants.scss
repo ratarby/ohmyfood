@@ -1,15 +1,20 @@
 
 main{    
     section{
+        @include marginLRTB(0rem 0rem);
+        
         .back__Ground{
             @include back__Ground;
             .title__resto{
                 @include title__resto;
                 .text__title__resto{
-                    @include fontWeight($fontWeight:600);
+                    @include fontWeight(600);
                 }
             }
             .box__1{
+                @include flexColumnCenter;
+                @include marginLRTB(0);
+                @include paddingLeft(.2rem);
                 *,
                 .card{
                 @include card;
@@ -59,6 +64,10 @@ main{
             }
         }
             .box__2{
+                @include flexColumnCenter;
+                @include marginLRTB(0);
+                @include paddingLeft(.2rem);
+
                 *,
                 .card{
                 @include card;

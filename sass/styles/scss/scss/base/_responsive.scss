@@ -2,9 +2,9 @@ $small: 375px!default;
 $medium: 768px!default;
 $large: 992px!default;
 
-$small-up:"only screen and (min-width: #{$small})";
-$small-down:"only screen and (max-width: #{$small})";
-$medium-up:"only screen and (min-width: #{$medium})";
-$medium-down:"only screen and (max-width: #{$medium})";
-$large-up:"only screen and (min-width: #{$large})";
-$large-down:"only screen and (max-width: #{$large})";
+$small-up:"all and (min-width: #{$small})";
+$small-down:"all and (max-width: #{$small})";
+$medium-up:"all and (min-width: #{$medium})";
+$medium-down:"all and (max-width: #{$medium})";
+$large-up:"all and (min-width: #{$large})";
+$large-down:"all and (max-width: #{$large})";

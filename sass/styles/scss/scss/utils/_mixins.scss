@@ -9,6 +9,12 @@
     display: flex;
     flex-direction: row;
 }
+@mixin flexRowCenter{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
 @mixin flexCenter{
     display: flex;
     justify-content: center;
@@ -138,9 +144,11 @@ justify-content: space-around;
 }
 // transform
 @mixin transformX($transformX) {
-    transform:  translateX($transformX);
-    -webkit-transform:  translateX($transformX);
-
+    transform:  translateX(#{$transformX});
+    -webkit-transform:  translateX(#{$transformX});
+    -moz-transform:  translateX(#{$transformX});
+    -ms-transform:  translateX(#{$transformX});
+    -o-transform:  translateX(#{$transformX});
 }
 @mixin transformY($transformY) {
     transform:  translateY($transformY);
@@ -177,8 +185,6 @@ justify-content: space-around;
 @mixin bordeRadius($bordeRadius) {
     border-radius: #{$bordeRadius};
     -webkit-border-radius: #{$bordeRadius};
-    -moz-border-radius: #{$bordeRadius};
-    -o-border-radius: #{$bordeRadius};
 
 }
 // box-shaddow
@@ -253,11 +259,10 @@ justify-content: space-around;
 @mixin animaTion($animaTion){
     animation: #{$animaTion};
     -webkit-animation: #{$animaTion};
-    -moz-transition: #{$animaTion};
 }
 @mixin animationDelay($animationDelay){
     animation-delay: #{$animationDelay};
-    -moz-transition: #{$animationDelay};
+    -webkit-animation: #{$animationDelay};
 
 }
 // media queries
@@ -449,7 +454,7 @@ justify-content: space-around;
 /* Section Fonctionnement*/
 @mixin fonctionnement {
     @include paddingBottom(1.4rem);
-    @include paddingLeft(0);
+    @include paddingLeft(.2rem);
     @include paddingRight(1rem);
     @include transformX(6px);
 }
@@ -527,12 +532,15 @@ justify-content: space-around;
 @mixin back__Ground {
     @include backGround(#{$color-grey-2});
     @include paddingBottom(2.6rem);
+    @include paddingLRTB(.1rem .1rem .1rem .1rem);
 }
 
 @mixin card{
+    @include alignItems(center);
     @include textDecoration(none);
     @include coLor(#{$color-black});
     @include widTh(100%);
+    
 }
 @mixin new{
     @include posiTion(relative);
@@ -649,14 +657,15 @@ justify-content: space-around;
 }
 
 @mixin menu__resto__description{
-    @include flex;
+    @include flexBetween;
     @include posiTion(absolute);
     @include backGround(#{$color-white});
-    @include paddingLRTB(10px 0px 10px 20px);
-    @include marginLRTB(0px 0px 0px 0px);
+    @include paddingLRTB(0px 4.1rem 0rem 1.25rem);
+    @include marginLRTB(0rem 0rem 0rem 0rem);
     @include bordeRadius( 2.5rem 2.5rem 0 0 );
     @include borderTop(none);
-    @include widTh(375px);
+    @include widTh(100%);
+    
     
 }
 @mixin menu__resto__text__description{
@@ -677,10 +686,8 @@ justify-content: space-around;
 }
 
 @mixin menu__btn__like__heart{
-   
     @include posiTion(relative);
-    @include Top(2rem);
-    @include transformX(1rem);
+    @include Top(.1rem);
 }
 
 
@@ -713,147 +720,6 @@ justify-content: space-around;
 @mixin menu__hearticones__2__hover{
     @include opaCity(0);
 }
-// // icone heart__alafrancaise__responsiveTablet
-// @mixin menu__btn__like__heart__alafrancaise__responsiveTablet{
-//     @include posiTion(relative);
-//     @include Top(2rem);
-//     @include Right(-39.6vh!important);
-// }
-// @mixin menu__hearticones__1__alafrancaise__responsiveTablet {
-//     @include posiTion(absolute);
-//     @include fontSize(1.5rem);
-//     @include backgroundImage(linear-gradient(to top, #{$color-secondary}, #{$color-primary}));
-//     @include Top(3%);
-//     @include transformX(8%);
-//     @include backgroundClip(text);
-//     @include coLor(transparent);
-//     @include backgroundPosition(0 24px);
-//     @include heiGht(24px);
-//     @include curSor(pointer);
-//     @include backgroundRepeat(no-repeat);
-//     @include transiTion(background-position 1s);
-// }
-// @mixin menu__hearticones__1__hover__alafrancaise__responsiveTablet{
-//     @include backgroundPosition(0 0px);
-// }
-// @mixin menu__hearticones__2__alafrancaise__responsiveTablet{
-//     @include fontSize(1.5rem);
-//     @include Top(0%);
-//     @include Right(0%);
-//     @include coLor(#{$color-black});
-//     @include opaCity(1);
-//     @include posiTion(absolute);
-//     @include transiTion(opacity 1.5s);
-// }
-// @mixin menu__hearticones__2__hover__alafrancaise__responsiveTablet{
-//     @include opaCity(0);
-// }
-// // icone heart__lanoteenchantee__responsiveTablet
-// @mixin menu__btn__like__heart__lanoteenchantee__responsiveTablet{
-//     @include posiTion(relative);
-//     @include Top(2rem);
-//     @include Right(-2vh);
-// }
-// @mixin menu__hearticones__1__lanoteenchantee__responsiveTablet {
-//     @include posiTion(absolute);
-//     @include fontSize(1.5rem);
-//     @include backgroundImage(linear-gradient(to top, #{$color-secondary}, #{$color-primary}));
-//     @include Top(3%);
-//     @include transformX(8%);
-//     @include backgroundClip(text);
-//     @include coLor(transparent);
-//     @include backgroundPosition(0 24px);
-//     @include heiGht(24px);
-//     @include curSor(pointer);
-//     @include backgroundRepeat(no-repeat);
-//     @include transiTion(background-position 1s);
-// }
-// @mixin menu__hearticones__1__hover__lanoteenchantee__responsiveTablet{
-//     @include backgroundPosition(0 0px);
-// }
-// @mixin menu__hearticones__2__lanoteenchantee__responsiveTablet{
-//     @include fontSize(1.5rem);
-//     @include Top(0%);
-//     @include Right(0%);
-//     @include coLor(#{$color-black});
-//     @include opaCity(1);
-//     @include posiTion(absolute);
-//     @include transiTion(opacity 1.5s);
-// }
-// @mixin menu__hearticones__2__hover__alafrancaise__responsiveTablet{
-//     @include opaCity(0);
-// }
-// // icone heart__lapalettedugout__responsiveTablet
-// @mixin menu__btn__like__heart__lapalettedugout__responsiveTablet{
-//     @include posiTion(relative);
-//     @include Top(2rem);
-//     @include Right(-29.5vh!important);
-// }
-// @mixin menu__hearticones__1__lapalettedugout__responsiveTablet {
-//     @include posiTion(absolute);
-//     @include fontSize(1.5rem);
-//     @include backgroundImage(linear-gradient(to top, #{$color-secondary}, #{$color-primary}));
-//     @include Top(3%);
-//     @include transformX(8%);
-//     @include backgroundClip(text);
-//     @include coLor(transparent);
-//     @include backgroundPosition(0 24px);
-//     @include heiGht(24px);
-//     @include curSor(pointer);
-//     @include backgroundRepeat(no-repeat);
-//     @include transiTion(background-position 1s);
-// }
-// @mixin menu__hearticones__1__hover__lapalettedugout__responsiveTablet{
-//     @include backgroundPosition(0 0px);
-// }
-// @mixin menu__hearticones__2__lapalettedugout__responsiveTablet{
-//     @include fontSize(1.5rem);
-//     @include Top(0%);
-//     @include Right(0%);
-//     @include coLor(#{$color-black});
-//     @include opaCity(1);
-//     @include posiTion(absolute);
-//     @include transiTion(opacity 1.5s);
-// }
-// @mixin menu__hearticones__2__hover__lapalettedugout__responsiveTablet{
-//     @include opaCity(0);
-// }
-// // icone heart__ledelicedessens__responsiveTablet
-// @mixin menu__btn__like__heart__ledelicedessens__responsiveTablet{
-//     @include posiTion(relative);
-//     @include Top(2rem);
-//     @include Right(-29.5vh!important);
-// }
-// @mixin menu__hearticones__1__ledelicedessens__responsiveTablet {
-//     @include posiTion(absolute);
-//     @include fontSize(1.5rem);
-//     @include backgroundImage(linear-gradient(to top, #{$color-secondary}, #{$color-primary}));
-//     @include Top(3%);
-//     @include transformX(8%);
-//     @include backgroundClip(text);
-//     @include coLor(transparent);
-//     @include backgroundPosition(0 24px);
-//     @include heiGht(24px);
-//     @include curSor(pointer);
-//     @include backgroundRepeat(no-repeat);
-//     @include transiTion(background-position 1s);
-// }
-// @mixin menu__hearticones__1__hover__ledelicedessens__responsiveTablet{
-//     @include backgroundPosition(0 0px);
-// }
-// @mixin menu__hearticones__2__ledelicedessens__responsiveTablet{
-//     @include fontSize(1.5rem);
-//     @include Top(0%);
-//     @include Right(0%);
-//     @include coLor(#{$color-black});
-//     @include opaCity(1);
-//     @include posiTion(absolute);
-//     @include transiTion(opacity 1.5s);
-// }
-// @mixin menu__hearticones__2__hover__ledelicedessens__responsiveTablet{
-//     @include opaCity(0);
-// }
-
 
 
 /*===========================================*/ 

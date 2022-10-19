@@ -1,142 +1,143 @@
     @import "../utils/_mixins.scss";
     @import "../base/_responsive";
-    @media  #{$small-up} {
+    @media   all and (min-width: 375px) {
         .container{
-            @include widTh($small);
+            @include widTh(#{$small-up});
             @include heiGht(auto);
             @include marginLRTB(auto);
         }
     }    
-    @media  #{$medium-up} {
+    @media  all and (min-width: 768px) {
         .container{
-            @include widTh($medium);
+            @include widTh(#{$medium-up});
             @include heiGht(auto);
-            @include marginLRTB(0);
+            @include marginLRTB(auto);
+            @include backGround(#{$color-grey-2});
+
             header{
                 .menu__header{
                     @include flex;
                     @include justifyContent(center);
                     .leftArrow{
-                    @include transformX(-23vh);
+                    @include transformX(-5rem);
                     @include fontSize(1.6rem);
+                    @include transformX(-24.8vh);
                     }
                     }
                 }
-            section{
-                .back__Ground{
-                    @include back__Ground;
-                    .title__resto{
-                        @include title__resto;
-                        .text__title__resto{
-                            @include fontWeight(600);
-                        }
-                    }
-                    .box__1{
-                        @include flex;
-                        @include paddingBottom(.4rem);
-                        @include paddingLeft(.8rem);
-                        @include paddingRight(.8rem);
-                        *,
-                        .card{
-                        @include card;
-                        .new{
-                            @include new;
-                        }
-                        .new::before{
-                            @include new__before;
-                        }   
-                        .card__resto{
-                            @include card__resto;
-                            .card__resto__img{
-                                @include card__resto__img;
+                main{    
+                    section{
+                        .back__Ground{
+                            @include back__Ground;
+                            .title__resto{
+                                @include title__resto;
+                                .text__title__resto{
+                                    @include fontWeight($fontWeight:600);
                                 }
-                            .card__resto__description{
-                                @include card__resto__description;
-                                .card__resto__text__description{
-                                    @include card__resto__text__description;
-                                    .card__resto__title{
-                                        @include card__resto__title;
-                                        .resto__title{
-                                            @include resto__title;
+                            }
+                            .box__1{
+                                @include flexRowCenter;
+                                *,
+                                .card{
+                                @include card;
+                                .new{
+                                    @include new;
+                                }
+                                .new::before{
+                                    @include new__before;
+                                }   
+                                .card__resto{
+                                    @include card__resto;
+                                    .card__resto__img{
+                                        @include card__resto__img;
+                                    }
+                                    .card__resto__description{
+                                        @include card__resto__description;
+                                        .card__resto__text__description{
+                                            @include card__resto__text__description;
+                                            .card__resto__title{
+                                                @include card__resto__title;
+                                                .resto__title{
+                                                    @include resto__title;
+                                                }
+                                                .resto__subtitle{
+                                                    @include resto__subtitle;
+                                                }
+                                            }
                                         }
-                                        .resto__subtitle{
-                                            @include resto__subtitle;
-                                        }
+                                        .card__btn__like__heart{
+                                            @include card__btn__like__heart;
+                                            .hearticones__1 {
+                                                @include hearticones__1;
+                                            }
+                                            .hearticones__1:hover {
+                                            @include hearticones__1__hover;
+                                            }
+                                            .hearticones__2 {
+                                            @include hearticones__2;
+                                            }
+                                            
+                                            .hearticones__2:hover {
+                                            @include hearticones__2__hover;
+                                            }
+                                        }                                   
                                     }
                                 }
-                                .card__btn__like__heart{
-                                    @include card__btn__like__heart;
-                                    .hearticones__1 {
-                                        @include hearticones__1;
+                            }
+                        }
+                            .box__2{
+                                @include flexRowCenter;
+                                *,
+                                .card{
+                                @include card;
+                                .new{
+                                    @include new;
+                                }
+                                .new::before{
+                                    @include new__before;
+                                }   
+                                .card__resto{
+                                    @include card__resto;
+                                    .card__resto__img{
+                                        @include card__resto__img;
+                                        }
+                                    .card__resto__description{
+                                        @include card__resto__description;
+                                        .card__resto__text__description{
+                                            @include card__resto__text__description;
+                                            .card__resto__title{
+                                                @include card__resto__title;
+                                                .resto__title{
+                                                    @include resto__title;
+                                                }
+                                                .resto__subtitle{
+                                                    @include resto__subtitle;
+                                                }
+                                            }
+                                        }
+                                        .card__btn__like__heart{
+                                            @include card__btn__like__heart;
+                                            .hearticones__1 {
+                                                @include hearticones__1;
+                                            }
+                                            .hearticones__1:hover {
+                                            @include hearticones__1__hover;
+                                            }
+                                            .hearticones__2 {
+                                            @include hearticones__2;
+                                            }
+                                            
+                                            .hearticones__2:hover {
+                                            @include hearticones__2__hover;
+                                            }
+                                            }                                   
+                                        }
                                     }
-                                    .hearticones__1:hover {
-                                    @include hearticones__1__hover;
-                                    }
-                                    .hearticones__2 {
-                                    @include hearticones__2;
-                                    }
-                                    
-                                    .hearticones__2:hover {
-                                    @include hearticones__2__hover;
-                                    }
-                                    }                                   
                                 }
                             }
                         }
                     }
-                    .box__2{
-                        @include flex;
-                        @include paddingTop(.4rem);
-                        @include paddingLeft(.8rem);
-                        @include paddingRight(.8rem);
-                        *,
-                        .card{
-                        @include card;
-                        .new{
-                            @include new;
-                        }
-                        .new::before{
-                            @include new__before;
-                        }   
-                        .card__resto{
-                            @include card__resto;
-                            .card__resto__img{
-                                @include card__resto__img;
-                                }
-                            .card__resto__description{
-                                @include card__resto__description;
-                                .card__resto__text__description{
-                                    @include card__resto__text__description;
-                                    .card__resto__title{
-                                        @include card__resto__title;
-                                        .resto__title{
-                                            @include resto__title;
-                                        }
-                                        .resto__subtitle{
-                                            @include resto__subtitle;
-                                        }
-                                    }
-                                }
-                                .card__btn__like__heart{
-                                    @include card__btn__like__heart;
-                                    .hearticones__1 {
-                                        @include hearticones__1;
-                                    }
-                                    .hearticones__1:hover {
-                                    @include hearticones__1__hover;
-                                    }
-                                    .hearticones__2 {
-                                    @include hearticones__2;
-                                    }
-                                    .hearticones__2:hover {
-                                    @include hearticones__2__hover;
-                                    }
-                                    }                                   
-                                }
-                            }
-                        }
-                    }
-                    }
+
                 }
                 .menu{
                     .menu__resto{
@@ -146,8 +147,8 @@
                     }
                     .menu__resto__description{
                         @include menu__resto__description;
-                        @include Top(21.5%);
-                        @include widTh(768px);
+                        @include paddingLRTB(0rem 5.4rem 0rem 1.25rem);
+                        @include backGround(#{$color-grey-2});
                         .menu__resto__text__description{
                             @include menu__resto__text__description;
                             .menu__resto__title{
@@ -159,7 +160,8 @@
                         }
                         .menu__btn__like__heart{
                             @include menu__btn__like__heart;
-                            
+                            @include Top(.3rem);
+
                             .menu__hearticones__1 {
                                 @include menu__hearticones__1;
                             }
@@ -177,9 +179,15 @@
                     }
                 }
             }
+            // MENU ENTREES
+        
+        /*MENU 1 SECTION*/
             .menus__entrees__plats__desserts{
+                @include marginBottom(-0.625rem);
+                @include paddingLRTB(1rem 1rem 0rem 1rem);
                 .menu__entree{
                     @include menu__entree;
+                    @include backGround(#{$color-grey-2});
                     .menu__title{
                         @include menu__title;
                     }
@@ -222,6 +230,8 @@
                 }
                 .menu__plat{
                     @include menu__plat;
+                    @include backGround(#{$color-grey-2});
+
                     .menu__title{
                         @include menu__title;
                     }
@@ -304,166 +314,158 @@
                     }    
                     }
                 }
-            }
+        
         }
-    }    
-    @media  #{$large-up} {
-        .container{
-            @include widTh($large);
-            @include heiGht(auto);
-            @include marginLRTB(auto);
-            @include backGround(#{$color-grey-2});
+    }
 
-            header{
-                .menu__header{
-                    @include flex;
-                    @include justifyContent(center);
-                    .leftArrow{
-                        @include transformX(-380px);
-                }
-                    }
-                }
-                section{
-                    .fonctionnement{
-                        @include fonctionnement;
-                        .title__fonctionnement{
-                            @include title__fonctionnement;
-                            .text__title__fonctionnement{
-                                @include text__title__fonctionnement;
-                                }
-                    }
-                    }
-                }                    
-                section{
-                    .back__Ground{
-                        @include back__Ground;
-                        .title__resto{
-                            @include title__resto;
-                            .text__title__resto{
-                                @include fontWeight(600);
-                            }
+    
+}
+    @media  (min-width: 992px) {
+            .container{
+                @include widTh(auto #{$large-up} );
+                @include heiGht(auto);
+                @include marginLRTB(auto);
+                @include backGround(#{$color-grey-2});
+
+                header{
+                    .menu__header{
+                        @include flex;
+                        @include justifyContent(center);
+                        .leftArrow{
+                        @include transformX(-5rem);
+                        @include fontSize(1.6rem);
+                        @include transformX(-24.8vh);
+                        @include transformX(-34vh);
                         }
-                        .box__1{
-                            @include flex;
-                            @include paddingBottom(.4rem);
-                            @include paddingLeft(.8rem);
-                            @include paddingRight(.8rem);
-                            *,
-                            .card{
-                            @include card;
-                            .new{
-                                @include new;
-                            }
-                            .new::before{
-                                @include new__before;
-                            }   
-                            .card__resto{
-                                @include card__resto;
-                                .card__resto__img{
-                                    @include card__resto__img;
-                                    }
-                                .card__resto__description{
-                                    @include card__resto__description;
-                                    .card__resto__text__description{
-                                        @include card__resto__text__description;
-                                        .card__resto__title{
-                                            @include card__resto__title;
-                                            .resto__title{
-                                                @include resto__title;
-                                            }
-                                            .resto__subtitle{
-                                                @include resto__subtitle;
-                                            }
-                                        }
-                                    }
-                                    .card__btn__like__heart{
-                                        @include card__btn__like__heart;
-                                        .hearticones__1 {
-                                            @include hearticones__1;
-                                        }
-                                        .hearticones__1:hover {
-                                        @include hearticones__1__hover;
-                                        }
-                                        .hearticones__2 {
-                                        @include hearticones__2;
-                                        }
-                                        
-                                        .hearticones__2:hover {
-                                        @include hearticones__2__hover;
-                                        }
-                                        }                                   
+                        }
+                    }
+
+                    main{    
+                        section{
+                            .back__Ground{
+                                @include marginLRTB(0rem 1rem);
+                                @include back__Ground;
+                                .title__resto{
+                                    @include title__resto;
+                                    .text__title__resto{
+                                        @include fontWeight($fontWeight:600);
                                     }
                                 }
-                            }
-                        }
-                        .box__2{
-                            @include flex;
-                            @include paddingTop(.4rem);
-                            @include paddingLeft(.8rem);
-                            @include paddingRight(.8rem);
-                            *,
-                            .card{
-                            @include card;
-                            .new{
-                                @include new;
-                            }
-                            .new::before{
-                                @include new__before;
-                            }   
-                            .card__resto{
-                                @include card__resto;
-                                .card__resto__img{
-                                    @include card__resto__img;
+                                .box__1{
+                                    @include flexRowCenter;
+                                    *,
+                                    .card{
+                                    @include card;
+                                    .new{
+                                        @include new;
                                     }
-                                .card__resto__description{
-                                    @include card__resto__description;
-                                    .card__resto__text__description{
-                                        @include card__resto__text__description;
-                                        .card__resto__title{
-                                            @include card__resto__title;
-                                            .resto__title{
-                                                @include resto__title;
+                                    .new::before{
+                                        @include new__before;
+                                    }   
+                                    .card__resto{
+                                        @include card__resto;
+                                        .card__resto__img{
+                                            @include card__resto__img;
+                                        }
+                                        .card__resto__description{
+                                            @include card__resto__description;
+                                            @include backGround(#{$color-grey-2});
+
+                                            .card__resto__text__description{
+                                                @include card__resto__text__description;
+                                                .card__resto__title{
+                                                    @include card__resto__title;
+                                                    .resto__title{
+                                                        @include resto__title;
+                                                    }
+                                                    .resto__subtitle{
+                                                        @include resto__subtitle;
+                                                    }
+                                                }
                                             }
-                                            .resto__subtitle{
-                                                @include resto__subtitle;
-                                            }
+                                            .card__btn__like__heart{
+                                                @include card__btn__like__heart;
+                                                .hearticones__1 {
+                                                    @include hearticones__1;
+                                                }
+                                                .hearticones__1:hover {
+                                                @include hearticones__1__hover;
+                                                }
+                                                .hearticones__2 {
+                                                @include hearticones__2;
+                                                }
+                                                
+                                                .hearticones__2:hover {
+                                                @include hearticones__2__hover;
+                                                }
+                                            }                                   
                                         }
-                                    }
-                                    .card__btn__like__heart{
-                                        @include card__btn__like__heart;
-                                        .hearticones__1 {
-                                            @include hearticones__1;
-                                        }
-                                        .hearticones__1:hover {
-                                        @include hearticones__1__hover;
-                                        }
-                                        .hearticones__2 {
-                                        @include hearticones__2;
-                                        }
-                                        .hearticones__2:hover {
-                                        @include hearticones__2__hover;
-                                        }
-                                        }                                   
                                     }
                                 }
                             }
+                                .box__2{
+                                    @include flexRowCenter;
+                                    *,
+                                    .card{
+                                    @include card;
+                                    .new{
+                                        @include new;
+                                    }
+                                    .new::before{
+                                        @include new__before;
+                                    }   
+                                    .card__resto{
+                                        @include card__resto;
+                                        .card__resto__img{
+                                            @include card__resto__img;
+                                            }
+                                        .card__resto__description{
+                                            @include card__resto__description;
+                                            .card__resto__text__description{
+                                                @include card__resto__text__description;
+                                                .card__resto__title{
+                                                    @include card__resto__title;
+                                                    .resto__title{
+                                                        @include resto__title;
+                                                    }
+                                                    .resto__subtitle{
+                                                        @include resto__subtitle;
+                                                    }
+                                                }
+                                            }
+                                            .card__btn__like__heart{
+                                                @include card__btn__like__heart;
+                                                .hearticones__1 {
+                                                    @include hearticones__1;
+                                                }
+                                                .hearticones__1:hover {
+                                                @include hearticones__1__hover;
+                                                }
+                                                .hearticones__2 {
+                                                @include hearticones__2;
+                                                }
+                                                
+                                                .hearticones__2:hover {
+                                                @include hearticones__2__hover;
+                                                }
+                                                }                                   
+                                            }
+                                        }
+                                    }
+                                }
+                            }
                         }
-                        }
+
                     }
                     .menu{
                         .menu__resto{
                         @include menu__resto;
                         .menu__resto__img{
                             @include menu__resto__img;
-                            @include paddingLeft(1px);
-                            @include paddingRight(0);
-                            @include heiGht(380px)
                         }
                         .menu__resto__description{
                             @include menu__resto__description;
-                            @include Top(31.5%);
-                            @include widTh(992px);
-                            @include paddingRight(0px);
+                            @include paddingLRTB(0rem 5.4rem 0rem 1.25rem);
                             @include backGround(#{$color-grey-2});
                             .menu__resto__text__description{
                                 @include menu__resto__text__description;
@@ -471,16 +473,13 @@
                                     @include menu__resto__title;
                                     .menu__resto__title{
                                         @include menu__resto__title;
-                                        @include paddingTop(20px);
                         }       
                                 }
                             }
                             .menu__btn__like__heart{
                                 @include menu__btn__like__heart;
-                                @include Top(4.49vh);
-                                @include transformX(55vh);
-                                @include paddingRight(20px);
-                                
+                                @include Top(.3rem);
+
                                 .menu__hearticones__1 {
                                     @include menu__hearticones__1;
                                 }
@@ -497,23 +496,79 @@
                             }               
                         }
                     }
+                    }
+                section{
+                    .fonctionnement{
+                        @include fonctionnement;
+                        .title__fonctionnement{
+                            @include flexCenter;
+                            @include title__fonctionnement;
+                            .text__title__fonctionnement{
+                                @include text__title__fonctionnement;
+                            }
+                        }
+                        .order{
+                            @include order;
+                            @include marginLeft(1rem);
+                            .order__box{
+                                @include flexRow;
+                            .order__1{
+                                @include widTh(31.95%);
+                                .order__list{
+                                    @include order__list;
+                                    .list__resto{
+                                        @include list__resto;
+                                        .fa-mobile-alt{
+                                            @include transform_icons__mobile;                                        
+                                        }
+                                    }
+                                }
+                                .order__list:hover{
+                                    @include order__list__hover;
+                                    }              
+                            
+                                .list__menu{
+                                    .list__icon{
+                                        @include transform_icons;
+                                    }
+                                }
+                                .list__degust{
+                                    .store__icon{
+                                        @include transform_icons;
+                                    
+                                    }
+                                }
+                                .order__list::before{
+                                    @include btn__menu__couleur__violet;
+                                }
+                            }
+                        }
+                    } 
+                    }
                 }
+
+                // MENU ENTREES PLAT DESSERTS
+            
+        
                 .menus__entrees__plats__desserts{
+                    @include marginBottom(-0.625rem);
+                    @include paddingLRTB(1rem 1rem 0rem 1rem);
                     @include flex;
+                    @include backGround(#{$color-grey-2});
+                    @include transformY(1rem);
+
                     .menu__entree{
                         @include menu__entree;
                         @include widTh(33.33%);
-                        @include transformY(35%);
-                        @include paddingBottom(63px);
+                        @include backGround(#{$color-grey-2});
+
                         .menu__title{
                             @include menu__title;
-                            @include marginBottom(30px);
                         }
                         /*  CARD 1,
                             CARD 2,
                             CARD 3  */ 
                         .sticker__menu__box__card{
-                            @include paddingBottom(3px);
                             .sticker__menu{
                                 @include sticker__menu;
                             }
@@ -550,17 +605,13 @@
                     .menu__plat{
                         @include menu__plat;
                         @include widTh(33.33%);
-                        @include transformY(35%);
-                        @include paddingBottom(63px);
                         .menu__title{
                             @include menu__title;
-                            @include marginBottom(30px);
                         }
                         /*  CARD 4,
                             CARD 5,
                             CARD 6  */
                         .sticker__menu__box__card{
-                            @include paddingBottom(3px);
                             .sticker__menu{
                                 @include sticker__menu;
                             }
@@ -597,18 +648,13 @@
                     .menu__dessert{
                         @include menu__dessert;
                         @include widTh(33.33%);
-                        @include transformY(35%);
-                        @include paddingBottom(63px);
                         .menu__title{
-                        @include menu__title;
-                        @include marginBottom(30px);
-                        
+                            @include menu__title;
                         }
                         /*  CARD 7,
                             CARD 8,
                             CARD 9  */
                         .sticker__menu__box__card{
-                            @include paddingBottom(3px);
                             .sticker__menu{
                                 @include sticker__menu;
                             }
@@ -617,7 +663,6 @@
                                 @include slideInUp__1;
                                 .sticker__menu__description{
                                     @include sticker__menu__description;
-                                    
                                     .sticker__menu__description__title{
                                         @include sticker__menu__description__title;
                                     }
@@ -643,75 +688,81 @@
                         }    
                         }
                     }
+            
+            }
+            // btn commander
+            .btn__commander{
+                @include flexColumnCenter;
+                @include paddingLRTB(18px); 
+                @include marginBottom(3px); 
+                @include backGround(#{$color-grey-2});
+                @include transformY(3rem); 
+                .button {
+                @include coLor(#{$color-white});
+                @include fontSize(16px);
+                @include fontWeight(normal);
+                @include boxShaddow(0px 5px 18px -3px #{$color-grey-1});
+                @include backGround(linear-gradient(175deg, #{$color-secondary} 5%, #{$color-primary} 100%));
+                @include borDer(#{$color-black});
+                @include bordeRadius(35px);
+                @include curSor(pointer);
+                @include paddingLRTB(15px 50px);
+                @include textDecoration(none);
                 }
-                .foot{
-                    @include foot;
-                    @include transformY(100%);
-                    .foot__con{
-                        @include flexColumn;
-                        .foot__logo{
-                            @include footLogo;
-                            .foot__logo__title{
-                                @include foot__logo__title;
-                            }
-                        }
-                        *,
-                        .foot__list{
-                            @include foot__list;
-                            .text__1{ 
-                                @include footList;
-                            }
-                            .foot__list__textA{
-                                .foot__link__icon{
-                                    .text__1{
-                                        @include text__1;
-                                    }
-                                }
-                                .foot__link__icon{
-                                    .text__2{
-                                        @include text__2;
-                                    }
-                                }
-                            }
-                            
+                
+                .button:hover {
+                @include backGround(linear-gradient(175deg, #{$color-secondary} 5%, #{$color-primary} 100%));
+                @include boxShaddow(0px 5px 22px -3px #{$color-grey-5});
+                @include opaCity(0.8);
+                }
+                
+                .button:active {
+                @include posiTion(relative);
+                @include Top(1px);
+                }
+                }
+                .box__commandbutton {
+                @include paddingLeft(45px);
+                @include paddingRight(45px);
+                @include marginBottom(45px);
+                @include marginTop(25px);
+                }
+            
+
+            .foot{
+                @include foot;
+                @include transformY(16vh);
+
+                .foot__con{
+                    @include flexColumn;
+                    .foot__logo{
+                        @include footLogo;
+                        .foot__logo__title{
+                            @include foot__logo__title;
                         }
                     }
-                }    
-        }
-        .btn__commander{
-            @include flexColumnCenter;
-            @include backGround(#{$color-grey-2});
-            @include transformY(6.2rem);
+                    *,
+                    .foot__list{
+                        @include foot__list;
+                        .text__1{ 
+                            @include footList;
+                        }
+                        .foot__list__textA{
+                            .foot__link__icon{
+                                .text__1{
+                                    @include text__1;
+                                }
+                            }
+                            .foot__link__icon{
+                                .text__2{
+                                    @include text__2;
+                                }
+                            }
+                        }
+                        
+                    }
+                }
+            }
 
-            .button {
-            @include coLor(#{$color-white});
-            @include fontSize(16px);
-            @include fontWeight(normal);
-            @include boxShaddow(0px 5px 18px -3px #{$color-grey-1});
-            @include backGround(linear-gradient(175deg, #{$color-secondary} 5%, #{$color-primary} 100%));
-            @include borDer(#{$color-black});
-            @include bordeRadius(35px);
-            @include curSor(pointer);
-            @include paddingLRTB(15px 50px);
-            @include textDecoration(none);
-            }
-            
-            .button:hover {
-            @include backGround(linear-gradient(175deg, #{$color-secondary} 5%, #{$color-primary} 100%));
-            @include boxShaddow(0px 5px 22px -3px #{$color-grey-5});
-            @include opaCity(0.8);
-            }
-            
-            .button:active {
-            @include posiTion(relative);
-            @include Top(1px);
-            }
-            }
-            .box__commandbutton {
-            @include paddingLeft(45px);
-            @include paddingRight(45px);
-            @include marginBottom(20px);
-            @include marginTop(25px);
-            }
-        
-    }   
+        }   
+        }
