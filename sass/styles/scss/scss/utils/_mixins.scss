@@ -146,12 +146,15 @@ justify-content: space-around;
     transform:  translateY($transformY);
     -webkit-transform:  translateY($transformY);
 }
+@mixin scaLe($scaLe) {
+    transform:  scale($scaLe);
+    -webkit-transform:  scale($scaLe);
+}
 
 @mixin transformRotate($transformRotate){
     transform: rotate($transformRotate);
     -webkit-transform: rotate($transformRotate);
 }
-
 
 
 // transition
@@ -257,8 +260,26 @@ justify-content: space-around;
     -moz-transition: #{$animationDelay};
 
 }
+// media queries
+// $breakpoints arguments :
+// - mobile
+// - tablet
+// - desktop
 
-
+@mixin respond($breakpont){
+    @if $breakpoint == mobile {
+        @media (max-width: 23.4375rem) { @content}; //375px
+    }
+    @if $breakpoint == tablet {
+        @media (max-width: 768px) {@content};
+    }
+    @if $breakpoint == desktop {
+        @media (max-width: 992px) {@content};
+    }
+    @if $breakpoint == big-desktop {
+        @media (min-width: 900px) {@content};
+    }
+}
 
 
 // COUNTER (section & increment)
@@ -330,6 +351,8 @@ justify-content: space-around;
     @include widTh(1.2rem);
     @include marginRight(0.5rem);
 }
+
+
 
 
                     /*page d'accueil*/ 
@@ -568,6 +591,7 @@ justify-content: space-around;
     @include fontWeight(lighter);
     @include lineHeight(24px);
 }
+// btn__like__heart
 @mixin card__btn__like__heart{
     @include posiTion(relative);
 }
@@ -625,14 +649,15 @@ justify-content: space-around;
 }
 
 @mixin menu__resto__description{
-    @include flexRow;
+    @include flex;
     @include posiTion(absolute);
     @include backGround(#{$color-white});
-    @include paddingLRTB(0px 0px 20px 20px);
+    @include paddingLRTB(10px 0px 10px 20px);
+    @include marginLRTB(0px 0px 0px 0px);
     @include bordeRadius( 2.5rem 2.5rem 0 0 );
     @include borderTop(none);
-    @include widTh(100%);
-    @include Top(21.5%);
+    @include widTh(375px);
+    
 }
 @mixin menu__resto__text__description{
     @include justifyContent(space-between);
@@ -648,36 +673,15 @@ justify-content: space-around;
     @include fontSize(1.8rem);
     @include fontWeight(500);
     @include marginBottom(18px);
-
+    
 }
-// icone heart__alafrançaise
-@mixin menu__btn__like__heart__alafrancaise{
+
+@mixin menu__btn__like__heart{
+   
     @include posiTion(relative);
     @include Top(2rem);
-    @include Right(-5.1rem);
+    @include transformX(1rem);
 }
-
-// icone heart__lanoteenchantee
-@mixin menu__btn__like__heart__lanoteenchantee{
-    @include posiTion(relative);
-    @include Top(2rem);
-    @include Right(-1.1rem);
-}
-// icone heart__lapalettedugout
-@mixin menu__btn__like__heart__lapalettedugout{
-    @include posiTion(relative);
-    @include Top(2rem);
-    @include Right(-1.5rem);
-}
-// icone heart__ledelicedessens
-@mixin menu__btn__like__heart__ledelicedessens{
-    @include posiTion(relative);
-    @include Top(2rem);
-    @include Right(-1.5rem);
-}
-
-
-
 
 
 @mixin menu__hearticones__1 {
@@ -709,146 +713,146 @@ justify-content: space-around;
 @mixin menu__hearticones__2__hover{
     @include opaCity(0);
 }
-// icone heart__alafrancaise__responsiveTablet
-@mixin menu__btn__like__heart__alafrancaise__responsiveTablet{
-    @include posiTion(relative);
-    @include Top(2rem);
-    @include Right(-39.6vh!important);
-}
-@mixin menu__hearticones__1__alafrancaise__responsiveTablet {
-    @include posiTion(absolute);
-    @include fontSize(1.5rem);
-    @include backgroundImage(linear-gradient(to top, #{$color-secondary}, #{$color-primary}));
-    @include Top(3%);
-    @include transformX(8%);
-    @include backgroundClip(text);
-    @include coLor(transparent);
-    @include backgroundPosition(0 24px);
-    @include heiGht(24px);
-    @include curSor(pointer);
-    @include backgroundRepeat(no-repeat);
-    @include transiTion(background-position 1s);
-}
-@mixin menu__hearticones__1__hover__alafrancaise__responsiveTablet{
-    @include backgroundPosition(0 0px);
-}
-@mixin menu__hearticones__2__alafrancaise__responsiveTablet{
-    @include fontSize(1.5rem);
-    @include Top(0%);
-    @include Right(0%);
-    @include coLor(#{$color-black});
-    @include opaCity(1);
-    @include posiTion(absolute);
-    @include transiTion(opacity 1.5s);
-}
-@mixin menu__hearticones__2__hover__alafrancaise__responsiveTablet{
-    @include opaCity(0);
-}
-// icone heart__lanoteenchantee__responsiveTablet
-@mixin menu__btn__like__heart__lanoteenchantee__responsiveTablet{
-    @include posiTion(relative);
-    @include Top(2rem);
-    @include Right(-2vh);
-}
-@mixin menu__hearticones__1__lanoteenchantee__responsiveTablet {
-    @include posiTion(absolute);
-    @include fontSize(1.5rem);
-    @include backgroundImage(linear-gradient(to top, #{$color-secondary}, #{$color-primary}));
-    @include Top(3%);
-    @include transformX(8%);
-    @include backgroundClip(text);
-    @include coLor(transparent);
-    @include backgroundPosition(0 24px);
-    @include heiGht(24px);
-    @include curSor(pointer);
-    @include backgroundRepeat(no-repeat);
-    @include transiTion(background-position 1s);
-}
-@mixin menu__hearticones__1__hover__lanoteenchantee__responsiveTablet{
-    @include backgroundPosition(0 0px);
-}
-@mixin menu__hearticones__2__lanoteenchantee__responsiveTablet{
-    @include fontSize(1.5rem);
-    @include Top(0%);
-    @include Right(0%);
-    @include coLor(#{$color-black});
-    @include opaCity(1);
-    @include posiTion(absolute);
-    @include transiTion(opacity 1.5s);
-}
-@mixin menu__hearticones__2__hover__alafrancaise__responsiveTablet{
-    @include opaCity(0);
-}
-// icone heart__lapalettedugout__responsiveTablet
-@mixin menu__btn__like__heart__lapalettedugout__responsiveTablet{
-    @include posiTion(relative);
-    @include Top(2rem);
-    @include Right(-29.5vh!important);
-}
-@mixin menu__hearticones__1__lapalettedugout__responsiveTablet {
-    @include posiTion(absolute);
-    @include fontSize(1.5rem);
-    @include backgroundImage(linear-gradient(to top, #{$color-secondary}, #{$color-primary}));
-    @include Top(3%);
-    @include transformX(8%);
-    @include backgroundClip(text);
-    @include coLor(transparent);
-    @include backgroundPosition(0 24px);
-    @include heiGht(24px);
-    @include curSor(pointer);
-    @include backgroundRepeat(no-repeat);
-    @include transiTion(background-position 1s);
-}
-@mixin menu__hearticones__1__hover__lapalettedugout__responsiveTablet{
-    @include backgroundPosition(0 0px);
-}
-@mixin menu__hearticones__2__lapalettedugout__responsiveTablet{
-    @include fontSize(1.5rem);
-    @include Top(0%);
-    @include Right(0%);
-    @include coLor(#{$color-black});
-    @include opaCity(1);
-    @include posiTion(absolute);
-    @include transiTion(opacity 1.5s);
-}
-@mixin menu__hearticones__2__hover__lapalettedugout__responsiveTablet{
-    @include opaCity(0);
-}
-// icone heart__ledelicedessens__responsiveTablet
-@mixin menu__btn__like__heart__ledelicedessens__responsiveTablet{
-    @include posiTion(relative);
-    @include Top(2rem);
-    @include Right(-29.5vh!important);
-}
-@mixin menu__hearticones__1__ledelicedessens__responsiveTablet {
-    @include posiTion(absolute);
-    @include fontSize(1.5rem);
-    @include backgroundImage(linear-gradient(to top, #{$color-secondary}, #{$color-primary}));
-    @include Top(3%);
-    @include transformX(8%);
-    @include backgroundClip(text);
-    @include coLor(transparent);
-    @include backgroundPosition(0 24px);
-    @include heiGht(24px);
-    @include curSor(pointer);
-    @include backgroundRepeat(no-repeat);
-    @include transiTion(background-position 1s);
-}
-@mixin menu__hearticones__1__hover__ledelicedessens__responsiveTablet{
-    @include backgroundPosition(0 0px);
-}
-@mixin menu__hearticones__2__ledelicedessens__responsiveTablet{
-    @include fontSize(1.5rem);
-    @include Top(0%);
-    @include Right(0%);
-    @include coLor(#{$color-black});
-    @include opaCity(1);
-    @include posiTion(absolute);
-    @include transiTion(opacity 1.5s);
-}
-@mixin menu__hearticones__2__hover__ledelicedessens__responsiveTablet{
-    @include opaCity(0);
-}
+// // icone heart__alafrancaise__responsiveTablet
+// @mixin menu__btn__like__heart__alafrancaise__responsiveTablet{
+//     @include posiTion(relative);
+//     @include Top(2rem);
+//     @include Right(-39.6vh!important);
+// }
+// @mixin menu__hearticones__1__alafrancaise__responsiveTablet {
+//     @include posiTion(absolute);
+//     @include fontSize(1.5rem);
+//     @include backgroundImage(linear-gradient(to top, #{$color-secondary}, #{$color-primary}));
+//     @include Top(3%);
+//     @include transformX(8%);
+//     @include backgroundClip(text);
+//     @include coLor(transparent);
+//     @include backgroundPosition(0 24px);
+//     @include heiGht(24px);
+//     @include curSor(pointer);
+//     @include backgroundRepeat(no-repeat);
+//     @include transiTion(background-position 1s);
+// }
+// @mixin menu__hearticones__1__hover__alafrancaise__responsiveTablet{
+//     @include backgroundPosition(0 0px);
+// }
+// @mixin menu__hearticones__2__alafrancaise__responsiveTablet{
+//     @include fontSize(1.5rem);
+//     @include Top(0%);
+//     @include Right(0%);
+//     @include coLor(#{$color-black});
+//     @include opaCity(1);
+//     @include posiTion(absolute);
+//     @include transiTion(opacity 1.5s);
+// }
+// @mixin menu__hearticones__2__hover__alafrancaise__responsiveTablet{
+//     @include opaCity(0);
+// }
+// // icone heart__lanoteenchantee__responsiveTablet
+// @mixin menu__btn__like__heart__lanoteenchantee__responsiveTablet{
+//     @include posiTion(relative);
+//     @include Top(2rem);
+//     @include Right(-2vh);
+// }
+// @mixin menu__hearticones__1__lanoteenchantee__responsiveTablet {
+//     @include posiTion(absolute);
+//     @include fontSize(1.5rem);
+//     @include backgroundImage(linear-gradient(to top, #{$color-secondary}, #{$color-primary}));
+//     @include Top(3%);
+//     @include transformX(8%);
+//     @include backgroundClip(text);
+//     @include coLor(transparent);
+//     @include backgroundPosition(0 24px);
+//     @include heiGht(24px);
+//     @include curSor(pointer);
+//     @include backgroundRepeat(no-repeat);
+//     @include transiTion(background-position 1s);
+// }
+// @mixin menu__hearticones__1__hover__lanoteenchantee__responsiveTablet{
+//     @include backgroundPosition(0 0px);
+// }
+// @mixin menu__hearticones__2__lanoteenchantee__responsiveTablet{
+//     @include fontSize(1.5rem);
+//     @include Top(0%);
+//     @include Right(0%);
+//     @include coLor(#{$color-black});
+//     @include opaCity(1);
+//     @include posiTion(absolute);
+//     @include transiTion(opacity 1.5s);
+// }
+// @mixin menu__hearticones__2__hover__alafrancaise__responsiveTablet{
+//     @include opaCity(0);
+// }
+// // icone heart__lapalettedugout__responsiveTablet
+// @mixin menu__btn__like__heart__lapalettedugout__responsiveTablet{
+//     @include posiTion(relative);
+//     @include Top(2rem);
+//     @include Right(-29.5vh!important);
+// }
+// @mixin menu__hearticones__1__lapalettedugout__responsiveTablet {
+//     @include posiTion(absolute);
+//     @include fontSize(1.5rem);
+//     @include backgroundImage(linear-gradient(to top, #{$color-secondary}, #{$color-primary}));
+//     @include Top(3%);
+//     @include transformX(8%);
+//     @include backgroundClip(text);
+//     @include coLor(transparent);
+//     @include backgroundPosition(0 24px);
+//     @include heiGht(24px);
+//     @include curSor(pointer);
+//     @include backgroundRepeat(no-repeat);
+//     @include transiTion(background-position 1s);
+// }
+// @mixin menu__hearticones__1__hover__lapalettedugout__responsiveTablet{
+//     @include backgroundPosition(0 0px);
+// }
+// @mixin menu__hearticones__2__lapalettedugout__responsiveTablet{
+//     @include fontSize(1.5rem);
+//     @include Top(0%);
+//     @include Right(0%);
+//     @include coLor(#{$color-black});
+//     @include opaCity(1);
+//     @include posiTion(absolute);
+//     @include transiTion(opacity 1.5s);
+// }
+// @mixin menu__hearticones__2__hover__lapalettedugout__responsiveTablet{
+//     @include opaCity(0);
+// }
+// // icone heart__ledelicedessens__responsiveTablet
+// @mixin menu__btn__like__heart__ledelicedessens__responsiveTablet{
+//     @include posiTion(relative);
+//     @include Top(2rem);
+//     @include Right(-29.5vh!important);
+// }
+// @mixin menu__hearticones__1__ledelicedessens__responsiveTablet {
+//     @include posiTion(absolute);
+//     @include fontSize(1.5rem);
+//     @include backgroundImage(linear-gradient(to top, #{$color-secondary}, #{$color-primary}));
+//     @include Top(3%);
+//     @include transformX(8%);
+//     @include backgroundClip(text);
+//     @include coLor(transparent);
+//     @include backgroundPosition(0 24px);
+//     @include heiGht(24px);
+//     @include curSor(pointer);
+//     @include backgroundRepeat(no-repeat);
+//     @include transiTion(background-position 1s);
+// }
+// @mixin menu__hearticones__1__hover__ledelicedessens__responsiveTablet{
+//     @include backgroundPosition(0 0px);
+// }
+// @mixin menu__hearticones__2__ledelicedessens__responsiveTablet{
+//     @include fontSize(1.5rem);
+//     @include Top(0%);
+//     @include Right(0%);
+//     @include coLor(#{$color-black});
+//     @include opaCity(1);
+//     @include posiTion(absolute);
+//     @include transiTion(opacity 1.5s);
+// }
+// @mixin menu__hearticones__2__hover__ledelicedessens__responsiveTablet{
+//     @include opaCity(0);
+// }
 
 
 

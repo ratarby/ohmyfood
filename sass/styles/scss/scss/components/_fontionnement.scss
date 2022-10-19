@@ -1,12 +1,12 @@
                                 /*localisation, découverte & exploration*/                                 
-                                section{
-                                    .fonctionnement{
-                                        @include fonctionnement;
-                                            .title__fonctionnement{
-                                                @include title__fonctionnement;
-                                            .text__title__fonctionnement{
-                                                @include text__title__fonctionnement;
-                                                }
-                                    }
-                                    }
-                                }                    
+    section{
+        .fonctionnement{
+            @include fonctionnement;
+                .title__fonctionnement{
+                    @include title__fonctionnement;
+                .text__title__fonctionnement{
+                    @include text__title__fonctionnement;
+                    }
+        }
+        }
+    }                    

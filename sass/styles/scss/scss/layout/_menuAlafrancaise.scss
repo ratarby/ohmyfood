@@ -1,5 +1,6 @@
 @import "../components/_hover.scss";
 @import "../base/_mediasqueries.scss";
+@import "../utils/_mixins.scss";
 .container{
         .menu{
             .menu__resto{
@@ -9,6 +10,7 @@
             }
             .menu__resto__description{
                 @include menu__resto__description;
+                
                 .menu__resto__text__description{
                     @include menu__resto__text__description;
                     .menu__resto__title{
@@ -18,8 +20,8 @@
             }       
                     }
                 }
-                .menu__btn__like__heart__alafrancaise{
-                    @include menu__btn__like__heart__alafrancaise;
+                .menu__btn__like__heart{
+                    @include menu__btn__like__heart;
                     
                     .menu__hearticones__1 {
                         @include menu__hearticones__1;

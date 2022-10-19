@@ -1,4 +1,5 @@
     @import "../utils/_mixins.scss";
+    @import "../base/_responsive";
     @media  #{$small-up} {
         .container{
             @include widTh($small);
@@ -10,7 +11,7 @@
         .container{
             @include widTh($medium);
             @include heiGht(auto);
-            @include marginLRTB(auto);
+            @include marginLRTB(0);
             header{
                 .menu__header{
                     @include flex;
@@ -137,208 +138,580 @@
                     }
                     }
                 }
-        
-        }
-        .menu{
-            .menu__resto{
-            @include menu__resto;
-            .menu__resto__img{
-                @include menu__resto__img;
-            }
-            .menu__resto__description{
-                @include menu__resto__description;
-                .menu__resto__text__description{
-                    @include menu__resto__text__description;
-                    .menu__resto__title{
-                        @include menu__resto__title;
-                        .menu__resto__title{
-                            @include menu__resto__title;
-            }       
+                .menu{
+                    .menu__resto{
+                    @include menu__resto;
+                    .menu__resto__img{
+                        @include menu__resto__img;
+                    }
+                    .menu__resto__description{
+                        @include menu__resto__description;
+                        @include Top(21.5%);
+                        @include widTh(768px);
+                        .menu__resto__text__description{
+                            @include menu__resto__text__description;
+                            .menu__resto__title{
+                                @include menu__resto__title;
+                                .menu__resto__title{
+                                    @include menu__resto__title;
+                    }       
+                            }
+                        }
+                        .menu__btn__like__heart{
+                            @include menu__btn__like__heart;
+                            
+                            .menu__hearticones__1 {
+                                @include menu__hearticones__1;
+                            }
+                            .menu__hearticones__1:hover {
+                            @include menu__hearticones__1__hover;
+                            }
+                            .menu__hearticones__2 {
+                            @include menu__hearticones__2;
+                            }
+                            
+                            .menu__hearticones__2:hover {
+                            @include menu__hearticones__2__hover;
+                            }
+                        }               
                     }
                 }
-                .menu__btn__like__heart__alafrancaise{
-                    @include menu__btn__like__heart__alafrancaise__responsiveTablet;
-                    @include menu__btn__like__heart__lanoteenchantee__responsiveTablet;
-                    .menu__hearticones__1 {
-                        @include menu__hearticones__1__alafrancaise__responsiveTablet;
+            }
+            .menus__entrees__plats__desserts{
+                .menu__entree{
+                    @include menu__entree;
+                    .menu__title{
+                        @include menu__title;
                     }
-                    .menu__hearticones__1:hover {
-                    @include menu__hearticones__1__hover__alafrancaise__responsiveTablet;
+                    /*  CARD 1,
+                        CARD 2,
+                        CARD 3  */ 
+                    .sticker__menu__box__card{
+                        .sticker__menu{
+                            @include sticker__menu;
+                        }
+                        .slideInUp,
+                        .slideInUp__1{
+                            @include slideInUp__1;
+                            .sticker__menu__description{
+                                @include sticker__menu__description;
+                                .sticker__menu__description__title{
+                                    @include sticker__menu__description__title;
+                                }
+                                .sticker__menu__description__subtitle {
+                                    @include sticker__menu__description__subtitle;
+                                }
+                                .sticker__menu:hover,
+                                .sticker__menu__description {
+                                    @include widTh(60%);
+                                }
+                            } 
+                                .sticker__menu__price{
+                                    @include sticker__menu__price;
+                                }
+                                
+                                .sticker__menu__icon {
+                                    @include sticker__menu__icon;
+                                }
+                                .sticker__menu__icon__check {
+                                    @include sticker__menu__icon__check;
+                        }
+                        
+                    }    
                     }
-                    .menu__hearticones__2 {
-                    @include menu__hearticones__2__alafrancaise__responsiveTablet;
+                }
+                .menu__plat{
+                    @include menu__plat;
+                    .menu__title{
+                        @include menu__title;
                     }
-                    
-                    .menu__hearticones__2:hover {
-                    @include menu__hearticones__2__hover__alafrancaise__responsiveTablet;
+                    /*  CARD 4,
+                        CARD 5,
+                        CARD 6  */
+                    .sticker__menu__box__card{
+                        .sticker__menu{
+                            @include sticker__menu;
+                        }
+                        .slideInUp,
+                        .slideInUp__2{
+                            @include slideInUp__1;
+                            .sticker__menu__description{
+                                @include sticker__menu__description;
+                                .sticker__menu__description__title{
+                                    @include sticker__menu__description__title;
+                                }
+                                .sticker__menu__description__subtitle {
+                                    @include sticker__menu__description__subtitle;
+                                }
+                                .sticker__menu:hover,
+                                .sticker__menu__description {
+                                    @include widTh(60%);
+                                }
+                            } 
+                                .sticker__menu__price{
+                                    @include sticker__menu__price;
+                                }
+                                
+                                .sticker__menu__icon {
+                                    @include sticker__menu__icon;
+                                }
+                                .sticker__menu__icon__check {
+                                    @include sticker__menu__icon__check;
+                        }
+                        
+                    }    
                     }
-                }               
-                .menu__btn__like__heart__alafrancaise{
-                    @include menu__btn__like__heart__lanoteenchantee__responsiveTablet;
-                    .menu__hearticones__1 {
-                        @include menu__hearticones__1__alafrancaise__responsiveTablet;
+                }
+                .menu__dessert{
+                    @include menu__dessert;
+                    .menu__title{
+                        @include menu__title;
                     }
-                    .menu__hearticones__1:hover {
-                    @include menu__hearticones__1__hover__alafrancaise__responsiveTablet;
+                    /*  CARD 7,
+                        CARD 8,
+                        CARD 9  */
+                    .sticker__menu__box__card{
+                        .sticker__menu{
+                            @include sticker__menu;
+                        }
+                        .slideInUp,
+                        .slideInUp__2{
+                            @include slideInUp__1;
+                            .sticker__menu__description{
+                                @include sticker__menu__description;
+                                .sticker__menu__description__title{
+                                    @include sticker__menu__description__title;
+                                }
+                                .sticker__menu__description__subtitle {
+                                    @include sticker__menu__description__subtitle;
+                                }
+                                .sticker__menu:hover,
+                                .sticker__menu__description {
+                                    @include widTh(60%);
+                                }
+                            } 
+                                .sticker__menu__price{
+                                    @include sticker__menu__price;
+                                }
+                                
+                                .sticker__menu__icon {
+                                    @include sticker__menu__icon;
+                                }
+                                .sticker__menu__icon__check {
+                                    @include sticker__menu__icon__check;
+                        }
+                        
+                    }    
                     }
-                    .menu__hearticones__2 {
-                    @include menu__hearticones__2__alafrancaise__responsiveTablet;
-                    }
-                    
-                    .menu__hearticones__2:hover {
-                    @include menu__hearticones__2__hover__alafrancaise__responsiveTablet;
-                    }
-                }               
+                }
             }
         }
-    }
-    // MENU ENTREES
-
-/*MENU 1 SECTION*/
-    .menus__entrees__plats__desserts{
-    .menu__entree{
-        @include menu__entree;
-        .menu__title{
-            @include menu__title;
-        }
-        /*  CARD 1,
-            CARD 2,
-            CARD 3  */ 
-        .sticker__menu__box__card{
-            .sticker__menu{
-                @include sticker__menu;
-            }
-            .slideInUp,
-            .slideInUp__1{
-                @include slideInUp__1;
-                .sticker__menu__description{
-                    @include sticker__menu__description;
-                    .sticker__menu__description__title{
-                        @include sticker__menu__description__title;
-                    }
-                    .sticker__menu__description__subtitle {
-                        @include sticker__menu__description__subtitle;
-                    }
-                    .sticker__menu:hover,
-                    .sticker__menu__description {
-                        @include widTh(60%);
-                    }
-                } 
-                    .sticker__menu__price{
-                        @include sticker__menu__price;
-                    }
-                    
-                    .sticker__menu__icon {
-                        @include sticker__menu__icon;
-                    }
-                    .sticker__menu__icon__check {
-                        @include sticker__menu__icon__check;
-            }
-            
-        }    
-        }
-    }
-    .menu__plat{
-        @include menu__plat;
-        .menu__title{
-            @include menu__title;
-        }
-        /*  CARD 4,
-            CARD 5,
-            CARD 6  */
-        .sticker__menu__box__card{
-            .sticker__menu{
-                @include sticker__menu;
-            }
-            .slideInUp,
-            .slideInUp__2{
-                @include slideInUp__1;
-                .sticker__menu__description{
-                    @include sticker__menu__description;
-                    .sticker__menu__description__title{
-                        @include sticker__menu__description__title;
-                    }
-                    .sticker__menu__description__subtitle {
-                        @include sticker__menu__description__subtitle;
-                    }
-                    .sticker__menu:hover,
-                    .sticker__menu__description {
-                        @include widTh(60%);
-                    }
-                } 
-                    .sticker__menu__price{
-                        @include sticker__menu__price;
-                    }
-                    
-                    .sticker__menu__icon {
-                        @include sticker__menu__icon;
-                    }
-                    .sticker__menu__icon__check {
-                        @include sticker__menu__icon__check;
-            }
-            
-        }    
-        }
-    }
-    .menu__dessert{
-        @include menu__dessert;
-        .menu__title{
-            @include menu__title;
-        }
-        /*  CARD 7,
-            CARD 8,
-            CARD 9  */
-        .sticker__menu__box__card{
-            .sticker__menu{
-                @include sticker__menu;
-            }
-            .slideInUp,
-            .slideInUp__2{
-                @include slideInUp__1;
-                .sticker__menu__description{
-                    @include sticker__menu__description;
-                    .sticker__menu__description__title{
-                        @include sticker__menu__description__title;
-                    }
-                    .sticker__menu__description__subtitle {
-                        @include sticker__menu__description__subtitle;
-                    }
-                    .sticker__menu:hover,
-                    .sticker__menu__description {
-                        @include widTh(60%);
-                    }
-                } 
-                    .sticker__menu__price{
-                        @include sticker__menu__price;
-                    }
-                    
-                    .sticker__menu__icon {
-                        @include sticker__menu__icon;
-                    }
-                    .sticker__menu__icon__check {
-                        @include sticker__menu__icon__check;
-            }
-            
-        }    
-        }
-    }
-
-}
     }    
     @media  #{$large-up} {
         .container{
             @include widTh($large);
             @include heiGht(auto);
             @include marginLRTB(auto);
+            @include backGround(#{$color-grey-2});
 
             header{
                 .menu__header{
                     @include flex;
                     @include justifyContent(center);
                     .leftArrow{
-                        @include Right(#{700vh})
-                    }
+                        @include transformX(-380px);
+                }
                     }
                 }
+                section{
+                    .fonctionnement{
+                        @include fonctionnement;
+                        .title__fonctionnement{
+                            @include title__fonctionnement;
+                            .text__title__fonctionnement{
+                                @include text__title__fonctionnement;
+                                }
+                    }
+                    }
+                }                    
+                section{
+                    .back__Ground{
+                        @include back__Ground;
+                        .title__resto{
+                            @include title__resto;
+                            .text__title__resto{
+                                @include fontWeight(600);
+                            }
+                        }
+                        .box__1{
+                            @include flex;
+                            @include paddingBottom(.4rem);
+                            @include paddingLeft(.8rem);
+                            @include paddingRight(.8rem);
+                            *,
+                            .card{
+                            @include card;
+                            .new{
+                                @include new;
+                            }
+                            .new::before{
+                                @include new__before;
+                            }   
+                            .card__resto{
+                                @include card__resto;
+                                .card__resto__img{
+                                    @include card__resto__img;
+                                    }
+                                .card__resto__description{
+                                    @include card__resto__description;
+                                    .card__resto__text__description{
+                                        @include card__resto__text__description;
+                                        .card__resto__title{
+                                            @include card__resto__title;
+                                            .resto__title{
+                                                @include resto__title;
+                                            }
+                                            .resto__subtitle{
+                                                @include resto__subtitle;
+                                            }
+                                        }
+                                    }
+                                    .card__btn__like__heart{
+                                        @include card__btn__like__heart;
+                                        .hearticones__1 {
+                                            @include hearticones__1;
+                                        }
+                                        .hearticones__1:hover {
+                                        @include hearticones__1__hover;
+                                        }
+                                        .hearticones__2 {
+                                        @include hearticones__2;
+                                        }
+                                        
+                                        .hearticones__2:hover {
+                                        @include hearticones__2__hover;
+                                        }
+                                        }                                   
+                                    }
+                                }
+                            }
+                        }
+                        .box__2{
+                            @include flex;
+                            @include paddingTop(.4rem);
+                            @include paddingLeft(.8rem);
+                            @include paddingRight(.8rem);
+                            *,
+                            .card{
+                            @include card;
+                            .new{
+                                @include new;
+                            }
+                            .new::before{
+                                @include new__before;
+                            }   
+                            .card__resto{
+                                @include card__resto;
+                                .card__resto__img{
+                                    @include card__resto__img;
+                                    }
+                                .card__resto__description{
+                                    @include card__resto__description;
+                                    .card__resto__text__description{
+                                        @include card__resto__text__description;
+                                        .card__resto__title{
+                                            @include card__resto__title;
+                                            .resto__title{
+                                                @include resto__title;
+                                            }
+                                            .resto__subtitle{
+                                                @include resto__subtitle;
+                                            }
+                                        }
+                                    }
+                                    .card__btn__like__heart{
+                                        @include card__btn__like__heart;
+                                        .hearticones__1 {
+                                            @include hearticones__1;
+                                        }
+                                        .hearticones__1:hover {
+                                        @include hearticones__1__hover;
+                                        }
+                                        .hearticones__2 {
+                                        @include hearticones__2;
+                                        }
+                                        .hearticones__2:hover {
+                                        @include hearticones__2__hover;
+                                        }
+                                        }                                   
+                                    }
+                                }
+                            }
+                        }
+                        }
+                    }
+                    .menu{
+                        .menu__resto{
+                        @include menu__resto;
+                        .menu__resto__img{
+                            @include menu__resto__img;
+                            @include paddingLeft(1px);
+                            @include paddingRight(0);
+                            @include heiGht(380px)
+                        }
+                        .menu__resto__description{
+                            @include menu__resto__description;
+                            @include Top(31.5%);
+                            @include widTh(992px);
+                            @include paddingRight(0px);
+                            @include backGround(#{$color-grey-2});
+                            .menu__resto__text__description{
+                                @include menu__resto__text__description;
+                                .menu__resto__title{
+                                    @include menu__resto__title;
+                                    .menu__resto__title{
+                                        @include menu__resto__title;
+                                        @include paddingTop(20px);
+                        }       
+                                }
+                            }
+                            .menu__btn__like__heart{
+                                @include menu__btn__like__heart;
+                                @include Top(4.49vh);
+                                @include transformX(55vh);
+                                @include paddingRight(20px);
+                                
+                                .menu__hearticones__1 {
+                                    @include menu__hearticones__1;
+                                }
+                                .menu__hearticones__1:hover {
+                                @include menu__hearticones__1__hover;
+                                }
+                                .menu__hearticones__2 {
+                                @include menu__hearticones__2;
+                                }
+                                
+                                .menu__hearticones__2:hover {
+                                @include menu__hearticones__2__hover;
+                                }
+                            }               
+                        }
+                    }
+                }
+                .menus__entrees__plats__desserts{
+                    @include flex;
+                    .menu__entree{
+                        @include menu__entree;
+                        @include widTh(33.33%);
+                        @include transformY(35%);
+                        @include paddingBottom(63px);
+                        .menu__title{
+                            @include menu__title;
+                            @include marginBottom(30px);
+                        }
+                        /*  CARD 1,
+                            CARD 2,
+                            CARD 3  */ 
+                        .sticker__menu__box__card{
+                            @include paddingBottom(3px);
+                            .sticker__menu{
+                                @include sticker__menu;
+                            }
+                            .slideInUp,
+                            .slideInUp__1{
+                                @include slideInUp__1;
+                                .sticker__menu__description{
+                                    @include sticker__menu__description;
+                                    .sticker__menu__description__title{
+                                        @include sticker__menu__description__title;
+                                    }
+                                    .sticker__menu__description__subtitle {
+                                        @include sticker__menu__description__subtitle;
+                                    }
+                                    .sticker__menu:hover,
+                                    .sticker__menu__description {
+                                        @include widTh(60%);
+                                    }
+                                } 
+                                    .sticker__menu__price{
+                                        @include sticker__menu__price;
+                                    }
+                                    
+                                    .sticker__menu__icon {
+                                        @include sticker__menu__icon;
+                                    }
+                                    .sticker__menu__icon__check {
+                                        @include sticker__menu__icon__check;
+                            }
+                            
+                        }    
+                        }
+                    }
+                    .menu__plat{
+                        @include menu__plat;
+                        @include widTh(33.33%);
+                        @include transformY(35%);
+                        @include paddingBottom(63px);
+                        .menu__title{
+                            @include menu__title;
+                            @include marginBottom(30px);
+                        }
+                        /*  CARD 4,
+                            CARD 5,
+                            CARD 6  */
+                        .sticker__menu__box__card{
+                            @include paddingBottom(3px);
+                            .sticker__menu{
+                                @include sticker__menu;
+                            }
+                            .slideInUp,
+                            .slideInUp__2{
+                                @include slideInUp__1;
+                                .sticker__menu__description{
+                                    @include sticker__menu__description;
+                                    .sticker__menu__description__title{
+                                        @include sticker__menu__description__title;
+                                    }
+                                    .sticker__menu__description__subtitle {
+                                        @include sticker__menu__description__subtitle;
+                                    }
+                                    .sticker__menu:hover,
+                                    .sticker__menu__description {
+                                        @include widTh(60%);
+                                    }
+                                } 
+                                    .sticker__menu__price{
+                                        @include sticker__menu__price;
+                                    }
+                                    
+                                    .sticker__menu__icon {
+                                        @include sticker__menu__icon;
+                                    }
+                                    .sticker__menu__icon__check {
+                                        @include sticker__menu__icon__check;
+                            }
+                            
+                        }    
+                        }
+                    }
+                    .menu__dessert{
+                        @include menu__dessert;
+                        @include widTh(33.33%);
+                        @include transformY(35%);
+                        @include paddingBottom(63px);
+                        .menu__title{
+                        @include menu__title;
+                        @include marginBottom(30px);
+                        
+                        }
+                        /*  CARD 7,
+                            CARD 8,
+                            CARD 9  */
+                        .sticker__menu__box__card{
+                            @include paddingBottom(3px);
+                            .sticker__menu{
+                                @include sticker__menu;
+                            }
+                            .slideInUp,
+                            .slideInUp__2{
+                                @include slideInUp__1;
+                                .sticker__menu__description{
+                                    @include sticker__menu__description;
+                                    
+                                    .sticker__menu__description__title{
+                                        @include sticker__menu__description__title;
+                                    }
+                                    .sticker__menu__description__subtitle {
+                                        @include sticker__menu__description__subtitle;
+                                    }
+                                    .sticker__menu:hover,
+                                    .sticker__menu__description {
+                                        @include widTh(60%);
+                                    }
+                                } 
+                                    .sticker__menu__price{
+                                        @include sticker__menu__price;
+                                    }
+                                    
+                                    .sticker__menu__icon {
+                                        @include sticker__menu__icon;
+                                    }
+                                    .sticker__menu__icon__check {
+                                        @include sticker__menu__icon__check;
+                            }
+                            
+                        }    
+                        }
+                    }
+                }
+                .foot{
+                    @include foot;
+                    @include transformY(100%);
+                    .foot__con{
+                        @include flexColumn;
+                        .foot__logo{
+                            @include footLogo;
+                            .foot__logo__title{
+                                @include foot__logo__title;
+                            }
+                        }
+                        *,
+                        .foot__list{
+                            @include foot__list;
+                            .text__1{ 
+                                @include footList;
+                            }
+                            .foot__list__textA{
+                                .foot__link__icon{
+                                    .text__1{
+                                        @include text__1;
+                                    }
+                                }
+                                .foot__link__icon{
+                                    .text__2{
+                                        @include text__2;
+                                    }
+                                }
+                            }
+                            
+                        }
+                    }
+                }    
         }
+        .btn__commander{
+            @include flexColumnCenter;
+            @include backGround(#{$color-grey-2});
+            @include transformY(6.2rem);
+
+            .button {
+            @include coLor(#{$color-white});
+            @include fontSize(16px);
+            @include fontWeight(normal);
+            @include boxShaddow(0px 5px 18px -3px #{$color-grey-1});
+            @include backGround(linear-gradient(175deg, #{$color-secondary} 5%, #{$color-primary} 100%));
+            @include borDer(#{$color-black});
+            @include bordeRadius(35px);
+            @include curSor(pointer);
+            @include paddingLRTB(15px 50px);
+            @include textDecoration(none);
+            }
+            
+            .button:hover {
+            @include backGround(linear-gradient(175deg, #{$color-secondary} 5%, #{$color-primary} 100%));
+            @include boxShaddow(0px 5px 22px -3px #{$color-grey-5});
+            @include opaCity(0.8);
+            }
+            
+            .button:active {
+            @include posiTion(relative);
+            @include Top(1px);
+            }
+            }
+            .box__commandbutton {
+            @include paddingLeft(45px);
+            @include paddingRight(45px);
+            @include marginBottom(20px);
+            @include marginTop(25px);
+            }
+        
     }   

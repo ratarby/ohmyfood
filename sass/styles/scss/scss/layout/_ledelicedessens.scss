@@ -18,8 +18,8 @@
             }       
                     }
                 }
-                .menu__btn__like__heart__ledelicedessens{
-                    @include menu__btn__like__heart__ledelicedessens;
+                .menu__btn__like__heart{
+                    @include menu__btn__like__heart;
                     .menu__hearticones__1 {
                         @include menu__hearticones__1;
                     }
