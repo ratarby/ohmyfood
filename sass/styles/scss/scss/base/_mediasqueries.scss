@@ -1,13 +1,14 @@
     @import "../utils/_mixins.scss";
     @import "../base/_responsive";
-    @media   all and (min-width: 375px) {
+
+    @media   all and (min-width: 23.4375rem) {
         .container{
             @include widTh(#{$small-up});
             @include heiGht(auto);
             @include marginLRTB(auto);
         }
     }    
-    @media  all and (min-width: 768px) {
+    @media  all and (min-width: 48rem) {
         .container{
             @include widTh(#{$medium-up});
             @include heiGht(auto);
@@ -320,7 +321,7 @@
 
     
 }
-    @media  (min-width: 992px) {
+    @media all and (min-width: 62rem) {
             .container{
                 @include widTh(auto #{$large-up} );
                 @include heiGht(auto);

@@ -355,6 +355,9 @@ main section .back__Ground {
   padding: 0.1rem 0.1rem 0.1rem 0.1rem;
 }
 main section .back__Ground .title__resto {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
   margin: 3rem;
   padding-top: 3rem;
   margin: 1.8rem;
@@ -373,7 +376,8 @@ main section .back__Ground .box__1 {
 }
 main section .back__Ground .box__1 *,
 main section .back__Ground .box__1 .card {
-  align-items: center;
+  display: flex;
+  flex-direction: column;
   text-decoration: none;
   color: #000000;
   width: 100%;
@@ -399,21 +403,17 @@ main section .back__Ground .box__1 .card .new::before {
 }
 main section .back__Ground .box__1 * .card__resto,
 main section .back__Ground .box__1 .card .card__resto {
-  transform: translateX(-5px);
-  -webkit-transform: translateX(-5px);
-  -moz-transform: translateX(-5px);
-  -ms-transform: translateX(-5px);
-  -o-transform: translateX(-5px);
   border-radius: 1.125rem;
   -webkit-border-radius: 1.125rem;
   box-shadow: 0px 5px 18px -3px #9e9e9e;
-  margin: 0px 20px 20px 20px;
+  margin: 1rem;
   background: #fff;
   width: 90%;
   height: 260px;
 }
 main section .back__Ground .box__1 * .card__resto .card__resto__img,
 main section .back__Ground .box__1 .card .card__resto .card__resto__img {
+  display: flex;
   border-radius: 1.2rem 1.2rem 0 0;
   -webkit-border-radius: 1.2rem 1.2rem 0 0;
   width: 100%;
@@ -424,15 +424,14 @@ main section .back__Ground .box__1 * .card__resto .card__resto__description,
 main section .back__Ground .box__1 .card .card__resto .card__resto__description {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   padding: 0px 10px 13px 10px;
   border-radius: 0px 0px 15px 15px;
   -webkit-border-radius: 0px 0px 15px 15px;
-  justify-content: space-between;
   border-top: none;
 }
 main section .back__Ground .box__1 * .card__resto .card__resto__description .card__resto__text__description,
 main section .back__Ground .box__1 .card .card__resto .card__resto__description .card__resto__text__description {
-  justify-content: space-between;
   padding-top: 1.2rem;
 }
 main section .back__Ground .box__1 * .card__resto .card__resto__description .card__resto__text__description .card__resto__title,
@@ -451,19 +450,18 @@ main section .back__Ground .box__1 .card .card__resto .card__resto__description 
 }
 main section .back__Ground .box__1 * .card__resto .card__resto__description .card__btn__like__heart,
 main section .back__Ground .box__1 .card .card__resto .card__resto__description .card__btn__like__heart {
+  display: flex;
   position: relative;
 }
 main section .back__Ground .box__1 * .card__resto .card__resto__description .card__btn__like__heart .hearticones__1,
 main section .back__Ground .box__1 .card .card__resto .card__resto__description .card__btn__like__heart .hearticones__1 {
+  display: flex;
+  align-items: flex-end;
+  padding-right: 1rem;
   position: absolute;
   font-size: 1.5rem;
   background-image: linear-gradient(to top, #FF79DA, #9356DC);
   top: 42%;
-  transform: translateX(78%);
-  -webkit-transform: translateX(78%);
-  -moz-transform: translateX(78%);
-  -ms-transform: translateX(78%);
-  -o-transform: translateX(78%);
   background-clip: text;
   color: transparent;
   background-position: 0 24px;
@@ -479,6 +477,9 @@ main section .back__Ground .box__1 .card .card__resto .card__resto__description 
 }
 main section .back__Ground .box__1 * .card__resto .card__resto__description .card__btn__like__heart .hearticones__2,
 main section .back__Ground .box__1 .card .card__resto .card__resto__description .card__btn__like__heart .hearticones__2 {
+  display: flex;
+  align-items: flex-end;
+  padding-right: 1rem;
   font-size: 1.5rem;
   top: 0%;
   right: 0%;
@@ -502,7 +503,8 @@ main section .back__Ground .box__2 {
 }
 main section .back__Ground .box__2 *,
 main section .back__Ground .box__2 .card {
-  align-items: center;
+  display: flex;
+  flex-direction: column;
   text-decoration: none;
   color: #000000;
   width: 100%;
@@ -528,21 +530,17 @@ main section .back__Ground .box__2 .card .new::before {
 }
 main section .back__Ground .box__2 * .card__resto,
 main section .back__Ground .box__2 .card .card__resto {
-  transform: translateX(-5px);
-  -webkit-transform: translateX(-5px);
-  -moz-transform: translateX(-5px);
-  -ms-transform: translateX(-5px);
-  -o-transform: translateX(-5px);
   border-radius: 1.125rem;
   -webkit-border-radius: 1.125rem;
   box-shadow: 0px 5px 18px -3px #9e9e9e;
-  margin: 0px 20px 20px 20px;
+  margin: 1rem;
   background: #fff;
   width: 90%;
   height: 260px;
 }
 main section .back__Ground .box__2 * .card__resto .card__resto__img,
 main section .back__Ground .box__2 .card .card__resto .card__resto__img {
+  display: flex;
   border-radius: 1.2rem 1.2rem 0 0;
   -webkit-border-radius: 1.2rem 1.2rem 0 0;
   width: 100%;
@@ -553,15 +551,14 @@ main section .back__Ground .box__2 * .card__resto .card__resto__description,
 main section .back__Ground .box__2 .card .card__resto .card__resto__description {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   padding: 0px 10px 13px 10px;
   border-radius: 0px 0px 15px 15px;
   -webkit-border-radius: 0px 0px 15px 15px;
-  justify-content: space-between;
   border-top: none;
 }
 main section .back__Ground .box__2 * .card__resto .card__resto__description .card__resto__text__description,
 main section .back__Ground .box__2 .card .card__resto .card__resto__description .card__resto__text__description {
-  justify-content: space-between;
   padding-top: 1.2rem;
 }
 main section .back__Ground .box__2 * .card__resto .card__resto__description .card__resto__text__description .card__resto__title,
@@ -580,19 +577,18 @@ main section .back__Ground .box__2 .card .card__resto .card__resto__description 
 }
 main section .back__Ground .box__2 * .card__resto .card__resto__description .card__btn__like__heart,
 main section .back__Ground .box__2 .card .card__resto .card__resto__description .card__btn__like__heart {
+  display: flex;
   position: relative;
 }
 main section .back__Ground .box__2 * .card__resto .card__resto__description .card__btn__like__heart .hearticones__1,
 main section .back__Ground .box__2 .card .card__resto .card__resto__description .card__btn__like__heart .hearticones__1 {
+  display: flex;
+  align-items: flex-end;
+  padding-right: 1rem;
   position: absolute;
   font-size: 1.5rem;
   background-image: linear-gradient(to top, #FF79DA, #9356DC);
   top: 42%;
-  transform: translateX(78%);
-  -webkit-transform: translateX(78%);
-  -moz-transform: translateX(78%);
-  -ms-transform: translateX(78%);
-  -o-transform: translateX(78%);
   background-clip: text;
   color: transparent;
   background-position: 0 24px;
@@ -608,6 +604,9 @@ main section .back__Ground .box__2 .card .card__resto .card__resto__description 
 }
 main section .back__Ground .box__2 * .card__resto .card__resto__description .card__btn__like__heart .hearticones__2,
 main section .back__Ground .box__2 .card .card__resto .card__resto__description .card__btn__like__heart .hearticones__2 {
+  display: flex;
+  align-items: flex-end;
+  padding-right: 1rem;
   font-size: 1.5rem;
   top: 0%;
   right: 0%;
@@ -671,16 +670,16 @@ header .menu__header .leftArrow {
 /*------------------SLIDES-------------------*/
 /*===========================================*/
 /*MENU HOVER */
-@media all and (min-width: 375px) {
+@media all and (min-width: 23.4375rem) {
   .container {
-    width: all and (min-width: 375px);
+    width: all and (min-width: 23.4375rem);
     height: auto;
     margin: auto;
   }
 }
-@media all and (min-width: 768px) {
+@media all and (min-width: 48rem) {
   .container {
-    width: all and (min-width: 768px);
+    width: all and (min-width: 48rem);
     height: auto;
     margin: auto;
     background: #f6f6f6;
@@ -709,6 +708,9 @@ header .menu__header .leftArrow {
     padding: 0.1rem 0.1rem 0.1rem 0.1rem;
   }
   .container main section .back__Ground .title__resto {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
     margin: 3rem;
     padding-top: 3rem;
     margin: 1.8rem;
@@ -725,7 +727,8 @@ header .menu__header .leftArrow {
   }
   .container main section .back__Ground .box__1 *,
 .container main section .back__Ground .box__1 .card {
-    align-items: center;
+    display: flex;
+    flex-direction: column;
     text-decoration: none;
     color: #000000;
     width: 100%;
@@ -751,21 +754,17 @@ header .menu__header .leftArrow {
   }
   .container main section .back__Ground .box__1 * .card__resto,
 .container main section .back__Ground .box__1 .card .card__resto {
-    transform: translateX(-5px);
-    -webkit-transform: translateX(-5px);
-    -moz-transform: translateX(-5px);
-    -ms-transform: translateX(-5px);
-    -o-transform: translateX(-5px);
     border-radius: 1.125rem;
     -webkit-border-radius: 1.125rem;
     box-shadow: 0px 5px 18px -3px #9e9e9e;
-    margin: 0px 20px 20px 20px;
+    margin: 1rem;
     background: #fff;
     width: 90%;
     height: 260px;
   }
   .container main section .back__Ground .box__1 * .card__resto .card__resto__img,
 .container main section .back__Ground .box__1 .card .card__resto .card__resto__img {
+    display: flex;
     border-radius: 1.2rem 1.2rem 0 0;
     -webkit-border-radius: 1.2rem 1.2rem 0 0;
     width: 100%;
@@ -776,15 +775,14 @@ header .menu__header .leftArrow {
 .container main section .back__Ground .box__1 .card .card__resto .card__resto__description {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     padding: 0px 10px 13px 10px;
     border-radius: 0px 0px 15px 15px;
     -webkit-border-radius: 0px 0px 15px 15px;
-    justify-content: space-between;
     border-top: none;
   }
   .container main section .back__Ground .box__1 * .card__resto .card__resto__description .card__resto__text__description,
 .container main section .back__Ground .box__1 .card .card__resto .card__resto__description .card__resto__text__description {
-    justify-content: space-between;
     padding-top: 1.2rem;
   }
   .container main section .back__Ground .box__1 * .card__resto .card__resto__description .card__resto__text__description .card__resto__title,
@@ -803,19 +801,18 @@ header .menu__header .leftArrow {
   }
   .container main section .back__Ground .box__1 * .card__resto .card__resto__description .card__btn__like__heart,
 .container main section .back__Ground .box__1 .card .card__resto .card__resto__description .card__btn__like__heart {
+    display: flex;
     position: relative;
   }
   .container main section .back__Ground .box__1 * .card__resto .card__resto__description .card__btn__like__heart .hearticones__1,
 .container main section .back__Ground .box__1 .card .card__resto .card__resto__description .card__btn__like__heart .hearticones__1 {
+    display: flex;
+    align-items: flex-end;
+    padding-right: 1rem;
     position: absolute;
     font-size: 1.5rem;
     background-image: linear-gradient(to top, #FF79DA, #9356DC);
     top: 42%;
-    transform: translateX(78%);
-    -webkit-transform: translateX(78%);
-    -moz-transform: translateX(78%);
-    -ms-transform: translateX(78%);
-    -o-transform: translateX(78%);
     background-clip: text;
     color: transparent;
     background-position: 0 24px;
@@ -831,6 +828,9 @@ header .menu__header .leftArrow {
   }
   .container main section .back__Ground .box__1 * .card__resto .card__resto__description .card__btn__like__heart .hearticones__2,
 .container main section .back__Ground .box__1 .card .card__resto .card__resto__description .card__btn__like__heart .hearticones__2 {
+    display: flex;
+    align-items: flex-end;
+    padding-right: 1rem;
     font-size: 1.5rem;
     top: 0%;
     right: 0%;
@@ -852,7 +852,8 @@ header .menu__header .leftArrow {
   }
   .container main section .back__Ground .box__2 *,
 .container main section .back__Ground .box__2 .card {
-    align-items: center;
+    display: flex;
+    flex-direction: column;
     text-decoration: none;
     color: #000000;
     width: 100%;
@@ -878,21 +879,17 @@ header .menu__header .leftArrow {
   }
   .container main section .back__Ground .box__2 * .card__resto,
 .container main section .back__Ground .box__2 .card .card__resto {
-    transform: translateX(-5px);
-    -webkit-transform: translateX(-5px);
-    -moz-transform: translateX(-5px);
-    -ms-transform: translateX(-5px);
-    -o-transform: translateX(-5px);
     border-radius: 1.125rem;
     -webkit-border-radius: 1.125rem;
     box-shadow: 0px 5px 18px -3px #9e9e9e;
-    margin: 0px 20px 20px 20px;
+    margin: 1rem;
     background: #fff;
     width: 90%;
     height: 260px;
   }
   .container main section .back__Ground .box__2 * .card__resto .card__resto__img,
 .container main section .back__Ground .box__2 .card .card__resto .card__resto__img {
+    display: flex;
     border-radius: 1.2rem 1.2rem 0 0;
     -webkit-border-radius: 1.2rem 1.2rem 0 0;
     width: 100%;
@@ -903,15 +900,14 @@ header .menu__header .leftArrow {
 .container main section .back__Ground .box__2 .card .card__resto .card__resto__description {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     padding: 0px 10px 13px 10px;
     border-radius: 0px 0px 15px 15px;
     -webkit-border-radius: 0px 0px 15px 15px;
-    justify-content: space-between;
     border-top: none;
   }
   .container main section .back__Ground .box__2 * .card__resto .card__resto__description .card__resto__text__description,
 .container main section .back__Ground .box__2 .card .card__resto .card__resto__description .card__resto__text__description {
-    justify-content: space-between;
     padding-top: 1.2rem;
   }
   .container main section .back__Ground .box__2 * .card__resto .card__resto__description .card__resto__text__description .card__resto__title,
@@ -930,19 +926,18 @@ header .menu__header .leftArrow {
   }
   .container main section .back__Ground .box__2 * .card__resto .card__resto__description .card__btn__like__heart,
 .container main section .back__Ground .box__2 .card .card__resto .card__resto__description .card__btn__like__heart {
+    display: flex;
     position: relative;
   }
   .container main section .back__Ground .box__2 * .card__resto .card__resto__description .card__btn__like__heart .hearticones__1,
 .container main section .back__Ground .box__2 .card .card__resto .card__resto__description .card__btn__like__heart .hearticones__1 {
+    display: flex;
+    align-items: flex-end;
+    padding-right: 1rem;
     position: absolute;
     font-size: 1.5rem;
     background-image: linear-gradient(to top, #FF79DA, #9356DC);
     top: 42%;
-    transform: translateX(78%);
-    -webkit-transform: translateX(78%);
-    -moz-transform: translateX(78%);
-    -ms-transform: translateX(78%);
-    -o-transform: translateX(78%);
     background-clip: text;
     color: transparent;
     background-position: 0 24px;
@@ -958,6 +953,9 @@ header .menu__header .leftArrow {
   }
   .container main section .back__Ground .box__2 * .card__resto .card__resto__description .card__btn__like__heart .hearticones__2,
 .container main section .back__Ground .box__2 .card .card__resto .card__resto__description .card__btn__like__heart .hearticones__2 {
+    display: flex;
+    align-items: flex-end;
+    padding-right: 1rem;
     font-size: 1.5rem;
     top: 0%;
     right: 0%;
@@ -1025,11 +1023,6 @@ header .menu__header .leftArrow {
     font-size: 1.5rem;
     background-image: linear-gradient(to top, #FF79DA, #9356DC);
     top: 3%;
-    transform: translateX(8%);
-    -webkit-transform: translateX(8%);
-    -moz-transform: translateX(8%);
-    -ms-transform: translateX(8%);
-    -o-transform: translateX(8%);
     background-clip: text;
     color: transparent;
     background-position: 0 24px;
@@ -1371,9 +1364,9 @@ header .menu__header .leftArrow {
     -webkit-border-radius: 25px;
   }
 }
-@media (min-width: 992px) {
+@media all and (min-width: 62rem) {
   .container {
-    width: auto all and (min-width: 992px);
+    width: auto all and (min-width: 62rem);
     height: auto;
     margin: auto;
     background: #f6f6f6;
@@ -1407,6 +1400,9 @@ header .menu__header .leftArrow {
     padding: 0.1rem 0.1rem 0.1rem 0.1rem;
   }
   .container main section .back__Ground .title__resto {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
     margin: 3rem;
     padding-top: 3rem;
     margin: 1.8rem;
@@ -1423,7 +1419,8 @@ header .menu__header .leftArrow {
   }
   .container main section .back__Ground .box__1 *,
 .container main section .back__Ground .box__1 .card {
-    align-items: center;
+    display: flex;
+    flex-direction: column;
     text-decoration: none;
     color: #000000;
     width: 100%;
@@ -1449,21 +1446,17 @@ header .menu__header .leftArrow {
   }
   .container main section .back__Ground .box__1 * .card__resto,
 .container main section .back__Ground .box__1 .card .card__resto {
-    transform: translateX(-5px);
-    -webkit-transform: translateX(-5px);
-    -moz-transform: translateX(-5px);
-    -ms-transform: translateX(-5px);
-    -o-transform: translateX(-5px);
     border-radius: 1.125rem;
     -webkit-border-radius: 1.125rem;
     box-shadow: 0px 5px 18px -3px #9e9e9e;
-    margin: 0px 20px 20px 20px;
+    margin: 1rem;
     background: #fff;
     width: 90%;
     height: 260px;
   }
   .container main section .back__Ground .box__1 * .card__resto .card__resto__img,
 .container main section .back__Ground .box__1 .card .card__resto .card__resto__img {
+    display: flex;
     border-radius: 1.2rem 1.2rem 0 0;
     -webkit-border-radius: 1.2rem 1.2rem 0 0;
     width: 100%;
@@ -1474,16 +1467,15 @@ header .menu__header .leftArrow {
 .container main section .back__Ground .box__1 .card .card__resto .card__resto__description {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     padding: 0px 10px 13px 10px;
     border-radius: 0px 0px 15px 15px;
     -webkit-border-radius: 0px 0px 15px 15px;
-    justify-content: space-between;
     border-top: none;
     background: #f6f6f6;
   }
   .container main section .back__Ground .box__1 * .card__resto .card__resto__description .card__resto__text__description,
 .container main section .back__Ground .box__1 .card .card__resto .card__resto__description .card__resto__text__description {
-    justify-content: space-between;
     padding-top: 1.2rem;
   }
   .container main section .back__Ground .box__1 * .card__resto .card__resto__description .card__resto__text__description .card__resto__title,
@@ -1502,19 +1494,18 @@ header .menu__header .leftArrow {
   }
   .container main section .back__Ground .box__1 * .card__resto .card__resto__description .card__btn__like__heart,
 .container main section .back__Ground .box__1 .card .card__resto .card__resto__description .card__btn__like__heart {
+    display: flex;
     position: relative;
   }
   .container main section .back__Ground .box__1 * .card__resto .card__resto__description .card__btn__like__heart .hearticones__1,
 .container main section .back__Ground .box__1 .card .card__resto .card__resto__description .card__btn__like__heart .hearticones__1 {
+    display: flex;
+    align-items: flex-end;
+    padding-right: 1rem;
     position: absolute;
     font-size: 1.5rem;
     background-image: linear-gradient(to top, #FF79DA, #9356DC);
     top: 42%;
-    transform: translateX(78%);
-    -webkit-transform: translateX(78%);
-    -moz-transform: translateX(78%);
-    -ms-transform: translateX(78%);
-    -o-transform: translateX(78%);
     background-clip: text;
     color: transparent;
     background-position: 0 24px;
@@ -1530,6 +1521,9 @@ header .menu__header .leftArrow {
   }
   .container main section .back__Ground .box__1 * .card__resto .card__resto__description .card__btn__like__heart .hearticones__2,
 .container main section .back__Ground .box__1 .card .card__resto .card__resto__description .card__btn__like__heart .hearticones__2 {
+    display: flex;
+    align-items: flex-end;
+    padding-right: 1rem;
     font-size: 1.5rem;
     top: 0%;
     right: 0%;
@@ -1551,7 +1545,8 @@ header .menu__header .leftArrow {
   }
   .container main section .back__Ground .box__2 *,
 .container main section .back__Ground .box__2 .card {
-    align-items: center;
+    display: flex;
+    flex-direction: column;
     text-decoration: none;
     color: #000000;
     width: 100%;
@@ -1577,21 +1572,17 @@ header .menu__header .leftArrow {
   }
   .container main section .back__Ground .box__2 * .card__resto,
 .container main section .back__Ground .box__2 .card .card__resto {
-    transform: translateX(-5px);
-    -webkit-transform: translateX(-5px);
-    -moz-transform: translateX(-5px);
-    -ms-transform: translateX(-5px);
-    -o-transform: translateX(-5px);
     border-radius: 1.125rem;
     -webkit-border-radius: 1.125rem;
     box-shadow: 0px 5px 18px -3px #9e9e9e;
-    margin: 0px 20px 20px 20px;
+    margin: 1rem;
     background: #fff;
     width: 90%;
     height: 260px;
   }
   .container main section .back__Ground .box__2 * .card__resto .card__resto__img,
 .container main section .back__Ground .box__2 .card .card__resto .card__resto__img {
+    display: flex;
     border-radius: 1.2rem 1.2rem 0 0;
     -webkit-border-radius: 1.2rem 1.2rem 0 0;
     width: 100%;
@@ -1602,15 +1593,14 @@ header .menu__header .leftArrow {
 .container main section .back__Ground .box__2 .card .card__resto .card__resto__description {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     padding: 0px 10px 13px 10px;
     border-radius: 0px 0px 15px 15px;
     -webkit-border-radius: 0px 0px 15px 15px;
-    justify-content: space-between;
     border-top: none;
   }
   .container main section .back__Ground .box__2 * .card__resto .card__resto__description .card__resto__text__description,
 .container main section .back__Ground .box__2 .card .card__resto .card__resto__description .card__resto__text__description {
-    justify-content: space-between;
     padding-top: 1.2rem;
   }
   .container main section .back__Ground .box__2 * .card__resto .card__resto__description .card__resto__text__description .card__resto__title,
@@ -1629,19 +1619,18 @@ header .menu__header .leftArrow {
   }
   .container main section .back__Ground .box__2 * .card__resto .card__resto__description .card__btn__like__heart,
 .container main section .back__Ground .box__2 .card .card__resto .card__resto__description .card__btn__like__heart {
+    display: flex;
     position: relative;
   }
   .container main section .back__Ground .box__2 * .card__resto .card__resto__description .card__btn__like__heart .hearticones__1,
 .container main section .back__Ground .box__2 .card .card__resto .card__resto__description .card__btn__like__heart .hearticones__1 {
+    display: flex;
+    align-items: flex-end;
+    padding-right: 1rem;
     position: absolute;
     font-size: 1.5rem;
     background-image: linear-gradient(to top, #FF79DA, #9356DC);
     top: 42%;
-    transform: translateX(78%);
-    -webkit-transform: translateX(78%);
-    -moz-transform: translateX(78%);
-    -ms-transform: translateX(78%);
-    -o-transform: translateX(78%);
     background-clip: text;
     color: transparent;
     background-position: 0 24px;
@@ -1657,6 +1646,9 @@ header .menu__header .leftArrow {
   }
   .container main section .back__Ground .box__2 * .card__resto .card__resto__description .card__btn__like__heart .hearticones__2,
 .container main section .back__Ground .box__2 .card .card__resto .card__resto__description .card__btn__like__heart .hearticones__2 {
+    display: flex;
+    align-items: flex-end;
+    padding-right: 1rem;
     font-size: 1.5rem;
     top: 0%;
     right: 0%;
@@ -1724,11 +1716,6 @@ header .menu__header .leftArrow {
     font-size: 1.5rem;
     background-image: linear-gradient(to top, #FF79DA, #9356DC);
     top: 3%;
-    transform: translateX(8%);
-    -webkit-transform: translateX(8%);
-    -moz-transform: translateX(8%);
-    -ms-transform: translateX(8%);
-    -o-transform: translateX(8%);
     background-clip: text;
     color: transparent;
     background-position: 0 24px;
@@ -2336,11 +2323,6 @@ header .menu__header .leftArrow {
   font-size: 1.5rem;
   background-image: linear-gradient(to top, #FF79DA, #9356DC);
   top: 3%;
-  transform: translateX(8%);
-  -webkit-transform: translateX(8%);
-  -moz-transform: translateX(8%);
-  -ms-transform: translateX(8%);
-  -o-transform: translateX(8%);
   background-clip: text;
   color: transparent;
   background-position: 0 24px;
@@ -2755,468 +2737,6 @@ header .menu__header .leftArrow {
   font-size: 1.5rem;
   background-image: linear-gradient(to top, #FF79DA, #9356DC);
   top: 3%;
-  transform: translateX(8%);
-  -webkit-transform: translateX(8%);
-  -moz-transform: translateX(8%);
-  -ms-transform: translateX(8%);
-  -o-transform: translateX(8%);
-  background-clip: text;
-  color: transparent;
-  background-position: 0 24px;
-  height: 24px;
-  cursor: pointer;
-  background-repeat: no-repeat;
-  transition: background-position 1s;
-  -webkit-transition: background-position 1s;
-}
-.container .menu .menu__resto .menu__resto__description .menu__btn__like__heart .menu__hearticones__1:hover {
-  background-position: 0 0px;
-}
-.container .menu .menu__resto .menu__resto__description .menu__btn__like__heart .menu__hearticones__2 {
-  font-size: 1.5rem;
-  top: 0%;
-  right: 0%;
-  color: #000000;
-  opacity: 1;
-  position: absolute;
-  transition: opacity 1.5s;
-  -webkit-transition: opacity 1.5s;
-}
-.container .menu .menu__resto .menu__resto__description .menu__btn__like__heart .menu__hearticones__2:hover {
-  opacity: 0;
-}
-.container .menus__entrees__plats__desserts .menu__entree {
-  display: flex;
-  flex-direction: column;
-  height: auto;
-  background: #f6f6f6;
-  /*  CARD 1,
-      CARD 2,
-      CARD 3  */
-}
-.container .menus__entrees__plats__desserts .menu__entree .menu__title {
-  font-size: 16px;
-  font-weight: lighter;
-  margin: 20px;
-  margin: 30px;
-  border-bottom: 3px solid #99E2D0;
-  width: 40px;
-  padding-bottom: 5px;
-  margin: 16px;
-}
-.container .menus__entrees__plats__desserts .menu__entree .sticker__menu__box__card .sticker__menu {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  box-shadow: 0px 5px 18px -3px #9e9e9e;
-  margin: 0px 13px 13px 14px;
-  border-radius: 15px;
-  -webkit-border-radius: 15px;
-  text-decoration: none;
-  color: #000000;
-  overflow: hidden;
-}
-.container .menus__entrees__plats__desserts .menu__entree .sticker__menu__box__card .slideInUp,
-.container .menus__entrees__plats__desserts .menu__entree .sticker__menu__box__card .slideInUp__1 {
-  animation: slideInUp 1s both;
-  -webkit-animation: slideInUp 1s both;
-  animation-delay: 0.2s;
-  -webkit-animation: 0.2s;
-}
-.container .menus__entrees__plats__desserts .menu__entree .sticker__menu__box__card .slideInUp .sticker__menu__description,
-.container .menus__entrees__plats__desserts .menu__entree .sticker__menu__box__card .slideInUp__1 .sticker__menu__description {
-  width: 60%;
-}
-.container .menus__entrees__plats__desserts .menu__entree .sticker__menu__box__card .slideInUp .sticker__menu__description .sticker__menu__description__title,
-.container .menus__entrees__plats__desserts .menu__entree .sticker__menu__box__card .slideInUp__1 .sticker__menu__description .sticker__menu__description__title {
-  font-size: 18px;
-  font-weight: 500;
-  margin: 11px 0px 4px 10px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-.container .menus__entrees__plats__desserts .menu__entree .sticker__menu__box__card .slideInUp .sticker__menu__description .sticker__menu__description__subtitle,
-.container .menus__entrees__plats__desserts .menu__entree .sticker__menu__box__card .slideInUp__1 .sticker__menu__description .sticker__menu__description__subtitle {
-  font-size: 14px;
-  font-weight: 300;
-  margin: 0px 0px 12px 10px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  transform: translateY(0.074rem);
-  -webkit-transform: translateY(0.074rem);
-}
-.container .menus__entrees__plats__desserts .menu__entree .sticker__menu__box__card .slideInUp .sticker__menu__description .sticker__menu:hover,
-.container .menus__entrees__plats__desserts .menu__entree .sticker__menu__box__card .slideInUp .sticker__menu__description .sticker__menu__description,
-.container .menus__entrees__plats__desserts .menu__entree .sticker__menu__box__card .slideInUp__1 .sticker__menu__description .sticker__menu:hover,
-.container .menus__entrees__plats__desserts .menu__entree .sticker__menu__box__card .slideInUp__1 .sticker__menu__description .sticker__menu__description {
-  width: 60%;
-}
-.container .menus__entrees__plats__desserts .menu__entree .sticker__menu__box__card .slideInUp .sticker__menu__price,
-.container .menus__entrees__plats__desserts .menu__entree .sticker__menu__box__card .slideInUp__1 .sticker__menu__price {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  font-size: 15px;
-  font-weight: 500;
-  padding: 38px 10px 0px 10px;
-  width: 32%;
-  transition: width 3s -0.1s ease-in-out;
-  -webkit-transition: width 3s -0.1s ease-in-out;
-}
-.container .menus__entrees__plats__desserts .menu__entree .sticker__menu__box__card .slideInUp .sticker__menu__icon,
-.container .menus__entrees__plats__desserts .menu__entree .sticker__menu__box__card .slideInUp__1 .sticker__menu__icon {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: #99E2D0;
-  width: 0%;
-  border-radius: 0px 15px 15px 0px;
-  -webkit-border-radius: 0px 15px 15px 0px;
-  overflow: hidden;
-  transition: width 1s -0.1s ease-in-out;
-  -webkit-transition: width 1s -0.1s ease-in-out;
-}
-.container .menus__entrees__plats__desserts .menu__entree .sticker__menu__box__card .slideInUp .sticker__menu__icon__check,
-.container .menus__entrees__plats__desserts .menu__entree .sticker__menu__box__card .slideInUp__1 .sticker__menu__icon__check {
-  background-color: #fff;
-  color: #99E2D0;
-  font-size: 12px;
-  padding: 4px;
-  border-radius: 25px;
-  -webkit-border-radius: 25px;
-}
-.container .menus__entrees__plats__desserts .menu__plat {
-  display: flex;
-  flex-direction: column;
-  height: auto;
-  background: #f6f6f6;
-  /*  CARD 4,
-      CARD 5,
-      CARD 6  */
-}
-.container .menus__entrees__plats__desserts .menu__plat .menu__title {
-  font-size: 16px;
-  font-weight: lighter;
-  margin: 20px;
-  margin: 30px;
-  border-bottom: 3px solid #99E2D0;
-  width: 40px;
-  padding-bottom: 5px;
-  margin: 16px;
-}
-.container .menus__entrees__plats__desserts .menu__plat .sticker__menu__box__card .sticker__menu {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  box-shadow: 0px 5px 18px -3px #9e9e9e;
-  margin: 0px 13px 13px 14px;
-  border-radius: 15px;
-  -webkit-border-radius: 15px;
-  text-decoration: none;
-  color: #000000;
-  overflow: hidden;
-}
-.container .menus__entrees__plats__desserts .menu__plat .sticker__menu__box__card .slideInUp,
-.container .menus__entrees__plats__desserts .menu__plat .sticker__menu__box__card .slideInUp__2 {
-  animation: slideInUp 1s both;
-  -webkit-animation: slideInUp 1s both;
-  animation-delay: 0.2s;
-  -webkit-animation: 0.2s;
-}
-.container .menus__entrees__plats__desserts .menu__plat .sticker__menu__box__card .slideInUp .sticker__menu__description,
-.container .menus__entrees__plats__desserts .menu__plat .sticker__menu__box__card .slideInUp__2 .sticker__menu__description {
-  width: 60%;
-}
-.container .menus__entrees__plats__desserts .menu__plat .sticker__menu__box__card .slideInUp .sticker__menu__description .sticker__menu__description__title,
-.container .menus__entrees__plats__desserts .menu__plat .sticker__menu__box__card .slideInUp__2 .sticker__menu__description .sticker__menu__description__title {
-  font-size: 18px;
-  font-weight: 500;
-  margin: 11px 0px 4px 10px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-.container .menus__entrees__plats__desserts .menu__plat .sticker__menu__box__card .slideInUp .sticker__menu__description .sticker__menu__description__subtitle,
-.container .menus__entrees__plats__desserts .menu__plat .sticker__menu__box__card .slideInUp__2 .sticker__menu__description .sticker__menu__description__subtitle {
-  font-size: 14px;
-  font-weight: 300;
-  margin: 0px 0px 12px 10px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  transform: translateY(0.074rem);
-  -webkit-transform: translateY(0.074rem);
-}
-.container .menus__entrees__plats__desserts .menu__plat .sticker__menu__box__card .slideInUp .sticker__menu__description .sticker__menu:hover,
-.container .menus__entrees__plats__desserts .menu__plat .sticker__menu__box__card .slideInUp .sticker__menu__description .sticker__menu__description,
-.container .menus__entrees__plats__desserts .menu__plat .sticker__menu__box__card .slideInUp__2 .sticker__menu__description .sticker__menu:hover,
-.container .menus__entrees__plats__desserts .menu__plat .sticker__menu__box__card .slideInUp__2 .sticker__menu__description .sticker__menu__description {
-  width: 60%;
-}
-.container .menus__entrees__plats__desserts .menu__plat .sticker__menu__box__card .slideInUp .sticker__menu__price,
-.container .menus__entrees__plats__desserts .menu__plat .sticker__menu__box__card .slideInUp__2 .sticker__menu__price {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  font-size: 15px;
-  font-weight: 500;
-  padding: 38px 10px 0px 10px;
-  width: 32%;
-  transition: width 3s -0.1s ease-in-out;
-  -webkit-transition: width 3s -0.1s ease-in-out;
-}
-.container .menus__entrees__plats__desserts .menu__plat .sticker__menu__box__card .slideInUp .sticker__menu__icon,
-.container .menus__entrees__plats__desserts .menu__plat .sticker__menu__box__card .slideInUp__2 .sticker__menu__icon {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: #99E2D0;
-  width: 0%;
-  border-radius: 0px 15px 15px 0px;
-  -webkit-border-radius: 0px 15px 15px 0px;
-  overflow: hidden;
-  transition: width 1s -0.1s ease-in-out;
-  -webkit-transition: width 1s -0.1s ease-in-out;
-}
-.container .menus__entrees__plats__desserts .menu__plat .sticker__menu__box__card .slideInUp .sticker__menu__icon__check,
-.container .menus__entrees__plats__desserts .menu__plat .sticker__menu__box__card .slideInUp__2 .sticker__menu__icon__check {
-  background-color: #fff;
-  color: #99E2D0;
-  font-size: 12px;
-  padding: 4px;
-  border-radius: 25px;
-  -webkit-border-radius: 25px;
-}
-.container .menus__entrees__plats__desserts .menu__dessert {
-  display: flex;
-  flex-direction: column;
-  height: auto;
-  background: #f6f6f6;
-  /*  CARD 7,
-      CARD 8,
-      CARD 9  */
-}
-.container .menus__entrees__plats__desserts .menu__dessert .menu__title {
-  font-size: 16px;
-  font-weight: lighter;
-  margin: 20px;
-  margin: 30px;
-  border-bottom: 3px solid #99E2D0;
-  width: 40px;
-  padding-bottom: 5px;
-  margin: 16px;
-}
-.container .menus__entrees__plats__desserts .menu__dessert .sticker__menu__box__card .sticker__menu {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  box-shadow: 0px 5px 18px -3px #9e9e9e;
-  margin: 0px 13px 13px 14px;
-  border-radius: 15px;
-  -webkit-border-radius: 15px;
-  text-decoration: none;
-  color: #000000;
-  overflow: hidden;
-}
-.container .menus__entrees__plats__desserts .menu__dessert .sticker__menu__box__card .slideInUp,
-.container .menus__entrees__plats__desserts .menu__dessert .sticker__menu__box__card .slideInUp__2 {
-  animation: slideInUp 1s both;
-  -webkit-animation: slideInUp 1s both;
-  animation-delay: 0.2s;
-  -webkit-animation: 0.2s;
-}
-.container .menus__entrees__plats__desserts .menu__dessert .sticker__menu__box__card .slideInUp .sticker__menu__description,
-.container .menus__entrees__plats__desserts .menu__dessert .sticker__menu__box__card .slideInUp__2 .sticker__menu__description {
-  width: 60%;
-}
-.container .menus__entrees__plats__desserts .menu__dessert .sticker__menu__box__card .slideInUp .sticker__menu__description .sticker__menu__description__title,
-.container .menus__entrees__plats__desserts .menu__dessert .sticker__menu__box__card .slideInUp__2 .sticker__menu__description .sticker__menu__description__title {
-  font-size: 18px;
-  font-weight: 500;
-  margin: 11px 0px 4px 10px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-.container .menus__entrees__plats__desserts .menu__dessert .sticker__menu__box__card .slideInUp .sticker__menu__description .sticker__menu__description__subtitle,
-.container .menus__entrees__plats__desserts .menu__dessert .sticker__menu__box__card .slideInUp__2 .sticker__menu__description .sticker__menu__description__subtitle {
-  font-size: 14px;
-  font-weight: 300;
-  margin: 0px 0px 12px 10px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  transform: translateY(0.074rem);
-  -webkit-transform: translateY(0.074rem);
-}
-.container .menus__entrees__plats__desserts .menu__dessert .sticker__menu__box__card .slideInUp .sticker__menu__description .sticker__menu:hover,
-.container .menus__entrees__plats__desserts .menu__dessert .sticker__menu__box__card .slideInUp .sticker__menu__description .sticker__menu__description,
-.container .menus__entrees__plats__desserts .menu__dessert .sticker__menu__box__card .slideInUp__2 .sticker__menu__description .sticker__menu:hover,
-.container .menus__entrees__plats__desserts .menu__dessert .sticker__menu__box__card .slideInUp__2 .sticker__menu__description .sticker__menu__description {
-  width: 60%;
-}
-.container .menus__entrees__plats__desserts .menu__dessert .sticker__menu__box__card .slideInUp .sticker__menu__price,
-.container .menus__entrees__plats__desserts .menu__dessert .sticker__menu__box__card .slideInUp__2 .sticker__menu__price {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  font-size: 15px;
-  font-weight: 500;
-  padding: 38px 10px 0px 10px;
-  width: 32%;
-  transition: width 3s -0.1s ease-in-out;
-  -webkit-transition: width 3s -0.1s ease-in-out;
-}
-.container .menus__entrees__plats__desserts .menu__dessert .sticker__menu__box__card .slideInUp .sticker__menu__icon,
-.container .menus__entrees__plats__desserts .menu__dessert .sticker__menu__box__card .slideInUp__2 .sticker__menu__icon {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: #99E2D0;
-  width: 0%;
-  border-radius: 0px 15px 15px 0px;
-  -webkit-border-radius: 0px 15px 15px 0px;
-  overflow: hidden;
-  transition: width 1s -0.1s ease-in-out;
-  -webkit-transition: width 1s -0.1s ease-in-out;
-}
-.container .menus__entrees__plats__desserts .menu__dessert .sticker__menu__box__card .slideInUp .sticker__menu__icon__check,
-.container .menus__entrees__plats__desserts .menu__dessert .sticker__menu__box__card .slideInUp__2 .sticker__menu__icon__check {
-  background-color: #fff;
-  color: #99E2D0;
-  font-size: 12px;
-  padding: 4px;
-  border-radius: 25px;
-  -webkit-border-radius: 25px;
-}
-
-.btn__commander {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 18px;
-  background: #f6f6f6;
-}
-.btn__commander .button {
-  color: #fff;
-  font-size: 16px;
-  font-weight: normal;
-  box-shadow: 0px 5px 18px -3px #9e9e9e;
-  background: linear-gradient(175deg, #FF79DA 5%, #9356DC 100%);
-  border: #000000;
-  border-radius: 35px;
-  -webkit-border-radius: 35px;
-  cursor: pointer;
-  padding: 15px 50px;
-  text-decoration: none;
-}
-.btn__commander .button:hover {
-  background: linear-gradient(175deg, #FF79DA 5%, #9356DC 100%);
-  box-shadow: 0px 5px 22px -3px #6b6b6b;
-  opacity: 0.8;
-}
-.btn__commander .button:active {
-  position: relative;
-  top: 1px;
-}
-
-.box__commandbutton {
-  padding-left: 45px;
-  padding-right: 45px;
-  margin: 45px;
-  margin: 25px;
-}
-
-.sticker__menu:hover.sticker__menu__price {
-  width: 5%;
-  padding-top: 35px;
-  transition: width 0.5s -0.3s ease-in-out;
-  -webkit-transition: width 0.5s -0.3s ease-in-out;
-}
-
-.sticker__menu:hover .sticker__menu__icon {
-  background-color: #99E2D0;
-  color: #fff;
-  width: 18%;
-  padding-left: 9%;
-  padding-right: 9%;
-  transition: width 0.5s -0.3s ease-in-out;
-  -webkit-transition: width 0.5s -0.3s ease-in-out;
-}
-
-.sticker__menu:hover .sticker__menu__icon__check {
-  animation: checkrotation 1s -0.3s ease-in-out;
-  -webkit-animation: checkrotation 1s -0.3s ease-in-out;
-  font-size: 12px;
-  padding: 4px;
-}
-
-.container {
-  /*MENU 1 SECTION*/
-}
-.container .menu .menu__resto {
-  box-shadow: 0px 5px 18px -3px #9e9e9e;
-  background: #fff;
-  width: 100%;
-  height: 260px;
-}
-.container .menu .menu__resto .menu__resto__img {
-  border-radius: 0 0 0 0;
-  -webkit-border-radius: 0 0 0 0;
-  width: 100%;
-  height: 240px;
-  object-fit: cover;
-  position: relative;
-  margin: -20px;
-  top: 1.2rem;
-  right: -1.2rem;
-}
-.container .menu .menu__resto .menu__resto__description {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: absolute;
-  background: #fff;
-  padding: 0px 4.1rem 0rem 1.25rem;
-  margin: 0rem 0rem 0rem 0rem;
-  border-radius: 2.5rem 2.5rem 0 0;
-  -webkit-border-radius: 2.5rem 2.5rem 0 0;
-  border-top: none;
-  width: 100%;
-  background: #f6f6f6;
-}
-.container .menu .menu__resto .menu__resto__description .menu__resto__text__description {
-  justify-content: space-between;
-  padding-top: 1.6rem;
-}
-.container .menu .menu__resto .menu__resto__description .menu__resto__text__description .menu__resto__title {
-  font-family: "Shrikhand";
-  font-size: 1.8rem;
-}
-.container .menu .menu__resto .menu__resto__description .menu__resto__text__description .menu__resto__title .menu__resto__title {
-  font-family: "Shrikhand";
-  font-size: 1.8rem;
-}
-.container .menu .menu__resto .menu__resto__description .menu__btn__like__heart {
-  position: relative;
-  top: 0.1rem;
-}
-.container .menu .menu__resto .menu__resto__description .menu__btn__like__heart .menu__hearticones__1 {
-  position: absolute;
-  font-size: 1.5rem;
-  background-image: linear-gradient(to top, #FF79DA, #9356DC);
-  top: 3%;
-  transform: translateX(8%);
-  -webkit-transform: translateX(8%);
-  -moz-transform: translateX(8%);
-  -ms-transform: translateX(8%);
-  -o-transform: translateX(8%);
   background-clip: text;
   color: transparent;
   background-position: 0 24px;
@@ -3669,11 +3189,458 @@ header .menu__header .leftArrow {
   font-size: 1.5rem;
   background-image: linear-gradient(to top, #FF79DA, #9356DC);
   top: 3%;
-  transform: translateX(8%);
-  -webkit-transform: translateX(8%);
-  -moz-transform: translateX(8%);
-  -ms-transform: translateX(8%);
-  -o-transform: translateX(8%);
+  background-clip: text;
+  color: transparent;
+  background-position: 0 24px;
+  height: 24px;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  transition: background-position 1s;
+  -webkit-transition: background-position 1s;
+}
+.container .menu .menu__resto .menu__resto__description .menu__btn__like__heart .menu__hearticones__1:hover {
+  background-position: 0 0px;
+}
+.container .menu .menu__resto .menu__resto__description .menu__btn__like__heart .menu__hearticones__2 {
+  font-size: 1.5rem;
+  top: 0%;
+  right: 0%;
+  color: #000000;
+  opacity: 1;
+  position: absolute;
+  transition: opacity 1.5s;
+  -webkit-transition: opacity 1.5s;
+}
+.container .menu .menu__resto .menu__resto__description .menu__btn__like__heart .menu__hearticones__2:hover {
+  opacity: 0;
+}
+.container .menus__entrees__plats__desserts .menu__entree {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  background: #f6f6f6;
+  /*  CARD 1,
+      CARD 2,
+      CARD 3  */
+}
+.container .menus__entrees__plats__desserts .menu__entree .menu__title {
+  font-size: 16px;
+  font-weight: lighter;
+  margin: 20px;
+  margin: 30px;
+  border-bottom: 3px solid #99E2D0;
+  width: 40px;
+  padding-bottom: 5px;
+  margin: 16px;
+}
+.container .menus__entrees__plats__desserts .menu__entree .sticker__menu__box__card .sticker__menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  box-shadow: 0px 5px 18px -3px #9e9e9e;
+  margin: 0px 13px 13px 14px;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  text-decoration: none;
+  color: #000000;
+  overflow: hidden;
+}
+.container .menus__entrees__plats__desserts .menu__entree .sticker__menu__box__card .slideInUp,
+.container .menus__entrees__plats__desserts .menu__entree .sticker__menu__box__card .slideInUp__1 {
+  animation: slideInUp 1s both;
+  -webkit-animation: slideInUp 1s both;
+  animation-delay: 0.2s;
+  -webkit-animation: 0.2s;
+}
+.container .menus__entrees__plats__desserts .menu__entree .sticker__menu__box__card .slideInUp .sticker__menu__description,
+.container .menus__entrees__plats__desserts .menu__entree .sticker__menu__box__card .slideInUp__1 .sticker__menu__description {
+  width: 60%;
+}
+.container .menus__entrees__plats__desserts .menu__entree .sticker__menu__box__card .slideInUp .sticker__menu__description .sticker__menu__description__title,
+.container .menus__entrees__plats__desserts .menu__entree .sticker__menu__box__card .slideInUp__1 .sticker__menu__description .sticker__menu__description__title {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 11px 0px 4px 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.container .menus__entrees__plats__desserts .menu__entree .sticker__menu__box__card .slideInUp .sticker__menu__description .sticker__menu__description__subtitle,
+.container .menus__entrees__plats__desserts .menu__entree .sticker__menu__box__card .slideInUp__1 .sticker__menu__description .sticker__menu__description__subtitle {
+  font-size: 14px;
+  font-weight: 300;
+  margin: 0px 0px 12px 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transform: translateY(0.074rem);
+  -webkit-transform: translateY(0.074rem);
+}
+.container .menus__entrees__plats__desserts .menu__entree .sticker__menu__box__card .slideInUp .sticker__menu__description .sticker__menu:hover,
+.container .menus__entrees__plats__desserts .menu__entree .sticker__menu__box__card .slideInUp .sticker__menu__description .sticker__menu__description,
+.container .menus__entrees__plats__desserts .menu__entree .sticker__menu__box__card .slideInUp__1 .sticker__menu__description .sticker__menu:hover,
+.container .menus__entrees__plats__desserts .menu__entree .sticker__menu__box__card .slideInUp__1 .sticker__menu__description .sticker__menu__description {
+  width: 60%;
+}
+.container .menus__entrees__plats__desserts .menu__entree .sticker__menu__box__card .slideInUp .sticker__menu__price,
+.container .menus__entrees__plats__desserts .menu__entree .sticker__menu__box__card .slideInUp__1 .sticker__menu__price {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 38px 10px 0px 10px;
+  width: 32%;
+  transition: width 3s -0.1s ease-in-out;
+  -webkit-transition: width 3s -0.1s ease-in-out;
+}
+.container .menus__entrees__plats__desserts .menu__entree .sticker__menu__box__card .slideInUp .sticker__menu__icon,
+.container .menus__entrees__plats__desserts .menu__entree .sticker__menu__box__card .slideInUp__1 .sticker__menu__icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #99E2D0;
+  width: 0%;
+  border-radius: 0px 15px 15px 0px;
+  -webkit-border-radius: 0px 15px 15px 0px;
+  overflow: hidden;
+  transition: width 1s -0.1s ease-in-out;
+  -webkit-transition: width 1s -0.1s ease-in-out;
+}
+.container .menus__entrees__plats__desserts .menu__entree .sticker__menu__box__card .slideInUp .sticker__menu__icon__check,
+.container .menus__entrees__plats__desserts .menu__entree .sticker__menu__box__card .slideInUp__1 .sticker__menu__icon__check {
+  background-color: #fff;
+  color: #99E2D0;
+  font-size: 12px;
+  padding: 4px;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+}
+.container .menus__entrees__plats__desserts .menu__plat {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  background: #f6f6f6;
+  /*  CARD 4,
+      CARD 5,
+      CARD 6  */
+}
+.container .menus__entrees__plats__desserts .menu__plat .menu__title {
+  font-size: 16px;
+  font-weight: lighter;
+  margin: 20px;
+  margin: 30px;
+  border-bottom: 3px solid #99E2D0;
+  width: 40px;
+  padding-bottom: 5px;
+  margin: 16px;
+}
+.container .menus__entrees__plats__desserts .menu__plat .sticker__menu__box__card .sticker__menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  box-shadow: 0px 5px 18px -3px #9e9e9e;
+  margin: 0px 13px 13px 14px;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  text-decoration: none;
+  color: #000000;
+  overflow: hidden;
+}
+.container .menus__entrees__plats__desserts .menu__plat .sticker__menu__box__card .slideInUp,
+.container .menus__entrees__plats__desserts .menu__plat .sticker__menu__box__card .slideInUp__2 {
+  animation: slideInUp 1s both;
+  -webkit-animation: slideInUp 1s both;
+  animation-delay: 0.2s;
+  -webkit-animation: 0.2s;
+}
+.container .menus__entrees__plats__desserts .menu__plat .sticker__menu__box__card .slideInUp .sticker__menu__description,
+.container .menus__entrees__plats__desserts .menu__plat .sticker__menu__box__card .slideInUp__2 .sticker__menu__description {
+  width: 60%;
+}
+.container .menus__entrees__plats__desserts .menu__plat .sticker__menu__box__card .slideInUp .sticker__menu__description .sticker__menu__description__title,
+.container .menus__entrees__plats__desserts .menu__plat .sticker__menu__box__card .slideInUp__2 .sticker__menu__description .sticker__menu__description__title {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 11px 0px 4px 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.container .menus__entrees__plats__desserts .menu__plat .sticker__menu__box__card .slideInUp .sticker__menu__description .sticker__menu__description__subtitle,
+.container .menus__entrees__plats__desserts .menu__plat .sticker__menu__box__card .slideInUp__2 .sticker__menu__description .sticker__menu__description__subtitle {
+  font-size: 14px;
+  font-weight: 300;
+  margin: 0px 0px 12px 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transform: translateY(0.074rem);
+  -webkit-transform: translateY(0.074rem);
+}
+.container .menus__entrees__plats__desserts .menu__plat .sticker__menu__box__card .slideInUp .sticker__menu__description .sticker__menu:hover,
+.container .menus__entrees__plats__desserts .menu__plat .sticker__menu__box__card .slideInUp .sticker__menu__description .sticker__menu__description,
+.container .menus__entrees__plats__desserts .menu__plat .sticker__menu__box__card .slideInUp__2 .sticker__menu__description .sticker__menu:hover,
+.container .menus__entrees__plats__desserts .menu__plat .sticker__menu__box__card .slideInUp__2 .sticker__menu__description .sticker__menu__description {
+  width: 60%;
+}
+.container .menus__entrees__plats__desserts .menu__plat .sticker__menu__box__card .slideInUp .sticker__menu__price,
+.container .menus__entrees__plats__desserts .menu__plat .sticker__menu__box__card .slideInUp__2 .sticker__menu__price {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 38px 10px 0px 10px;
+  width: 32%;
+  transition: width 3s -0.1s ease-in-out;
+  -webkit-transition: width 3s -0.1s ease-in-out;
+}
+.container .menus__entrees__plats__desserts .menu__plat .sticker__menu__box__card .slideInUp .sticker__menu__icon,
+.container .menus__entrees__plats__desserts .menu__plat .sticker__menu__box__card .slideInUp__2 .sticker__menu__icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #99E2D0;
+  width: 0%;
+  border-radius: 0px 15px 15px 0px;
+  -webkit-border-radius: 0px 15px 15px 0px;
+  overflow: hidden;
+  transition: width 1s -0.1s ease-in-out;
+  -webkit-transition: width 1s -0.1s ease-in-out;
+}
+.container .menus__entrees__plats__desserts .menu__plat .sticker__menu__box__card .slideInUp .sticker__menu__icon__check,
+.container .menus__entrees__plats__desserts .menu__plat .sticker__menu__box__card .slideInUp__2 .sticker__menu__icon__check {
+  background-color: #fff;
+  color: #99E2D0;
+  font-size: 12px;
+  padding: 4px;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+}
+.container .menus__entrees__plats__desserts .menu__dessert {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  background: #f6f6f6;
+  /*  CARD 7,
+      CARD 8,
+      CARD 9  */
+}
+.container .menus__entrees__plats__desserts .menu__dessert .menu__title {
+  font-size: 16px;
+  font-weight: lighter;
+  margin: 20px;
+  margin: 30px;
+  border-bottom: 3px solid #99E2D0;
+  width: 40px;
+  padding-bottom: 5px;
+  margin: 16px;
+}
+.container .menus__entrees__plats__desserts .menu__dessert .sticker__menu__box__card .sticker__menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  box-shadow: 0px 5px 18px -3px #9e9e9e;
+  margin: 0px 13px 13px 14px;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  text-decoration: none;
+  color: #000000;
+  overflow: hidden;
+}
+.container .menus__entrees__plats__desserts .menu__dessert .sticker__menu__box__card .slideInUp,
+.container .menus__entrees__plats__desserts .menu__dessert .sticker__menu__box__card .slideInUp__2 {
+  animation: slideInUp 1s both;
+  -webkit-animation: slideInUp 1s both;
+  animation-delay: 0.2s;
+  -webkit-animation: 0.2s;
+}
+.container .menus__entrees__plats__desserts .menu__dessert .sticker__menu__box__card .slideInUp .sticker__menu__description,
+.container .menus__entrees__plats__desserts .menu__dessert .sticker__menu__box__card .slideInUp__2 .sticker__menu__description {
+  width: 60%;
+}
+.container .menus__entrees__plats__desserts .menu__dessert .sticker__menu__box__card .slideInUp .sticker__menu__description .sticker__menu__description__title,
+.container .menus__entrees__plats__desserts .menu__dessert .sticker__menu__box__card .slideInUp__2 .sticker__menu__description .sticker__menu__description__title {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 11px 0px 4px 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.container .menus__entrees__plats__desserts .menu__dessert .sticker__menu__box__card .slideInUp .sticker__menu__description .sticker__menu__description__subtitle,
+.container .menus__entrees__plats__desserts .menu__dessert .sticker__menu__box__card .slideInUp__2 .sticker__menu__description .sticker__menu__description__subtitle {
+  font-size: 14px;
+  font-weight: 300;
+  margin: 0px 0px 12px 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transform: translateY(0.074rem);
+  -webkit-transform: translateY(0.074rem);
+}
+.container .menus__entrees__plats__desserts .menu__dessert .sticker__menu__box__card .slideInUp .sticker__menu__description .sticker__menu:hover,
+.container .menus__entrees__plats__desserts .menu__dessert .sticker__menu__box__card .slideInUp .sticker__menu__description .sticker__menu__description,
+.container .menus__entrees__plats__desserts .menu__dessert .sticker__menu__box__card .slideInUp__2 .sticker__menu__description .sticker__menu:hover,
+.container .menus__entrees__plats__desserts .menu__dessert .sticker__menu__box__card .slideInUp__2 .sticker__menu__description .sticker__menu__description {
+  width: 60%;
+}
+.container .menus__entrees__plats__desserts .menu__dessert .sticker__menu__box__card .slideInUp .sticker__menu__price,
+.container .menus__entrees__plats__desserts .menu__dessert .sticker__menu__box__card .slideInUp__2 .sticker__menu__price {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 38px 10px 0px 10px;
+  width: 32%;
+  transition: width 3s -0.1s ease-in-out;
+  -webkit-transition: width 3s -0.1s ease-in-out;
+}
+.container .menus__entrees__plats__desserts .menu__dessert .sticker__menu__box__card .slideInUp .sticker__menu__icon,
+.container .menus__entrees__plats__desserts .menu__dessert .sticker__menu__box__card .slideInUp__2 .sticker__menu__icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #99E2D0;
+  width: 0%;
+  border-radius: 0px 15px 15px 0px;
+  -webkit-border-radius: 0px 15px 15px 0px;
+  overflow: hidden;
+  transition: width 1s -0.1s ease-in-out;
+  -webkit-transition: width 1s -0.1s ease-in-out;
+}
+.container .menus__entrees__plats__desserts .menu__dessert .sticker__menu__box__card .slideInUp .sticker__menu__icon__check,
+.container .menus__entrees__plats__desserts .menu__dessert .sticker__menu__box__card .slideInUp__2 .sticker__menu__icon__check {
+  background-color: #fff;
+  color: #99E2D0;
+  font-size: 12px;
+  padding: 4px;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+}
+
+.btn__commander {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 18px;
+  background: #f6f6f6;
+}
+.btn__commander .button {
+  color: #fff;
+  font-size: 16px;
+  font-weight: normal;
+  box-shadow: 0px 5px 18px -3px #9e9e9e;
+  background: linear-gradient(175deg, #FF79DA 5%, #9356DC 100%);
+  border: #000000;
+  border-radius: 35px;
+  -webkit-border-radius: 35px;
+  cursor: pointer;
+  padding: 15px 50px;
+  text-decoration: none;
+}
+.btn__commander .button:hover {
+  background: linear-gradient(175deg, #FF79DA 5%, #9356DC 100%);
+  box-shadow: 0px 5px 22px -3px #6b6b6b;
+  opacity: 0.8;
+}
+.btn__commander .button:active {
+  position: relative;
+  top: 1px;
+}
+
+.box__commandbutton {
+  padding-left: 45px;
+  padding-right: 45px;
+  margin: 45px;
+  margin: 25px;
+}
+
+.sticker__menu:hover.sticker__menu__price {
+  width: 5%;
+  padding-top: 35px;
+  transition: width 0.5s -0.3s ease-in-out;
+  -webkit-transition: width 0.5s -0.3s ease-in-out;
+}
+
+.sticker__menu:hover .sticker__menu__icon {
+  background-color: #99E2D0;
+  color: #fff;
+  width: 18%;
+  padding-left: 9%;
+  padding-right: 9%;
+  transition: width 0.5s -0.3s ease-in-out;
+  -webkit-transition: width 0.5s -0.3s ease-in-out;
+}
+
+.sticker__menu:hover .sticker__menu__icon__check {
+  animation: checkrotation 1s -0.3s ease-in-out;
+  -webkit-animation: checkrotation 1s -0.3s ease-in-out;
+  font-size: 12px;
+  padding: 4px;
+}
+
+.container {
+  /*MENU 1 SECTION*/
+}
+.container .menu .menu__resto {
+  box-shadow: 0px 5px 18px -3px #9e9e9e;
+  background: #fff;
+  width: 100%;
+  height: 260px;
+}
+.container .menu .menu__resto .menu__resto__img {
+  border-radius: 0 0 0 0;
+  -webkit-border-radius: 0 0 0 0;
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  position: relative;
+  margin: -20px;
+  top: 1.2rem;
+  right: -1.2rem;
+}
+.container .menu .menu__resto .menu__resto__description {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  background: #fff;
+  padding: 0px 4.1rem 0rem 1.25rem;
+  margin: 0rem 0rem 0rem 0rem;
+  border-radius: 2.5rem 2.5rem 0 0;
+  -webkit-border-radius: 2.5rem 2.5rem 0 0;
+  border-top: none;
+  width: 100%;
+  background: #f6f6f6;
+}
+.container .menu .menu__resto .menu__resto__description .menu__resto__text__description {
+  justify-content: space-between;
+  padding-top: 1.6rem;
+}
+.container .menu .menu__resto .menu__resto__description .menu__resto__text__description .menu__resto__title {
+  font-family: "Shrikhand";
+  font-size: 1.8rem;
+}
+.container .menu .menu__resto .menu__resto__description .menu__resto__text__description .menu__resto__title .menu__resto__title {
+  font-family: "Shrikhand";
+  font-size: 1.8rem;
+}
+.container .menu .menu__resto .menu__resto__description .menu__btn__like__heart {
+  position: relative;
+  top: 0.1rem;
+}
+.container .menu .menu__resto .menu__resto__description .menu__btn__like__heart .menu__hearticones__1 {
+  position: absolute;
+  font-size: 1.5rem;
+  background-image: linear-gradient(to top, #FF79DA, #9356DC);
+  top: 3%;
   background-clip: text;
   color: transparent;
   background-position: 0 24px;
@@ -4147,16 +4114,16 @@ header .menu__header .leftArrow {
 /*------------------SLIDES-------------------*/
 /*===========================================*/
 /*MENU HOVER */
-@media all and (min-width: 375px) {
+@media all and (min-width: 23.4375rem) {
   .container {
-    width: all and (min-width: 375px);
+    width: all and (min-width: 23.4375rem);
     height: auto;
     margin: auto;
   }
 }
-@media all and (min-width: 768px) {
+@media all and (min-width: 48rem) {
   .container {
-    width: all and (min-width: 768px);
+    width: all and (min-width: 48rem);
     height: auto;
     margin: auto;
     background: #f6f6f6;
@@ -4185,6 +4152,9 @@ header .menu__header .leftArrow {
     padding: 0.1rem 0.1rem 0.1rem 0.1rem;
   }
   .container main section .back__Ground .title__resto {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
     margin: 3rem;
     padding-top: 3rem;
     margin: 1.8rem;
@@ -4201,7 +4171,8 @@ header .menu__header .leftArrow {
   }
   .container main section .back__Ground .box__1 *,
 .container main section .back__Ground .box__1 .card {
-    align-items: center;
+    display: flex;
+    flex-direction: column;
     text-decoration: none;
     color: #000000;
     width: 100%;
@@ -4227,21 +4198,17 @@ header .menu__header .leftArrow {
   }
   .container main section .back__Ground .box__1 * .card__resto,
 .container main section .back__Ground .box__1 .card .card__resto {
-    transform: translateX(-5px);
-    -webkit-transform: translateX(-5px);
-    -moz-transform: translateX(-5px);
-    -ms-transform: translateX(-5px);
-    -o-transform: translateX(-5px);
     border-radius: 1.125rem;
     -webkit-border-radius: 1.125rem;
     box-shadow: 0px 5px 18px -3px #9e9e9e;
-    margin: 0px 20px 20px 20px;
+    margin: 1rem;
     background: #fff;
     width: 90%;
     height: 260px;
   }
   .container main section .back__Ground .box__1 * .card__resto .card__resto__img,
 .container main section .back__Ground .box__1 .card .card__resto .card__resto__img {
+    display: flex;
     border-radius: 1.2rem 1.2rem 0 0;
     -webkit-border-radius: 1.2rem 1.2rem 0 0;
     width: 100%;
@@ -4252,15 +4219,14 @@ header .menu__header .leftArrow {
 .container main section .back__Ground .box__1 .card .card__resto .card__resto__description {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     padding: 0px 10px 13px 10px;
     border-radius: 0px 0px 15px 15px;
     -webkit-border-radius: 0px 0px 15px 15px;
-    justify-content: space-between;
     border-top: none;
   }
   .container main section .back__Ground .box__1 * .card__resto .card__resto__description .card__resto__text__description,
 .container main section .back__Ground .box__1 .card .card__resto .card__resto__description .card__resto__text__description {
-    justify-content: space-between;
     padding-top: 1.2rem;
   }
   .container main section .back__Ground .box__1 * .card__resto .card__resto__description .card__resto__text__description .card__resto__title,
@@ -4279,19 +4245,18 @@ header .menu__header .leftArrow {
   }
   .container main section .back__Ground .box__1 * .card__resto .card__resto__description .card__btn__like__heart,
 .container main section .back__Ground .box__1 .card .card__resto .card__resto__description .card__btn__like__heart {
+    display: flex;
     position: relative;
   }
   .container main section .back__Ground .box__1 * .card__resto .card__resto__description .card__btn__like__heart .hearticones__1,
 .container main section .back__Ground .box__1 .card .card__resto .card__resto__description .card__btn__like__heart .hearticones__1 {
+    display: flex;
+    align-items: flex-end;
+    padding-right: 1rem;
     position: absolute;
     font-size: 1.5rem;
     background-image: linear-gradient(to top, #FF79DA, #9356DC);
     top: 42%;
-    transform: translateX(78%);
-    -webkit-transform: translateX(78%);
-    -moz-transform: translateX(78%);
-    -ms-transform: translateX(78%);
-    -o-transform: translateX(78%);
     background-clip: text;
     color: transparent;
     background-position: 0 24px;
@@ -4307,6 +4272,9 @@ header .menu__header .leftArrow {
   }
   .container main section .back__Ground .box__1 * .card__resto .card__resto__description .card__btn__like__heart .hearticones__2,
 .container main section .back__Ground .box__1 .card .card__resto .card__resto__description .card__btn__like__heart .hearticones__2 {
+    display: flex;
+    align-items: flex-end;
+    padding-right: 1rem;
     font-size: 1.5rem;
     top: 0%;
     right: 0%;
@@ -4328,7 +4296,8 @@ header .menu__header .leftArrow {
   }
   .container main section .back__Ground .box__2 *,
 .container main section .back__Ground .box__2 .card {
-    align-items: center;
+    display: flex;
+    flex-direction: column;
     text-decoration: none;
     color: #000000;
     width: 100%;
@@ -4354,21 +4323,17 @@ header .menu__header .leftArrow {
   }
   .container main section .back__Ground .box__2 * .card__resto,
 .container main section .back__Ground .box__2 .card .card__resto {
-    transform: translateX(-5px);
-    -webkit-transform: translateX(-5px);
-    -moz-transform: translateX(-5px);
-    -ms-transform: translateX(-5px);
-    -o-transform: translateX(-5px);
     border-radius: 1.125rem;
     -webkit-border-radius: 1.125rem;
     box-shadow: 0px 5px 18px -3px #9e9e9e;
-    margin: 0px 20px 20px 20px;
+    margin: 1rem;
     background: #fff;
     width: 90%;
     height: 260px;
   }
   .container main section .back__Ground .box__2 * .card__resto .card__resto__img,
 .container main section .back__Ground .box__2 .card .card__resto .card__resto__img {
+    display: flex;
     border-radius: 1.2rem 1.2rem 0 0;
     -webkit-border-radius: 1.2rem 1.2rem 0 0;
     width: 100%;
@@ -4379,15 +4344,14 @@ header .menu__header .leftArrow {
 .container main section .back__Ground .box__2 .card .card__resto .card__resto__description {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     padding: 0px 10px 13px 10px;
     border-radius: 0px 0px 15px 15px;
     -webkit-border-radius: 0px 0px 15px 15px;
-    justify-content: space-between;
     border-top: none;
   }
   .container main section .back__Ground .box__2 * .card__resto .card__resto__description .card__resto__text__description,
 .container main section .back__Ground .box__2 .card .card__resto .card__resto__description .card__resto__text__description {
-    justify-content: space-between;
     padding-top: 1.2rem;
   }
   .container main section .back__Ground .box__2 * .card__resto .card__resto__description .card__resto__text__description .card__resto__title,
@@ -4406,19 +4370,18 @@ header .menu__header .leftArrow {
   }
   .container main section .back__Ground .box__2 * .card__resto .card__resto__description .card__btn__like__heart,
 .container main section .back__Ground .box__2 .card .card__resto .card__resto__description .card__btn__like__heart {
+    display: flex;
     position: relative;
   }
   .container main section .back__Ground .box__2 * .card__resto .card__resto__description .card__btn__like__heart .hearticones__1,
 .container main section .back__Ground .box__2 .card .card__resto .card__resto__description .card__btn__like__heart .hearticones__1 {
+    display: flex;
+    align-items: flex-end;
+    padding-right: 1rem;
     position: absolute;
     font-size: 1.5rem;
     background-image: linear-gradient(to top, #FF79DA, #9356DC);
     top: 42%;
-    transform: translateX(78%);
-    -webkit-transform: translateX(78%);
-    -moz-transform: translateX(78%);
-    -ms-transform: translateX(78%);
-    -o-transform: translateX(78%);
     background-clip: text;
     color: transparent;
     background-position: 0 24px;
@@ -4434,6 +4397,9 @@ header .menu__header .leftArrow {
   }
   .container main section .back__Ground .box__2 * .card__resto .card__resto__description .card__btn__like__heart .hearticones__2,
 .container main section .back__Ground .box__2 .card .card__resto .card__resto__description .card__btn__like__heart .hearticones__2 {
+    display: flex;
+    align-items: flex-end;
+    padding-right: 1rem;
     font-size: 1.5rem;
     top: 0%;
     right: 0%;
@@ -4501,11 +4467,6 @@ header .menu__header .leftArrow {
     font-size: 1.5rem;
     background-image: linear-gradient(to top, #FF79DA, #9356DC);
     top: 3%;
-    transform: translateX(8%);
-    -webkit-transform: translateX(8%);
-    -moz-transform: translateX(8%);
-    -ms-transform: translateX(8%);
-    -o-transform: translateX(8%);
     background-clip: text;
     color: transparent;
     background-position: 0 24px;
@@ -4847,9 +4808,9 @@ header .menu__header .leftArrow {
     -webkit-border-radius: 25px;
   }
 }
-@media (min-width: 992px) {
+@media all and (min-width: 62rem) {
   .container {
-    width: auto all and (min-width: 992px);
+    width: auto all and (min-width: 62rem);
     height: auto;
     margin: auto;
     background: #f6f6f6;
@@ -4883,6 +4844,9 @@ header .menu__header .leftArrow {
     padding: 0.1rem 0.1rem 0.1rem 0.1rem;
   }
   .container main section .back__Ground .title__resto {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
     margin: 3rem;
     padding-top: 3rem;
     margin: 1.8rem;
@@ -4899,7 +4863,8 @@ header .menu__header .leftArrow {
   }
   .container main section .back__Ground .box__1 *,
 .container main section .back__Ground .box__1 .card {
-    align-items: center;
+    display: flex;
+    flex-direction: column;
     text-decoration: none;
     color: #000000;
     width: 100%;
@@ -4925,21 +4890,17 @@ header .menu__header .leftArrow {
   }
   .container main section .back__Ground .box__1 * .card__resto,
 .container main section .back__Ground .box__1 .card .card__resto {
-    transform: translateX(-5px);
-    -webkit-transform: translateX(-5px);
-    -moz-transform: translateX(-5px);
-    -ms-transform: translateX(-5px);
-    -o-transform: translateX(-5px);
     border-radius: 1.125rem;
     -webkit-border-radius: 1.125rem;
     box-shadow: 0px 5px 18px -3px #9e9e9e;
-    margin: 0px 20px 20px 20px;
+    margin: 1rem;
     background: #fff;
     width: 90%;
     height: 260px;
   }
   .container main section .back__Ground .box__1 * .card__resto .card__resto__img,
 .container main section .back__Ground .box__1 .card .card__resto .card__resto__img {
+    display: flex;
     border-radius: 1.2rem 1.2rem 0 0;
     -webkit-border-radius: 1.2rem 1.2rem 0 0;
     width: 100%;
@@ -4950,16 +4911,15 @@ header .menu__header .leftArrow {
 .container main section .back__Ground .box__1 .card .card__resto .card__resto__description {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     padding: 0px 10px 13px 10px;
     border-radius: 0px 0px 15px 15px;
     -webkit-border-radius: 0px 0px 15px 15px;
-    justify-content: space-between;
     border-top: none;
     background: #f6f6f6;
   }
   .container main section .back__Ground .box__1 * .card__resto .card__resto__description .card__resto__text__description,
 .container main section .back__Ground .box__1 .card .card__resto .card__resto__description .card__resto__text__description {
-    justify-content: space-between;
     padding-top: 1.2rem;
   }
   .container main section .back__Ground .box__1 * .card__resto .card__resto__description .card__resto__text__description .card__resto__title,
@@ -4978,19 +4938,18 @@ header .menu__header .leftArrow {
   }
   .container main section .back__Ground .box__1 * .card__resto .card__resto__description .card__btn__like__heart,
 .container main section .back__Ground .box__1 .card .card__resto .card__resto__description .card__btn__like__heart {
+    display: flex;
     position: relative;
   }
   .container main section .back__Ground .box__1 * .card__resto .card__resto__description .card__btn__like__heart .hearticones__1,
 .container main section .back__Ground .box__1 .card .card__resto .card__resto__description .card__btn__like__heart .hearticones__1 {
+    display: flex;
+    align-items: flex-end;
+    padding-right: 1rem;
     position: absolute;
     font-size: 1.5rem;
     background-image: linear-gradient(to top, #FF79DA, #9356DC);
     top: 42%;
-    transform: translateX(78%);
-    -webkit-transform: translateX(78%);
-    -moz-transform: translateX(78%);
-    -ms-transform: translateX(78%);
-    -o-transform: translateX(78%);
     background-clip: text;
     color: transparent;
     background-position: 0 24px;
@@ -5006,6 +4965,9 @@ header .menu__header .leftArrow {
   }
   .container main section .back__Ground .box__1 * .card__resto .card__resto__description .card__btn__like__heart .hearticones__2,
 .container main section .back__Ground .box__1 .card .card__resto .card__resto__description .card__btn__like__heart .hearticones__2 {
+    display: flex;
+    align-items: flex-end;
+    padding-right: 1rem;
     font-size: 1.5rem;
     top: 0%;
     right: 0%;
@@ -5027,7 +4989,8 @@ header .menu__header .leftArrow {
   }
   .container main section .back__Ground .box__2 *,
 .container main section .back__Ground .box__2 .card {
-    align-items: center;
+    display: flex;
+    flex-direction: column;
     text-decoration: none;
     color: #000000;
     width: 100%;
@@ -5053,21 +5016,17 @@ header .menu__header .leftArrow {
   }
   .container main section .back__Ground .box__2 * .card__resto,
 .container main section .back__Ground .box__2 .card .card__resto {
-    transform: translateX(-5px);
-    -webkit-transform: translateX(-5px);
-    -moz-transform: translateX(-5px);
-    -ms-transform: translateX(-5px);
-    -o-transform: translateX(-5px);
     border-radius: 1.125rem;
     -webkit-border-radius: 1.125rem;
     box-shadow: 0px 5px 18px -3px #9e9e9e;
-    margin: 0px 20px 20px 20px;
+    margin: 1rem;
     background: #fff;
     width: 90%;
     height: 260px;
   }
   .container main section .back__Ground .box__2 * .card__resto .card__resto__img,
 .container main section .back__Ground .box__2 .card .card__resto .card__resto__img {
+    display: flex;
     border-radius: 1.2rem 1.2rem 0 0;
     -webkit-border-radius: 1.2rem 1.2rem 0 0;
     width: 100%;
@@ -5078,15 +5037,14 @@ header .menu__header .leftArrow {
 .container main section .back__Ground .box__2 .card .card__resto .card__resto__description {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     padding: 0px 10px 13px 10px;
     border-radius: 0px 0px 15px 15px;
     -webkit-border-radius: 0px 0px 15px 15px;
-    justify-content: space-between;
     border-top: none;
   }
   .container main section .back__Ground .box__2 * .card__resto .card__resto__description .card__resto__text__description,
 .container main section .back__Ground .box__2 .card .card__resto .card__resto__description .card__resto__text__description {
-    justify-content: space-between;
     padding-top: 1.2rem;
   }
   .container main section .back__Ground .box__2 * .card__resto .card__resto__description .card__resto__text__description .card__resto__title,
@@ -5105,19 +5063,18 @@ header .menu__header .leftArrow {
   }
   .container main section .back__Ground .box__2 * .card__resto .card__resto__description .card__btn__like__heart,
 .container main section .back__Ground .box__2 .card .card__resto .card__resto__description .card__btn__like__heart {
+    display: flex;
     position: relative;
   }
   .container main section .back__Ground .box__2 * .card__resto .card__resto__description .card__btn__like__heart .hearticones__1,
 .container main section .back__Ground .box__2 .card .card__resto .card__resto__description .card__btn__like__heart .hearticones__1 {
+    display: flex;
+    align-items: flex-end;
+    padding-right: 1rem;
     position: absolute;
     font-size: 1.5rem;
     background-image: linear-gradient(to top, #FF79DA, #9356DC);
     top: 42%;
-    transform: translateX(78%);
-    -webkit-transform: translateX(78%);
-    -moz-transform: translateX(78%);
-    -ms-transform: translateX(78%);
-    -o-transform: translateX(78%);
     background-clip: text;
     color: transparent;
     background-position: 0 24px;
@@ -5133,6 +5090,9 @@ header .menu__header .leftArrow {
   }
   .container main section .back__Ground .box__2 * .card__resto .card__resto__description .card__btn__like__heart .hearticones__2,
 .container main section .back__Ground .box__2 .card .card__resto .card__resto__description .card__btn__like__heart .hearticones__2 {
+    display: flex;
+    align-items: flex-end;
+    padding-right: 1rem;
     font-size: 1.5rem;
     top: 0%;
     right: 0%;
@@ -5200,11 +5160,6 @@ header .menu__header .leftArrow {
     font-size: 1.5rem;
     background-image: linear-gradient(to top, #FF79DA, #9356DC);
     top: 3%;
-    transform: translateX(8%);
-    -webkit-transform: translateX(8%);
-    -moz-transform: translateX(8%);
-    -ms-transform: translateX(8%);
-    -o-transform: translateX(8%);
     background-clip: text;
     color: transparent;
     background-position: 0 24px;

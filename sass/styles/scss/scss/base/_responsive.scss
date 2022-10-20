@@ -1,6 +1,6 @@
-$small: 375px!default;
-$medium: 768px!default;
-$large: 992px!default;
+$small: 23.4375rem!default;
+$medium: 48rem!default;
+$large: 62rem!default;
 
 $small-up:"all and (min-width: #{$small})";
 $small-down:"all and (max-width: #{$small})";

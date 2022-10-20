@@ -536,7 +536,7 @@ justify-content: space-around;
 }
 
 @mixin card{
-    @include alignItems(center);
+    @include flexColumn;
     @include textDecoration(none);
     @include coLor(#{$color-black});
     @include widTh(100%);
@@ -557,21 +557,24 @@ justify-content: space-around;
     @include Right(1rem);
 }
 @mixin title__resto{
+    @include flex;
+    @include flexDirection(row);
+    @include justifyContent(flex-start);
     @include marginTop(3rem);
     @include paddingTop(3rem);
     @include marginBottom(1.8rem);
     @include fontSize(1.4rem);
 }
 @mixin card__resto{
-    @include transformX(-5px);
     @include bordeRadius(1.125rem);
     @include boxShaddow(0px 5px 18px -3px #{$color-grey-1});
-    @include marginLRTB (0px 20px 20px 20px);
+    @include marginLRTB (1rem);
     @include backGround(#{$color-white});
     @include widTh(90%);
     @include heiGht(260px) ;
 }
 @mixin card__resto__img{
+    @include flex;
     @include bordeRadius(1.2rem 1.2rem 0 0);
     @include widTh(100%);
     @include heiGht(180px);
@@ -579,13 +582,12 @@ justify-content: space-around;
 }
 @mixin card__resto__description{
     @include flexRow;
+    @include justifyContent(space-between);
     @include paddingLRTB(0px 10px 13px 10px);
     @include bordeRadius(0px 0px 15px 15px);
-    @include justifyContent(space-between);
     @include borderTop(none);
 }
 @mixin card__resto__text__description{
-    @include justifyContent(space-between);
     @include paddingTop(1.2rem);
 }
 @mixin card__resto__title{
@@ -601,14 +603,17 @@ justify-content: space-around;
 }
 // btn__like__heart
 @mixin card__btn__like__heart{
+    @include flex;
     @include posiTion(relative);
 }
 @mixin hearticones__1 {
+    @include flex;
+    @include alignItems(flex-end);
+    @include paddingRight(1rem);
     @include posiTion(absolute);
     @include fontSize(1.5rem);
     @include backgroundImage(linear-gradient(to top, #{$color-secondary}, #{$color-primary}));
     @include Top(42%);
-    @include transformX(78%);
     @include backgroundClip(text);
     @include coLor(transparent);
     @include backgroundPosition(0 24px);
@@ -622,6 +627,9 @@ justify-content: space-around;
     @include backgroundPosition(0 0px);
 }
 @mixin hearticones__2{
+    @include flex;
+    @include alignItems(flex-end);
+    @include paddingRight(1rem);
     @include fontSize(1.5rem);
     @include Top(0%);
     @include Right(0%);
@@ -696,7 +704,6 @@ justify-content: space-around;
     @include fontSize(1.5rem);
     @include backgroundImage(linear-gradient(to top, #{$color-secondary}, #{$color-primary}));
     @include Top(3%);
-    @include transformX(8%);
     @include backgroundClip(text);
     @include coLor(transparent);
     @include backgroundPosition(0 24px);
