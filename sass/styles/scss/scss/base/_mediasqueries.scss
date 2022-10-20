@@ -22,7 +22,7 @@
                     .leftArrow{
                     @include transformX(-5rem);
                     @include fontSize(1.6rem);
-                    @include transformX(-24.8vh);
+                    @include transformX(-20.8vh);
                     }
                     }
                 }
@@ -142,6 +142,7 @@
                 }
                 .menu{
                     .menu__resto{
+                        @include widTh(768px);
                     @include menu__resto;
                     .menu__resto__img{
                         @include menu__resto__img;
@@ -334,8 +335,7 @@
                         .leftArrow{
                         @include transformX(-5rem);
                         @include fontSize(1.6rem);
-                        @include transformX(-24.8vh);
-                        @include transformX(-34vh);
+                        @include transformX(-30vh);
                         }
                         }
                     }

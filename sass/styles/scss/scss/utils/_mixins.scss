@@ -212,11 +212,11 @@ justify-content: space-around;
 }
 // color darken
 @mixin darKen($color, $amount){
-    color: mix (#{$color}, $amount);
+    color: mix (#{$color},$color-black,$amount);
 }
 // color lighTen
 @mixin lighTen($color, $amount){
-    color: lighten #{$color}, $amount;
+    color: mix(#{$color}, $color-white,$amount) 
 }
 // overflow
 @mixin overFlow($overFlow){
