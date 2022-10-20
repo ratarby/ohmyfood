@@ -1,6 +1,6 @@
 @import "../utils/_mixins.scss";
 
 .container{
-    @include widTh(auto);
-    @include heiGht(auto);
+    width: auto;
+    height: auto;
 }

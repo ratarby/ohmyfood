@@ -1,18 +1,18 @@
     @import "../utils/_mixins.scss";
     @import "../base/_responsive";
 
-    @media   all and (min-width: 23.4375rem) {
+    @include  responsive(mobile) {
         .container{
-            @include widTh(#{$small-up});
-            @include heiGht(auto);
-            @include marginLRTB(auto);
+            width:375px;
+            height: auto;
+            margin:auto;
         }
     }    
-    @media  all and (min-width: 48rem) {
+    @include responsive(tablet) {
         .container{
-            @include widTh(#{$medium-up});
-            @include heiGht(auto);
-            @include marginLRTB(auto);
+            width:768px;
+            height: auto;
+            margin:auto;
             @include backGround(#{$color-grey-2});
 
             header{
@@ -150,6 +150,7 @@
                         @include menu__resto__description;
                         @include paddingLRTB(0rem 5.4rem 0rem 1.25rem);
                         @include backGround(#{$color-grey-2});
+                        @include widTh(768px);
                         .menu__resto__text__description{
                             @include menu__resto__text__description;
                             .menu__resto__title{
@@ -184,8 +185,6 @@
         
         /*MENU 1 SECTION*/
             .menus__entrees__plats__desserts{
-                @include marginBottom(-0.625rem);
-                @include paddingLRTB(1rem 1rem 0rem 1rem);
                 .menu__entree{
                     @include menu__entree;
                     @include backGround(#{$color-grey-2});
@@ -321,11 +320,11 @@
 
     
 }
-    @media all and (min-width: 62rem) {
+    @include responsive(desktop) {
             .container{
-                @include widTh(auto #{$large-up} );
-                @include heiGht(auto);
-                @include marginLRTB(auto);
+                width:992px;
+                height: auto;
+                margin:auto;
                 @include backGround(#{$color-grey-2});
 
                 header{
@@ -340,11 +339,8 @@
                         }
                         }
                     }
-
-                    main{    
                         section{
                             .back__Ground{
-                                @include marginLRTB(0rem 1rem);
                                 @include back__Ground;
                                 .title__resto{
                                     @include title__resto;
@@ -456,8 +452,6 @@
                                 }
                             }
                         }
-
-                    }
                     .menu{
                         .menu__resto{
                         @include menu__resto;
@@ -468,6 +462,7 @@
                             @include menu__resto__description;
                             @include paddingLRTB(0rem 5.4rem 0rem 1.25rem);
                             @include backGround(#{$color-grey-2});
+                            @include widTh(992px);
                             .menu__resto__text__description{
                                 @include menu__resto__text__description;
                                 .menu__resto__title{
@@ -501,6 +496,7 @@
                 section{
                     .fonctionnement{
                         @include fonctionnement;
+                        width: 95.6%;
                         .title__fonctionnement{
                             @include flexCenter;
                             @include title__fonctionnement;
@@ -511,10 +507,11 @@
                         .order{
                             @include order;
                             @include marginLeft(1rem);
+                            
                             .order__box{
                                 @include flexRow;
                             .order__1{
-                                @include widTh(31.95%);
+                                @include widTh(33.33%);
                                 .order__list{
                                     @include order__list;
                                     .list__resto{
@@ -550,13 +547,12 @@
 
                 // MENU ENTREES PLAT DESSERTS
             
-        
+            .marg__menu{ 
+                align-items: center;
                 .menus__entrees__plats__desserts{
-                    @include marginBottom(-0.625rem);
-                    @include paddingLRTB(1rem 1rem 0rem 1rem);
                     @include flex;
+                    justify-content: center;
                     @include backGround(#{$color-grey-2});
-                    @include transformY(1rem);
 
                     .menu__entree{
                         @include menu__entree;
@@ -690,7 +686,8 @@
                         }
                     }
             
-            }
+            }}
+            
             // btn commander
             .btn__commander{
                 @include flexColumnCenter;

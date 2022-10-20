@@ -10,7 +10,6 @@
             }
             .menu__resto__description{
                 @include menu__resto__description;
-                
                 .menu__resto__text__description{
                     @include menu__resto__text__description;
                     .menu__resto__title{

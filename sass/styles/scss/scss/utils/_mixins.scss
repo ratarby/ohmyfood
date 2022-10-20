@@ -145,30 +145,22 @@ justify-content: space-around;
 // transform
 @mixin transformX($transformX) {
     transform:  translateX(#{$transformX});
-    -webkit-transform:  translateX(#{$transformX});
-    -moz-transform:  translateX(#{$transformX});
-    -ms-transform:  translateX(#{$transformX});
-    -o-transform:  translateX(#{$transformX});
 }
 @mixin transformY($transformY) {
     transform:  translateY($transformY);
-    -webkit-transform:  translateY($transformY);
 }
 @mixin scaLe($scaLe) {
     transform:  scale($scaLe);
-    -webkit-transform:  scale($scaLe);
 }
 
 @mixin transformRotate($transformRotate){
     transform: rotate($transformRotate);
-    -webkit-transform: rotate($transformRotate);
 }
 
 
 // transition
 @mixin transiTion($transiTion){
     transition: $transiTion;
-    -webkit-transition: $transiTion;
 }
 // border
 @mixin borDer($borDer){
@@ -184,7 +176,6 @@ justify-content: space-around;
 // border-radius
 @mixin bordeRadius($bordeRadius) {
     border-radius: #{$bordeRadius};
-    -webkit-border-radius: #{$bordeRadius};
 
 }
 // box-shaddow
@@ -221,7 +212,7 @@ justify-content: space-around;
 }
 // color darken
 @mixin darKen($color, $amount){
-    color: darken #{$color}, $amount;
+    color: mix (#{$color}, $amount);
 }
 // color lighTen
 @mixin lighTen($color, $amount){
@@ -258,11 +249,9 @@ justify-content: space-around;
 // animations
 @mixin animaTion($animaTion){
     animation: #{$animaTion};
-    -webkit-animation: #{$animaTion};
 }
 @mixin animationDelay($animationDelay){
     animation-delay: #{$animationDelay};
-    -webkit-animation: #{$animationDelay};
 
 }
 // media queries
@@ -271,18 +260,18 @@ justify-content: space-around;
 // - tablet
 // - desktop
 
-@mixin respond($breakpont){
+@mixin responsive($breakpoint){
     @if $breakpoint == mobile {
-        @media (max-width: 23.4375rem) { @content}; //375px
+        @media (min-width: 375px) { @content}; 
     }
     @if $breakpoint == tablet {
-        @media (max-width: 768px) {@content};
+        @media (min-width: 768px) {@content};
     }
     @if $breakpoint == desktop {
-        @media (max-width: 992px) {@content};
+        @media (min-width: 992px) {@content};
     }
     @if $breakpoint == big-desktop {
-        @media (min-width: 900px) {@content};
+        @media (min-width: 990px) {@content};
     }
 }
 
@@ -379,7 +368,7 @@ justify-content: space-around;
 // ______________________________________________
 @mixin nom__ville{
     @include flex;    
-    @include backGround(lighten #{$color-grey-1} 30%) ;
+    @include backGround(#{$color-grey-1} scale(30%)) ;
     @include paddingLRTB(1rem);
     @include fontSize(1.08rem);
     @include fontWeight(bold);
@@ -612,9 +601,9 @@ justify-content: space-around;
     @include paddingRight(1rem);
     @include posiTion(absolute);
     @include fontSize(1.5rem);
+    background-clip: text;
     @include backgroundImage(linear-gradient(to top, #{$color-secondary}, #{$color-primary}));
     @include Top(42%);
-    @include backgroundClip(text);
     @include coLor(transparent);
     @include backgroundPosition(0 24px);
     @include heiGht(24px);
@@ -672,7 +661,7 @@ justify-content: space-around;
     @include marginLRTB(0rem 0rem 0rem 0rem);
     @include bordeRadius( 2.5rem 2.5rem 0 0 );
     @include borderTop(none);
-    @include widTh(100%);
+    @include widTh(375px);
     
     
 }
@@ -704,7 +693,6 @@ justify-content: space-around;
     @include fontSize(1.5rem);
     @include backgroundImage(linear-gradient(to top, #{$color-secondary}, #{$color-primary}));
     @include Top(3%);
-    @include backgroundClip(text);
     @include coLor(transparent);
     @include backgroundPosition(0 24px);
     @include heiGht(24px);
