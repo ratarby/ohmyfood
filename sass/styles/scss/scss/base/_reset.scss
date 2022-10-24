@@ -1,17 +1,35 @@
+
 $color-bg:rgb(255, 255, 255);
 
 html,
-body {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: "Roboto",sans-serif;
-    text-decoration: none;
-    background: #{$color-bg};
-    @if (lightness($color-bg) > 50%) {
-        color:#000;
-    }@else {
-        color: #fff;
-    }
-}
+body  {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: "Roboto",sans-serif;
+        text-decoration: none;
+        background: #{$color-bg};
+        @if (lightness($color-bg) > 50%) {
+            color:#000;
+        }@else {
+            color: #fff;
+        }
 
+  }
+
+
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+
+  
+  ol, ul {
+    list-style: none;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }

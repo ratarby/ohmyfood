@@ -1,277 +1,340 @@
 // General
-@mixin flex{
+@mixin flex {
     display: flex;
 }
-@mixin flexDirection($flexDirection){
+
+@mixin flexDirection($flexDirection) {
     flex-direction: $flexDirection;
 }
-@mixin flexRow{
+
+@mixin flexRow {
     display: flex;
     flex-direction: row;
 }
-@mixin flexRowCenter{
+
+@mixin flexRowCenter {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 }
-@mixin flexCenter{
+
+@mixin flexCenter {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-@mixin flexAround{
+
+@mixin flexAround {
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
-@mixin flexBetween{
+
+@mixin flexBetween {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-@mixin flexColumnCenter{
+
+@mixin flexColumnCenter {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-@mixin flexColumn{
+
+@mixin flexColumn {
     display: flex;
     flex-direction: column;
 }
-@mixin flexColumnAround{
-display: flex;
-flex-direction: column;
-justify-content: space-around;
+
+@mixin flexColumnAround {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
-@mixin flexColumnBetween{
+
+@mixin flexColumnBetween {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
+
 // position
-@mixin posiTion($posiTion){
-    position: $posiTion; 
+@mixin posiTion($posiTion) {
+    position: $posiTion;
 }
+
 // justify-content
 @mixin justifyContent($justifyContent) {
     justify-content: $justifyContent;
 }
+
 // justify-items
 @mixin justifyItems($justifyItems) {
     justify-items: $justifyItems;
 }
+
 // align-items
 @mixin alignItems($alignItems) {
-    align-items:$alignItems;
+    align-items: $alignItems;
 }
+
 // text-align
-@mixin textAlign($textAlign){
+@mixin textAlign($textAlign) {
     text-align: $textAlign;
 }
+
 // text-decoration
-@mixin textDecoration($textDecoration){
+@mixin textDecoration($textDecoration) {
     text-decoration: $textDecoration;
 }
+
 // line-height
-@mixin lineHeight($lineHeight){
+@mixin lineHeight($lineHeight) {
     line-height: $lineHeight;
 }
+
 // width
-@mixin widTh($widTh){
+@mixin widTh($widTh) {
     width: $widTh;
 }
+
 // height
 @mixin heiGht($heiGht) {
     height: $heiGht;
 }
+
 // top
-@mixin Top($Top){
-    top:$Top;
+@mixin Top($Top) {
+    top: $Top;
 }
+
 // right
-@mixin Right($Right){
+@mixin Right($Right) {
     right: $Right;
 }
+
 // position
-@mixin posiTion($posiTion){
+@mixin posiTion($posiTion) {
     position: $posiTion;
 }
+
 // margin
 @mixin marginLRTB($marginLRTB) {
     margin: $marginLRTB;
 }
+
 @mixin marginLeft($marginLeft) {
-    margin: $marginLeft;
+    margin-left: $marginLeft;
 }
+
 @mixin marginRight($marginRight) {
-    margin: $marginRight;
+    margin-right: $marginRight;
 }
+
 @mixin marginTop($marginTop) {
-    margin: $marginTop;
+    margin-top: $marginTop;
 }
+
 @mixin marginBottom($marginBottom) {
-    margin: $marginBottom;
+    margin-bottom: $marginBottom;
 }
+
 // padding
 @mixin paddingLRTB($paddingLRTB) {
     padding: $paddingLRTB;
 }
+
 @mixin paddingLeft($paddingLeft) {
     padding-left: $paddingLeft;
 }
+
 @mixin paddingRight($paddingRight) {
     padding-right: $paddingRight;
 }
+
 @mixin paddingTop($paddingTop) {
     padding-top: $paddingTop;
 }
+
 @mixin paddingBottom($paddingBottom) {
     padding-bottom: $paddingBottom;
 }
+
 // font-family
-@mixin fontFamily($fontFamily){
+@mixin fontFamily($fontFamily) {
     font-family: $fontFamily;
 }
+
 // font-weight
 @mixin fontWeight($fontWeight) {
     font-weight: $fontWeight;
 }
+
 // font-size
 @mixin fontSize($fontSize) {
     font-size: $fontSize;
 }
+
 // transform
 @mixin transformX($transformX) {
-    transform:  translateX(#{$transformX});
-}
-@mixin transformY($transformY) {
-    transform:  translateY($transformY);
-}
-@mixin scaLe($scaLe) {
-    transform:  scale($scaLe);
+    transform: translateX(#{$transformX});
 }
 
-@mixin transformRotate($transformRotate){
+@mixin transformY($transformY) {
+    transform: translateY($transformY);
+}
+
+@mixin scaLe($scaLe) {
+    transform: scale($scaLe);
+}
+
+@mixin transformRotate($transformRotate) {
     transform: rotate($transformRotate);
 }
 
 
 // transition
-@mixin transiTion($transiTion){
+@mixin transiTion($transiTion) {
     transition: $transiTion;
 }
+
 // border
-@mixin borDer($borDer){
+@mixin borDer($borDer) {
     border: $borDer;
 }
+
 // border-top
 @mixin borderTop($borderTop) {
     border-top: $borderTop;
 }
-@mixin borderBottom($borderBottom){
+
+@mixin borderBottom($borderBottom) {
     border-bottom: $borderBottom;
 }
+
 // border-radius
 @mixin bordeRadius($bordeRadius) {
     border-radius: #{$bordeRadius};
 
 }
+
 // box-shaddow
-@mixin boxShaddow($boxShaddow){
+@mixin boxShaddow($boxShaddow) {
     box-shadow: $boxShaddow;
 }
+
 // background
-@mixin backGround($backGround){
+@mixin backGround($backGround) {
     background: $backGround;
 }
+
 // background-image
-@mixin backgroundImage($backgroundImage){
+@mixin backgroundImage($backgroundImage) {
     background-image: #{$backgroundImage};
 }
+
 // background-color
-@mixin backgroundColor($backgroundColor){
+@mixin backgroundColor($backgroundColor) {
     background-color: #{$backgroundColor};
 }
+
 // background-clip
-@mixin backgroundClip($backgroundClip){
+@mixin backgroundClip($backgroundClip) {
+    -webkit-background-clip: #{$backgroundClip};
     background-clip: #{$backgroundClip};
 }
+
 // background-position
-@mixin backgroundPosition($backgroundPosition){
+@mixin backgroundPosition($backgroundPosition) {
     background-position: $backgroundPosition;
 }
+
 // background-repeat
-@mixin backgroundRepeat($backgroundRepeat){
+@mixin backgroundRepeat($backgroundRepeat) {
     background-repeat: $backgroundRepeat;
 }
+
 // color
 @mixin coLor($coLor) {
     color: #{$coLor};
 }
-// color darken
-@mixin darKen($color, $amount){
-    color: mix (#{$color},$color-black,$amount);
-}
-// color lighTen
-@mixin lighTen($color, $amount){
-    color: mix(#{$color}, $color-white,$amount) 
-}
+
 // overflow
-@mixin overFlow($overFlow){
-    overflow : $overFlow
+@mixin overFlow($overFlow) {
+    overflow: $overFlow
 }
+
 // text-overflow
 @mixin textOverflow($textOverflow) {
     text-overflow: $textOverflow;
 }
+
 // opacity
-@mixin opaCity($opaCity){
+@mixin opaCity($opaCity) {
     opacity: $opaCity;
 }
+
 // visibility
-@mixin visiBility($visiBility){
+@mixin visiBility($visiBility) {
     visibility: $visiBility;
 }
-@mixin curSor($curSor){
+
+@mixin curSor($curSor) {
     cursor: $curSor;
 }
+
 // object-fit
-@mixin objectFit($objectFit){
+@mixin objectFit($objectFit) {
     object-fit: $objectFit;
 }
+
 // white-space
-@mixin whiteSpace($whiteSpace){
+@mixin whiteSpace($whiteSpace) {
     white-space: $whiteSpace;
 }
 
 // animations
-@mixin animaTion($animaTion){
+@mixin animaTion($animaTion) {
     animation: #{$animaTion};
 }
-@mixin animationDelay($animationDelay){
+
+@mixin animationDelay($animationDelay) {
     animation-delay: #{$animationDelay};
 
 }
+
 // media queries
 // $breakpoints arguments :
 // - mobile
 // - tablet
 // - desktop
 
-@mixin responsive($breakpoint){
-    @if $breakpoint == mobile {
-        @media (min-width: 375px) { @content}; 
+@mixin responsive($breakpoint) {
+    @if $breakpoint==mobile {
+        @media (min-width: 375px) {
+            @content
+        };
     }
-    @if $breakpoint == tablet {
-        @media (min-width: 768px) {@content};
+
+    @if $breakpoint==tablet {
+        @media (min-width: 768px) {
+            @content
+        };
     }
-    @if $breakpoint == desktop {
-        @media (min-width: 992px) {@content};
+
+    @if $breakpoint==desktop {
+        @media (min-width: 992px) {
+            @content
+        };
     }
-    @if $breakpoint == big-desktop {
-        @media (min-width: 990px) {@content};
+
+    @if $breakpoint==big-desktop {
+        @media (min-width: 990px) {
+            @content
+        };
     }
 }
 
@@ -279,31 +342,36 @@ justify-content: space-around;
 // COUNTER (section & increment)
 // _____________________________
 // counter-reset
-@mixin counteReset($counteReset){
+@mixin counteReset($counteReset) {
     counter-reset: $counteReset;
 }
-@mixin counterIncrement($counterIncrement){
+
+@mixin counterIncrement($counterIncrement) {
     counter-increment: $counterIncrement;
 }
-@mixin conTent($conTent){
+
+@mixin conTent($conTent) {
     content: $conTent;
 }
-@mixin listStyleType($listStyleType){
+
+@mixin listStyleType($listStyleType) {
     list-style-type: $listStyleType;
 }
 
 
 // ________________________________________
-/*footer*/ 
-@mixin darkLight{
+//footer  
+@mixin darkLight {
     @if (lightness($color-grey-4) > 50%) {
         color: #{$color-black};
-    }@else {
+    }
+
+    @else {
         color: #{$color-white};
     }
 }
 
-@mixin foot{
+@mixin foot {
     @include backGround(#{$color-grey-4});
     @include paddingTop(20px);
     @include paddingLeft(20px);
@@ -311,36 +379,42 @@ justify-content: space-around;
     @include darkLight;
     @include widTh(100%);
 }
+
 @mixin footLogo {
-    @include fontFamily("Shrikhand") ;
+    @include fontFamily("Shrikhand");
     @include paddingBottom(.8rem);
 }
-@mixin foot__logo__title{
+
+@mixin foot__logo__title {
     @include fontSize(1.1rem)
 }
-@mixin foot__list{
+
+@mixin foot__list {
     @include textDecoration(none);
     @include darkLight;
     @include lineHeight(1.6rem);
     @include fontSize(.96rem);
 }
+
 @mixin footList {
     @include darkLight;
 }
-@mixin text__1{
+
+@mixin text__1 {
     @include flexRow;
     @include justifyContent(space-between);
     @include widTh(12rem);
     @include fontSize(.96rem);
 }
-@mixin text__2{
+
+@mixin text__2 {
     @include flexRow;
     @include justifyContent(space-between);
     @include widTh(9.94rem);
     @include fontSize(.96rem);
 }
 
-@mixin footIcon{
+@mixin footIcon {
     @include transformX(-1px);
     @include widTh(1.2rem);
     @include marginRight(0.5rem);
@@ -349,12 +423,12 @@ justify-content: space-around;
 
 
 
-                    /*page d'accueil*/ 
-/*header*/ 
-@mixin logo{
+//page d'accueil  
+//header  
+@mixin logo {
     @include fontFamily("Shrikhand");
     @include textAlign(center);
-    @include posiTion(relative) ;
+    @include posiTion(relative);
     @include fontSize(2rem);
     @include boxShaddow($shadow-header);
     @include paddingTop(1rem);
@@ -362,13 +436,13 @@ justify-content: space-around;
 }
 
 // ______________________________________________
-/* section localisation, decouverte & exploration*/
+// section localisation, decouverte & exploration 
 // ______________________________________________
-/*----------------localisation-------------------*/ 
+//----------------localisation-------------------  
 // ______________________________________________
-@mixin nom__ville{
-    @include flex;    
-    @include backGround(#{$color-grey-1} scale(30%)) ;
+@mixin nom__ville {
+    @include flex;
+    @include backGround(lighten($color-grey-1, 35%));
     @include paddingLRTB(1rem);
     @include fontSize(1.08rem);
     @include fontWeight(bold);
@@ -378,94 +452,108 @@ justify-content: space-around;
 }
 
 // icone__ville
-@mixin icon__ville{
+@mixin icon__ville {
     @include transformX(-1.4rem);
     @include fontSize($font-size-icone__ville);
 }
 
 // __________________________________________
-/* -------decouverte et exploration----------*/ 
+// -------decouverte et exploration----------  
 // __________________________________________
 @mixin resa__menu {
     @include flex;
     @include justifyContent(center);
-    @include alignItems(center) ;
-    @include textAlign(center) ;
+    @include alignItems(center);
+    @include textAlign(center);
     @include paddingTop(2rem);
     @include paddingBottom(1.5rem);
 }
-@mixin text__resa__menu{
+
+@mixin text__resa__menu {
     @include fontSize($font-size-title__resa__menu);
     @include fontWeight(600);
     @include widTh(80%);
 }
+
 @mixin para__resto {
     @include textAlign(center);
     @include fontWeight(lighter);
 }
+
 @mixin text__para__resto {
     @include fontSize($font-size-title__para__resto);
     @include opaCity(70%);
 }
 
-/*btn*/ 
-@mixin btn{
+//btn  
+@mixin btn {
     @include flexRow;
     @include marginLRTB(1.8rem);
     @include justifyContent(center);
 }
-@mixin btn__exp__resto{
-    @include fontSize(1rem) ;
+
+@mixin btn__exp__resto {
+    @include fontSize(1rem);
     @include fontWeight(normal);
     @include bordeRadius(2.1875rem);
     @include paddingLRTB(15px 25px);
     @include alignItems(center);
-    @include boxShaddow( 0px 5px 18px -3px #{$color-grey-1});
+    @include boxShaddow(0px 5px 18px -3px #{$color-grey-1});
     @include backGround(#{$bg-linear-gradient});
     @include borDer(none);
     @include coLor(#{$color-white});
     @include textDecoration(none);
     @include curSor(pointer);
 }
-@mixin btn__exp__resto__hover{
+
+@mixin btn__exp__resto__hover {
     @include backGround(#{$bg-linear-gradient});
     @include boxShaddow(0px 5px 22px -3px #{$color-grey-5});
-    @include opaCity(.8) ;
+    @include opaCity(.8);
     @include curSor(pointer);
 }
-@mixin btn__exp__rest__active{
+
+@mixin btn__exp__rest__active {
     @include posiTion(relative);
     @include Top(1px);
 }
 
 
 
-/* Section Fonctionnement*/
+// Section Fonctionnement 
 @mixin fonctionnement {
     @include paddingBottom(1.4rem);
     @include paddingLeft(.2rem);
     @include paddingRight(1rem);
+    @include marginLeft(1.15rem);
+    @include marginRight(1rem);
     @include transformX(6px);
 }
-@mixin title__fonctionnement{
+
+@mixin title__fonctionnement {
     @include marginTop(3rem);
     @include marginBottom(2rem);
     @include fontSize(1.4rem);
 }
+
 @mixin text__title__fonctionnement {
     @include fontWeight(600);
 }
+
 // order
 @mixin order {
     @include transformX(3px);
-    @include widTh(100%) ;
+    @include widTh(100%);
     @include counteReset(section);
 }
+
 // order__list
 @mixin order__list {
     @include bordeRadius(1.4rem);
     @include btn__menu;
+
 }
+
 // order__list::before
 @mixin btn__menu__couleur__violet {
     @include flexRow;
@@ -474,15 +562,16 @@ justify-content: space-around;
     @include bordeRadius(2.8125rem);
     @include fontSize(.9375rem);
     @include fontWeight(lighter);
-    @include backgroundColor(#{$color-primary}) ;
+    @include backgroundColor(#{$color-primary});
     @include coLor(#{$color-white});
     @include paddingLRTB(.125rem .5rem .125rem .5rem);
     @include textDecoration(none);
     @include posiTion(absolute);
     @include counterIncrement(section);
-    @include conTent("" counter(section)) ;
+    @include conTent(""counter(section));
     @include listStyleType(decimal);
 }
+
 @mixin btn__menu {
     @include paddingTop(1.6rem);
     @include paddingBottom(1.6rem);
@@ -495,26 +584,30 @@ justify-content: space-around;
 
 
 // order__list::hover
-@mixin order__list__hover{
+@mixin order__list__hover {
     @include backGround(#{$color-palette-1});
     @include boxShaddow($shadow-order__list);
     @include curSor(pointer);
 }
+
 // list__resto
 @mixin list__resto {
     @include paddingLeft($paddingLeft:20px);
 }
+
 // mobile__icon, list__icon, store__icon
-@mixin transform_icons{
+@mixin transform_icons {
     @include coLor(#{$color-grey-3});
     @include fontSize(1rem);
     @include transformX($transformX:-1.4rem);
 }
-@mixin transform_icons__mobile{
+
+@mixin transform_icons__mobile {
     @include coLor(#{$color-grey-3});
     @include fontSize(1.28rem);
     @include transformX($transformX:-1.6rem);
 }
+
 // Section Restaurants
 
 // HOME --> CARD + BTN
@@ -524,28 +617,34 @@ justify-content: space-around;
     @include paddingLRTB(.1rem .1rem .1rem .1rem);
 }
 
-@mixin card{
+@mixin card {
     @include flexColumn;
     @include textDecoration(none);
     @include coLor(#{$color-black});
     @include widTh(100%);
-    
+
 }
-@mixin new{
+
+@mixin new {
     @include posiTion(relative);
 }
+
 @mixin new__before {
     @include flexColumnCenter;
-    @include backGround(#{$color-tertiary}) ;
-    @include darKen($color: #{$color-tertiary}, $amount: 50%);
     @include posiTion(absolute);
     @include heiGht(2rem);
     @include widTh(5rem);
     @include conTent("Nouveau");
+    @include backGround(lighten($color-tertiary, 3%));
+    @include coLor(darken($color-tertiary, 35%));
+    @include fontWeight(500);
+    @include fontSize(.9rem);
     @include Top(1rem);
     @include Right(1rem);
+    @include bordeRadius(.1rem);
 }
-@mixin title__resto{
+
+@mixin title__resto {
     @include flex;
     @include flexDirection(row);
     @include justifyContent(flex-start);
@@ -553,55 +652,65 @@ justify-content: space-around;
     @include paddingTop(3rem);
     @include marginBottom(1.8rem);
     @include fontSize(1.4rem);
+    
 }
-@mixin card__resto{
+
+@mixin card__resto {
     @include bordeRadius(1.125rem);
     @include boxShaddow(0px 5px 18px -3px #{$color-grey-1});
     @include marginLRTB (1rem);
     @include backGround(#{$color-white});
     @include widTh(90%);
-    @include heiGht(260px) ;
+    @include heiGht(260px);
 }
-@mixin card__resto__img{
+
+@mixin card__resto__img {
     @include flex;
     @include bordeRadius(1.2rem 1.2rem 0 0);
     @include widTh(100%);
     @include heiGht(180px);
     @include objectFit(cover);
 }
-@mixin card__resto__description{
+
+@mixin card__resto__description {
     @include flexRow;
     @include justifyContent(space-between);
     @include paddingLRTB(0px 10px 13px 10px);
     @include bordeRadius(0px 0px 15px 15px);
     @include borderTop(none);
 }
-@mixin card__resto__text__description{
+
+@mixin card__resto__text__description {
     @include paddingTop(1.2rem);
 }
-@mixin card__resto__title{
+
+@mixin card__resto__title {
     @include fontSize(1.1rem);
 }
-@mixin resto__title{
+
+@mixin resto__title {
     @include fontWeight(500);
 }
-@mixin resto__subtitle{
+
+@mixin resto__subtitle {
     @include fontSize(1rem);
     @include fontWeight(lighter);
     @include lineHeight(24px);
 }
+
 // btn__like__heart
-@mixin card__btn__like__heart{
+@mixin card__btn__like__heart {
     @include flex;
     @include posiTion(relative);
 }
+
 @mixin hearticones__1 {
     @include flex;
     @include alignItems(flex-end);
     @include paddingRight(1rem);
     @include posiTion(absolute);
     @include fontSize(1.5rem);
-    background-clip: text;
+    @include backgroundClip(text);
     @include backgroundImage(linear-gradient(to top, #{$color-secondary}, #{$color-primary}));
     @include Top(42%);
     @include coLor(transparent);
@@ -610,12 +719,14 @@ justify-content: space-around;
     @include curSor(pointer);
     @include backgroundRepeat(no-repeat);
     @include transiTion(background-position 1s);
-    
+
 }
-@mixin hearticones__1__hover{
+
+@mixin hearticones__1__hover {
     @include backgroundPosition(0 0px);
 }
-@mixin hearticones__2{
+
+@mixin hearticones__2 {
     @include flex;
     @include alignItems(flex-end);
     @include paddingRight(1rem);
@@ -626,63 +737,71 @@ justify-content: space-around;
     @include opaCity(1);
     @include posiTion(absolute);
     @include transiTion(opacity 1.5s);
+
 }
-@mixin hearticones__2__hover{
+
+@mixin hearticones__2__hover {
     @include opaCity(0);
 }
+
 // MENUS --> IMG + BTN
-@mixin menu{
+@mixin menu {
     @include textDecoration(none);
     @include coLor(#{$color-black});
     @include widTh(100%);
 }
-@mixin menu__resto{
+
+@mixin menu__resto {
     @include boxShaddow(0px 5px 18px -3px #{$color-grey-1});
     @include backGround(#{$color-white});
     @include widTh(100%);
-    @include heiGht(260px) ;
+    @include heiGht(260px);
 }
-@mixin menu__resto__img{
+
+@mixin menu__resto__img {
     @include bordeRadius(0 0 0 0);
     @include widTh(100%);
-    @include heiGht(240px);
+    @include heiGht(260px);
     @include objectFit(cover);
     @include posiTion(relative);
     @include marginBottom(-20px);
-    @include Top(1.2rem);
-    @include Right(-1.2rem);
+    @include Top(0.02rem);
 }
 
-@mixin menu__resto__description{
+@mixin menu__resto__description {
     @include flexBetween;
     @include posiTion(absolute);
     @include backGround(#{$color-white});
-    @include paddingLRTB(0px 4.1rem 0rem 1.25rem);
-    @include marginLRTB(0rem 0rem 0rem 0rem);
-    @include bordeRadius( 2.5rem 2.5rem 0 0 );
+    @include paddingLRTB(0px 3.89rem 0rem 1.26rem);
+    @include marginLRTB(-1.2rem 0rem 1rem 0rem);
+    @include bordeRadius(2.5rem 2.5rem 0 0);
     @include borderTop(none);
     @include widTh(375px);
-    
-    
+
+
 }
-@mixin menu__resto__text__description{
+
+@mixin menu__resto__text__description {
     @include justifyContent(space-between);
     @include paddingTop(1.6rem);
+
 }
-@mixin menu__resto__title{
+
+@mixin menu__resto__title {
     @include fontFamily("Shrikhand");
     @include fontSize(1.8rem);
-    
+
 }
-@mixin menu__title{
+
+@mixin menu__title {
     @include fontFamily("Shrikhand");
     @include fontSize(1.8rem);
     @include fontWeight(500);
     @include marginBottom(18px);
-    
+
 }
 
-@mixin menu__btn__like__heart{
+@mixin menu__btn__like__heart {
     @include posiTion(relative);
     @include Top(.1rem);
 }
@@ -699,11 +818,15 @@ justify-content: space-around;
     @include curSor(pointer);
     @include backgroundRepeat(no-repeat);
     @include transiTion(background-position 1s);
+    @include backgroundClip(text);
+
 }
-@mixin menu__hearticones__1__hover{
+
+@mixin menu__hearticones__1__hover {
     @include backgroundPosition(0 0px);
 }
-@mixin menu__hearticones__2{
+
+@mixin menu__hearticones__2 {
     @include fontSize(1.5rem);
     @include Top(0%);
     @include Right(0%);
@@ -712,52 +835,47 @@ justify-content: space-around;
     @include posiTion(absolute);
     @include transiTion(opacity 1.5s);
 }
-@mixin menu__hearticones__2__hover{
+
+@mixin menu__hearticones__2__hover {
     @include opaCity(0);
 }
 
 
-/*===========================================*/ 
-/*------------------SLIDES-------------------*/                  
-/*===========================================*/ 
-@mixin slideInUp__1{
+//===========================================  
+//------------------SLIDES-------------------                   
+//===========================================  
+@mixin slideInUp__1 {
     @include animaTion(slideInUp 1s both);
     @include animationDelay(0.2s);
 }
-@mixin slideInUp__2{
-    @include animaTion(slideInUp 1s both);
-    @include animationDelay(0.2s);
-}
-@mixin slideInUp__3{
-    @include animaTion(slideInUp 1s both);
-    @include animationDelay(0.2s);
-}
-@mixin slideInUp__4{
-    @include animaTion(slideInUp 1s both);
-    @include animationDelay(0.2s);
-}
+
+
+
 
 
 // MENUS ENTREES - PLAT - DESSERT
 
-@mixin menu__entree{
-    @include flexColumn;
-    @include heiGht(auto);
-    @include backGround(#{$color-grey-2});
-    
-}
-@mixin menu__plat{
-    @include flexColumn;
-    @include heiGht(auto);
-    @include backGround(#{$color-grey-2});
-}
-@mixin menu__dessert{
+@mixin menu__entree {
     @include flexColumn;
     @include heiGht(auto);
     @include backGround(#{$color-grey-2});
 
 }
-@mixin menu__title{ 
+
+@mixin menu__plat {
+    @include flexColumn;
+    @include heiGht(auto);
+    @include backGround(#{$color-grey-2});
+}
+
+@mixin menu__dessert {
+    @include flexColumn;
+    @include heiGht(auto);
+    @include backGround(#{$color-grey-2});
+
+}
+
+@mixin menu__title {
     @include fontSize(16px);
     @include fontWeight(lighter);
     @include marginLeft(20px);
@@ -767,7 +885,8 @@ justify-content: space-around;
     @include paddingBottom(5px);
     @include marginBottom(16px);
 }
-@mixin sticker__menu{
+
+@mixin sticker__menu {
     @include flexRow;
     @include justifyContent(space-between);
     @include boxShaddow(0px 5px 18px -3px #{$color-grey-1});
@@ -777,12 +896,14 @@ justify-content: space-around;
     @include coLor(#{$color-black});
     @include overFlow(hidden);
 }
-@mixin sticker__menu__description{
+
+@mixin sticker__menu__description {
     @include flexColumn;
     @include widTh(85%);
     @include transiTion(width 1s -.1s ease-in-out);
 }
-@mixin sticker__menu__description__title{
+
+@mixin sticker__menu__description__title {
     @include fontSize(18px);
     @include fontWeight(500);
     @include marginLRTB(11px 0px 4px 10px);
@@ -790,7 +911,8 @@ justify-content: space-around;
     @include overFlow(hidden);
     @include textOverflow(ellipsis);
 }
-@mixin sticker__menu__description__subtitle{
+
+@mixin sticker__menu__description__subtitle {
     @include fontSize(14px);
     @include fontWeight(300);
     @include marginLRTB(0px 0px 12px 10px);
@@ -800,44 +922,42 @@ justify-content: space-around;
     @include transformY(.074rem);
 }
 
-@mixin sticker__menu__price{
+@mixin sticker__menu__price {
     @include flexRow;
     @include justifyContent(flex-end);
     @include fontSize(15px);
     @include fontWeight(500);
     @include paddingLRTB(38px 10px 0px 10px);
     @include widTh(32%);
-    @include transiTion(width 3s -.1s ease-in-out);
+    @include transiTion(width .5s ease-in-out);
 }
 
-@mixin sticker__menu__icon{
-    @include flexColumn;
+@mixin sticker__menu__icon {
+    @include flexRow;
     @include justifyContent(center);
     @include alignItems(center);
     @include backgroundColor(#{$color-tertiary});
     @include widTh(0%);
     @include bordeRadius(0px 15px 15px 0px);
     @include overFlow(hidden);
-    @include transiTion(width 1s -.1s ease-in-out);
+    @include transiTion(all .5s ease-in-out);
 }
-@mixin sticker__menu__icon__check{
+
+@mixin sticker__menu__icon__check {
     @include backgroundColor(#{$color-white});
     @include coLor(#{$color-tertiary});
     @include fontSize(12px);
     @include paddingLRTB(4px);
     @include bordeRadius(25px);
+    @include overFlow(visible);
 }
 
-/*MENU HOVER */
+//MENU HOVER  
 
-@mixin sticker__menu__hover{
+@mixin sticker__menu__hover {
     @include widTh(60%);
 }
-@mixin sticker__menu__description{
+
+@mixin sticker__menu__description {
     @include widTh(60%);
 }
-
-
-
-
-

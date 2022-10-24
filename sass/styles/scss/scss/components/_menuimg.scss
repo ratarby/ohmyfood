@@ -22,14 +22,14 @@
             .hearticones__1 {
                 @include hearticones__1;
             }
-            .hearticones__1:hover {
+            &:hover {
             @include hearticones__1__hover;
             }
             .hearticones__2 {
             @include hearticones__2;
             }
             
-            .hearticones__2:hover {
+            &:hover {
             @include hearticones__2__hover;
             }
         }                                   

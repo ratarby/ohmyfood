@@ -1,5 +1,11 @@
 
-.sticker__menu:hover.sticker__menu__price {
+.sticker__menu:hover .sticker__menu__description {
+    @include widTh(60%);
+    @include transiTion(width 1s ease-in-out);
+  }
+
+
+.sticker__menu:hover .sticker__menu__price {
     @include widTh(5%);
     @include paddingTop(35px);
     @include transiTion(width .5s -.3s ease-in-out);

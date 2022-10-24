@@ -3,7 +3,7 @@
 // section, titre & paragrphe
 section{
     .decouverte__exploration{
-        @include backGround($backGround: $color-grey-2);
+        @include backGround(lighten($color-grey-1, 60%));
         @include paddingBottom(1.4rem);
         .title__resa__menu{
             @include resa__menu;

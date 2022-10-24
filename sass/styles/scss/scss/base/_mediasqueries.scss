@@ -1,18 +1,17 @@
     @import "../utils/_mixins.scss";
-    @import "../base/_responsive";
 
     @include  responsive(mobile) {
         .container{
-            width:375px;
-            height: auto;
-            margin:auto;
+            @include widTh(375px);
+            @include heiGht(auto);
+            @include marginLRTB(auto);
         }
     }    
     @include responsive(tablet) {
         .container{
-            width:768px;
-            height: auto;
-            margin:auto;
+            @include widTh(768px);
+            @include heiGht(auto);
+            @include marginLRTB(auto);
             @include backGround(#{$color-grey-2});
 
             header{
@@ -142,14 +141,14 @@
                 }
                 .menu{
                     .menu__resto{
-                        @include widTh(768px);
+                    @include widTh(768px);
                     @include menu__resto;
                     .menu__resto__img{
                         @include menu__resto__img;
                     }
                     .menu__resto__description{
                         @include menu__resto__description;
-                        @include paddingLRTB(0rem 5.4rem 0rem 1.25rem);
+                        @include paddingLRTB(0rem 4.8rem 0rem 1.25rem);
                         @include backGround(#{$color-grey-2});
                         @include widTh(768px);
                         .menu__resto__text__description{
@@ -183,8 +182,7 @@
                 }
             }
             // MENU ENTREES
-        
-        /*MENU 1 SECTION*/
+        //MENU 1 SECTION 
             .menus__entrees__plats__desserts{
                 .menu__entree{
                     @include menu__entree;
@@ -192,9 +190,7 @@
                     .menu__title{
                         @include menu__title;
                     }
-                    /*  CARD 1,
-                        CARD 2,
-                        CARD 3  */ 
+                    //  CARD 1,CARD 2, CARD 3 
                     .sticker__menu__box__card{
                         .sticker__menu{
                             @include sticker__menu;
@@ -236,9 +232,7 @@
                     .menu__title{
                         @include menu__title;
                     }
-                    /*  CARD 4,
-                        CARD 5,
-                        CARD 6  */
+                    //  CARD 4,CARD 5,CARD 6
                     .sticker__menu__box__card{
                         .sticker__menu{
                             @include sticker__menu;
@@ -278,9 +272,8 @@
                     .menu__title{
                         @include menu__title;
                     }
-                    /*  CARD 7,
-                        CARD 8,
-                        CARD 9  */
+                    //  CARD 7,CARD 8, CARD 9   
+                        
                     .sticker__menu__box__card{
                         .sticker__menu{
                             @include sticker__menu;
@@ -315,7 +308,6 @@
                     }    
                     }
                 }
-        
         }
     }
 
@@ -323,9 +315,9 @@
 }
     @include responsive(desktop) {
             .container{
-                width:992px;
-                height: auto;
-                margin:auto;
+                @include widTh(992px);
+                @include heiGht(auto);
+                @include marginLRTB(auto);
                 @include backGround(#{$color-grey-2});
 
                 header{
@@ -454,16 +446,22 @@
                         }
                     .menu{
                         .menu__resto{
-                        @include menu__resto;
-                        .menu__resto__img{
-                            @include menu__resto__img;
-                        }
-                        .menu__resto__description{
-                            @include menu__resto__description;
-                            @include paddingLRTB(0rem 5.4rem 0rem 1.25rem);
-                            @include backGround(#{$color-grey-2});
-                            @include widTh(992px);
-                            .menu__resto__text__description{
+                            @include menu__resto;
+                            @include heiGht(30vh);
+                            .menu__resto__img{
+                                @include menu__resto__img;
+                                @include heiGht(28vh);
+                                
+                            }
+                            .menu__resto__description{
+                                @include menu__resto__description;
+                                @include paddingLRTB(2rem 3.8rem 0rem 1.25rem);
+                                @include backGround(#{$color-grey-2});
+                                @include widTh(992px);
+                                @include heiGht(8vh);
+                                @include transformY(-1vh);
+                                z-index: 3;
+                                .menu__resto__text__description{
                                 @include menu__resto__text__description;
                                 .menu__resto__title{
                                     @include menu__resto__title;
@@ -496,10 +494,12 @@
                 section{
                     .fonctionnement{
                         @include fonctionnement;
-                        width: 95.6%;
+                        @include widTh(97.6%);
+                        @include transformX(-1.4rem);
                         .title__fonctionnement{
                             @include flexCenter;
                             @include title__fonctionnement;
+                            @include transformX(1.2rem);
                             .text__title__fonctionnement{
                                 @include text__title__fonctionnement;
                             }
@@ -514,6 +514,7 @@
                                 @include widTh(33.33%);
                                 .order__list{
                                     @include order__list;
+                                    margin: 0 .8rem;
                                     .list__resto{
                                         @include list__resto;
                                         .fa-mobile-alt{
@@ -548,23 +549,22 @@
                 // MENU ENTREES PLAT DESSERTS
             
             .marg__menu{ 
-                align-items: center;
+                @include alignItems(center);
                 .menus__entrees__plats__desserts{
                     @include flex;
-                    justify-content: center;
+                    @include justifyContent(center);
                     @include backGround(#{$color-grey-2});
-
+                    @include marginTop(3rem);
                     .menu__entree{
                         @include menu__entree;
                         @include widTh(33.33%);
                         @include backGround(#{$color-grey-2});
-
+                        @include marginBottom(1.5rem);
                         .menu__title{
                             @include menu__title;
+                            @include marginBottom(2rem);
                         }
-                        /*  CARD 1,
-                            CARD 2,
-                            CARD 3  */ 
+                        //  CARD 1,CARD 2,CARD 3 
                         .sticker__menu__box__card{
                             .sticker__menu{
                                 @include sticker__menu;
@@ -604,10 +604,10 @@
                         @include widTh(33.33%);
                         .menu__title{
                             @include menu__title;
+                            @include marginBottom(2rem);
+
                         }
-                        /*  CARD 4,
-                            CARD 5,
-                            CARD 6  */
+                        //  CARD 4,CARD 5, CARD 6  
                         .sticker__menu__box__card{
                             .sticker__menu{
                                 @include sticker__menu;
@@ -647,10 +647,10 @@
                         @include widTh(33.33%);
                         .menu__title{
                             @include menu__title;
+                            @include marginBottom(2rem);
+
                         }
-                        /*  CARD 7,
-                            CARD 8,
-                            CARD 9  */
+                        //  CARD 7, CARD 8, CARD 9
                         .sticker__menu__box__card{
                             .sticker__menu{
                                 @include sticker__menu;
@@ -685,8 +685,8 @@
                         }    
                         }
                     }
-            
-            }}
+            }
+        }
             
             // btn commander
             .btn__commander{
@@ -694,7 +694,7 @@
                 @include paddingLRTB(18px); 
                 @include marginBottom(3px); 
                 @include backGround(#{$color-grey-2});
-                @include transformY(3rem); 
+                @include transformY(5rem); 
                 .button {
                 @include coLor(#{$color-white});
                 @include fontSize(16px);
@@ -754,13 +754,11 @@
                             .foot__link__icon{
                                 .text__2{
                                     @include text__2;
-                                }
                             }
                         }
-                        
                     }
                 }
             }
-
-        }   
         }
+    }
+}   

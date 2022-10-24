@@ -1,53 +1,8 @@
 @charset "UTF-8";
-/*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
-html, body, p, ol, ul, li, dl, dt, dd, blockquote, figure, fieldset, legend, textarea, pre, iframe, hr, h1, h2, h3, h4, h5, h6 {
-  margin: 0;
-  padding: 0;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-size: 100%;
-  font-weight: normal;
-}
-
-ul {
-  list-style: none;
-}
-
-button, input, select {
-  margin: 0;
-}
-
-html {
-  box-sizing: border-box;
-}
-
-*, *::before, *::after {
-  box-sizing: inherit;
-}
-
-img, video {
-  height: auto;
-  max-width: 100%;
-}
-
-iframe {
-  border: 0;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-td, th {
-  padding: 0;
-}
-
 html,
 body {
   box-sizing: border-box;
@@ -59,36 +14,30 @@ body {
   color: #000;
 }
 
-/*footer*/
-/*page d'accueil*/
-/*header*/
-/* section localisation, decouverte & exploration*/
-/*----------------localisation-------------------*/
-/* -------decouverte et exploration----------*/
-/*btn*/
-/* Section Fonctionnement*/
-/*===========================================*/
-/*------------------SLIDES-------------------*/
-/*===========================================*/
-/*MENU HOVER */
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .container {
   width: auto;
   height: auto;
 }
 
-/*footer*/
-/*page d'accueil*/
-/*header*/
-/* section localisation, decouverte & exploration*/
-/*----------------localisation-------------------*/
-/* -------decouverte et exploration----------*/
-/*btn*/
-/* Section Fonctionnement*/
-/*===========================================*/
-/*------------------SLIDES-------------------*/
-/*===========================================*/
-/*MENU HOVER */
 header {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 99.8%;
+  transform: translateX(0.05rem);
   font-family: "Shrikhand";
   text-align: center;
   position: relative;
@@ -98,18 +47,6 @@ header {
   padding-bottom: 0.4rem;
 }
 
-/*footer*/
-/*page d'accueil*/
-/*header*/
-/* section localisation, decouverte & exploration*/
-/*----------------localisation-------------------*/
-/* -------decouverte et exploration----------*/
-/*btn*/
-/* Section Fonctionnement*/
-/*===========================================*/
-/*------------------SLIDES-------------------*/
-/*===========================================*/
-/*MENU HOVER */
 .btn {
   display: flex;
   flex-direction: row;
@@ -140,20 +77,8 @@ header {
   top: 1px;
 }
 
-/*footer*/
-/*page d'accueil*/
-/*header*/
-/* section localisation, decouverte & exploration*/
-/*----------------localisation-------------------*/
-/* -------decouverte et exploration----------*/
-/*btn*/
-/* Section Fonctionnement*/
-/*===========================================*/
-/*------------------SLIDES-------------------*/
-/*===========================================*/
-/*MENU HOVER */
 section .decouverte__exploration {
-  background: #f6f6f6;
+  background: white;
   padding-bottom: 1.4rem;
 }
 section .decouverte__exploration .title__resa__menu {
@@ -181,7 +106,7 @@ section .decouverte__exploration .title__para__resto .text__title__para__resto {
 /*bar de recherche*/
 .localisation__ville {
   display: flex;
-  background: #9e9e9e scale(30%);
+  background: #f7f7f7;
   padding: 1rem;
   font-size: 1.08rem;
   font-weight: bold;
@@ -199,11 +124,13 @@ section .fonctionnement {
   padding-bottom: 1.4rem;
   padding-left: 0.2rem;
   padding-right: 1rem;
+  margin-left: 1.15rem;
+  margin-right: 1rem;
   transform: translateX(6px);
 }
 section .fonctionnement .title__fonctionnement {
-  margin: 3rem;
-  margin: 2rem;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
   font-size: 1.4rem;
 }
 section .fonctionnement .title__fonctionnement .text__title__fonctionnement {
@@ -220,7 +147,7 @@ section .fonctionnement .title__fonctionnement .text__title__fonctionnement {
   border-radius: 1.4rem;
   padding-top: 1.6rem;
   padding-bottom: 1.6rem;
-  margin: 1rem;
+  margin-bottom: 1rem;
   background: #f6f6f6;
   box-shadow: 0 0.3125rem 1.375rem -0.1875rem #9e9e9e;
   position: relative;
@@ -228,8 +155,10 @@ section .fonctionnement .title__fonctionnement .text__title__fonctionnement {
 }
 .order .order__list .list__resto {
   padding-left: 20px;
+  text-decoration: none;
+  color: #000;
 }
-.order .order__list .list__resto .fa-mobile-alt {
+.order .order__list .fa-mobile-alt {
   color: #6b6363;
   font-size: 1.28rem;
   transform: translateX(-1.6rem);
@@ -239,17 +168,25 @@ section .fonctionnement .title__fonctionnement .text__title__fonctionnement {
   box-shadow: 0px 0.3125rem 1.375rem -0.1875rem #6b6363;
   cursor: pointer;
 }
+.order .list__menu {
+  text-decoration: none;
+  color: #000;
+}
 .order .list__menu .list__icon {
   color: #6b6363;
   font-size: 1rem;
   transform: translateX(-1.4rem);
+}
+.order .list__degust {
+  text-decoration: none;
+  color: #000;
 }
 .order .list__degust .store__icon {
   color: #6b6363;
   font-size: 1rem;
   transform: translateX(-1.4rem);
 }
-.order .order__list::before {
+.order .order__list:before {
   display: flex;
   flex-direction: row;
   transform: translateY(-0.0625rem);
@@ -267,53 +204,6 @@ section .fonctionnement .title__fonctionnement .text__title__fonctionnement {
   list-style-type: decimal;
 }
 
-.foot {
-  background: #353535;
-  padding-top: 20px;
-  padding-left: 20px;
-  padding-bottom: 40px;
-  color: #fff;
-  width: 100%;
-}
-.foot .foot__con {
-  display: flex;
-  flex-direction: column;
-}
-.foot .foot__con .foot__logo {
-  font-family: "Shrikhand";
-  padding-bottom: 0.8rem;
-}
-.foot .foot__con .foot__logo .foot__logo__title {
-  font-size: 1.1rem;
-}
-.foot .foot__con *,
-.foot .foot__con .foot__list {
-  text-decoration: none;
-  color: #fff;
-  line-height: 1.6rem;
-  font-size: 0.96rem;
-}
-.foot .foot__con * .text__1,
-.foot .foot__con .foot__list .text__1 {
-  color: #fff;
-}
-.foot .foot__con * .foot__list__textA .foot__link__icon .text__1,
-.foot .foot__con .foot__list .foot__list__textA .foot__link__icon .text__1 {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 12rem;
-  font-size: 0.96rem;
-}
-.foot .foot__con * .foot__list__textA .foot__link__icon .text__2,
-.foot .foot__con .foot__list .foot__list__textA .foot__link__icon .text__2 {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 9.94rem;
-  font-size: 0.96rem;
-}
-
 main section {
   margin: 0rem 0rem;
 }
@@ -326,13 +216,14 @@ main section .back__Ground .title__resto {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  margin: 3rem;
+  margin-top: 3rem;
   padding-top: 3rem;
-  margin: 1.8rem;
+  margin-bottom: 1.8rem;
   font-size: 1.4rem;
 }
 main section .back__Ground .title__resto .text__title__resto {
   font-weight: 600;
+  margin-left: 1.6rem;
 }
 main section .back__Ground .box__1 {
   display: flex;
@@ -347,7 +238,7 @@ main section .back__Ground .box__1 .card {
   display: flex;
   flex-direction: column;
   text-decoration: none;
-  color: #000000;
+  color: #000;
   width: 100%;
 }
 main section .back__Ground .box__1 * .new,
@@ -360,14 +251,17 @@ main section .back__Ground .box__1 .card .new::before {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: #99E2D0;
-  color: mix #99E2D0, #000000, 50%;
   position: absolute;
   height: 2rem;
   width: 5rem;
   content: "Nouveau";
+  background: #a5e5d5;
+  color: #2c9c81;
+  font-weight: 500;
+  font-size: 0.9rem;
   top: 1rem;
   right: 1rem;
+  border-radius: 0.1rem;
 }
 main section .back__Ground .box__1 * .card__resto,
 main section .back__Ground .box__1 .card .card__resto {
@@ -425,6 +319,7 @@ main section .back__Ground .box__1 .card .card__resto .card__resto__description 
   padding-right: 1rem;
   position: absolute;
   font-size: 1.5rem;
+  -webkit-background-clip: text;
   background-clip: text;
   background-image: linear-gradient(to top, #FF79DA, #9356DC);
   top: 42%;
@@ -447,7 +342,7 @@ main section .back__Ground .box__1 .card .card__resto .card__resto__description 
   font-size: 1.5rem;
   top: 0%;
   right: 0%;
-  color: #000000;
+  color: #000;
   opacity: 1;
   position: absolute;
   transition: opacity 1.5s;
@@ -469,7 +364,7 @@ main section .back__Ground .box__2 .card {
   display: flex;
   flex-direction: column;
   text-decoration: none;
-  color: #000000;
+  color: #000;
   width: 100%;
 }
 main section .back__Ground .box__2 * .new,
@@ -482,14 +377,17 @@ main section .back__Ground .box__2 .card .new::before {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: #99E2D0;
-  color: mix #99E2D0, #000000, 50%;
   position: absolute;
   height: 2rem;
   width: 5rem;
   content: "Nouveau";
+  background: #a5e5d5;
+  color: #2c9c81;
+  font-weight: 500;
+  font-size: 0.9rem;
   top: 1rem;
   right: 1rem;
+  border-radius: 0.1rem;
 }
 main section .back__Ground .box__2 * .card__resto,
 main section .back__Ground .box__2 .card .card__resto {
@@ -547,6 +445,7 @@ main section .back__Ground .box__2 .card .card__resto .card__resto__description 
   padding-right: 1rem;
   position: absolute;
   font-size: 1.5rem;
+  -webkit-background-clip: text;
   background-clip: text;
   background-image: linear-gradient(to top, #FF79DA, #9356DC);
   top: 42%;
@@ -569,7 +468,7 @@ main section .back__Ground .box__2 .card .card__resto .card__resto__description 
   font-size: 1.5rem;
   top: 0%;
   right: 0%;
-  color: #000000;
+  color: #000;
   opacity: 1;
   position: absolute;
   transition: opacity 1.5s;
@@ -588,7 +487,12 @@ header .menu__header .leftArrow {
   font-size: 1.6rem;
 }
 
-.sticker__menu:hover.sticker__menu__price {
+.sticker__menu:hover .sticker__menu__description {
+  width: 60%;
+  transition: width 1s ease-in-out;
+}
+
+.sticker__menu:hover .sticker__menu__price {
   width: 5%;
   padding-top: 35px;
   transition: width 0.5s -0.3s ease-in-out;
@@ -609,18 +513,6 @@ header .menu__header .leftArrow {
   padding: 4px;
 }
 
-/*footer*/
-/*page d'accueil*/
-/*header*/
-/* section localisation, decouverte & exploration*/
-/*----------------localisation-------------------*/
-/* -------decouverte et exploration----------*/
-/*btn*/
-/* Section Fonctionnement*/
-/*===========================================*/
-/*------------------SLIDES-------------------*/
-/*===========================================*/
-/*MENU HOVER */
 @media (min-width: 375px) {
   .container {
     width: 375px;
@@ -633,7 +525,7 @@ header .menu__header .leftArrow {
     width: 768px;
     height: auto;
     margin: auto;
-    background: #f6f6f6; /*MENU 1 SECTION*/
+    background: #f6f6f6;
   }
   .container header .menu__header {
     display: flex;
@@ -653,9 +545,9 @@ header .menu__header .leftArrow {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    margin: 3rem;
+    margin-top: 3rem;
     padding-top: 3rem;
-    margin: 1.8rem;
+    margin-bottom: 1.8rem;
     font-size: 1.4rem;
   }
   .container main section .back__Ground .title__resto .text__title__resto {
@@ -672,7 +564,7 @@ header .menu__header .leftArrow {
     display: flex;
     flex-direction: column;
     text-decoration: none;
-    color: #000000;
+    color: #000;
     width: 100%;
   }
   .container main section .back__Ground .box__1 * .new,
@@ -685,14 +577,17 @@ header .menu__header .leftArrow {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: #99E2D0;
-    color: mix #99E2D0, #000000, 50%;
     position: absolute;
     height: 2rem;
     width: 5rem;
     content: "Nouveau";
+    background: #a5e5d5;
+    color: #2c9c81;
+    font-weight: 500;
+    font-size: 0.9rem;
     top: 1rem;
     right: 1rem;
+    border-radius: 0.1rem;
   }
   .container main section .back__Ground .box__1 * .card__resto,
 .container main section .back__Ground .box__1 .card .card__resto {
@@ -750,6 +645,7 @@ header .menu__header .leftArrow {
     padding-right: 1rem;
     position: absolute;
     font-size: 1.5rem;
+    -webkit-background-clip: text;
     background-clip: text;
     background-image: linear-gradient(to top, #FF79DA, #9356DC);
     top: 42%;
@@ -772,7 +668,7 @@ header .menu__header .leftArrow {
     font-size: 1.5rem;
     top: 0%;
     right: 0%;
-    color: #000000;
+    color: #000;
     opacity: 1;
     position: absolute;
     transition: opacity 1.5s;
@@ -792,7 +688,7 @@ header .menu__header .leftArrow {
     display: flex;
     flex-direction: column;
     text-decoration: none;
-    color: #000000;
+    color: #000;
     width: 100%;
   }
   .container main section .back__Ground .box__2 * .new,
@@ -805,14 +701,17 @@ header .menu__header .leftArrow {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: #99E2D0;
-    color: mix #99E2D0, #000000, 50%;
     position: absolute;
     height: 2rem;
     width: 5rem;
     content: "Nouveau";
+    background: #a5e5d5;
+    color: #2c9c81;
+    font-weight: 500;
+    font-size: 0.9rem;
     top: 1rem;
     right: 1rem;
+    border-radius: 0.1rem;
   }
   .container main section .back__Ground .box__2 * .card__resto,
 .container main section .back__Ground .box__2 .card .card__resto {
@@ -870,6 +769,7 @@ header .menu__header .leftArrow {
     padding-right: 1rem;
     position: absolute;
     font-size: 1.5rem;
+    -webkit-background-clip: text;
     background-clip: text;
     background-image: linear-gradient(to top, #FF79DA, #9356DC);
     top: 42%;
@@ -892,7 +792,7 @@ header .menu__header .leftArrow {
     font-size: 1.5rem;
     top: 0%;
     right: 0%;
-    color: #000000;
+    color: #000;
     opacity: 1;
     position: absolute;
     transition: opacity 1.5s;
@@ -911,12 +811,11 @@ header .menu__header .leftArrow {
   .container .menu .menu__resto .menu__resto__img {
     border-radius: 0 0 0 0;
     width: 100%;
-    height: 240px;
+    height: 260px;
     object-fit: cover;
     position: relative;
-    margin: -20px;
-    top: 1.2rem;
-    right: -1.2rem;
+    margin-bottom: -20px;
+    top: 0.02rem;
   }
   .container .menu .menu__resto .menu__resto__description {
     display: flex;
@@ -924,12 +823,12 @@ header .menu__header .leftArrow {
     align-items: center;
     position: absolute;
     background: #fff;
-    padding: 0px 4.1rem 0rem 1.25rem;
-    margin: 0rem 0rem 0rem 0rem;
+    padding: 0px 3.89rem 0rem 1.26rem;
+    margin: -1.2rem 0rem 1rem 0rem;
     border-radius: 2.5rem 2.5rem 0 0;
     border-top: none;
     width: 375px;
-    padding: 0rem 5.4rem 0rem 1.25rem;
+    padding: 0rem 4.8rem 0rem 1.25rem;
     background: #f6f6f6;
     width: 768px;
   }
@@ -961,6 +860,8 @@ header .menu__header .leftArrow {
     cursor: pointer;
     background-repeat: no-repeat;
     transition: background-position 1s;
+    -webkit-background-clip: text;
+    background-clip: text;
   }
   .container .menu .menu__resto .menu__resto__description .menu__btn__like__heart .menu__hearticones__1:hover {
     background-position: 0 0px;
@@ -969,7 +870,7 @@ header .menu__header .leftArrow {
     font-size: 1.5rem;
     top: 0%;
     right: 0%;
-    color: #000000;
+    color: #000;
     opacity: 1;
     position: absolute;
     transition: opacity 1.5s;
@@ -983,19 +884,16 @@ header .menu__header .leftArrow {
     height: auto;
     background: #f6f6f6;
     background: #f6f6f6;
-    /*  CARD 1,
-        CARD 2,
-        CARD 3  */
   }
   .container .menus__entrees__plats__desserts .menu__entree .menu__title {
     font-size: 16px;
     font-weight: lighter;
-    margin: 20px;
-    margin: 30px;
+    margin-left: 20px;
+    margin-top: 30px;
     border-bottom: 3px solid #99E2D0;
     width: 40px;
     padding-bottom: 5px;
-    margin: 16px;
+    margin-bottom: 16px;
   }
   .container .menus__entrees__plats__desserts .menu__entree .sticker__menu__box__card .sticker__menu {
     display: flex;
@@ -1005,7 +903,7 @@ header .menu__header .leftArrow {
     margin: 0px 13px 13px 14px;
     border-radius: 15px;
     text-decoration: none;
-    color: #000000;
+    color: #000;
     overflow: hidden;
   }
   .container .menus__entrees__plats__desserts .menu__entree .sticker__menu__box__card .slideInUp,
@@ -1051,19 +949,19 @@ header .menu__header .leftArrow {
     font-weight: 500;
     padding: 38px 10px 0px 10px;
     width: 32%;
-    transition: width 3s -0.1s ease-in-out;
+    transition: width 0.5s ease-in-out;
   }
   .container .menus__entrees__plats__desserts .menu__entree .sticker__menu__box__card .slideInUp .sticker__menu__icon,
 .container .menus__entrees__plats__desserts .menu__entree .sticker__menu__box__card .slideInUp__1 .sticker__menu__icon {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     background-color: #99E2D0;
     width: 0%;
     border-radius: 0px 15px 15px 0px;
     overflow: hidden;
-    transition: width 1s -0.1s ease-in-out;
+    transition: all 0.5s ease-in-out;
   }
   .container .menus__entrees__plats__desserts .menu__entree .sticker__menu__box__card .slideInUp .sticker__menu__icon__check,
 .container .menus__entrees__plats__desserts .menu__entree .sticker__menu__box__card .slideInUp__1 .sticker__menu__icon__check {
@@ -1072,6 +970,7 @@ header .menu__header .leftArrow {
     font-size: 12px;
     padding: 4px;
     border-radius: 25px;
+    overflow: visible;
   }
   .container .menus__entrees__plats__desserts .menu__plat {
     display: flex;
@@ -1079,19 +978,16 @@ header .menu__header .leftArrow {
     height: auto;
     background: #f6f6f6;
     background: #f6f6f6;
-    /*  CARD 4,
-        CARD 5,
-        CARD 6  */
   }
   .container .menus__entrees__plats__desserts .menu__plat .menu__title {
     font-size: 16px;
     font-weight: lighter;
-    margin: 20px;
-    margin: 30px;
+    margin-left: 20px;
+    margin-top: 30px;
     border-bottom: 3px solid #99E2D0;
     width: 40px;
     padding-bottom: 5px;
-    margin: 16px;
+    margin-bottom: 16px;
   }
   .container .menus__entrees__plats__desserts .menu__plat .sticker__menu__box__card .sticker__menu {
     display: flex;
@@ -1101,7 +997,7 @@ header .menu__header .leftArrow {
     margin: 0px 13px 13px 14px;
     border-radius: 15px;
     text-decoration: none;
-    color: #000000;
+    color: #000;
     overflow: hidden;
   }
   .container .menus__entrees__plats__desserts .menu__plat .sticker__menu__box__card .slideInUp,
@@ -1147,19 +1043,19 @@ header .menu__header .leftArrow {
     font-weight: 500;
     padding: 38px 10px 0px 10px;
     width: 32%;
-    transition: width 3s -0.1s ease-in-out;
+    transition: width 0.5s ease-in-out;
   }
   .container .menus__entrees__plats__desserts .menu__plat .sticker__menu__box__card .slideInUp .sticker__menu__icon,
 .container .menus__entrees__plats__desserts .menu__plat .sticker__menu__box__card .slideInUp__2 .sticker__menu__icon {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     background-color: #99E2D0;
     width: 0%;
     border-radius: 0px 15px 15px 0px;
     overflow: hidden;
-    transition: width 1s -0.1s ease-in-out;
+    transition: all 0.5s ease-in-out;
   }
   .container .menus__entrees__plats__desserts .menu__plat .sticker__menu__box__card .slideInUp .sticker__menu__icon__check,
 .container .menus__entrees__plats__desserts .menu__plat .sticker__menu__box__card .slideInUp__2 .sticker__menu__icon__check {
@@ -1168,25 +1064,23 @@ header .menu__header .leftArrow {
     font-size: 12px;
     padding: 4px;
     border-radius: 25px;
+    overflow: visible;
   }
   .container .menus__entrees__plats__desserts .menu__dessert {
     display: flex;
     flex-direction: column;
     height: auto;
     background: #f6f6f6;
-    /*  CARD 7,
-        CARD 8,
-        CARD 9  */
   }
   .container .menus__entrees__plats__desserts .menu__dessert .menu__title {
     font-size: 16px;
     font-weight: lighter;
-    margin: 20px;
-    margin: 30px;
+    margin-left: 20px;
+    margin-top: 30px;
     border-bottom: 3px solid #99E2D0;
     width: 40px;
     padding-bottom: 5px;
-    margin: 16px;
+    margin-bottom: 16px;
   }
   .container .menus__entrees__plats__desserts .menu__dessert .sticker__menu__box__card .sticker__menu {
     display: flex;
@@ -1196,7 +1090,7 @@ header .menu__header .leftArrow {
     margin: 0px 13px 13px 14px;
     border-radius: 15px;
     text-decoration: none;
-    color: #000000;
+    color: #000;
     overflow: hidden;
   }
   .container .menus__entrees__plats__desserts .menu__dessert .sticker__menu__box__card .slideInUp,
@@ -1242,19 +1136,19 @@ header .menu__header .leftArrow {
     font-weight: 500;
     padding: 38px 10px 0px 10px;
     width: 32%;
-    transition: width 3s -0.1s ease-in-out;
+    transition: width 0.5s ease-in-out;
   }
   .container .menus__entrees__plats__desserts .menu__dessert .sticker__menu__box__card .slideInUp .sticker__menu__icon,
 .container .menus__entrees__plats__desserts .menu__dessert .sticker__menu__box__card .slideInUp__2 .sticker__menu__icon {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     background-color: #99E2D0;
     width: 0%;
     border-radius: 0px 15px 15px 0px;
     overflow: hidden;
-    transition: width 1s -0.1s ease-in-out;
+    transition: all 0.5s ease-in-out;
   }
   .container .menus__entrees__plats__desserts .menu__dessert .sticker__menu__box__card .slideInUp .sticker__menu__icon__check,
 .container .menus__entrees__plats__desserts .menu__dessert .sticker__menu__box__card .slideInUp__2 .sticker__menu__icon__check {
@@ -1263,6 +1157,7 @@ header .menu__header .leftArrow {
     font-size: 12px;
     padding: 4px;
     border-radius: 25px;
+    overflow: visible;
   }
 }
 @media (min-width: 992px) {
@@ -1290,9 +1185,9 @@ header .menu__header .leftArrow {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    margin: 3rem;
+    margin-top: 3rem;
     padding-top: 3rem;
-    margin: 1.8rem;
+    margin-bottom: 1.8rem;
     font-size: 1.4rem;
   }
   .container section .back__Ground .title__resto .text__title__resto {
@@ -1309,7 +1204,7 @@ header .menu__header .leftArrow {
     display: flex;
     flex-direction: column;
     text-decoration: none;
-    color: #000000;
+    color: #000;
     width: 100%;
   }
   .container section .back__Ground .box__1 * .new,
@@ -1322,14 +1217,17 @@ header .menu__header .leftArrow {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: #99E2D0;
-    color: mix #99E2D0, #000000, 50%;
     position: absolute;
     height: 2rem;
     width: 5rem;
     content: "Nouveau";
+    background: #a5e5d5;
+    color: #2c9c81;
+    font-weight: 500;
+    font-size: 0.9rem;
     top: 1rem;
     right: 1rem;
+    border-radius: 0.1rem;
   }
   .container section .back__Ground .box__1 * .card__resto,
 .container section .back__Ground .box__1 .card .card__resto {
@@ -1388,6 +1286,7 @@ header .menu__header .leftArrow {
     padding-right: 1rem;
     position: absolute;
     font-size: 1.5rem;
+    -webkit-background-clip: text;
     background-clip: text;
     background-image: linear-gradient(to top, #FF79DA, #9356DC);
     top: 42%;
@@ -1410,7 +1309,7 @@ header .menu__header .leftArrow {
     font-size: 1.5rem;
     top: 0%;
     right: 0%;
-    color: #000000;
+    color: #000;
     opacity: 1;
     position: absolute;
     transition: opacity 1.5s;
@@ -1430,7 +1329,7 @@ header .menu__header .leftArrow {
     display: flex;
     flex-direction: column;
     text-decoration: none;
-    color: #000000;
+    color: #000;
     width: 100%;
   }
   .container section .back__Ground .box__2 * .new,
@@ -1443,14 +1342,17 @@ header .menu__header .leftArrow {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: #99E2D0;
-    color: mix #99E2D0, #000000, 50%;
     position: absolute;
     height: 2rem;
     width: 5rem;
     content: "Nouveau";
+    background: #a5e5d5;
+    color: #2c9c81;
+    font-weight: 500;
+    font-size: 0.9rem;
     top: 1rem;
     right: 1rem;
+    border-radius: 0.1rem;
   }
   .container section .back__Ground .box__2 * .card__resto,
 .container section .back__Ground .box__2 .card .card__resto {
@@ -1508,6 +1410,7 @@ header .menu__header .leftArrow {
     padding-right: 1rem;
     position: absolute;
     font-size: 1.5rem;
+    -webkit-background-clip: text;
     background-clip: text;
     background-image: linear-gradient(to top, #FF79DA, #9356DC);
     top: 42%;
@@ -1530,7 +1433,7 @@ header .menu__header .leftArrow {
     font-size: 1.5rem;
     top: 0%;
     right: 0%;
-    color: #000000;
+    color: #000;
     opacity: 1;
     position: absolute;
     transition: opacity 1.5s;
@@ -1544,16 +1447,17 @@ header .menu__header .leftArrow {
     background: #fff;
     width: 100%;
     height: 260px;
+    height: 30vh;
   }
   .container .menu .menu__resto .menu__resto__img {
     border-radius: 0 0 0 0;
     width: 100%;
-    height: 240px;
+    height: 260px;
     object-fit: cover;
     position: relative;
-    margin: -20px;
-    top: 1.2rem;
-    right: -1.2rem;
+    margin-bottom: -20px;
+    top: 0.02rem;
+    height: 28vh;
   }
   .container .menu .menu__resto .menu__resto__description {
     display: flex;
@@ -1561,14 +1465,17 @@ header .menu__header .leftArrow {
     align-items: center;
     position: absolute;
     background: #fff;
-    padding: 0px 4.1rem 0rem 1.25rem;
-    margin: 0rem 0rem 0rem 0rem;
+    padding: 0px 3.89rem 0rem 1.26rem;
+    margin: -1.2rem 0rem 1rem 0rem;
     border-radius: 2.5rem 2.5rem 0 0;
     border-top: none;
     width: 375px;
-    padding: 0rem 5.4rem 0rem 1.25rem;
+    padding: 2rem 3.8rem 0rem 1.25rem;
     background: #f6f6f6;
     width: 992px;
+    height: 8vh;
+    transform: translateY(-1vh);
+    z-index: 3;
   }
   .container .menu .menu__resto .menu__resto__description .menu__resto__text__description {
     justify-content: space-between;
@@ -1598,6 +1505,8 @@ header .menu__header .leftArrow {
     cursor: pointer;
     background-repeat: no-repeat;
     transition: background-position 1s;
+    -webkit-background-clip: text;
+    background-clip: text;
   }
   .container .menu .menu__resto .menu__resto__description .menu__btn__like__heart .menu__hearticones__1:hover {
     background-position: 0 0px;
@@ -1606,7 +1515,7 @@ header .menu__header .leftArrow {
     font-size: 1.5rem;
     top: 0%;
     right: 0%;
-    color: #000000;
+    color: #000;
     opacity: 1;
     position: absolute;
     transition: opacity 1.5s;
@@ -1618,16 +1527,20 @@ header .menu__header .leftArrow {
     padding-bottom: 1.4rem;
     padding-left: 0.2rem;
     padding-right: 1rem;
+    margin-left: 1.15rem;
+    margin-right: 1rem;
     transform: translateX(6px);
-    width: 95.6%;
+    width: 97.6%;
+    transform: translateX(-1.4rem);
   }
   .container section .fonctionnement .title__fonctionnement {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 3rem;
-    margin: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
     font-size: 1.4rem;
+    transform: translateX(1.2rem);
   }
   .container section .fonctionnement .title__fonctionnement .text__title__fonctionnement {
     font-weight: 600;
@@ -1636,7 +1549,7 @@ header .menu__header .leftArrow {
     transform: translateX(3px);
     width: 100%;
     counter-reset: section;
-    margin: 1rem;
+    margin-left: 1rem;
   }
   .container section .fonctionnement .order .order__box {
     display: flex;
@@ -1649,11 +1562,12 @@ header .menu__header .leftArrow {
     border-radius: 1.4rem;
     padding-top: 1.6rem;
     padding-bottom: 1.6rem;
-    margin: 1rem;
+    margin-bottom: 1rem;
     background: #f6f6f6;
     box-shadow: 0 0.3125rem 1.375rem -0.1875rem #9e9e9e;
     position: relative;
     text-align: center;
+    margin: 0 0.8rem;
   }
   .container section .fonctionnement .order .order__box .order__1 .order__list .list__resto {
     padding-left: 20px;
@@ -1702,6 +1616,7 @@ header .menu__header .leftArrow {
     display: flex;
     justify-content: center;
     background: #f6f6f6;
+    margin-top: 3rem;
   }
   .container .marg__menu .menus__entrees__plats__desserts .menu__entree {
     display: flex;
@@ -1710,19 +1625,18 @@ header .menu__header .leftArrow {
     background: #f6f6f6;
     width: 33.33%;
     background: #f6f6f6;
-    /*  CARD 1,
-        CARD 2,
-        CARD 3  */
+    margin-bottom: 1.5rem;
   }
   .container .marg__menu .menus__entrees__plats__desserts .menu__entree .menu__title {
     font-size: 16px;
     font-weight: lighter;
-    margin: 20px;
-    margin: 30px;
+    margin-left: 20px;
+    margin-top: 30px;
     border-bottom: 3px solid #99E2D0;
     width: 40px;
     padding-bottom: 5px;
-    margin: 16px;
+    margin-bottom: 16px;
+    margin-bottom: 2rem;
   }
   .container .marg__menu .menus__entrees__plats__desserts .menu__entree .sticker__menu__box__card .sticker__menu {
     display: flex;
@@ -1732,7 +1646,7 @@ header .menu__header .leftArrow {
     margin: 0px 13px 13px 14px;
     border-radius: 15px;
     text-decoration: none;
-    color: #000000;
+    color: #000;
     overflow: hidden;
   }
   .container .marg__menu .menus__entrees__plats__desserts .menu__entree .sticker__menu__box__card .slideInUp,
@@ -1778,19 +1692,19 @@ header .menu__header .leftArrow {
     font-weight: 500;
     padding: 38px 10px 0px 10px;
     width: 32%;
-    transition: width 3s -0.1s ease-in-out;
+    transition: width 0.5s ease-in-out;
   }
   .container .marg__menu .menus__entrees__plats__desserts .menu__entree .sticker__menu__box__card .slideInUp .sticker__menu__icon,
 .container .marg__menu .menus__entrees__plats__desserts .menu__entree .sticker__menu__box__card .slideInUp__1 .sticker__menu__icon {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     background-color: #99E2D0;
     width: 0%;
     border-radius: 0px 15px 15px 0px;
     overflow: hidden;
-    transition: width 1s -0.1s ease-in-out;
+    transition: all 0.5s ease-in-out;
   }
   .container .marg__menu .menus__entrees__plats__desserts .menu__entree .sticker__menu__box__card .slideInUp .sticker__menu__icon__check,
 .container .marg__menu .menus__entrees__plats__desserts .menu__entree .sticker__menu__box__card .slideInUp__1 .sticker__menu__icon__check {
@@ -1799,6 +1713,7 @@ header .menu__header .leftArrow {
     font-size: 12px;
     padding: 4px;
     border-radius: 25px;
+    overflow: visible;
   }
   .container .marg__menu .menus__entrees__plats__desserts .menu__plat {
     display: flex;
@@ -1806,19 +1721,17 @@ header .menu__header .leftArrow {
     height: auto;
     background: #f6f6f6;
     width: 33.33%;
-    /*  CARD 4,
-        CARD 5,
-        CARD 6  */
   }
   .container .marg__menu .menus__entrees__plats__desserts .menu__plat .menu__title {
     font-size: 16px;
     font-weight: lighter;
-    margin: 20px;
-    margin: 30px;
+    margin-left: 20px;
+    margin-top: 30px;
     border-bottom: 3px solid #99E2D0;
     width: 40px;
     padding-bottom: 5px;
-    margin: 16px;
+    margin-bottom: 16px;
+    margin-bottom: 2rem;
   }
   .container .marg__menu .menus__entrees__plats__desserts .menu__plat .sticker__menu__box__card .sticker__menu {
     display: flex;
@@ -1828,7 +1741,7 @@ header .menu__header .leftArrow {
     margin: 0px 13px 13px 14px;
     border-radius: 15px;
     text-decoration: none;
-    color: #000000;
+    color: #000;
     overflow: hidden;
   }
   .container .marg__menu .menus__entrees__plats__desserts .menu__plat .sticker__menu__box__card .slideInUp,
@@ -1874,19 +1787,19 @@ header .menu__header .leftArrow {
     font-weight: 500;
     padding: 38px 10px 0px 10px;
     width: 32%;
-    transition: width 3s -0.1s ease-in-out;
+    transition: width 0.5s ease-in-out;
   }
   .container .marg__menu .menus__entrees__plats__desserts .menu__plat .sticker__menu__box__card .slideInUp .sticker__menu__icon,
 .container .marg__menu .menus__entrees__plats__desserts .menu__plat .sticker__menu__box__card .slideInUp__2 .sticker__menu__icon {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     background-color: #99E2D0;
     width: 0%;
     border-radius: 0px 15px 15px 0px;
     overflow: hidden;
-    transition: width 1s -0.1s ease-in-out;
+    transition: all 0.5s ease-in-out;
   }
   .container .marg__menu .menus__entrees__plats__desserts .menu__plat .sticker__menu__box__card .slideInUp .sticker__menu__icon__check,
 .container .marg__menu .menus__entrees__plats__desserts .menu__plat .sticker__menu__box__card .slideInUp__2 .sticker__menu__icon__check {
@@ -1895,6 +1808,7 @@ header .menu__header .leftArrow {
     font-size: 12px;
     padding: 4px;
     border-radius: 25px;
+    overflow: visible;
   }
   .container .marg__menu .menus__entrees__plats__desserts .menu__dessert {
     display: flex;
@@ -1902,19 +1816,17 @@ header .menu__header .leftArrow {
     height: auto;
     background: #f6f6f6;
     width: 33.33%;
-    /*  CARD 7,
-        CARD 8,
-        CARD 9  */
   }
   .container .marg__menu .menus__entrees__plats__desserts .menu__dessert .menu__title {
     font-size: 16px;
     font-weight: lighter;
-    margin: 20px;
-    margin: 30px;
+    margin-left: 20px;
+    margin-top: 30px;
     border-bottom: 3px solid #99E2D0;
     width: 40px;
     padding-bottom: 5px;
-    margin: 16px;
+    margin-bottom: 16px;
+    margin-bottom: 2rem;
   }
   .container .marg__menu .menus__entrees__plats__desserts .menu__dessert .sticker__menu__box__card .sticker__menu {
     display: flex;
@@ -1924,7 +1836,7 @@ header .menu__header .leftArrow {
     margin: 0px 13px 13px 14px;
     border-radius: 15px;
     text-decoration: none;
-    color: #000000;
+    color: #000;
     overflow: hidden;
   }
   .container .marg__menu .menus__entrees__plats__desserts .menu__dessert .sticker__menu__box__card .slideInUp,
@@ -1970,19 +1882,19 @@ header .menu__header .leftArrow {
     font-weight: 500;
     padding: 38px 10px 0px 10px;
     width: 32%;
-    transition: width 3s -0.1s ease-in-out;
+    transition: width 0.5s ease-in-out;
   }
   .container .marg__menu .menus__entrees__plats__desserts .menu__dessert .sticker__menu__box__card .slideInUp .sticker__menu__icon,
 .container .marg__menu .menus__entrees__plats__desserts .menu__dessert .sticker__menu__box__card .slideInUp__2 .sticker__menu__icon {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     background-color: #99E2D0;
     width: 0%;
     border-radius: 0px 15px 15px 0px;
     overflow: hidden;
-    transition: width 1s -0.1s ease-in-out;
+    transition: all 0.5s ease-in-out;
   }
   .container .marg__menu .menus__entrees__plats__desserts .menu__dessert .sticker__menu__box__card .slideInUp .sticker__menu__icon__check,
 .container .marg__menu .menus__entrees__plats__desserts .menu__dessert .sticker__menu__box__card .slideInUp__2 .sticker__menu__icon__check {
@@ -1991,6 +1903,7 @@ header .menu__header .leftArrow {
     font-size: 12px;
     padding: 4px;
     border-radius: 25px;
+    overflow: visible;
   }
   .container .btn__commander {
     display: flex;
@@ -1998,9 +1911,9 @@ header .menu__header .leftArrow {
     justify-content: center;
     align-items: center;
     padding: 18px;
-    margin: 3px;
+    margin-bottom: 3px;
     background: #f6f6f6;
-    transform: translateY(3rem);
+    transform: translateY(5rem);
   }
   .container .btn__commander .button {
     color: #fff;
@@ -2008,7 +1921,7 @@ header .menu__header .leftArrow {
     font-weight: normal;
     box-shadow: 0px 5px 18px -3px #9e9e9e;
     background: linear-gradient(175deg, #FF79DA 5%, #9356DC 100%);
-    border: #000000;
+    border: #000;
     border-radius: 35px;
     cursor: pointer;
     padding: 15px 50px;
@@ -2026,8 +1939,8 @@ header .menu__header .leftArrow {
   .container .box__commandbutton {
     padding-left: 45px;
     padding-right: 45px;
-    margin: 45px;
-    margin: 25px;
+    margin-bottom: 45px;
+    margin-top: 25px;
   }
   .container .foot {
     background: #353535;
@@ -2077,21 +1990,6 @@ header .menu__header .leftArrow {
     font-size: 0.96rem;
   }
 }
-/*footer*/
-/*page d'accueil*/
-/*header*/
-/* section localisation, decouverte & exploration*/
-/*----------------localisation-------------------*/
-/* -------decouverte et exploration----------*/
-/*btn*/
-/* Section Fonctionnement*/
-/*===========================================*/
-/*------------------SLIDES-------------------*/
-/*===========================================*/
-/*MENU HOVER */
-.container {
-  /*MENU 1 SECTION*/
-}
 .container .menu .menu__resto {
   box-shadow: 0px 5px 18px -3px #9e9e9e;
   background: #fff;
@@ -2101,12 +1999,11 @@ header .menu__header .leftArrow {
 .container .menu .menu__resto .menu__resto__img {
   border-radius: 0 0 0 0;
   width: 100%;
-  height: 240px;
+  height: 260px;
   object-fit: cover;
   position: relative;
-  margin: -20px;
-  top: 1.2rem;
-  right: -1.2rem;
+  margin-bottom: -20px;
+  top: 0.02rem;
 }
 .container .menu .menu__resto .menu__resto__description {
   display: flex;
@@ -2114,8 +2011,8 @@ header .menu__header .leftArrow {
   align-items: center;
   position: absolute;
   background: #fff;
-  padding: 0px 4.1rem 0rem 1.25rem;
-  margin: 0rem 0rem 0rem 0rem;
+  padding: 0px 3.89rem 0rem 1.26rem;
+  margin: -1.2rem 0rem 1rem 0rem;
   border-radius: 2.5rem 2.5rem 0 0;
   border-top: none;
   width: 375px;
@@ -2147,6 +2044,8 @@ header .menu__header .leftArrow {
   cursor: pointer;
   background-repeat: no-repeat;
   transition: background-position 1s;
+  -webkit-background-clip: text;
+  background-clip: text;
 }
 .container .menu .menu__resto .menu__resto__description .menu__btn__like__heart .menu__hearticones__1:hover {
   background-position: 0 0px;
@@ -2155,7 +2054,7 @@ header .menu__header .leftArrow {
   font-size: 1.5rem;
   top: 0%;
   right: 0%;
-  color: #000000;
+  color: #000;
   opacity: 1;
   position: absolute;
   transition: opacity 1.5s;
@@ -2163,24 +2062,24 @@ header .menu__header .leftArrow {
 .container .menu .menu__resto .menu__resto__description .menu__btn__like__heart .menu__hearticones__2:hover {
   opacity: 0;
 }
+.container .menus__entrees__plats__desserts {
+  margin-top: 2rem;
+}
 .container .menus__entrees__plats__desserts .menu__entree {
   display: flex;
   flex-direction: column;
   height: auto;
   background: #f6f6f6;
-  /*  CARD 1,
-      CARD 2,
-      CARD 3  */
 }
 .container .menus__entrees__plats__desserts .menu__entree .menu__title {
   font-size: 16px;
   font-weight: lighter;
-  margin: 20px;
-  margin: 30px;
+  margin-left: 20px;
+  margin-top: 30px;
   border-bottom: 3px solid #99E2D0;
   width: 40px;
   padding-bottom: 5px;
-  margin: 16px;
+  margin-bottom: 16px;
 }
 .container .menus__entrees__plats__desserts .menu__entree .sticker__menu__box__card .sticker__menu {
   display: flex;
@@ -2190,7 +2089,7 @@ header .menu__header .leftArrow {
   margin: 0px 13px 13px 14px;
   border-radius: 15px;
   text-decoration: none;
-  color: #000000;
+  color: #000;
   overflow: hidden;
 }
 .container .menus__entrees__plats__desserts .menu__entree .sticker__menu__box__card .slideInUp,
@@ -2236,19 +2135,19 @@ header .menu__header .leftArrow {
   font-weight: 500;
   padding: 38px 10px 0px 10px;
   width: 32%;
-  transition: width 3s -0.1s ease-in-out;
+  transition: width 0.5s ease-in-out;
 }
 .container .menus__entrees__plats__desserts .menu__entree .sticker__menu__box__card .slideInUp .sticker__menu__icon,
 .container .menus__entrees__plats__desserts .menu__entree .sticker__menu__box__card .slideInUp__1 .sticker__menu__icon {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   background-color: #99E2D0;
   width: 0%;
   border-radius: 0px 15px 15px 0px;
   overflow: hidden;
-  transition: width 1s -0.1s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 .container .menus__entrees__plats__desserts .menu__entree .sticker__menu__box__card .slideInUp .sticker__menu__icon__check,
 .container .menus__entrees__plats__desserts .menu__entree .sticker__menu__box__card .slideInUp__1 .sticker__menu__icon__check {
@@ -2257,25 +2156,23 @@ header .menu__header .leftArrow {
   font-size: 12px;
   padding: 4px;
   border-radius: 25px;
+  overflow: visible;
 }
 .container .menus__entrees__plats__desserts .menu__plat {
   display: flex;
   flex-direction: column;
   height: auto;
   background: #f6f6f6;
-  /*  CARD 4,
-      CARD 5,
-      CARD 6  */
 }
 .container .menus__entrees__plats__desserts .menu__plat .menu__title {
   font-size: 16px;
   font-weight: lighter;
-  margin: 20px;
-  margin: 30px;
+  margin-left: 20px;
+  margin-top: 30px;
   border-bottom: 3px solid #99E2D0;
   width: 40px;
   padding-bottom: 5px;
-  margin: 16px;
+  margin-bottom: 16px;
 }
 .container .menus__entrees__plats__desserts .menu__plat .sticker__menu__box__card .sticker__menu {
   display: flex;
@@ -2285,7 +2182,7 @@ header .menu__header .leftArrow {
   margin: 0px 13px 13px 14px;
   border-radius: 15px;
   text-decoration: none;
-  color: #000000;
+  color: #000;
   overflow: hidden;
 }
 .container .menus__entrees__plats__desserts .menu__plat .sticker__menu__box__card .slideInUp,
@@ -2331,19 +2228,19 @@ header .menu__header .leftArrow {
   font-weight: 500;
   padding: 38px 10px 0px 10px;
   width: 32%;
-  transition: width 3s -0.1s ease-in-out;
+  transition: width 0.5s ease-in-out;
 }
 .container .menus__entrees__plats__desserts .menu__plat .sticker__menu__box__card .slideInUp .sticker__menu__icon,
 .container .menus__entrees__plats__desserts .menu__plat .sticker__menu__box__card .slideInUp__2 .sticker__menu__icon {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   background-color: #99E2D0;
   width: 0%;
   border-radius: 0px 15px 15px 0px;
   overflow: hidden;
-  transition: width 1s -0.1s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 .container .menus__entrees__plats__desserts .menu__plat .sticker__menu__box__card .slideInUp .sticker__menu__icon__check,
 .container .menus__entrees__plats__desserts .menu__plat .sticker__menu__box__card .slideInUp__2 .sticker__menu__icon__check {
@@ -2352,25 +2249,23 @@ header .menu__header .leftArrow {
   font-size: 12px;
   padding: 4px;
   border-radius: 25px;
+  overflow: visible;
 }
 .container .menus__entrees__plats__desserts .menu__dessert {
   display: flex;
   flex-direction: column;
   height: auto;
   background: #f6f6f6;
-  /*  CARD 7,
-      CARD 8,
-      CARD 9  */
 }
 .container .menus__entrees__plats__desserts .menu__dessert .menu__title {
   font-size: 16px;
   font-weight: lighter;
-  margin: 20px;
-  margin: 30px;
+  margin-left: 20px;
+  margin-top: 30px;
   border-bottom: 3px solid #99E2D0;
   width: 40px;
   padding-bottom: 5px;
-  margin: 16px;
+  margin-bottom: 16px;
 }
 .container .menus__entrees__plats__desserts .menu__dessert .sticker__menu__box__card .sticker__menu {
   display: flex;
@@ -2380,7 +2275,7 @@ header .menu__header .leftArrow {
   margin: 0px 13px 13px 14px;
   border-radius: 15px;
   text-decoration: none;
-  color: #000000;
+  color: #000;
   overflow: hidden;
 }
 .container .menus__entrees__plats__desserts .menu__dessert .sticker__menu__box__card .slideInUp,
@@ -2426,19 +2321,19 @@ header .menu__header .leftArrow {
   font-weight: 500;
   padding: 38px 10px 0px 10px;
   width: 32%;
-  transition: width 3s -0.1s ease-in-out;
+  transition: width 0.5s ease-in-out;
 }
 .container .menus__entrees__plats__desserts .menu__dessert .sticker__menu__box__card .slideInUp .sticker__menu__icon,
 .container .menus__entrees__plats__desserts .menu__dessert .sticker__menu__box__card .slideInUp__2 .sticker__menu__icon {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   background-color: #99E2D0;
   width: 0%;
   border-radius: 0px 15px 15px 0px;
   overflow: hidden;
-  transition: width 1s -0.1s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 .container .menus__entrees__plats__desserts .menu__dessert .sticker__menu__box__card .slideInUp .sticker__menu__icon__check,
 .container .menus__entrees__plats__desserts .menu__dessert .sticker__menu__box__card .slideInUp__2 .sticker__menu__icon__check {
@@ -2447,9 +2342,15 @@ header .menu__header .leftArrow {
   font-size: 12px;
   padding: 4px;
   border-radius: 25px;
+  overflow: visible;
 }
 
-.sticker__menu:hover.sticker__menu__price {
+.sticker__menu:hover .sticker__menu__description {
+  width: 60%;
+  transition: width 1s ease-in-out;
+}
+
+.sticker__menu:hover .sticker__menu__price {
   width: 5%;
   padding-top: 35px;
   transition: width 0.5s -0.3s ease-in-out;
@@ -2470,9 +2371,6 @@ header .menu__header .leftArrow {
   padding: 4px;
 }
 
-.container {
-  /*MENU 1 SECTION*/
-}
 .container .menu .menu__resto {
   box-shadow: 0px 5px 18px -3px #9e9e9e;
   background: #fff;
@@ -2482,12 +2380,11 @@ header .menu__header .leftArrow {
 .container .menu .menu__resto .menu__resto__img {
   border-radius: 0 0 0 0;
   width: 100%;
-  height: 240px;
+  height: 260px;
   object-fit: cover;
   position: relative;
-  margin: -20px;
-  top: 1.2rem;
-  right: -1.2rem;
+  margin-bottom: -20px;
+  top: 0.02rem;
 }
 .container .menu .menu__resto .menu__resto__description {
   display: flex;
@@ -2495,8 +2392,8 @@ header .menu__header .leftArrow {
   align-items: center;
   position: absolute;
   background: #fff;
-  padding: 0px 4.1rem 0rem 1.25rem;
-  margin: 0rem 0rem 0rem 0rem;
+  padding: 0px 3.89rem 0rem 1.26rem;
+  margin: -1.2rem 0rem 1rem 0rem;
   border-radius: 2.5rem 2.5rem 0 0;
   border-top: none;
   width: 375px;
@@ -2529,6 +2426,8 @@ header .menu__header .leftArrow {
   cursor: pointer;
   background-repeat: no-repeat;
   transition: background-position 1s;
+  -webkit-background-clip: text;
+  background-clip: text;
 }
 .container .menu .menu__resto .menu__resto__description .menu__btn__like__heart .menu__hearticones__1:hover {
   background-position: 0 0px;
@@ -2537,7 +2436,7 @@ header .menu__header .leftArrow {
   font-size: 1.5rem;
   top: 0%;
   right: 0%;
-  color: #000000;
+  color: #000;
   opacity: 1;
   position: absolute;
   transition: opacity 1.5s;
@@ -2550,19 +2449,16 @@ header .menu__header .leftArrow {
   flex-direction: column;
   height: auto;
   background: #f6f6f6;
-  /*  CARD 1,
-      CARD 2,
-      CARD 3  */
 }
 .container .menus__entrees__plats__desserts .menu__entree .menu__title {
   font-size: 16px;
   font-weight: lighter;
-  margin: 20px;
-  margin: 30px;
+  margin-left: 20px;
+  margin-top: 30px;
   border-bottom: 3px solid #99E2D0;
   width: 40px;
   padding-bottom: 5px;
-  margin: 16px;
+  margin-bottom: 16px;
 }
 .container .menus__entrees__plats__desserts .menu__entree .sticker__menu__box__card .sticker__menu {
   display: flex;
@@ -2572,7 +2468,7 @@ header .menu__header .leftArrow {
   margin: 0px 13px 13px 14px;
   border-radius: 15px;
   text-decoration: none;
-  color: #000000;
+  color: #000;
   overflow: hidden;
 }
 .container .menus__entrees__plats__desserts .menu__entree .sticker__menu__box__card .slideInUp,
@@ -2618,19 +2514,19 @@ header .menu__header .leftArrow {
   font-weight: 500;
   padding: 38px 10px 0px 10px;
   width: 32%;
-  transition: width 3s -0.1s ease-in-out;
+  transition: width 0.5s ease-in-out;
 }
 .container .menus__entrees__plats__desserts .menu__entree .sticker__menu__box__card .slideInUp .sticker__menu__icon,
 .container .menus__entrees__plats__desserts .menu__entree .sticker__menu__box__card .slideInUp__1 .sticker__menu__icon {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   background-color: #99E2D0;
   width: 0%;
   border-radius: 0px 15px 15px 0px;
   overflow: hidden;
-  transition: width 1s -0.1s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 .container .menus__entrees__plats__desserts .menu__entree .sticker__menu__box__card .slideInUp .sticker__menu__icon__check,
 .container .menus__entrees__plats__desserts .menu__entree .sticker__menu__box__card .slideInUp__1 .sticker__menu__icon__check {
@@ -2639,25 +2535,23 @@ header .menu__header .leftArrow {
   font-size: 12px;
   padding: 4px;
   border-radius: 25px;
+  overflow: visible;
 }
 .container .menus__entrees__plats__desserts .menu__plat {
   display: flex;
   flex-direction: column;
   height: auto;
   background: #f6f6f6;
-  /*  CARD 4,
-      CARD 5,
-      CARD 6  */
 }
 .container .menus__entrees__plats__desserts .menu__plat .menu__title {
   font-size: 16px;
   font-weight: lighter;
-  margin: 20px;
-  margin: 30px;
+  margin-left: 20px;
+  margin-top: 30px;
   border-bottom: 3px solid #99E2D0;
   width: 40px;
   padding-bottom: 5px;
-  margin: 16px;
+  margin-bottom: 16px;
 }
 .container .menus__entrees__plats__desserts .menu__plat .sticker__menu__box__card .sticker__menu {
   display: flex;
@@ -2667,7 +2561,7 @@ header .menu__header .leftArrow {
   margin: 0px 13px 13px 14px;
   border-radius: 15px;
   text-decoration: none;
-  color: #000000;
+  color: #000;
   overflow: hidden;
 }
 .container .menus__entrees__plats__desserts .menu__plat .sticker__menu__box__card .slideInUp,
@@ -2713,19 +2607,19 @@ header .menu__header .leftArrow {
   font-weight: 500;
   padding: 38px 10px 0px 10px;
   width: 32%;
-  transition: width 3s -0.1s ease-in-out;
+  transition: width 0.5s ease-in-out;
 }
 .container .menus__entrees__plats__desserts .menu__plat .sticker__menu__box__card .slideInUp .sticker__menu__icon,
 .container .menus__entrees__plats__desserts .menu__plat .sticker__menu__box__card .slideInUp__2 .sticker__menu__icon {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   background-color: #99E2D0;
   width: 0%;
   border-radius: 0px 15px 15px 0px;
   overflow: hidden;
-  transition: width 1s -0.1s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 .container .menus__entrees__plats__desserts .menu__plat .sticker__menu__box__card .slideInUp .sticker__menu__icon__check,
 .container .menus__entrees__plats__desserts .menu__plat .sticker__menu__box__card .slideInUp__2 .sticker__menu__icon__check {
@@ -2734,25 +2628,23 @@ header .menu__header .leftArrow {
   font-size: 12px;
   padding: 4px;
   border-radius: 25px;
+  overflow: visible;
 }
 .container .menus__entrees__plats__desserts .menu__dessert {
   display: flex;
   flex-direction: column;
   height: auto;
   background: #f6f6f6;
-  /*  CARD 7,
-      CARD 8,
-      CARD 9  */
 }
 .container .menus__entrees__plats__desserts .menu__dessert .menu__title {
   font-size: 16px;
   font-weight: lighter;
-  margin: 20px;
-  margin: 30px;
+  margin-left: 20px;
+  margin-top: 30px;
   border-bottom: 3px solid #99E2D0;
   width: 40px;
   padding-bottom: 5px;
-  margin: 16px;
+  margin-bottom: 16px;
 }
 .container .menus__entrees__plats__desserts .menu__dessert .sticker__menu__box__card .sticker__menu {
   display: flex;
@@ -2762,7 +2654,7 @@ header .menu__header .leftArrow {
   margin: 0px 13px 13px 14px;
   border-radius: 15px;
   text-decoration: none;
-  color: #000000;
+  color: #000;
   overflow: hidden;
 }
 .container .menus__entrees__plats__desserts .menu__dessert .sticker__menu__box__card .slideInUp,
@@ -2808,19 +2700,19 @@ header .menu__header .leftArrow {
   font-weight: 500;
   padding: 38px 10px 0px 10px;
   width: 32%;
-  transition: width 3s -0.1s ease-in-out;
+  transition: width 0.5s ease-in-out;
 }
 .container .menus__entrees__plats__desserts .menu__dessert .sticker__menu__box__card .slideInUp .sticker__menu__icon,
 .container .menus__entrees__plats__desserts .menu__dessert .sticker__menu__box__card .slideInUp__2 .sticker__menu__icon {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   background-color: #99E2D0;
   width: 0%;
   border-radius: 0px 15px 15px 0px;
   overflow: hidden;
-  transition: width 1s -0.1s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 .container .menus__entrees__plats__desserts .menu__dessert .sticker__menu__box__card .slideInUp .sticker__menu__icon__check,
 .container .menus__entrees__plats__desserts .menu__dessert .sticker__menu__box__card .slideInUp__2 .sticker__menu__icon__check {
@@ -2829,6 +2721,7 @@ header .menu__header .leftArrow {
   font-size: 12px;
   padding: 4px;
   border-radius: 25px;
+  overflow: visible;
 }
 
 .btn__commander {
@@ -2845,7 +2738,7 @@ header .menu__header .leftArrow {
   font-weight: normal;
   box-shadow: 0px 5px 18px -3px #9e9e9e;
   background: linear-gradient(175deg, #FF79DA 5%, #9356DC 100%);
-  border: #000000;
+  border: #000;
   border-radius: 35px;
   cursor: pointer;
   padding: 15px 50px;
@@ -2864,11 +2757,16 @@ header .menu__header .leftArrow {
 .box__commandbutton {
   padding-left: 45px;
   padding-right: 45px;
-  margin: 45px;
-  margin: 25px;
+  margin-bottom: 45px;
+  margin-top: 25px;
 }
 
-.sticker__menu:hover.sticker__menu__price {
+.sticker__menu:hover .sticker__menu__description {
+  width: 60%;
+  transition: width 1s ease-in-out;
+}
+
+.sticker__menu:hover .sticker__menu__price {
   width: 5%;
   padding-top: 35px;
   transition: width 0.5s -0.3s ease-in-out;
@@ -2889,9 +2787,6 @@ header .menu__header .leftArrow {
   padding: 4px;
 }
 
-.container {
-  /*MENU 1 SECTION*/
-}
 .container .menu .menu__resto {
   box-shadow: 0px 5px 18px -3px #9e9e9e;
   background: #fff;
@@ -2901,12 +2796,11 @@ header .menu__header .leftArrow {
 .container .menu .menu__resto .menu__resto__img {
   border-radius: 0 0 0 0;
   width: 100%;
-  height: 240px;
+  height: 260px;
   object-fit: cover;
   position: relative;
-  margin: -20px;
-  top: 1.2rem;
-  right: -1.2rem;
+  margin-bottom: -20px;
+  top: 0.02rem;
 }
 .container .menu .menu__resto .menu__resto__description {
   display: flex;
@@ -2914,8 +2808,8 @@ header .menu__header .leftArrow {
   align-items: center;
   position: absolute;
   background: #fff;
-  padding: 0px 4.1rem 0rem 1.25rem;
-  margin: 0rem 0rem 0rem 0rem;
+  padding: 0px 3.89rem 0rem 1.26rem;
+  margin: -1.2rem 0rem 1rem 0rem;
   border-radius: 2.5rem 2.5rem 0 0;
   border-top: none;
   width: 375px;
@@ -2948,6 +2842,8 @@ header .menu__header .leftArrow {
   cursor: pointer;
   background-repeat: no-repeat;
   transition: background-position 1s;
+  -webkit-background-clip: text;
+  background-clip: text;
 }
 .container .menu .menu__resto .menu__resto__description .menu__btn__like__heart .menu__hearticones__1:hover {
   background-position: 0 0px;
@@ -2956,7 +2852,7 @@ header .menu__header .leftArrow {
   font-size: 1.5rem;
   top: 0%;
   right: 0%;
-  color: #000000;
+  color: #000;
   opacity: 1;
   position: absolute;
   transition: opacity 1.5s;
@@ -2969,19 +2865,16 @@ header .menu__header .leftArrow {
   flex-direction: column;
   height: auto;
   background: #f6f6f6;
-  /*  CARD 1,
-      CARD 2,
-      CARD 3  */
 }
 .container .menus__entrees__plats__desserts .menu__entree .menu__title {
   font-size: 16px;
   font-weight: lighter;
-  margin: 20px;
-  margin: 30px;
+  margin-left: 20px;
+  margin-top: 30px;
   border-bottom: 3px solid #99E2D0;
   width: 40px;
   padding-bottom: 5px;
-  margin: 16px;
+  margin-bottom: 16px;
 }
 .container .menus__entrees__plats__desserts .menu__entree .sticker__menu__box__card .sticker__menu {
   display: flex;
@@ -2991,7 +2884,7 @@ header .menu__header .leftArrow {
   margin: 0px 13px 13px 14px;
   border-radius: 15px;
   text-decoration: none;
-  color: #000000;
+  color: #000;
   overflow: hidden;
 }
 .container .menus__entrees__plats__desserts .menu__entree .sticker__menu__box__card .slideInUp,
@@ -3037,19 +2930,19 @@ header .menu__header .leftArrow {
   font-weight: 500;
   padding: 38px 10px 0px 10px;
   width: 32%;
-  transition: width 3s -0.1s ease-in-out;
+  transition: width 0.5s ease-in-out;
 }
 .container .menus__entrees__plats__desserts .menu__entree .sticker__menu__box__card .slideInUp .sticker__menu__icon,
 .container .menus__entrees__plats__desserts .menu__entree .sticker__menu__box__card .slideInUp__1 .sticker__menu__icon {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   background-color: #99E2D0;
   width: 0%;
   border-radius: 0px 15px 15px 0px;
   overflow: hidden;
-  transition: width 1s -0.1s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 .container .menus__entrees__plats__desserts .menu__entree .sticker__menu__box__card .slideInUp .sticker__menu__icon__check,
 .container .menus__entrees__plats__desserts .menu__entree .sticker__menu__box__card .slideInUp__1 .sticker__menu__icon__check {
@@ -3058,25 +2951,23 @@ header .menu__header .leftArrow {
   font-size: 12px;
   padding: 4px;
   border-radius: 25px;
+  overflow: visible;
 }
 .container .menus__entrees__plats__desserts .menu__plat {
   display: flex;
   flex-direction: column;
   height: auto;
   background: #f6f6f6;
-  /*  CARD 4,
-      CARD 5,
-      CARD 6  */
 }
 .container .menus__entrees__plats__desserts .menu__plat .menu__title {
   font-size: 16px;
   font-weight: lighter;
-  margin: 20px;
-  margin: 30px;
+  margin-left: 20px;
+  margin-top: 30px;
   border-bottom: 3px solid #99E2D0;
   width: 40px;
   padding-bottom: 5px;
-  margin: 16px;
+  margin-bottom: 16px;
 }
 .container .menus__entrees__plats__desserts .menu__plat .sticker__menu__box__card .sticker__menu {
   display: flex;
@@ -3086,7 +2977,7 @@ header .menu__header .leftArrow {
   margin: 0px 13px 13px 14px;
   border-radius: 15px;
   text-decoration: none;
-  color: #000000;
+  color: #000;
   overflow: hidden;
 }
 .container .menus__entrees__plats__desserts .menu__plat .sticker__menu__box__card .slideInUp,
@@ -3132,19 +3023,19 @@ header .menu__header .leftArrow {
   font-weight: 500;
   padding: 38px 10px 0px 10px;
   width: 32%;
-  transition: width 3s -0.1s ease-in-out;
+  transition: width 0.5s ease-in-out;
 }
 .container .menus__entrees__plats__desserts .menu__plat .sticker__menu__box__card .slideInUp .sticker__menu__icon,
 .container .menus__entrees__plats__desserts .menu__plat .sticker__menu__box__card .slideInUp__2 .sticker__menu__icon {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   background-color: #99E2D0;
   width: 0%;
   border-radius: 0px 15px 15px 0px;
   overflow: hidden;
-  transition: width 1s -0.1s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 .container .menus__entrees__plats__desserts .menu__plat .sticker__menu__box__card .slideInUp .sticker__menu__icon__check,
 .container .menus__entrees__plats__desserts .menu__plat .sticker__menu__box__card .slideInUp__2 .sticker__menu__icon__check {
@@ -3153,25 +3044,23 @@ header .menu__header .leftArrow {
   font-size: 12px;
   padding: 4px;
   border-radius: 25px;
+  overflow: visible;
 }
 .container .menus__entrees__plats__desserts .menu__dessert {
   display: flex;
   flex-direction: column;
   height: auto;
   background: #f6f6f6;
-  /*  CARD 7,
-      CARD 8,
-      CARD 9  */
 }
 .container .menus__entrees__plats__desserts .menu__dessert .menu__title {
   font-size: 16px;
   font-weight: lighter;
-  margin: 20px;
-  margin: 30px;
+  margin-left: 20px;
+  margin-top: 30px;
   border-bottom: 3px solid #99E2D0;
   width: 40px;
   padding-bottom: 5px;
-  margin: 16px;
+  margin-bottom: 16px;
 }
 .container .menus__entrees__plats__desserts .menu__dessert .sticker__menu__box__card .sticker__menu {
   display: flex;
@@ -3181,7 +3070,7 @@ header .menu__header .leftArrow {
   margin: 0px 13px 13px 14px;
   border-radius: 15px;
   text-decoration: none;
-  color: #000000;
+  color: #000;
   overflow: hidden;
 }
 .container .menus__entrees__plats__desserts .menu__dessert .sticker__menu__box__card .slideInUp,
@@ -3227,19 +3116,19 @@ header .menu__header .leftArrow {
   font-weight: 500;
   padding: 38px 10px 0px 10px;
   width: 32%;
-  transition: width 3s -0.1s ease-in-out;
+  transition: width 0.5s ease-in-out;
 }
 .container .menus__entrees__plats__desserts .menu__dessert .sticker__menu__box__card .slideInUp .sticker__menu__icon,
 .container .menus__entrees__plats__desserts .menu__dessert .sticker__menu__box__card .slideInUp__2 .sticker__menu__icon {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   background-color: #99E2D0;
   width: 0%;
   border-radius: 0px 15px 15px 0px;
   overflow: hidden;
-  transition: width 1s -0.1s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 .container .menus__entrees__plats__desserts .menu__dessert .sticker__menu__box__card .slideInUp .sticker__menu__icon__check,
 .container .menus__entrees__plats__desserts .menu__dessert .sticker__menu__box__card .slideInUp__2 .sticker__menu__icon__check {
@@ -3248,6 +3137,7 @@ header .menu__header .leftArrow {
   font-size: 12px;
   padding: 4px;
   border-radius: 25px;
+  overflow: visible;
 }
 
 .btn__commander {
@@ -3264,7 +3154,7 @@ header .menu__header .leftArrow {
   font-weight: normal;
   box-shadow: 0px 5px 18px -3px #9e9e9e;
   background: linear-gradient(175deg, #FF79DA 5%, #9356DC 100%);
-  border: #000000;
+  border: #000;
   border-radius: 35px;
   cursor: pointer;
   padding: 15px 50px;
@@ -3283,11 +3173,16 @@ header .menu__header .leftArrow {
 .box__commandbutton {
   padding-left: 45px;
   padding-right: 45px;
-  margin: 45px;
-  margin: 25px;
+  margin-bottom: 45px;
+  margin-top: 25px;
 }
 
-.sticker__menu:hover.sticker__menu__price {
+.sticker__menu:hover .sticker__menu__description {
+  width: 60%;
+  transition: width 1s ease-in-out;
+}
+
+.sticker__menu:hover .sticker__menu__price {
   width: 5%;
   padding-top: 35px;
   transition: width 0.5s -0.3s ease-in-out;
@@ -3308,9 +3203,6 @@ header .menu__header .leftArrow {
   padding: 4px;
 }
 
-.container {
-  /*MENU 1 SECTION*/
-}
 .container .menu .menu__resto {
   box-shadow: 0px 5px 18px -3px #9e9e9e;
   background: #fff;
@@ -3320,12 +3212,11 @@ header .menu__header .leftArrow {
 .container .menu .menu__resto .menu__resto__img {
   border-radius: 0 0 0 0;
   width: 100%;
-  height: 240px;
+  height: 260px;
   object-fit: cover;
   position: relative;
-  margin: -20px;
-  top: 1.2rem;
-  right: -1.2rem;
+  margin-bottom: -20px;
+  top: 0.02rem;
 }
 .container .menu .menu__resto .menu__resto__description {
   display: flex;
@@ -3333,8 +3224,8 @@ header .menu__header .leftArrow {
   align-items: center;
   position: absolute;
   background: #fff;
-  padding: 0px 4.1rem 0rem 1.25rem;
-  margin: 0rem 0rem 0rem 0rem;
+  padding: 0px 3.89rem 0rem 1.26rem;
+  margin: -1.2rem 0rem 1rem 0rem;
   border-radius: 2.5rem 2.5rem 0 0;
   border-top: none;
   width: 375px;
@@ -3367,6 +3258,8 @@ header .menu__header .leftArrow {
   cursor: pointer;
   background-repeat: no-repeat;
   transition: background-position 1s;
+  -webkit-background-clip: text;
+  background-clip: text;
 }
 .container .menu .menu__resto .menu__resto__description .menu__btn__like__heart .menu__hearticones__1:hover {
   background-position: 0 0px;
@@ -3375,7 +3268,7 @@ header .menu__header .leftArrow {
   font-size: 1.5rem;
   top: 0%;
   right: 0%;
-  color: #000000;
+  color: #000;
   opacity: 1;
   position: absolute;
   transition: opacity 1.5s;
@@ -3388,19 +3281,16 @@ header .menu__header .leftArrow {
   flex-direction: column;
   height: auto;
   background: #f6f6f6;
-  /*  CARD 1,
-      CARD 2,
-      CARD 3  */
 }
 .container .menus__entrees__plats__desserts .menu__entree .menu__title {
   font-size: 16px;
   font-weight: lighter;
-  margin: 20px;
-  margin: 30px;
+  margin-left: 20px;
+  margin-top: 30px;
   border-bottom: 3px solid #99E2D0;
   width: 40px;
   padding-bottom: 5px;
-  margin: 16px;
+  margin-bottom: 16px;
 }
 .container .menus__entrees__plats__desserts .menu__entree .sticker__menu__box__card .sticker__menu {
   display: flex;
@@ -3410,7 +3300,7 @@ header .menu__header .leftArrow {
   margin: 0px 13px 13px 14px;
   border-radius: 15px;
   text-decoration: none;
-  color: #000000;
+  color: #000;
   overflow: hidden;
 }
 .container .menus__entrees__plats__desserts .menu__entree .sticker__menu__box__card .slideInUp,
@@ -3456,19 +3346,19 @@ header .menu__header .leftArrow {
   font-weight: 500;
   padding: 38px 10px 0px 10px;
   width: 32%;
-  transition: width 3s -0.1s ease-in-out;
+  transition: width 0.5s ease-in-out;
 }
 .container .menus__entrees__plats__desserts .menu__entree .sticker__menu__box__card .slideInUp .sticker__menu__icon,
 .container .menus__entrees__plats__desserts .menu__entree .sticker__menu__box__card .slideInUp__1 .sticker__menu__icon {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   background-color: #99E2D0;
   width: 0%;
   border-radius: 0px 15px 15px 0px;
   overflow: hidden;
-  transition: width 1s -0.1s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 .container .menus__entrees__plats__desserts .menu__entree .sticker__menu__box__card .slideInUp .sticker__menu__icon__check,
 .container .menus__entrees__plats__desserts .menu__entree .sticker__menu__box__card .slideInUp__1 .sticker__menu__icon__check {
@@ -3477,25 +3367,23 @@ header .menu__header .leftArrow {
   font-size: 12px;
   padding: 4px;
   border-radius: 25px;
+  overflow: visible;
 }
 .container .menus__entrees__plats__desserts .menu__plat {
   display: flex;
   flex-direction: column;
   height: auto;
   background: #f6f6f6;
-  /*  CARD 4,
-      CARD 5,
-      CARD 6  */
 }
 .container .menus__entrees__plats__desserts .menu__plat .menu__title {
   font-size: 16px;
   font-weight: lighter;
-  margin: 20px;
-  margin: 30px;
+  margin-left: 20px;
+  margin-top: 30px;
   border-bottom: 3px solid #99E2D0;
   width: 40px;
   padding-bottom: 5px;
-  margin: 16px;
+  margin-bottom: 16px;
 }
 .container .menus__entrees__plats__desserts .menu__plat .sticker__menu__box__card .sticker__menu {
   display: flex;
@@ -3505,7 +3393,7 @@ header .menu__header .leftArrow {
   margin: 0px 13px 13px 14px;
   border-radius: 15px;
   text-decoration: none;
-  color: #000000;
+  color: #000;
   overflow: hidden;
 }
 .container .menus__entrees__plats__desserts .menu__plat .sticker__menu__box__card .slideInUp,
@@ -3551,19 +3439,19 @@ header .menu__header .leftArrow {
   font-weight: 500;
   padding: 38px 10px 0px 10px;
   width: 32%;
-  transition: width 3s -0.1s ease-in-out;
+  transition: width 0.5s ease-in-out;
 }
 .container .menus__entrees__plats__desserts .menu__plat .sticker__menu__box__card .slideInUp .sticker__menu__icon,
 .container .menus__entrees__plats__desserts .menu__plat .sticker__menu__box__card .slideInUp__2 .sticker__menu__icon {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   background-color: #99E2D0;
   width: 0%;
   border-radius: 0px 15px 15px 0px;
   overflow: hidden;
-  transition: width 1s -0.1s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 .container .menus__entrees__plats__desserts .menu__plat .sticker__menu__box__card .slideInUp .sticker__menu__icon__check,
 .container .menus__entrees__plats__desserts .menu__plat .sticker__menu__box__card .slideInUp__2 .sticker__menu__icon__check {
@@ -3572,25 +3460,23 @@ header .menu__header .leftArrow {
   font-size: 12px;
   padding: 4px;
   border-radius: 25px;
+  overflow: visible;
 }
 .container .menus__entrees__plats__desserts .menu__dessert {
   display: flex;
   flex-direction: column;
   height: auto;
   background: #f6f6f6;
-  /*  CARD 7,
-      CARD 8,
-      CARD 9  */
 }
 .container .menus__entrees__plats__desserts .menu__dessert .menu__title {
   font-size: 16px;
   font-weight: lighter;
-  margin: 20px;
-  margin: 30px;
+  margin-left: 20px;
+  margin-top: 30px;
   border-bottom: 3px solid #99E2D0;
   width: 40px;
   padding-bottom: 5px;
-  margin: 16px;
+  margin-bottom: 16px;
 }
 .container .menus__entrees__plats__desserts .menu__dessert .sticker__menu__box__card .sticker__menu {
   display: flex;
@@ -3600,7 +3486,7 @@ header .menu__header .leftArrow {
   margin: 0px 13px 13px 14px;
   border-radius: 15px;
   text-decoration: none;
-  color: #000000;
+  color: #000;
   overflow: hidden;
 }
 .container .menus__entrees__plats__desserts .menu__dessert .sticker__menu__box__card .slideInUp,
@@ -3646,19 +3532,19 @@ header .menu__header .leftArrow {
   font-weight: 500;
   padding: 38px 10px 0px 10px;
   width: 32%;
-  transition: width 3s -0.1s ease-in-out;
+  transition: width 0.5s ease-in-out;
 }
 .container .menus__entrees__plats__desserts .menu__dessert .sticker__menu__box__card .slideInUp .sticker__menu__icon,
 .container .menus__entrees__plats__desserts .menu__dessert .sticker__menu__box__card .slideInUp__2 .sticker__menu__icon {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   background-color: #99E2D0;
   width: 0%;
   border-radius: 0px 15px 15px 0px;
   overflow: hidden;
-  transition: width 1s -0.1s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 .container .menus__entrees__plats__desserts .menu__dessert .sticker__menu__box__card .slideInUp .sticker__menu__icon__check,
 .container .menus__entrees__plats__desserts .menu__dessert .sticker__menu__box__card .slideInUp__2 .sticker__menu__icon__check {
@@ -3667,6 +3553,7 @@ header .menu__header .leftArrow {
   font-size: 12px;
   padding: 4px;
   border-radius: 25px;
+  overflow: visible;
 }
 
 .btn__commander {
@@ -3683,7 +3570,7 @@ header .menu__header .leftArrow {
   font-weight: normal;
   box-shadow: 0px 5px 18px -3px #9e9e9e;
   background: linear-gradient(175deg, #FF79DA 5%, #9356DC 100%);
-  border: #000000;
+  border: #000;
   border-radius: 35px;
   cursor: pointer;
   padding: 15px 50px;
@@ -3702,8 +3589,8 @@ header .menu__header .leftArrow {
 .box__commandbutton {
   padding-left: 45px;
   padding-right: 45px;
-  margin: 45px;
-  margin: 25px;
+  margin-bottom: 45px;
+  margin-top: 25px;
 }
 
 /*ANIMATION */
@@ -3715,18 +3602,6 @@ header .menu__header .leftArrow {
     transform: rotate(361deg);
   }
 }
-/*footer*/
-/*page d'accueil*/
-/*header*/
-/* section localisation, decouverte & exploration*/
-/*----------------localisation-------------------*/
-/* -------decouverte et exploration----------*/
-/*btn*/
-/* Section Fonctionnement*/
-/*===========================================*/
-/*------------------SLIDES-------------------*/
-/*===========================================*/
-/*MENU HOVER */
 .btn {
   display: flex;
   flex-direction: row;
@@ -3757,18 +3632,53 @@ header .menu__header .leftArrow {
   top: 1px;
 }
 
-/*footer*/
-/*page d'accueil*/
-/*header*/
-/* section localisation, decouverte & exploration*/
-/*----------------localisation-------------------*/
-/* -------decouverte et exploration----------*/
-/*btn*/
-/* Section Fonctionnement*/
-/*===========================================*/
-/*------------------SLIDES-------------------*/
-/*===========================================*/
-/*MENU HOVER */
+.foot {
+  background: #353535;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-bottom: 40px;
+  color: #fff;
+  width: 100%;
+}
+.foot .foot__con {
+  display: flex;
+  flex-direction: column;
+}
+.foot .foot__con .foot__logo {
+  font-family: "Shrikhand";
+  padding-bottom: 0.8rem;
+}
+.foot .foot__con .foot__logo .foot__logo__title {
+  font-size: 1.1rem;
+}
+.foot .foot__con *,
+.foot .foot__con .foot__list {
+  text-decoration: none;
+  color: #fff;
+  line-height: 1.6rem;
+  font-size: 0.96rem;
+}
+.foot .foot__con * .text__1,
+.foot .foot__con .foot__list .text__1 {
+  color: #fff;
+}
+.foot .foot__con * .foot__list__textA .foot__link__icon .text__1,
+.foot .foot__con .foot__list .foot__list__textA .foot__link__icon .text__1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 12rem;
+  font-size: 0.96rem;
+}
+.foot .foot__con * .foot__list__textA .foot__link__icon .text__2,
+.foot .foot__con .foot__list .foot__list__textA .foot__link__icon .text__2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 9.94rem;
+  font-size: 0.96rem;
+}
+
 @media (min-width: 375px) {
   .container {
     width: 375px;
@@ -3781,7 +3691,7 @@ header .menu__header .leftArrow {
     width: 768px;
     height: auto;
     margin: auto;
-    background: #f6f6f6; /*MENU 1 SECTION*/
+    background: #f6f6f6;
   }
   .container header .menu__header {
     display: flex;
@@ -3801,9 +3711,9 @@ header .menu__header .leftArrow {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    margin: 3rem;
+    margin-top: 3rem;
     padding-top: 3rem;
-    margin: 1.8rem;
+    margin-bottom: 1.8rem;
     font-size: 1.4rem;
   }
   .container main section .back__Ground .title__resto .text__title__resto {
@@ -3820,7 +3730,7 @@ header .menu__header .leftArrow {
     display: flex;
     flex-direction: column;
     text-decoration: none;
-    color: #000000;
+    color: #000;
     width: 100%;
   }
   .container main section .back__Ground .box__1 * .new,
@@ -3833,14 +3743,17 @@ header .menu__header .leftArrow {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: #99E2D0;
-    color: mix #99E2D0, #000000, 50%;
     position: absolute;
     height: 2rem;
     width: 5rem;
     content: "Nouveau";
+    background: #a5e5d5;
+    color: #2c9c81;
+    font-weight: 500;
+    font-size: 0.9rem;
     top: 1rem;
     right: 1rem;
+    border-radius: 0.1rem;
   }
   .container main section .back__Ground .box__1 * .card__resto,
 .container main section .back__Ground .box__1 .card .card__resto {
@@ -3898,6 +3811,7 @@ header .menu__header .leftArrow {
     padding-right: 1rem;
     position: absolute;
     font-size: 1.5rem;
+    -webkit-background-clip: text;
     background-clip: text;
     background-image: linear-gradient(to top, #FF79DA, #9356DC);
     top: 42%;
@@ -3920,7 +3834,7 @@ header .menu__header .leftArrow {
     font-size: 1.5rem;
     top: 0%;
     right: 0%;
-    color: #000000;
+    color: #000;
     opacity: 1;
     position: absolute;
     transition: opacity 1.5s;
@@ -3940,7 +3854,7 @@ header .menu__header .leftArrow {
     display: flex;
     flex-direction: column;
     text-decoration: none;
-    color: #000000;
+    color: #000;
     width: 100%;
   }
   .container main section .back__Ground .box__2 * .new,
@@ -3953,14 +3867,17 @@ header .menu__header .leftArrow {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: #99E2D0;
-    color: mix #99E2D0, #000000, 50%;
     position: absolute;
     height: 2rem;
     width: 5rem;
     content: "Nouveau";
+    background: #a5e5d5;
+    color: #2c9c81;
+    font-weight: 500;
+    font-size: 0.9rem;
     top: 1rem;
     right: 1rem;
+    border-radius: 0.1rem;
   }
   .container main section .back__Ground .box__2 * .card__resto,
 .container main section .back__Ground .box__2 .card .card__resto {
@@ -4018,6 +3935,7 @@ header .menu__header .leftArrow {
     padding-right: 1rem;
     position: absolute;
     font-size: 1.5rem;
+    -webkit-background-clip: text;
     background-clip: text;
     background-image: linear-gradient(to top, #FF79DA, #9356DC);
     top: 42%;
@@ -4040,7 +3958,7 @@ header .menu__header .leftArrow {
     font-size: 1.5rem;
     top: 0%;
     right: 0%;
-    color: #000000;
+    color: #000;
     opacity: 1;
     position: absolute;
     transition: opacity 1.5s;
@@ -4059,12 +3977,11 @@ header .menu__header .leftArrow {
   .container .menu .menu__resto .menu__resto__img {
     border-radius: 0 0 0 0;
     width: 100%;
-    height: 240px;
+    height: 260px;
     object-fit: cover;
     position: relative;
-    margin: -20px;
-    top: 1.2rem;
-    right: -1.2rem;
+    margin-bottom: -20px;
+    top: 0.02rem;
   }
   .container .menu .menu__resto .menu__resto__description {
     display: flex;
@@ -4072,12 +3989,12 @@ header .menu__header .leftArrow {
     align-items: center;
     position: absolute;
     background: #fff;
-    padding: 0px 4.1rem 0rem 1.25rem;
-    margin: 0rem 0rem 0rem 0rem;
+    padding: 0px 3.89rem 0rem 1.26rem;
+    margin: -1.2rem 0rem 1rem 0rem;
     border-radius: 2.5rem 2.5rem 0 0;
     border-top: none;
     width: 375px;
-    padding: 0rem 5.4rem 0rem 1.25rem;
+    padding: 0rem 4.8rem 0rem 1.25rem;
     background: #f6f6f6;
     width: 768px;
   }
@@ -4109,6 +4026,8 @@ header .menu__header .leftArrow {
     cursor: pointer;
     background-repeat: no-repeat;
     transition: background-position 1s;
+    -webkit-background-clip: text;
+    background-clip: text;
   }
   .container .menu .menu__resto .menu__resto__description .menu__btn__like__heart .menu__hearticones__1:hover {
     background-position: 0 0px;
@@ -4117,7 +4036,7 @@ header .menu__header .leftArrow {
     font-size: 1.5rem;
     top: 0%;
     right: 0%;
-    color: #000000;
+    color: #000;
     opacity: 1;
     position: absolute;
     transition: opacity 1.5s;
@@ -4131,19 +4050,16 @@ header .menu__header .leftArrow {
     height: auto;
     background: #f6f6f6;
     background: #f6f6f6;
-    /*  CARD 1,
-        CARD 2,
-        CARD 3  */
   }
   .container .menus__entrees__plats__desserts .menu__entree .menu__title {
     font-size: 16px;
     font-weight: lighter;
-    margin: 20px;
-    margin: 30px;
+    margin-left: 20px;
+    margin-top: 30px;
     border-bottom: 3px solid #99E2D0;
     width: 40px;
     padding-bottom: 5px;
-    margin: 16px;
+    margin-bottom: 16px;
   }
   .container .menus__entrees__plats__desserts .menu__entree .sticker__menu__box__card .sticker__menu {
     display: flex;
@@ -4153,7 +4069,7 @@ header .menu__header .leftArrow {
     margin: 0px 13px 13px 14px;
     border-radius: 15px;
     text-decoration: none;
-    color: #000000;
+    color: #000;
     overflow: hidden;
   }
   .container .menus__entrees__plats__desserts .menu__entree .sticker__menu__box__card .slideInUp,
@@ -4199,19 +4115,19 @@ header .menu__header .leftArrow {
     font-weight: 500;
     padding: 38px 10px 0px 10px;
     width: 32%;
-    transition: width 3s -0.1s ease-in-out;
+    transition: width 0.5s ease-in-out;
   }
   .container .menus__entrees__plats__desserts .menu__entree .sticker__menu__box__card .slideInUp .sticker__menu__icon,
 .container .menus__entrees__plats__desserts .menu__entree .sticker__menu__box__card .slideInUp__1 .sticker__menu__icon {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     background-color: #99E2D0;
     width: 0%;
     border-radius: 0px 15px 15px 0px;
     overflow: hidden;
-    transition: width 1s -0.1s ease-in-out;
+    transition: all 0.5s ease-in-out;
   }
   .container .menus__entrees__plats__desserts .menu__entree .sticker__menu__box__card .slideInUp .sticker__menu__icon__check,
 .container .menus__entrees__plats__desserts .menu__entree .sticker__menu__box__card .slideInUp__1 .sticker__menu__icon__check {
@@ -4220,6 +4136,7 @@ header .menu__header .leftArrow {
     font-size: 12px;
     padding: 4px;
     border-radius: 25px;
+    overflow: visible;
   }
   .container .menus__entrees__plats__desserts .menu__plat {
     display: flex;
@@ -4227,19 +4144,16 @@ header .menu__header .leftArrow {
     height: auto;
     background: #f6f6f6;
     background: #f6f6f6;
-    /*  CARD 4,
-        CARD 5,
-        CARD 6  */
   }
   .container .menus__entrees__plats__desserts .menu__plat .menu__title {
     font-size: 16px;
     font-weight: lighter;
-    margin: 20px;
-    margin: 30px;
+    margin-left: 20px;
+    margin-top: 30px;
     border-bottom: 3px solid #99E2D0;
     width: 40px;
     padding-bottom: 5px;
-    margin: 16px;
+    margin-bottom: 16px;
   }
   .container .menus__entrees__plats__desserts .menu__plat .sticker__menu__box__card .sticker__menu {
     display: flex;
@@ -4249,7 +4163,7 @@ header .menu__header .leftArrow {
     margin: 0px 13px 13px 14px;
     border-radius: 15px;
     text-decoration: none;
-    color: #000000;
+    color: #000;
     overflow: hidden;
   }
   .container .menus__entrees__plats__desserts .menu__plat .sticker__menu__box__card .slideInUp,
@@ -4295,19 +4209,19 @@ header .menu__header .leftArrow {
     font-weight: 500;
     padding: 38px 10px 0px 10px;
     width: 32%;
-    transition: width 3s -0.1s ease-in-out;
+    transition: width 0.5s ease-in-out;
   }
   .container .menus__entrees__plats__desserts .menu__plat .sticker__menu__box__card .slideInUp .sticker__menu__icon,
 .container .menus__entrees__plats__desserts .menu__plat .sticker__menu__box__card .slideInUp__2 .sticker__menu__icon {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     background-color: #99E2D0;
     width: 0%;
     border-radius: 0px 15px 15px 0px;
     overflow: hidden;
-    transition: width 1s -0.1s ease-in-out;
+    transition: all 0.5s ease-in-out;
   }
   .container .menus__entrees__plats__desserts .menu__plat .sticker__menu__box__card .slideInUp .sticker__menu__icon__check,
 .container .menus__entrees__plats__desserts .menu__plat .sticker__menu__box__card .slideInUp__2 .sticker__menu__icon__check {
@@ -4316,25 +4230,23 @@ header .menu__header .leftArrow {
     font-size: 12px;
     padding: 4px;
     border-radius: 25px;
+    overflow: visible;
   }
   .container .menus__entrees__plats__desserts .menu__dessert {
     display: flex;
     flex-direction: column;
     height: auto;
     background: #f6f6f6;
-    /*  CARD 7,
-        CARD 8,
-        CARD 9  */
   }
   .container .menus__entrees__plats__desserts .menu__dessert .menu__title {
     font-size: 16px;
     font-weight: lighter;
-    margin: 20px;
-    margin: 30px;
+    margin-left: 20px;
+    margin-top: 30px;
     border-bottom: 3px solid #99E2D0;
     width: 40px;
     padding-bottom: 5px;
-    margin: 16px;
+    margin-bottom: 16px;
   }
   .container .menus__entrees__plats__desserts .menu__dessert .sticker__menu__box__card .sticker__menu {
     display: flex;
@@ -4344,7 +4256,7 @@ header .menu__header .leftArrow {
     margin: 0px 13px 13px 14px;
     border-radius: 15px;
     text-decoration: none;
-    color: #000000;
+    color: #000;
     overflow: hidden;
   }
   .container .menus__entrees__plats__desserts .menu__dessert .sticker__menu__box__card .slideInUp,
@@ -4390,19 +4302,19 @@ header .menu__header .leftArrow {
     font-weight: 500;
     padding: 38px 10px 0px 10px;
     width: 32%;
-    transition: width 3s -0.1s ease-in-out;
+    transition: width 0.5s ease-in-out;
   }
   .container .menus__entrees__plats__desserts .menu__dessert .sticker__menu__box__card .slideInUp .sticker__menu__icon,
 .container .menus__entrees__plats__desserts .menu__dessert .sticker__menu__box__card .slideInUp__2 .sticker__menu__icon {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     background-color: #99E2D0;
     width: 0%;
     border-radius: 0px 15px 15px 0px;
     overflow: hidden;
-    transition: width 1s -0.1s ease-in-out;
+    transition: all 0.5s ease-in-out;
   }
   .container .menus__entrees__plats__desserts .menu__dessert .sticker__menu__box__card .slideInUp .sticker__menu__icon__check,
 .container .menus__entrees__plats__desserts .menu__dessert .sticker__menu__box__card .slideInUp__2 .sticker__menu__icon__check {
@@ -4411,6 +4323,7 @@ header .menu__header .leftArrow {
     font-size: 12px;
     padding: 4px;
     border-radius: 25px;
+    overflow: visible;
   }
 }
 @media (min-width: 992px) {
@@ -4438,9 +4351,9 @@ header .menu__header .leftArrow {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    margin: 3rem;
+    margin-top: 3rem;
     padding-top: 3rem;
-    margin: 1.8rem;
+    margin-bottom: 1.8rem;
     font-size: 1.4rem;
   }
   .container section .back__Ground .title__resto .text__title__resto {
@@ -4457,7 +4370,7 @@ header .menu__header .leftArrow {
     display: flex;
     flex-direction: column;
     text-decoration: none;
-    color: #000000;
+    color: #000;
     width: 100%;
   }
   .container section .back__Ground .box__1 * .new,
@@ -4470,14 +4383,17 @@ header .menu__header .leftArrow {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: #99E2D0;
-    color: mix #99E2D0, #000000, 50%;
     position: absolute;
     height: 2rem;
     width: 5rem;
     content: "Nouveau";
+    background: #a5e5d5;
+    color: #2c9c81;
+    font-weight: 500;
+    font-size: 0.9rem;
     top: 1rem;
     right: 1rem;
+    border-radius: 0.1rem;
   }
   .container section .back__Ground .box__1 * .card__resto,
 .container section .back__Ground .box__1 .card .card__resto {
@@ -4536,6 +4452,7 @@ header .menu__header .leftArrow {
     padding-right: 1rem;
     position: absolute;
     font-size: 1.5rem;
+    -webkit-background-clip: text;
     background-clip: text;
     background-image: linear-gradient(to top, #FF79DA, #9356DC);
     top: 42%;
@@ -4558,7 +4475,7 @@ header .menu__header .leftArrow {
     font-size: 1.5rem;
     top: 0%;
     right: 0%;
-    color: #000000;
+    color: #000;
     opacity: 1;
     position: absolute;
     transition: opacity 1.5s;
@@ -4578,7 +4495,7 @@ header .menu__header .leftArrow {
     display: flex;
     flex-direction: column;
     text-decoration: none;
-    color: #000000;
+    color: #000;
     width: 100%;
   }
   .container section .back__Ground .box__2 * .new,
@@ -4591,14 +4508,17 @@ header .menu__header .leftArrow {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: #99E2D0;
-    color: mix #99E2D0, #000000, 50%;
     position: absolute;
     height: 2rem;
     width: 5rem;
     content: "Nouveau";
+    background: #a5e5d5;
+    color: #2c9c81;
+    font-weight: 500;
+    font-size: 0.9rem;
     top: 1rem;
     right: 1rem;
+    border-radius: 0.1rem;
   }
   .container section .back__Ground .box__2 * .card__resto,
 .container section .back__Ground .box__2 .card .card__resto {
@@ -4656,6 +4576,7 @@ header .menu__header .leftArrow {
     padding-right: 1rem;
     position: absolute;
     font-size: 1.5rem;
+    -webkit-background-clip: text;
     background-clip: text;
     background-image: linear-gradient(to top, #FF79DA, #9356DC);
     top: 42%;
@@ -4678,7 +4599,7 @@ header .menu__header .leftArrow {
     font-size: 1.5rem;
     top: 0%;
     right: 0%;
-    color: #000000;
+    color: #000;
     opacity: 1;
     position: absolute;
     transition: opacity 1.5s;
@@ -4692,16 +4613,17 @@ header .menu__header .leftArrow {
     background: #fff;
     width: 100%;
     height: 260px;
+    height: 30vh;
   }
   .container .menu .menu__resto .menu__resto__img {
     border-radius: 0 0 0 0;
     width: 100%;
-    height: 240px;
+    height: 260px;
     object-fit: cover;
     position: relative;
-    margin: -20px;
-    top: 1.2rem;
-    right: -1.2rem;
+    margin-bottom: -20px;
+    top: 0.02rem;
+    height: 28vh;
   }
   .container .menu .menu__resto .menu__resto__description {
     display: flex;
@@ -4709,14 +4631,17 @@ header .menu__header .leftArrow {
     align-items: center;
     position: absolute;
     background: #fff;
-    padding: 0px 4.1rem 0rem 1.25rem;
-    margin: 0rem 0rem 0rem 0rem;
+    padding: 0px 3.89rem 0rem 1.26rem;
+    margin: -1.2rem 0rem 1rem 0rem;
     border-radius: 2.5rem 2.5rem 0 0;
     border-top: none;
     width: 375px;
-    padding: 0rem 5.4rem 0rem 1.25rem;
+    padding: 2rem 3.8rem 0rem 1.25rem;
     background: #f6f6f6;
     width: 992px;
+    height: 8vh;
+    transform: translateY(-1vh);
+    z-index: 3;
   }
   .container .menu .menu__resto .menu__resto__description .menu__resto__text__description {
     justify-content: space-between;
@@ -4746,6 +4671,8 @@ header .menu__header .leftArrow {
     cursor: pointer;
     background-repeat: no-repeat;
     transition: background-position 1s;
+    -webkit-background-clip: text;
+    background-clip: text;
   }
   .container .menu .menu__resto .menu__resto__description .menu__btn__like__heart .menu__hearticones__1:hover {
     background-position: 0 0px;
@@ -4754,7 +4681,7 @@ header .menu__header .leftArrow {
     font-size: 1.5rem;
     top: 0%;
     right: 0%;
-    color: #000000;
+    color: #000;
     opacity: 1;
     position: absolute;
     transition: opacity 1.5s;
@@ -4766,16 +4693,20 @@ header .menu__header .leftArrow {
     padding-bottom: 1.4rem;
     padding-left: 0.2rem;
     padding-right: 1rem;
+    margin-left: 1.15rem;
+    margin-right: 1rem;
     transform: translateX(6px);
-    width: 95.6%;
+    width: 97.6%;
+    transform: translateX(-1.4rem);
   }
   .container section .fonctionnement .title__fonctionnement {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 3rem;
-    margin: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
     font-size: 1.4rem;
+    transform: translateX(1.2rem);
   }
   .container section .fonctionnement .title__fonctionnement .text__title__fonctionnement {
     font-weight: 600;
@@ -4784,7 +4715,7 @@ header .menu__header .leftArrow {
     transform: translateX(3px);
     width: 100%;
     counter-reset: section;
-    margin: 1rem;
+    margin-left: 1rem;
   }
   .container section .fonctionnement .order .order__box {
     display: flex;
@@ -4797,11 +4728,12 @@ header .menu__header .leftArrow {
     border-radius: 1.4rem;
     padding-top: 1.6rem;
     padding-bottom: 1.6rem;
-    margin: 1rem;
+    margin-bottom: 1rem;
     background: #f6f6f6;
     box-shadow: 0 0.3125rem 1.375rem -0.1875rem #9e9e9e;
     position: relative;
     text-align: center;
+    margin: 0 0.8rem;
   }
   .container section .fonctionnement .order .order__box .order__1 .order__list .list__resto {
     padding-left: 20px;
@@ -4850,6 +4782,7 @@ header .menu__header .leftArrow {
     display: flex;
     justify-content: center;
     background: #f6f6f6;
+    margin-top: 3rem;
   }
   .container .marg__menu .menus__entrees__plats__desserts .menu__entree {
     display: flex;
@@ -4858,19 +4791,18 @@ header .menu__header .leftArrow {
     background: #f6f6f6;
     width: 33.33%;
     background: #f6f6f6;
-    /*  CARD 1,
-        CARD 2,
-        CARD 3  */
+    margin-bottom: 1.5rem;
   }
   .container .marg__menu .menus__entrees__plats__desserts .menu__entree .menu__title {
     font-size: 16px;
     font-weight: lighter;
-    margin: 20px;
-    margin: 30px;
+    margin-left: 20px;
+    margin-top: 30px;
     border-bottom: 3px solid #99E2D0;
     width: 40px;
     padding-bottom: 5px;
-    margin: 16px;
+    margin-bottom: 16px;
+    margin-bottom: 2rem;
   }
   .container .marg__menu .menus__entrees__plats__desserts .menu__entree .sticker__menu__box__card .sticker__menu {
     display: flex;
@@ -4880,7 +4812,7 @@ header .menu__header .leftArrow {
     margin: 0px 13px 13px 14px;
     border-radius: 15px;
     text-decoration: none;
-    color: #000000;
+    color: #000;
     overflow: hidden;
   }
   .container .marg__menu .menus__entrees__plats__desserts .menu__entree .sticker__menu__box__card .slideInUp,
@@ -4926,19 +4858,19 @@ header .menu__header .leftArrow {
     font-weight: 500;
     padding: 38px 10px 0px 10px;
     width: 32%;
-    transition: width 3s -0.1s ease-in-out;
+    transition: width 0.5s ease-in-out;
   }
   .container .marg__menu .menus__entrees__plats__desserts .menu__entree .sticker__menu__box__card .slideInUp .sticker__menu__icon,
 .container .marg__menu .menus__entrees__plats__desserts .menu__entree .sticker__menu__box__card .slideInUp__1 .sticker__menu__icon {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     background-color: #99E2D0;
     width: 0%;
     border-radius: 0px 15px 15px 0px;
     overflow: hidden;
-    transition: width 1s -0.1s ease-in-out;
+    transition: all 0.5s ease-in-out;
   }
   .container .marg__menu .menus__entrees__plats__desserts .menu__entree .sticker__menu__box__card .slideInUp .sticker__menu__icon__check,
 .container .marg__menu .menus__entrees__plats__desserts .menu__entree .sticker__menu__box__card .slideInUp__1 .sticker__menu__icon__check {
@@ -4947,6 +4879,7 @@ header .menu__header .leftArrow {
     font-size: 12px;
     padding: 4px;
     border-radius: 25px;
+    overflow: visible;
   }
   .container .marg__menu .menus__entrees__plats__desserts .menu__plat {
     display: flex;
@@ -4954,19 +4887,17 @@ header .menu__header .leftArrow {
     height: auto;
     background: #f6f6f6;
     width: 33.33%;
-    /*  CARD 4,
-        CARD 5,
-        CARD 6  */
   }
   .container .marg__menu .menus__entrees__plats__desserts .menu__plat .menu__title {
     font-size: 16px;
     font-weight: lighter;
-    margin: 20px;
-    margin: 30px;
+    margin-left: 20px;
+    margin-top: 30px;
     border-bottom: 3px solid #99E2D0;
     width: 40px;
     padding-bottom: 5px;
-    margin: 16px;
+    margin-bottom: 16px;
+    margin-bottom: 2rem;
   }
   .container .marg__menu .menus__entrees__plats__desserts .menu__plat .sticker__menu__box__card .sticker__menu {
     display: flex;
@@ -4976,7 +4907,7 @@ header .menu__header .leftArrow {
     margin: 0px 13px 13px 14px;
     border-radius: 15px;
     text-decoration: none;
-    color: #000000;
+    color: #000;
     overflow: hidden;
   }
   .container .marg__menu .menus__entrees__plats__desserts .menu__plat .sticker__menu__box__card .slideInUp,
@@ -5022,19 +4953,19 @@ header .menu__header .leftArrow {
     font-weight: 500;
     padding: 38px 10px 0px 10px;
     width: 32%;
-    transition: width 3s -0.1s ease-in-out;
+    transition: width 0.5s ease-in-out;
   }
   .container .marg__menu .menus__entrees__plats__desserts .menu__plat .sticker__menu__box__card .slideInUp .sticker__menu__icon,
 .container .marg__menu .menus__entrees__plats__desserts .menu__plat .sticker__menu__box__card .slideInUp__2 .sticker__menu__icon {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     background-color: #99E2D0;
     width: 0%;
     border-radius: 0px 15px 15px 0px;
     overflow: hidden;
-    transition: width 1s -0.1s ease-in-out;
+    transition: all 0.5s ease-in-out;
   }
   .container .marg__menu .menus__entrees__plats__desserts .menu__plat .sticker__menu__box__card .slideInUp .sticker__menu__icon__check,
 .container .marg__menu .menus__entrees__plats__desserts .menu__plat .sticker__menu__box__card .slideInUp__2 .sticker__menu__icon__check {
@@ -5043,6 +4974,7 @@ header .menu__header .leftArrow {
     font-size: 12px;
     padding: 4px;
     border-radius: 25px;
+    overflow: visible;
   }
   .container .marg__menu .menus__entrees__plats__desserts .menu__dessert {
     display: flex;
@@ -5050,19 +4982,17 @@ header .menu__header .leftArrow {
     height: auto;
     background: #f6f6f6;
     width: 33.33%;
-    /*  CARD 7,
-        CARD 8,
-        CARD 9  */
   }
   .container .marg__menu .menus__entrees__plats__desserts .menu__dessert .menu__title {
     font-size: 16px;
     font-weight: lighter;
-    margin: 20px;
-    margin: 30px;
+    margin-left: 20px;
+    margin-top: 30px;
     border-bottom: 3px solid #99E2D0;
     width: 40px;
     padding-bottom: 5px;
-    margin: 16px;
+    margin-bottom: 16px;
+    margin-bottom: 2rem;
   }
   .container .marg__menu .menus__entrees__plats__desserts .menu__dessert .sticker__menu__box__card .sticker__menu {
     display: flex;
@@ -5072,7 +5002,7 @@ header .menu__header .leftArrow {
     margin: 0px 13px 13px 14px;
     border-radius: 15px;
     text-decoration: none;
-    color: #000000;
+    color: #000;
     overflow: hidden;
   }
   .container .marg__menu .menus__entrees__plats__desserts .menu__dessert .sticker__menu__box__card .slideInUp,
@@ -5118,19 +5048,19 @@ header .menu__header .leftArrow {
     font-weight: 500;
     padding: 38px 10px 0px 10px;
     width: 32%;
-    transition: width 3s -0.1s ease-in-out;
+    transition: width 0.5s ease-in-out;
   }
   .container .marg__menu .menus__entrees__plats__desserts .menu__dessert .sticker__menu__box__card .slideInUp .sticker__menu__icon,
 .container .marg__menu .menus__entrees__plats__desserts .menu__dessert .sticker__menu__box__card .slideInUp__2 .sticker__menu__icon {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     background-color: #99E2D0;
     width: 0%;
     border-radius: 0px 15px 15px 0px;
     overflow: hidden;
-    transition: width 1s -0.1s ease-in-out;
+    transition: all 0.5s ease-in-out;
   }
   .container .marg__menu .menus__entrees__plats__desserts .menu__dessert .sticker__menu__box__card .slideInUp .sticker__menu__icon__check,
 .container .marg__menu .menus__entrees__plats__desserts .menu__dessert .sticker__menu__box__card .slideInUp__2 .sticker__menu__icon__check {
@@ -5139,6 +5069,7 @@ header .menu__header .leftArrow {
     font-size: 12px;
     padding: 4px;
     border-radius: 25px;
+    overflow: visible;
   }
   .container .btn__commander {
     display: flex;
@@ -5146,9 +5077,9 @@ header .menu__header .leftArrow {
     justify-content: center;
     align-items: center;
     padding: 18px;
-    margin: 3px;
+    margin-bottom: 3px;
     background: #f6f6f6;
-    transform: translateY(3rem);
+    transform: translateY(5rem);
   }
   .container .btn__commander .button {
     color: #fff;
@@ -5156,7 +5087,7 @@ header .menu__header .leftArrow {
     font-weight: normal;
     box-shadow: 0px 5px 18px -3px #9e9e9e;
     background: linear-gradient(175deg, #FF79DA 5%, #9356DC 100%);
-    border: #000000;
+    border: #000;
     border-radius: 35px;
     cursor: pointer;
     padding: 15px 50px;
@@ -5174,8 +5105,8 @@ header .menu__header .leftArrow {
   .container .box__commandbutton {
     padding-left: 45px;
     padding-right: 45px;
-    margin: 45px;
-    margin: 25px;
+    margin-bottom: 45px;
+    margin-top: 25px;
   }
   .container .foot {
     background: #353535;

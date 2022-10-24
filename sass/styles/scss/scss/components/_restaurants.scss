@@ -9,6 +9,7 @@ main{
                 @include title__resto;
                 .text__title__resto{
                     @include fontWeight(600);
+                    @include marginLeft(1.6rem);
                 }
             }
             .box__1{

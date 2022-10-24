@@ -41,16 +41,15 @@
     }
     // MENU ENTREES
 
-/*MENU 1 SECTION*/
+//MENU 1 SECTION 
     .menus__entrees__plats__desserts{
+        @include marginTop(2rem);
     .menu__entree{
         @include menu__entree;
         .menu__title{
             @include menu__title;
         }
-        /*  CARD 1,
-            CARD 2,
-            CARD 3  */ 
+        //  CARD 1, CARD 2, CARD 3 
         .sticker__menu__box__card{
             .sticker__menu{
                 @include sticker__menu;
@@ -90,9 +89,7 @@
         .menu__title{
             @include menu__title;
         }
-        /*  CARD 4,
-            CARD 5,
-            CARD 6  */
+        //  CARD 4, CARD 5, CARD 6  
         .sticker__menu__box__card{
             .sticker__menu{
                 @include sticker__menu;
@@ -132,9 +129,9 @@
         .menu__title{
             @include menu__title;
         }
-        /*  CARD 7,
-            CARD 8,
-            CARD 9  */
+        //  CARD 7, CARD 8, CARD 9 
+            
+              
         .sticker__menu__box__card{
             .sticker__menu{
                 @include sticker__menu;

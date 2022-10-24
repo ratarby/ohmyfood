@@ -1,31 +1,39 @@
 /*commandes choisissez, composez, dégustez*/
+
 .order{
     @include order;
-        .order__list{
-            @include order__list;
-            .list__resto{
-                @include list__resto;
-                .fa-mobile-alt{
+    .order__list{
+        @include order__list;
+        .list__resto{
+            @include list__resto;
+            @include textDecoration(none);
+            @include coLor($color-black);
+            }
+            .fa-mobile-alt{
                     @include transform_icons__mobile;                                        
                 }
             }
-        }
+        
         .order__list:hover{
             @include order__list__hover;
             }              
     
         .list__menu{
+            @include textDecoration(none);
+            @include coLor($color-black);
             .list__icon{
                 @include transform_icons;
             }
         }
         .list__degust{
+            @include textDecoration(none);
+            @include coLor($color-black);
             .store__icon{
                 @include transform_icons;
             
             }
         }
-        .order__list::before{
+        .order__list:before{
             @include btn__menu__couleur__violet;
         }
 }    

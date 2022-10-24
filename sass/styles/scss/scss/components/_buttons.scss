@@ -2,8 +2,8 @@
 // btn explorez nos restaurants
 .btn{
     @include btn;
-.btn__exp__resto{
-@include btn__exp__resto;
+    .btn__exp__resto{
+    @include btn__exp__resto;
 
 &:hover {
 @include btn__exp__resto__hover;
