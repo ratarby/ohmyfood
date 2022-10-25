@@ -1,8 +1,66 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
+body .loader {
+  display: flex;
+  background: black;
+  position: fixed;
+  width: 100vh;
+  height: 100vh;
+  inset: 0;
+  text-align: center;
+  z-index: 1;
+  opacity: 0.9;
+  animation: hide 0.2s 3s forwards;
+  transform-origin: top;
+}
+body .loader .loader__ball {
+  position: absolute;
+  margin: 48vh 14vh;
+  width: 1.2rem;
+  height: 1.2rem;
+  background-color: #fface8;
+  border-radius: 50%;
+  animation: motion 3s ease-in-out infinite;
+  -webkit-animation: motion 3s ease-in-out infinite;
+}
+body .loader .loader__text {
+  margin: 50vh 7vh;
+  color: #d5f3eb;
+  font-family: "Shrikhand", cursive;
+  letter-spacing: 3px;
+  font-size: 2rem;
+  z-index: 2;
+}
+
+@keyframes motion {
+  0% {
+    transform: translateX(0) scale(1);
+  }
+  25% {
+    transform: translateX(-50px) scale(0.3);
+  }
+  50% {
+    transform: translateX(0) scale(1);
+  }
+  75% {
+    transform: translateX(50px) scale(0.3);
+  }
+  100% {
+    transform: translateX(0) scale(1);
+  }
+}
+@keyframes hide {
+  0% {
+    visibility: visible;
+  }
+  100% {
+    visibility: hidden;
+  }
+}
 html,
 body {
   box-sizing: border-box;
@@ -521,6 +579,63 @@ header .menu__header .leftArrow {
   }
 }
 @media (min-width: 768px) {
+  body .loader {
+    display: flex;
+    justify-content: center;
+    background: black;
+    position: fixed;
+    width: auto;
+    height: auto;
+    inset: 0;
+    text-align: center;
+    z-index: 1;
+    opacity: 0.9;
+    animation: hide 0.2s 3s forwards;
+    transform-origin: top;
+  }
+  body .loader .loader__ball {
+    position: absolute;
+    margin: 48vh 14vh;
+    width: 1.2rem;
+    height: 1.2rem;
+    background-color: #fface8;
+    border-radius: 50%;
+    animation: motion 3s ease-in-out infinite;
+    -webkit-animation: motion 3s ease-in-out infinite;
+  }
+  body .loader .loader__text {
+    margin: 50vh 7vh;
+    color: #d5f3eb;
+    font-family: "Shrikhand", cursive;
+    letter-spacing: 3px;
+    font-size: 2rem;
+    z-index: 2;
+  }
+  @keyframes motion {
+    0% {
+      transform: translateX(0) scale(1);
+    }
+    25% {
+      transform: translateX(-50px) scale(0.3);
+    }
+    50% {
+      transform: translateX(0) scale(1);
+    }
+    75% {
+      transform: translateX(50px) scale(0.3);
+    }
+    100% {
+      transform: translateX(0) scale(1);
+    }
+  }
+  @keyframes hide {
+    0% {
+      visibility: visible;
+    }
+    100% {
+      visibility: hidden;
+    }
+  }
   .container {
     width: 768px;
     height: auto;
@@ -1161,6 +1276,63 @@ header .menu__header .leftArrow {
   }
 }
 @media (min-width: 992px) {
+  body .loader {
+    display: flex;
+    justify-content: center;
+    background: black;
+    position: fixed;
+    width: auto;
+    height: auto;
+    inset: 0;
+    text-align: center;
+    z-index: 1;
+    opacity: 0.9;
+    animation: hide 0.2s 3s forwards;
+    transform-origin: top;
+  }
+  body .loader .loader__ball {
+    position: absolute;
+    margin: 48vh 14vh;
+    width: 1.2rem;
+    height: 1.2rem;
+    background-color: #fface8;
+    border-radius: 50%;
+    animation: motion 3s ease-in-out infinite;
+    -webkit-animation: motion 3s ease-in-out infinite;
+  }
+  body .loader .loader__text {
+    margin: 50vh 7vh;
+    color: #d5f3eb;
+    font-family: "Shrikhand", cursive;
+    letter-spacing: 3px;
+    font-size: 2rem;
+    z-index: 2;
+  }
+  @keyframes motion {
+    0% {
+      transform: translateX(0) scale(1);
+    }
+    25% {
+      transform: translateX(-50px) scale(0.3);
+    }
+    50% {
+      transform: translateX(0) scale(1);
+    }
+    75% {
+      transform: translateX(50px) scale(0.3);
+    }
+    100% {
+      transform: translateX(0) scale(1);
+    }
+  }
+  @keyframes hide {
+    0% {
+      visibility: visible;
+    }
+    100% {
+      visibility: hidden;
+    }
+  }
   .container {
     width: 992px;
     height: auto;
@@ -3687,6 +3859,63 @@ header .menu__header .leftArrow {
   }
 }
 @media (min-width: 768px) {
+  body .loader {
+    display: flex;
+    justify-content: center;
+    background: black;
+    position: fixed;
+    width: auto;
+    height: auto;
+    inset: 0;
+    text-align: center;
+    z-index: 1;
+    opacity: 0.9;
+    animation: hide 0.2s 3s forwards;
+    transform-origin: top;
+  }
+  body .loader .loader__ball {
+    position: absolute;
+    margin: 48vh 14vh;
+    width: 1.2rem;
+    height: 1.2rem;
+    background-color: #fface8;
+    border-radius: 50%;
+    animation: motion 3s ease-in-out infinite;
+    -webkit-animation: motion 3s ease-in-out infinite;
+  }
+  body .loader .loader__text {
+    margin: 50vh 7vh;
+    color: #d5f3eb;
+    font-family: "Shrikhand", cursive;
+    letter-spacing: 3px;
+    font-size: 2rem;
+    z-index: 2;
+  }
+  @keyframes motion {
+    0% {
+      transform: translateX(0) scale(1);
+    }
+    25% {
+      transform: translateX(-50px) scale(0.3);
+    }
+    50% {
+      transform: translateX(0) scale(1);
+    }
+    75% {
+      transform: translateX(50px) scale(0.3);
+    }
+    100% {
+      transform: translateX(0) scale(1);
+    }
+  }
+  @keyframes hide {
+    0% {
+      visibility: visible;
+    }
+    100% {
+      visibility: hidden;
+    }
+  }
   .container {
     width: 768px;
     height: auto;
@@ -4327,6 +4556,63 @@ header .menu__header .leftArrow {
   }
 }
 @media (min-width: 992px) {
+  body .loader {
+    display: flex;
+    justify-content: center;
+    background: black;
+    position: fixed;
+    width: auto;
+    height: auto;
+    inset: 0;
+    text-align: center;
+    z-index: 1;
+    opacity: 0.9;
+    animation: hide 0.2s 3s forwards;
+    transform-origin: top;
+  }
+  body .loader .loader__ball {
+    position: absolute;
+    margin: 48vh 14vh;
+    width: 1.2rem;
+    height: 1.2rem;
+    background-color: #fface8;
+    border-radius: 50%;
+    animation: motion 3s ease-in-out infinite;
+    -webkit-animation: motion 3s ease-in-out infinite;
+  }
+  body .loader .loader__text {
+    margin: 50vh 7vh;
+    color: #d5f3eb;
+    font-family: "Shrikhand", cursive;
+    letter-spacing: 3px;
+    font-size: 2rem;
+    z-index: 2;
+  }
+  @keyframes motion {
+    0% {
+      transform: translateX(0) scale(1);
+    }
+    25% {
+      transform: translateX(-50px) scale(0.3);
+    }
+    50% {
+      transform: translateX(0) scale(1);
+    }
+    75% {
+      transform: translateX(50px) scale(0.3);
+    }
+    100% {
+      transform: translateX(0) scale(1);
+    }
+  }
+  @keyframes hide {
+    0% {
+      visibility: visible;
+    }
+    100% {
+      visibility: hidden;
+    }
+  }
   .container {
     width: 992px;
     height: auto;
