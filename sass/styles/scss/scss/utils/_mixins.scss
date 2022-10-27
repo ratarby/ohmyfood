@@ -1,4 +1,7 @@
 // General
+@mixin block{
+    display: block;
+}
 @mixin flex {
     display: flex;
 }
@@ -119,6 +122,11 @@
 // position
 @mixin posiTion($posiTion) {
     position: $posiTion;
+}
+
+// inset
+@mixin inSet($inSet) {
+    inset: $inSet;
 }
 
 // margin
@@ -301,9 +309,18 @@
     animation: #{$animaTion};
 }
 
+//letter-spacing
+@mixin letterSpacing($letterSpacing) {
+    letter-spacing: $letterSpacing;
+}
+
 @mixin animationDelay($animationDelay) {
     animation-delay: #{$animationDelay};
+}
 
+// z__index
+@mixin zIndex($zIndex) {
+    z-index: $zIndex;
 }
 
 // media queries

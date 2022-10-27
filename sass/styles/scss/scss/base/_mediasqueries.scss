@@ -8,75 +8,55 @@
         }
     }    
     @include responsive(tablet) {
-// .loader
-
-body{
-    .loader{
-    display: flex;
-    justify-content: center;
-    background: darken($color-primary,60%);
-    position: fixed;
-    width: auto;
-    height: auto;
-    inset: 0;
-    text-align: center;
-    z-index: 1;
-    opacity:.9;
-    animation : hide .2s 3s forwards;
-    transform-origin: top;
-    .loader__ball{
-        position: absolute;
-        margin: 48vh 14vh;
-        width: 1.2rem;
-        height: 1.2rem;
-        background-color: lighten($color-secondary,10%);
-        border-radius: 50%;
-        animation: motion 3s ease-in-out infinite;
-        -webkit-animation: motion 3s ease-in-out infinite;
+        .loader__page {
+            @include flexColumnCenter;
+            @include widTh(100%);
+            @include heiGht(100%);
+            @include posiTion(fixed);
+            @include backgroundColor(darken($color-primary,60%));
+            @include inSet(0);
+            @include opaCity(.9);
+            @include zIndex(2);
+            animation : hide 1s 2s forwards;
+            .loader__spinner {
+            @include flexColumnCenter;
+            @include widTh(768px);
+            @include heiGht(auto);
+            .loader  {
+                animation: rotate 1s infinite;  
+                @include heiGht(50px);
+                @include widTh(50px);
+            }
+            .loader:before,
+            .loader:after {   
+                content: '';
+                @include block;
+                @include bordeRadius(50%);
+                @include heiGht(20px);  
+                @include widTh(20px);
+            }
+            .loader:before {
+                animation: ball1 1s infinite;  
+                @include backgroundColor(#{$color-primary});
+                @include boxShaddow(30px 0 0 #{$color-secondary});
+                @include marginBottom(10px);
+            }
+            .loader:after {
+                animation: ball2 1s infinite; 
+                @include backgroundColor(#{$color-tertiary});
+                @include boxShaddow(30px 0 0 lighten($color-secondary,10%));
+            }
+            .loader__text {
+                @include flexColumnCenter;
+                @include coLor(lighten($color-tertiary,10%));
+                @include fontFamily("Shrikhand");
+                @include fontSize(2rem);
+                @include letterSpacing(3px);
+                @include zIndex(2);
+                }
         }
-    .loader__text {
-        margin: 50vh 7vh;
-        color: lighten($color-tertiary,15%);
-        font-family: "Shrikhand",cursive;
-        letter-spacing: 3px;
-        font-size: 2rem;
-        z-index: 2;
-    }   
-}
-}    
-  
- 
-@keyframes motion{
-  0%{
-	transform: translateX(0) scale(1);
-	}
-    
-  25%{
-	transform: translateX(-50px) scale(0.3);
-  }
-    
-  50%{
-	transform: translateX(0) scale(1);
-  }
-    
-  75%{
-	transform: translateX(50px) scale(0.3);
-	}
-    
-  100%{
-	transform: translateX(0) scale(1);
-	}
-}
-@keyframes hide {
-    0%{
-       visibility: visible;
-}
-    100%{
-        visibility: hidden;
-    
-}
-}
-
+        }
+        
         .container{
             @include widTh(768px);
             @include heiGht(auto);
@@ -385,74 +365,55 @@ body{
     
 }
     @include responsive(desktop) {
-// .loader
-
-body{
-    .loader{
-    display: flex;
-    justify-content: center;
-    background: darken($color-primary,60%);
-    position: fixed;
-    width: auto;
-    height: auto;
-    inset: 0;
-    text-align: center;
-    z-index: 1;
-    opacity:.9;
-    animation : hide .2s 3s forwards;
-    transform-origin: top;
-    .loader__ball{
-        position: absolute;
-        margin: 48vh 14vh;
-        width: 1.2rem;
-        height: 1.2rem;
-        background-color: lighten($color-secondary,10%);
-        border-radius: 50%;
-        animation: motion 3s ease-in-out infinite;
-        -webkit-animation: motion 3s ease-in-out infinite;
+        .loader__page {
+            @include flexColumnCenter;
+            @include widTh(100%);
+            @include heiGht(100%);
+            @include posiTion(fixed);
+            @include backgroundColor(darken($color-primary,60%));
+            @include inSet(0);
+            @include opaCity(.9);
+            @include zIndex(2);
+            animation : hide 1s 2s forwards;
+            .loader__spinner {
+            @include flexColumnCenter;
+            @include widTh(992px);
+            @include heiGht(auto);
+            .loader  {
+                animation: rotate 1s infinite;  
+                @include heiGht(50px);
+                @include widTh(50px);
+            }
+            .loader:before,
+            .loader:after {   
+                content: '';
+                @include block;
+                @include bordeRadius(50%);
+                @include heiGht(20px);  
+                @include widTh(20px);
+            }
+            .loader:before {
+                animation: ball1 1s infinite;  
+                @include backgroundColor(#{$color-primary});
+                @include boxShaddow(30px 0 0 #{$color-secondary});
+                @include marginBottom(10px);
+            }
+            .loader:after {
+                animation: ball2 1s infinite; 
+                @include backgroundColor(#{$color-tertiary});
+                @include boxShaddow(30px 0 0 lighten($color-secondary,10%));
+            }
+            .loader__text {
+                @include flexColumnCenter;
+                @include coLor(lighten($color-tertiary,10%));
+                @include fontFamily("Shrikhand");
+                @include fontSize(2rem);
+                @include letterSpacing(3px);
+                @include zIndex(2);
+                }
         }
-    .loader__text {
-        margin: 50vh 7vh;
-        color: lighten($color-tertiary,15%);
-        font-family: "Shrikhand",cursive;
-        letter-spacing: 3px;
-        font-size: 2rem;
-        z-index: 2;
-    }   
-}
-}    
-  
- 
-@keyframes motion{
-  0%{
-	transform: translateX(0) scale(1);
-	}
-    
-  25%{
-	transform: translateX(-50px) scale(0.3);
-  }
-    
-  50%{
-	transform: translateX(0) scale(1);
-  }
-    
-  75%{
-	transform: translateX(50px) scale(0.3);
-	}
-    
-  100%{
-	transform: translateX(0) scale(1);
-	}
-}
-@keyframes hide {
-    0%{
-       visibility: visible;
-}
-    100%{
-        visibility: hidden;
-    
-}
-}
+        }
+        
             .container{
                 @include widTh(992px);
                 @include heiGht(auto);
