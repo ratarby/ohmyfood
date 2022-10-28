@@ -78,7 +78,7 @@
   inset: 0;
   opacity: 0.9;
   z-index: 2;
-  animation: hide 1s 2s forwards;
+  animation: hide 0.5s 1s forwards;
 }
 .loader__page .loader__spinner {
   display: flex;
@@ -91,9 +91,9 @@
   padding: 0 45%;
 }
 .loader__page .loader__spinner .loader {
-  animation: rotate 1s infinite;
   height: 50px;
   width: 50px;
+  animation: rotate 1s infinite;
 }
 .loader__page .loader__spinner .loader:before,
 .loader__page .loader__spinner .loader:after {
@@ -104,15 +104,15 @@
   width: 20px;
 }
 .loader__page .loader__spinner .loader:before {
-  animation: ball1 1s infinite;
   background-color: #9356DC;
   box-shadow: 30px 0 0 #FF79DA;
   margin-bottom: 10px;
+  animation: ball1 1s infinite;
 }
 .loader__page .loader__spinner .loader:after {
-  animation: ball2 1s infinite;
   background-color: #99E2D0;
   box-shadow: 30px 0 0 #fface8;
+  animation: ball2 1s infinite;
 }
 .loader__page .loader__spinner .loader__text {
   display: flex;
@@ -610,6 +610,10 @@ header .menu__header .leftArrow {
   transform: translateX(-6vh);
   font-size: 1.6rem;
 }
+header .menu__header .leftArrow:active {
+  position: relative;
+  top: 1px;
+}
 
 .sticker__menu:hover .sticker__menu__description {
   width: 60%;
@@ -657,7 +661,7 @@ header .menu__header .leftArrow {
     inset: 0;
     opacity: 0.9;
     z-index: 2;
-    animation: hide 1s 2s forwards;
+    animation: hide 0.5s 1s forwards;
   }
   .loader__page .loader__spinner {
     display: flex;
@@ -668,9 +672,9 @@ header .menu__header .leftArrow {
     height: auto;
   }
   .loader__page .loader__spinner .loader {
-    animation: rotate 1s infinite;
     height: 50px;
     width: 50px;
+    animation: rotate 1s infinite;
   }
   .loader__page .loader__spinner .loader:before,
 .loader__page .loader__spinner .loader:after {
@@ -681,15 +685,15 @@ header .menu__header .leftArrow {
     width: 20px;
   }
   .loader__page .loader__spinner .loader:before {
-    animation: ball1 1s infinite;
     background-color: #9356DC;
     box-shadow: 30px 0 0 #FF79DA;
     margin-bottom: 10px;
+    animation: ball1 1s infinite;
   }
   .loader__page .loader__spinner .loader:after {
-    animation: ball2 1s infinite;
     background-color: #99E2D0;
     box-shadow: 30px 0 0 #fface8;
+    animation: ball2 1s infinite;
   }
   .loader__page .loader__spinner .loader__text {
     display: flex;
@@ -1354,7 +1358,7 @@ header .menu__header .leftArrow {
     inset: 0;
     opacity: 0.9;
     z-index: 2;
-    animation: hide 1s 2s forwards;
+    animation: hide 0.5s 1s forwards;
   }
   .loader__page .loader__spinner {
     display: flex;
@@ -1365,9 +1369,9 @@ header .menu__header .leftArrow {
     height: auto;
   }
   .loader__page .loader__spinner .loader {
-    animation: rotate 1s infinite;
     height: 50px;
     width: 50px;
+    animation: rotate 1s infinite;
   }
   .loader__page .loader__spinner .loader:before,
 .loader__page .loader__spinner .loader:after {
@@ -1378,15 +1382,15 @@ header .menu__header .leftArrow {
     width: 20px;
   }
   .loader__page .loader__spinner .loader:before {
-    animation: ball1 1s infinite;
     background-color: #9356DC;
     box-shadow: 30px 0 0 #FF79DA;
     margin-bottom: 10px;
+    animation: ball1 1s infinite;
   }
   .loader__page .loader__spinner .loader:after {
-    animation: ball2 1s infinite;
     background-color: #99E2D0;
     box-shadow: 30px 0 0 #fface8;
+    animation: ball2 1s infinite;
   }
   .loader__page .loader__spinner .loader__text {
     display: flex;
@@ -3990,7 +3994,7 @@ header .menu__header .leftArrow {
     inset: 0;
     opacity: 0.9;
     z-index: 2;
-    animation: hide 1s 2s forwards;
+    animation: hide 0.5s 1s forwards;
   }
   .loader__page .loader__spinner {
     display: flex;
@@ -4001,9 +4005,9 @@ header .menu__header .leftArrow {
     height: auto;
   }
   .loader__page .loader__spinner .loader {
-    animation: rotate 1s infinite;
     height: 50px;
     width: 50px;
+    animation: rotate 1s infinite;
   }
   .loader__page .loader__spinner .loader:before,
 .loader__page .loader__spinner .loader:after {
@@ -4014,15 +4018,15 @@ header .menu__header .leftArrow {
     width: 20px;
   }
   .loader__page .loader__spinner .loader:before {
-    animation: ball1 1s infinite;
     background-color: #9356DC;
     box-shadow: 30px 0 0 #FF79DA;
     margin-bottom: 10px;
+    animation: ball1 1s infinite;
   }
   .loader__page .loader__spinner .loader:after {
-    animation: ball2 1s infinite;
     background-color: #99E2D0;
     box-shadow: 30px 0 0 #fface8;
+    animation: ball2 1s infinite;
   }
   .loader__page .loader__spinner .loader__text {
     display: flex;
@@ -4687,7 +4691,7 @@ header .menu__header .leftArrow {
     inset: 0;
     opacity: 0.9;
     z-index: 2;
-    animation: hide 1s 2s forwards;
+    animation: hide 0.5s 1s forwards;
   }
   .loader__page .loader__spinner {
     display: flex;
@@ -4698,9 +4702,9 @@ header .menu__header .leftArrow {
     height: auto;
   }
   .loader__page .loader__spinner .loader {
-    animation: rotate 1s infinite;
     height: 50px;
     width: 50px;
+    animation: rotate 1s infinite;
   }
   .loader__page .loader__spinner .loader:before,
 .loader__page .loader__spinner .loader:after {
@@ -4711,15 +4715,15 @@ header .menu__header .leftArrow {
     width: 20px;
   }
   .loader__page .loader__spinner .loader:before {
-    animation: ball1 1s infinite;
     background-color: #9356DC;
     box-shadow: 30px 0 0 #FF79DA;
     margin-bottom: 10px;
+    animation: ball1 1s infinite;
   }
   .loader__page .loader__spinner .loader:after {
-    animation: ball2 1s infinite;
     background-color: #99E2D0;
     box-shadow: 30px 0 0 #fface8;
+    animation: ball2 1s infinite;
   }
   .loader__page .loader__spinner .loader__text {
     display: flex;

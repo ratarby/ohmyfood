@@ -1,4 +1,4 @@
-
+//stickers
 .sticker__menu:hover .sticker__menu__description {
     @include widTh(60%);
     @include transiTion(width 1s ease-in-out);
@@ -27,3 +27,6 @@
     @include fontSize(12px);
     @include paddingLRTB(4px);
 }
+
+
+

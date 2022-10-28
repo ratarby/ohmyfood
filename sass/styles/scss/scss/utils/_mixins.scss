@@ -195,15 +195,9 @@
     transform: translateY($transformY);
 }
 
-@mixin scaLe($scaLe) {
-    transform: scale($scaLe);
-}
-
 @mixin transformRotate($transformRotate) {
     transform: rotate($transformRotate);
 }
-
-
 // transition
 @mixin transiTion($transiTion) {
     transition: $transiTion;

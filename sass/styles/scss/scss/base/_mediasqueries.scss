@@ -17,15 +17,15 @@
             @include inSet(0);
             @include opaCity(.9);
             @include zIndex(2);
-            animation : hide 1s 2s forwards;
+            animation : hide .5s 1s forwards;
             .loader__spinner {
             @include flexColumnCenter;
             @include widTh(768px);
             @include heiGht(auto);
             .loader  {
-                animation: rotate 1s infinite;  
                 @include heiGht(50px);
                 @include widTh(50px);
+                animation: rotate 1s infinite;  
             }
             .loader:before,
             .loader:after {   
@@ -36,15 +36,15 @@
                 @include widTh(20px);
             }
             .loader:before {
-                animation: ball1 1s infinite;  
                 @include backgroundColor(#{$color-primary});
                 @include boxShaddow(30px 0 0 #{$color-secondary});
                 @include marginBottom(10px);
+                animation: ball1 1s infinite;  
             }
             .loader:after {
-                animation: ball2 1s infinite; 
                 @include backgroundColor(#{$color-tertiary});
                 @include boxShaddow(30px 0 0 lighten($color-secondary,10%));
+                animation: ball2 1s infinite; 
             }
             .loader__text {
                 @include flexColumnCenter;
@@ -374,15 +374,15 @@
             @include inSet(0);
             @include opaCity(.9);
             @include zIndex(2);
-            animation : hide 1s 2s forwards;
+            animation : hide .5s 1s forwards;
             .loader__spinner {
             @include flexColumnCenter;
             @include widTh(992px);
             @include heiGht(auto);
             .loader  {
-                animation: rotate 1s infinite;  
                 @include heiGht(50px);
                 @include widTh(50px);
+                animation: rotate 1s infinite;  
             }
             .loader:before,
             .loader:after {   
@@ -393,15 +393,15 @@
                 @include widTh(20px);
             }
             .loader:before {
-                animation: ball1 1s infinite;  
                 @include backgroundColor(#{$color-primary});
                 @include boxShaddow(30px 0 0 #{$color-secondary});
                 @include marginBottom(10px);
+                animation: ball1 1s infinite;  
             }
             .loader:after {
-                animation: ball2 1s infinite; 
                 @include backgroundColor(#{$color-tertiary});
                 @include boxShaddow(30px 0 0 lighten($color-secondary,10%));
+                animation: ball2 1s infinite; 
             }
             .loader__text {
                 @include flexColumnCenter;
