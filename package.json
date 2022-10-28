@@ -8,15 +8,20 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "sass": "sass --watch ./sass/styles/scss:./sass/styles/css"
+    "sass": "sass --watch ./sass/styles/scss:./sass/styles/css",
+    "build": "postcss ./sass/styles/css/main.css -u autoprefixer cssnano -o ./build/main.min.css"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "autoprefixer": "^10.4.12",
     "browser-sync": "^2.27.10",
     "minireset.css": "^0.0.7",
-    "normalize.css": "^8.0.1",
     "sass": "^1.55.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.13",
+    "cssnano": "^5.1.14",
+    "postcss": "^8.4.18",
+    "postcss-cli": "^10.0.0"
   }
 }
