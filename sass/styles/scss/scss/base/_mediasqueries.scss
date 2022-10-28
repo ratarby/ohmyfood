@@ -17,7 +17,7 @@
             @include inSet(0);
             @include opaCity(.9);
             @include zIndex(2);
-            animation : hide .5s 1s forwards;
+            animation: hide  1s 2s forwards;
             .loader__spinner {
             @include flexColumnCenter;
             @include widTh(768px);
@@ -374,7 +374,7 @@
             @include inSet(0);
             @include opaCity(.9);
             @include zIndex(2);
-            animation : hide .5s 1s forwards;
+            animation: hide  1s 2s forwards;
             .loader__spinner {
             @include flexColumnCenter;
             @include widTh(992px);

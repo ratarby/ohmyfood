@@ -58,7 +58,19 @@
 
 
 
-/*ANIMATION */
+/*ANIMATION MENUS*/
+@keyframes slideInUp {
+0% {
+    transform: translateY(100%);
+    visibility: visible;
+    opacity: 0;
+}
+100% {
+    opacity: 1;
+    transform: translateY(0);
+}
+}
+
 @keyframes checkrotation {
 0% {
     @include transformRotate(0deg);

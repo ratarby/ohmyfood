@@ -245,7 +245,6 @@
 
 // background-clip
 @mixin backgroundClip($backgroundClip) {
-    -webkit-background-clip: #{$backgroundClip};
     background-clip: #{$backgroundClip};
 }
 
@@ -859,6 +858,7 @@
     @include animaTion(slideInUp 1s both);
     @include animationDelay(0.2s);
 }
+
 
 
 

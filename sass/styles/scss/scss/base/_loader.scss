@@ -7,22 +7,22 @@
 
 
 .loader__page {
-    @include flexColumnCenter;
-    @include widTh(100%);
-    @include heiGht(100%);
-    @include posiTion(fixed);
-    @include backgroundColor(darken($color-primary,60%));
-    @include inSet(0);
-    @include opaCity(.9);
-    @include zIndex(2);
-    animation : hide .5s 1s forwards;
-    .loader__spinner {
-    @include flexColumnCenter;
-    @include widTh(375px);
-    @include heiGht(auto);
-    @include marginLRTB(auto);
-    @include paddingLRTB(0 45%);
-    
+        @include flexColumnCenter;
+        @include widTh(100%);
+        @include heiGht(100%);
+        @include posiTion(fixed);
+        @include backgroundColor(darken($color-primary,60%));
+        @include inSet(0);
+        @include opaCity(.9);
+        @include zIndex(2);
+        animation: hide  1s 2s forwards;
+        .loader__spinner{
+            @include flexColumnCenter;
+            @include widTh(375px);
+            @include heiGht(auto);
+            @include marginLRTB(auto);
+            @include paddingLRTB(0 45%);
+        
     .loader  {
         @include heiGht(50px);
         @include widTh(50px);
