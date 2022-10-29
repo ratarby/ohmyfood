@@ -7,7 +7,7 @@ This is à third project of Openclassrooms
 Liens
 
     Lien GitHub : https://github.com/ratarby/ohmyfood.git
-    Lien Page web :
+    Lien Page web : https://ratarby.github.io/ohmyfood/
 ---
 Scénario
 
