@@ -3,7 +3,7 @@ header{
         @include flex;
         @include justifyContent(center);
         .leftArrow{
-        @include transformX(-6vh);
+        @include transformX(-4.76rem);
         @include fontSize(1.6rem);
         &:active{
             @include posiTion(relative);

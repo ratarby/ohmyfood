@@ -70,9 +70,9 @@
                     @include flex;
                     @include justifyContent(center);
                     .leftArrow{
-                    @include transformX(-5rem);
+                    @include transformX(-4.76rem);
                     @include fontSize(1.6rem);
-                    @include transformX(-20.8vh);
+                    @include transformX(-16.76rem);
                     }
                     }
                 }
@@ -425,9 +425,9 @@
                         @include flex;
                         @include justifyContent(center);
                         .leftArrow{
-                        @include transformX(-5rem);
+                        @include transformX(-4.76rem);
                         @include fontSize(1.6rem);
-                        @include transformX(-30vh);
+                        @include transformX(-24rem);
                         }
                         }
                     }

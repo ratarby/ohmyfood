@@ -616,7 +616,7 @@ header .menu__header {
   justify-content: center;
 }
 header .menu__header .leftArrow {
-  transform: translateX(-6vh);
+  transform: translateX(-4.76rem);
   font-size: 1.6rem;
 }
 header .menu__header .leftArrow:active {
@@ -726,9 +726,9 @@ header .menu__header .leftArrow:active {
     justify-content: center;
   }
   .container header .menu__header .leftArrow {
-    transform: translateX(-5rem);
+    transform: translateX(-4.76rem);
     font-size: 1.6rem;
-    transform: translateX(-20.8vh);
+    transform: translateX(-16.76rem);
   }
   .container main section .back__Ground {
     background: #f6f6f6;
@@ -1420,9 +1420,9 @@ header .menu__header .leftArrow:active {
     justify-content: center;
   }
   .container header .menu__header .leftArrow {
-    transform: translateX(-5rem);
+    transform: translateX(-4.76rem);
     font-size: 1.6rem;
-    transform: translateX(-30vh);
+    transform: translateX(-24rem);
   }
   .container section .back__Ground {
     background: #f6f6f6;
@@ -4060,9 +4060,9 @@ header .menu__header .leftArrow:active {
     justify-content: center;
   }
   .container header .menu__header .leftArrow {
-    transform: translateX(-5rem);
+    transform: translateX(-4.76rem);
     font-size: 1.6rem;
-    transform: translateX(-20.8vh);
+    transform: translateX(-16.76rem);
   }
   .container main section .back__Ground {
     background: #f6f6f6;
@@ -4754,9 +4754,9 @@ header .menu__header .leftArrow:active {
     justify-content: center;
   }
   .container header .menu__header .leftArrow {
-    transform: translateX(-5rem);
+    transform: translateX(-4.76rem);
     font-size: 1.6rem;
-    transform: translateX(-30vh);
+    transform: translateX(-24rem);
   }
   .container section .back__Ground {
     background: #f6f6f6;

@@ -11,7 +11,7 @@
     "sass": "sass --watch ./sass/styles/scss:./sass/styles/css",
     "build": "postcss ./sass/styles/css/main.css -u autoprefixer cssnano -o ./build/main.min.css"
   },
-  "author": "",
+  "author": "Manandriana Rajohanesa",
   "license": "ISC",
   "dependencies": {
     "browser-sync": "^2.27.10",
