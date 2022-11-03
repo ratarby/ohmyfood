@@ -9,6 +9,10 @@ Liens
     Lien GitHub : https://github.com/ratarby/ohmyfood.git
     Lien Page web : https://ratarby.github.io/ohmyfood/
 ---
+    J'ai ajouté deux dossiers pour les tests expériences utilisateurs: 
+        - test_browsers
+        - test_iphone_12pro_max
+---
 Scénario
 
 Vous venez d'être recruté chez Ohmyfood!, en tant que développeur junior. Félicitations!
