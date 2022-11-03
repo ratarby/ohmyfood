@@ -12,6 +12,7 @@ Liens
     J'ai ajouté deux dossiers pour les tests expériences utilisateurs: 
         - test_browsers
         - test_iphone_12pro_max
+    Je vous mets le dossier contenant les tests sur le site w3c : ./docs/w3c_validator
 ---
 Scénario
 
